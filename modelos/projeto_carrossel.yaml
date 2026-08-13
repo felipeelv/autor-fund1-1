@@ -1,0 +1,70 @@
+projeto:
+  titulo: "Titulo do carrossel"
+  tipo: "carrossel"
+  idioma: "pt-BR"
+  formato: "quadrado 1:1"
+  provider_padrao: "openai"
+
+modelo:
+  provider: "openai"
+  id: "gpt-image-2"
+  perfil_de_prompt: |
+    Instrucoes literais, diretas, sem contradicoes e com textos permitidos bem delimitados.
+
+parametros_api:
+  tamanho: "1024x1024"
+  qualidade: "auto"
+  formato: "png"
+  fundo: "auto"
+  moderacao: "auto"
+
+saida:
+  area: "revisao"
+  gerar_pdf: true
+  arquivo_pdf: "carrossel.pdf"
+  dpi_pdf: 300
+
+estilo_global: |
+  Carrossel visualmente consistente.
+  Texto grande, hierarquia clara, layout limpo.
+
+conteudo: |
+  Explique o tema geral do carrossel.
+
+textos_obrigatorios:
+  card_1: "TEXTO DO CARD 1"
+  card_2: "TEXTO DO CARD 2"
+  card_3: "TEXTO DO CARD 3"
+  card_4: "TEXTO DO CARD 4"
+  card_5: "TEXTO DO CARD 5"
+
+regras:
+  - "Ser literal e direto; nao interpretar alem do prompt."
+  - "Evitar excesso de contexto e notas tecnicas."
+  - "Usar somente os textos obrigatorios definidos."
+  - "Pouco texto por card."
+  - "Visual consistente entre cards."
+  - "Nao inventar dados."
+  - "Nao criar texto extra."
+
+imagens:
+  - numero: 1
+    tipo: "card"
+    prompt: "prompts/card_1.txt"
+    saida: "card_1.png"
+  - numero: 2
+    tipo: "card"
+    prompt: "prompts/card_2.txt"
+    saida: "card_2.png"
+  - numero: 3
+    tipo: "card"
+    prompt: "prompts/card_3.txt"
+    saida: "card_3.png"
+  - numero: 4
+    tipo: "card"
+    prompt: "prompts/card_4.txt"
+    saida: "card_4.png"
+  - numero: 5
+    tipo: "card"
+    prompt: "prompts/card_5.txt"
+    saida: "card_5.png"

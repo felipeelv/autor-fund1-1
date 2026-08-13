@@ -1,0 +1,62 @@
+projeto:
+  titulo: "Titulo do infografico"
+  tipo: "infografico"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  provider_padrao: "openai"
+
+modelo:
+  provider: "openai"
+  id: "gpt-image-2"
+  perfil_de_prompt: |
+    Instrucoes literais, diretas, sem contradicoes e com textos permitidos bem delimitados.
+
+parametros_api:
+  tamanho: "1024x1536"
+  qualidade: "auto"
+  formato: "png"
+  fundo: "auto"
+  moderacao: "auto"
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  arquivo_pdf: "infografico.pdf"
+  dpi_pdf: 300
+
+estilo_global: |
+  Infografico limpo, educativo, moderno.
+  Usar icones simples, blocos organizados e texto grande.
+  Ajustar densidade visual ao comportamento de gpt-image-2.
+
+conteudo: |
+  Liste dados, secoes e explicacoes que precisam aparecer.
+  Remova qualquer instrucao que gere ruido para gpt-image-2.
+
+hierarquia:
+  titulo_principal: "Texto maior da arte"
+  secoes:
+    - "Secao 1"
+    - "Secao 2"
+    - "Secao 3"
+
+textos_obrigatorios:
+  - "TITULO CURTO"
+  - "SECAO 1"
+  - "SECAO 2"
+  - "SECAO 3"
+
+regras:
+  - "Ser literal e direto; nao interpretar alem do prompt."
+  - "Evitar excesso de contexto e notas tecnicas."
+  - "Usar somente os textos obrigatorios definidos."
+  - "Nao inventar dados."
+  - "Nao criar texto extra."
+  - "Nada de texto pequeno."
+  - "Usar layout organizado."
+
+imagens:
+  - numero: 1
+    tipo: "infografico"
+    prompt: "prompt.txt"
+    saida: "infografico.png"

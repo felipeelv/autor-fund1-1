@@ -1,0 +1,74 @@
+projeto:
+  titulo: "Titulo da HQ"
+  tipo: "hq"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  provider_padrao: "openai"
+
+modelo:
+  provider: "openai"
+  id: "gpt-image-2"
+  perfil_de_prompt: |
+    Instrucoes literais, diretas, sem contradicoes e com textos permitidos bem delimitados.
+
+parametros_api:
+  tamanho: "1024x1536"
+  qualidade: "auto"
+  formato: "png"
+  fundo: "auto"
+  moderacao: "auto"
+
+saida:
+  area: "revisao"
+  gerar_pdf: true
+  arquivo_pdf: "hq_final.pdf"
+  dpi_pdf: 300
+
+estilo_global: |
+  Historia em quadrinhos vertical.
+  Visual expressivo, consistente e legivel em celular.
+  Pouco texto dentro da imagem.
+
+conteudo: |
+  Resumo completo da historia.
+
+personagens: |
+  Personagem 1:
+  Aparencia, roupa, idade, personalidade.
+
+  Personagem 2:
+  Aparencia, roupa, idade, personalidade.
+
+textos_obrigatorios:
+  pagina_1: "TITULO OU FRASE CURTA"
+  pagina_2: "FRASE CURTA"
+  pagina_3: "FRASE CURTA"
+  pagina_4: "FRASE CURTA"
+
+regras:
+  - "Ser literal e direto; nao interpretar alem do prompt."
+  - "Evitar excesso de contexto e notas tecnicas."
+  - "Usar somente os textos obrigatorios definidos."
+  - "Pouco texto dentro da imagem."
+  - "Nao criar texto extra."
+  - "Manter personagens consistentes entre paginas."
+  - "Baloes grandes e legiveis, se houver baloes."
+  - "Margens seguras."
+
+imagens:
+  - numero: 1
+    tipo: "pagina"
+    prompt: "prompts/pagina_1.txt"
+    saida: "pagina_1.png"
+  - numero: 2
+    tipo: "pagina"
+    prompt: "prompts/pagina_2.txt"
+    saida: "pagina_2.png"
+  - numero: 3
+    tipo: "pagina"
+    prompt: "prompts/pagina_3.txt"
+    saida: "pagina_3.png"
+  - numero: 4
+    tipo: "pagina"
+    prompt: "prompts/pagina_4.txt"
+    saida: "pagina_4.png"

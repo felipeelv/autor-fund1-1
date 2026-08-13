@@ -1,0 +1,62 @@
+projeto:
+  titulo: "Titulo da arte"
+  tipo: "poster" # poster | card | capa | thumbnail
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  provider_padrao: "openai"
+
+modelo:
+  provider: "openai"
+  id: "gpt-image-2"
+  perfil_de_prompt: |
+    Instrucoes literais, diretas, sem contradicoes e com textos permitidos bem delimitados.
+
+parametros_api:
+  tamanho: "1024x1536"
+  qualidade: "auto"
+  formato: "png"
+  fundo: "auto"
+  moderacao: "auto"
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  arquivo_pdf: "final.pdf"
+  dpi_pdf: 300
+
+estilo_global: |
+  Descreva o estilo: cinematico, minimalista, premium, infantil, editorial etc.
+  Ajuste a descricao ao comportamento de gpt-image-2.
+
+conteudo: |
+  Descreva a cena ou composicao principal.
+
+textos_obrigatorios:
+  titulo: "TEXTO PRINCIPAL"
+  subtitulo: "TEXTO SECUNDARIO OPCIONAL"
+
+cores:
+  - "cor 1"
+  - "cor 2"
+  - "cor 3"
+
+elementos_obrigatorios:
+  - "Elemento visual 1"
+  - "Elemento visual 2"
+
+elementos_proibidos:
+  - "Algo que nao deve aparecer"
+
+regras:
+  - "Ser literal e direto; nao interpretar alem do prompt."
+  - "Evitar excesso de contexto e notas tecnicas."
+  - "Usar somente os textos obrigatorios definidos."
+  - "Texto grande e legivel."
+  - "Nao criar texto extra."
+  - "Deixar area segura nas bordas."
+
+imagens:
+  - numero: 1
+    tipo: "poster"
+    prompt: "prompt.txt"
+    saida: "poster.png"

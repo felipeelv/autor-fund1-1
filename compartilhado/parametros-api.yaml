@@ -1,0 +1,22 @@
+provider: openai
+modelo: gpt-image-2
+
+rascunho:
+  tamanho: "1024x1536"
+  qualidade: "low"
+  formato: "png"
+  fundo: "opaque"
+  moderacao: "auto"
+
+producao:
+  tamanho: "1024x1536"
+  qualidade: "high"
+  formato: "png"
+  fundo: "opaque"
+  moderacao: "auto"
+
+impressao_a4:
+  observacao: >-
+    1024x1536 tem proporção 2:3 e não é A4. O preset a4 do gerador usa
+    2160x3056, proporção próxima de A4, mas a montagem física e a revisão
+    tipográfica continuam obrigatórias.

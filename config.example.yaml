@@ -1,0 +1,7 @@
+armazenamento:
+  # Raiz externa única do gerador, fora do repositório.
+  raiz: "/caminho/para/SAIDAS GERADOR DE IMAGENS"
+  areas:
+    revisao: "_revisao"
+    aprovadas: "aprovadas"
+    historico: "historico-importado"

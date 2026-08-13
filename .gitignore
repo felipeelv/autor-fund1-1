@@ -1,0 +1,36 @@
+# Segredos
+.env
+.env.local
+.env.*.local
+config.local.yaml
+
+# Python / uv
+__pycache__/
+*.py[cod]
+.venv/
+.uv/
+.uv-cache/
+
+# Temporários, logs e relatórios locais
+*.tmp
+*.log
+relatorios/
+graphify-out/
+
+# O projeto não armazena imagens nem saídas renderizadas
+saida/
+_revisao/
+aprovadas/
+*.avif
+*.gif
+*.jpeg
+*.jpg
+*.png
+*.tif
+*.tiff
+*.webp
+
+# Sistema e editores
+.DS_Store
+.vscode/
+.idea/

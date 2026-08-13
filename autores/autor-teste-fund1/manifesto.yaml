@@ -1,0 +1,38 @@
+schema: 1
+
+disciplina:
+  id: autor-teste-fund1
+  nome: "Inglês EF1 — autor-teste"
+  estado: ativo
+  escopo: "amostras de páginas de apostila de Inglês para o Fundamental I"
+  modelo_imagem: "gpt-image-2"
+  formato_padrao: "apostila-fund1"
+
+configuracao:
+  autor: "autor.yaml"
+  adaptacoes: "adaptacoes.yaml"
+  kit: null
+
+fonte_operacional:
+  tipo: "prompt versionado interno"
+  caminho: "anos/<ano>/prompts/<ano-letivo>/<bimestre>/<arquivo>.md"
+  selecao: "projeto YAML ou argumento --prompt da CLI"
+  dependencia_externa: false
+
+estrutura_por_ano:
+  fontes: "anos/<ano>/fontes/2026-2-semestre"
+  prompts: "anos/<ano>/prompts/<ano-letivo>/<bimestre>"
+
+direcao:
+  autor: "direcao/AUTOR.md"
+  padrao_visual: "direcao/PADRAO-VISUAL-1ANO.md"
+  memoria: "direcao/MEMORIA.md"
+
+producao:
+  projetos: "projetos"
+  registros: "registros"
+  revisao_externa: "_revisao/autor-teste-fund1/<ano>/<bimestre>/<unidade>"
+  aprovadas_externa: "aprovadas/autor-teste-fund1/<ano>/<bimestre>/<unidade>"
+
+anos: [1ano, 3ano]
+anos_planejados: []
