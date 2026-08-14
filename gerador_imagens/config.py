@@ -41,6 +41,10 @@ ALIASES: dict[str, str] = {
     "imagens_parciais": "partial_images",
     "tentativas": "max_retries",
     "metadados": "write_metadata",
+    "proporcao": "aspect_ratio",
+    "proporção": "aspect_ratio",
+    "resolucao": "resolution",
+    "resolução": "resolution",
 }
 
 
@@ -59,6 +63,8 @@ class GenerationOptions:
     timeout: float = 180.0
     max_retries: int = 2
     write_metadata: bool = True
+    aspect_ratio: str | None = None
+    resolution: str | None = None
 
     def validated(self) -> "GenerationOptions":
         validate_size(self.size)
@@ -90,6 +96,13 @@ class GenerationOptions:
             raise ConfigError("Retries deve estar entre 0 e 10.")
         if not self.model.strip():
             raise ConfigError("O modelo não pode estar vazio.")
+        if self.aspect_ratio is not None and not re.fullmatch(
+            r"(?:1:1|16:9|9:16|4:3|3:4|3:2|2:3|2:1|1:2|19\.5:9|9:19\.5|20:9|9:20|auto)",
+            str(self.aspect_ratio),
+        ):
+            raise ConfigError(f"Proporção inválida: {self.aspect_ratio}")
+        if self.resolution is not None and self.resolution not in {"1k", "2k"}:
+            raise ConfigError("Resolução do provedor deve ser '1k' ou '2k'.")
         if output_format != self.output_format:
             return GenerationOptions(
                 **{**asdict(self), "output_format": output_format}

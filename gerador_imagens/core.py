@@ -31,24 +31,46 @@ class GenerationResult:
     usage: dict[str, Any] | None
 
 
-def load_api_key(root: Path) -> str:
-    env_path = root / ".env"
-    load_dotenv(env_path if env_path.exists() else None, override=False)
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+def load_api_key(root: Path, provider: str = "openai") -> str:
+    provider = provider.lower()
+    if provider == "openai":
+        env_paths = (root / ".env.openai.local", root / ".env")
+        variable = "OPENAI_API_KEY"
+        example = root / ".env.openai.example"
+        local = root / ".env.openai.local"
+    elif provider == "xai":
+        env_paths = (root / ".env.grok.local",)
+        variable = "XAI_API_KEY"
+        example = root / ".env.grok.example"
+        local = root / ".env.grok.local"
+    else:
+        raise GenerationError(f"Provider de credencial inválido: {provider}")
+    for env_path in env_paths:
+        if env_path.exists():
+            load_dotenv(env_path, override=False)
+    api_key = os.getenv(variable, "").strip()
     if not api_key:
         raise GenerationError(
-            f"OPENAI_API_KEY não encontrada. Crie {root / '.env'} "
-            "a partir de .env.example."
+            f"{variable} não encontrada. Crie {local} a partir de {example}."
         )
     return api_key
 
 
-def build_client(api_key: str, options: GenerationOptions) -> OpenAI:
-    return OpenAI(
-        api_key=api_key,
-        timeout=options.timeout,
-        max_retries=options.max_retries,
-    )
+def build_client(
+    api_key: str,
+    options: GenerationOptions,
+    provider: str = "openai",
+) -> OpenAI:
+    kwargs: dict[str, Any] = {
+        "api_key": api_key,
+        "timeout": options.timeout,
+        "max_retries": options.max_retries,
+    }
+    if provider == "xai":
+        kwargs["base_url"] = "https://api.x.ai/v1"
+    elif provider != "openai":
+        raise GenerationError(f"Provider de cliente inválido: {provider}")
+    return OpenAI(**kwargs)
 
 
 def check_authentication(client: OpenAI, model: str) -> str:
@@ -106,6 +128,57 @@ def validate_image_bytes(
             f"A API retornou {width}x{height}, mas foi solicitado {expected_size}."
         )
     return width, height, actual_format
+
+
+def _prepare_provider_image_bytes(
+    data: bytes,
+    options: GenerationOptions,
+    provider: str,
+) -> tuple[bytes, str, bool]:
+    """Normaliza respostas documentadas pelo provedor antes de salvar."""
+    try:
+        with Image.open(BytesIO(data)) as image:
+            source_format = _normalize_pillow_format(image.format)
+            image.verify()
+    except (UnidentifiedImageError, OSError, SyntaxError) as exc:
+        raise GenerationError("Os bytes recebidos não formam uma imagem válida.") from exc
+
+    if source_format == options.output_format:
+        return data, source_format, False
+    if not (
+        provider == "xai"
+        and source_format == "png"
+        and options.output_format == "jpeg"
+    ):
+        raise GenerationError(
+            f"A API retornou {source_format or 'formato desconhecido'}, "
+            f"mas foi solicitado {options.output_format}."
+        )
+
+    try:
+        with Image.open(BytesIO(data)) as image:
+            transposed = ImageOps.exif_transpose(image)
+            if transposed.mode in {"RGBA", "LA"} or "transparency" in transposed.info:
+                rgba = transposed.convert("RGBA")
+                converted = Image.new("RGB", rgba.size, "white")
+                converted.paste(rgba, mask=rgba.getchannel("A"))
+                rgba.close()
+            else:
+                converted = transposed.convert("RGB")
+            buffer = BytesIO()
+            converted.save(
+                buffer,
+                format="JPEG",
+                quality=95,
+                subsampling=0,
+                optimize=True,
+            )
+            converted.close()
+    except (OSError, SyntaxError) as exc:
+        raise GenerationError(
+            "Não foi possível converter a resposta PNG da xAI para JPEG."
+        ) from exc
+    return buffer.getvalue(), source_format, True
 
 
 def _atomic_write_bytes(path: Path, data: bytes, overwrite: bool) -> None:
@@ -173,7 +246,26 @@ def _serialize(value: Any) -> Any:
     return str(value)
 
 
-def _request_kwargs(prompt: str, options: GenerationOptions) -> dict[str, Any]:
+def _request_kwargs(
+    prompt: str,
+    options: GenerationOptions,
+    provider: str,
+) -> dict[str, Any]:
+    if provider == "xai":
+        extra_body: dict[str, Any] = {
+            "aspect_ratio": options.aspect_ratio,
+            "resolution": options.resolution,
+        }
+        return {
+            "model": options.model,
+            "prompt": prompt,
+            "quality": options.quality,
+            "n": options.n,
+            "response_format": "b64_json",
+            "extra_body": extra_body,
+        }
+    if provider != "openai":
+        raise GenerationError(f"Provider de geração inválido: {provider}")
     kwargs: dict[str, Any] = {
         "model": options.model,
         "prompt": prompt,
@@ -202,11 +294,12 @@ def _metadata_payload(
     image_info: dict[str, Any],
     request_id: str | None,
     usage: dict[str, Any] | None,
+    provider: str,
 ) -> dict[str, Any]:
     return {
         "schema_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "provider": "openai",
+        "provider": provider,
         "model": options.model,
         "parameters": {
             "size": options.size,
@@ -220,6 +313,8 @@ def _metadata_payload(
             "partial_images": options.partial_images,
             "timeout": options.timeout,
             "max_retries": options.max_retries,
+            "aspect_ratio": options.aspect_ratio,
+            "resolution": options.resolution,
         },
         "prompt": {
             "source": str(prompt_source) if prompt_source else None,
@@ -268,13 +363,14 @@ def _generate_regular(
     prompt_source: Path | None,
     author_id: str | None,
     project_source: Path | None,
+    provider: str,
 ) -> GenerationResult:
     paths = output_paths(output, options.n, options.output_format)
     planned = list(paths)
     if options.write_metadata:
         planned.extend(_metadata_path(path) for path in paths)
     _protect_planned_paths(planned, overwrite)
-    response = client.images.generate(**_request_kwargs(prompt, options))
+    response = client.images.generate(**_request_kwargs(prompt, options, provider))
     data = list(response.data or [])
     if len(data) != options.n:
         raise GenerationError(
@@ -283,11 +379,21 @@ def _generate_regular(
     request_id = getattr(response, "_request_id", None)
     usage = _serialize(getattr(response, "usage", None))
     decoded = [_decode_base64(getattr(item, "b64_json", "")) for item in data]
-    for image_bytes in decoded:
+    prepared = [
+        _prepare_provider_image_bytes(image_bytes, options, provider)
+        for image_bytes in decoded
+    ]
+    for image_bytes, _, _ in prepared:
         validate_image_bytes(image_bytes, options.output_format, options.size)
     metadata_paths: list[Path] = []
-    for image_bytes, path in zip(decoded, paths, strict=True):
+    for (image_bytes, source_format, transcoded), path in zip(
+        prepared,
+        paths,
+        strict=True,
+    ):
         image_info = save_image(path, image_bytes, options, overwrite)
+        image_info["source_format"] = source_format
+        image_info["transcoded"] = transcoded
         if options.write_metadata:
             payload = _metadata_payload(
                 prompt=prompt,
@@ -298,6 +404,7 @@ def _generate_regular(
                 image_info=image_info,
                 request_id=request_id,
                 usage=usage,
+                provider=provider,
             )
             metadata_paths.append(_save_metadata(path, payload, overwrite))
     return GenerationResult(paths, metadata_paths, [], request_id, usage)
@@ -312,6 +419,7 @@ def _generate_streaming(
     prompt_source: Path | None,
     author_id: str | None,
     project_source: Path | None,
+    provider: str,
 ) -> GenerationResult:
     final_path = output_paths(output, 1, options.output_format)[0]
     planned = [final_path]
@@ -328,7 +436,7 @@ def _generate_streaming(
     final_bytes: bytes | None = None
     usage: dict[str, Any] | None = None
     request_id: str | None = None
-    stream = client.images.generate(**_request_kwargs(prompt, options))
+    stream = client.images.generate(**_request_kwargs(prompt, options, provider))
     for event in stream:
         request_id = (
             getattr(event, "_request_id", None)
@@ -367,6 +475,7 @@ def _generate_streaming(
             image_info=image_info,
             request_id=request_id,
             usage=usage,
+            provider=provider,
         )
         metadata_paths.append(_save_metadata(final_path, payload, overwrite))
     return GenerationResult(
@@ -388,11 +497,17 @@ def generate_image(
     prompt_source: Path | None = None,
     author_id: str | None = None,
     project_source: Path | None = None,
+    provider: str = "openai",
 ) -> GenerationResult:
     prompt = prompt.strip()
     if not prompt:
         raise GenerationError("O prompt está vazio.")
     options = options.validated()
+    provider = provider.lower()
+    if provider not in {"openai", "xai"}:
+        raise GenerationError(f"Provider de geração inválido: {provider}")
+    if provider == "xai" and options.stream:
+        raise GenerationError("O provider xai não usa streaming neste gerador.")
     if options.stream:
         return _generate_streaming(
             client,
@@ -403,6 +518,7 @@ def generate_image(
             prompt_source,
             author_id,
             project_source,
+            provider,
         )
     return _generate_regular(
         client,
@@ -413,6 +529,7 @@ def generate_image(
         prompt_source,
         author_id,
         project_source,
+        provider,
     )
 
 

@@ -1,0 +1,45 @@
+projeto:
+  titulo: "Matemática EF1 — 3º ano — Unidades 5 e 6 — fundo branco, colagem segmentada e títulos variados — Grok Imagine 2 — v14"
+  tipo: "colecao-apostila-fund1-6-paginas"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "autor-teste-mat3"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Divisão com resto — fundo branco e colagem segmentada — v14"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p01-v14-branco-colagem-variada.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-6paginas-grok-v14-branco-colagem-variada/p01-divisao-com-resto-grok-v14.jpg"
+  - nome: "P2 — Verificar e interpretar o resto — fundo branco e colagem segmentada — v14"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p02-v14-branco-colagem-variada.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-6paginas-grok-v14-branco-colagem-variada/p02-verificar-e-interpretar-o-resto-grok-v14.jpg"
+  - nome: "P3 — As quatro operações — fundo branco e colagem segmentada — v14"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p03-v14-branco-colagem-variada.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-6paginas-grok-v14-branco-colagem-variada/p03-as-quatro-operacoes-grok-v14.jpg"
+  - nome: "P4 — Sólidos geométricos — fundo branco e colagem segmentada — v14"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p04-v14-branco-colagem-variada.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-6paginas-grok-v14-branco-colagem-variada/p04-solidos-geometricos-grok-v14.jpg"
+  - nome: "P5 — Planificação e figuras planas — fundo branco e colagem segmentada — v14"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p05-v14-branco-colagem-variada.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-6paginas-grok-v14-branco-colagem-variada/p05-planificacao-e-figuras-planas-grok-v14.jpg"
+  - nome: "P6 — Polígonos e quadriláteros — fundo branco e colagem segmentada — v14"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p06-v14-branco-colagem-variada.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-6paginas-grok-v14-branco-colagem-variada/p06-poligonos-e-quadrilateros-grok-v14.jpg"

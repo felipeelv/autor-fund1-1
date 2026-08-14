@@ -1,130 +1,117 @@
-# Autor-teste de Inglês — Fundamental I
+# Autor-teste — Fundamental I
 
-Repositório autônomo para gerar as páginas pedagógicas do autor
-`autor-teste-fund1` com a OpenAI Images API e o modelo `gpt-image-2`.
+Repositório autônomo que reúne os autores pedagógicos do grupo `autor-teste`
+com OpenAI Images API (`gpt-image-2`), xAI Images API
+(`grok-imagine-image-2.0`) e o formato visual `apostila-fund1`.
 
-Este pacote não depende do repositório maior. Ele contém o núcleo Python, as
-configurações compartilhadas necessárias, o formato `apostila-fund1`, as
-fontes, os conteúdos editoriais, os prompts, os projetos YAML, os registros e
-testes locais.
+Autores disponíveis:
 
-Imagens, PDFs, prévias, credenciais e ambientes virtuais não fazem parte do
-repositório. Toda saída é gravada em uma raiz externa configurada.
+- `autor-teste-fund1`: Inglês do Fundamental I;
+- `autor-teste-mat3`: Matemática do 3º ano do Fundamental I.
+
+Cada autor mantém fontes, direção, conteúdos, prompts, projetos e registros em
+sua própria pasta. O núcleo Python, o formato e as regras comuns são
+compartilhados. Imagens, PDFs, prévias, credenciais e ambientes virtuais não
+fazem parte do acervo versionado.
 
 ## Estrutura
 
 ```text
 autor-teste-fund1-independente/
-├── autores/autor-teste-fund1/  # direção, conteúdo, prompts e projetos
+├── autores/
+│   ├── autor-teste-fund1/      # Inglês · Fundamental I
+│   └── autor-teste-mat3/       # Matemática · 3º ano
 ├── compartilhado/              # regras editoriais e parâmetros comuns
-├── formatos/apostila-fund1/    # formato visual autorizado
+├── formatos/apostila-fund1/    # formato autorizado pelos dois autores
 ├── gerador_imagens/             # núcleo Python
 ├── modelos/                     # modelos de prompt e projeto
 ├── tests/                       # testes sem chamadas à API
 ├── gerar.py                     # geração e dry-run
-├── validar.py                   # auditoria de prompts, projetos e imagens
-└── aprovar.py                   # promoção de revisão para aprovadas
+├── validar.py                   # auditoria local
+└── aprovar.py                   # promoção para aprovadas
 ```
 
-## Requisitos
+## Requisitos e configuração
 
 - Python 3.10 ou superior;
-- [uv](https://docs.astral.sh/uv/);
-- uma chave da OpenAI com acesso a `gpt-image-2`;
-- uma pasta de saída fora deste repositório.
-
-## Instalação
+- `uv`;
+- chave do provedor que será usado: OpenAI com acesso a `gpt-image-2` e/ou xAI
+  com acesso a `grok-imagine-image-2.0`;
+- pasta de saída fora deste repositório.
 
 ```bash
-cd /caminho/para/autor-teste-fund1-independente
+cd /Users/feliperosamini/autor-teste-fund1-independente
 uv sync --locked
-cp .env.example .env
+cp .env.openai.example .env.openai.local
+cp .env.grok.example .env.grok.local
 cp config.example.yaml config.local.yaml
 ```
 
-Edite `.env` e informe somente a sua chave:
+Informe cada chave somente no arquivo local correspondente e configure uma raiz
+externa em `config.local.yaml`. `.env.openai.local`, `.env.grok.local` e
+`config.local.yaml` são ignorados pelo Git.
 
-```dotenv
-OPENAI_API_KEY=cole_sua_chave_aqui
-```
+Projetos OpenAI usam `OPENAI_API_KEY` de `.env.openai.local`. Projetos xAI usam
+`XAI_API_KEY` de `.env.grok.local`. O provedor é declarado em cada projeto e
+nenhuma credencial altera silenciosamente o modelo selecionado.
 
-Edite `config.local.yaml` e indique uma pasta externa existente:
-
-```yaml
-armazenamento:
-  raiz: "/caminho/externo/Imagens"
-  areas:
-    revisao: "_revisao"
-    aprovadas: "aprovadas"
-    historico: "historico-importado"
-```
-
-`.env` e `config.local.yaml` são ignorados pelo Git. A configuração do destino
-também pode ser feita pela variável `GERADOR_IMAGENS_SAIDA`.
-
-## Verificação inicial
-
-Os comandos abaixo não geram imagens nem consomem créditos:
+## Verificação sem consumo de créditos
 
 ```bash
 uv run python -m unittest discover -s tests -v
 uv run gerar.py --help
 uv run gerar.py --listar-autores
 uv run validar.py --acervo
+```
+
+Dry-run de Inglês:
+
+```bash
 uv run gerar.py \
   --projeto autores/autor-teste-fund1/projetos/2026/3-bimestre/unidade-03-bloco-01-autonomia-guiada-4paginas-v5.yaml \
   --dry-run
 ```
 
-## Gerar as quatro páginas aprovadas
-
-Depois do `dry-run`, execute:
+Dry-run de Matemática:
 
 ```bash
 uv run gerar.py \
-  --projeto autores/autor-teste-fund1/projetos/2026/3-bimestre/unidade-03-bloco-01-autonomia-guiada-4paginas-v5.yaml
+  --projeto autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \
+  --dry-run
 ```
 
-As imagens serão salvas em:
+Dry-run da amostra de Matemática com Grok Imagine 2:
 
-```text
-<raiz externa>/_revisao/autor-teste-fund1/1ano/3-bimestre/
-└── unidade-03-bloco-01-autonomia-guiada-v5/
+```bash
+uv run gerar.py \
+  --projeto autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-p01-amostra-grok-v1.yaml \
+  --dry-run
 ```
 
-O gerador não sobrescreve arquivos existentes. `--forcar` só deve ser usado
-com autorização explícita e depois de confirmar o destino exato.
+## Lote de Matemática com seis páginas
+
+O lote inicial de Matemática usa a fonte interna integral do 3º bimestre e
+cria seis páginas sobre:
+
+1. divisão com resto;
+2. verificação e interpretação do resto;
+3. quatro operações;
+4. sólidos geométricos;
+5. planificação 3D e 2D;
+6. polígonos e quadriláteros.
+
+Projeto:
+`autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml`.
 
 ## Fluxo editorial
 
-1. manter a fonte e o conteúdo pedagógico dentro do autor;
-2. criar um prompt versionado para cada página;
+1. selecionar o autor correto;
+2. revisar fonte, conteúdo e prompt versionado;
 3. declarar o lote em um projeto YAML;
 4. executar `--dry-run`;
-5. gerar na área externa `_revisao`;
-6. conferir texto, correspondências visuais, metadados e OCR;
+5. gerar na área externa `_revisao/<autor>/...`;
+6. conferir texto, símbolos, correspondências visuais, metadados e OCR;
 7. promover somente após revisão humana.
 
-Exemplo de promoção:
-
-```bash
-uv run aprovar.py \
-  autor-teste-fund1/1ano/3-bimestre/unidade-03-bloco-01-autonomia-guiada-v5/p01-cores-ao-nosso-redor-v5.png \
-  --revisor "Nome do revisor"
-```
-
-A aprovação copia a imagem para a área externa `aprovadas` e cria registros
-textuais de rastreabilidade em `registros/aprovacoes/`.
-
-## Preparar o novo repositório Git
-
-Depois de mover ou renomear esta pasta, ela pode receber seu próprio Git:
-
-```bash
-git init
-git add .
-git status
-```
-
-Confira o `git status` antes do primeiro commit. Nenhuma imagem, `.env`,
-`config.local.yaml` ou `.venv` deve aparecer na lista de arquivos versionados.
+O gerador protege arquivos existentes. `--forcar` só deve ser usado com
+autorização explícita e depois de confirmar o destino exato.

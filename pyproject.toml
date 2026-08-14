@@ -1,7 +1,7 @@
 [project]
-name = "autor-teste-fund1-gerador"
+name = "autor-teste-gerador"
 version = "1.0.0"
-description = "Gerador autônomo do autor-teste de Inglês do Fundamental I"
+description = "Gerador autônomo dos autores-teste de Inglês e Matemática do Fundamental I"
 requires-python = ">=3.10"
 dependencies = [
   "openai==2.48.0",

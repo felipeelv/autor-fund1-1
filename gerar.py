@@ -63,6 +63,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--autor", help="ID de um perfil em autores/<id>/autor.yaml.")
     parser.add_argument(
+        "--provider",
+        choices=("openai", "xai"),
+        default="openai",
+        help="Provedor da Images API para geração direta ou check-auth.",
+    )
+    parser.add_argument(
         "--renderizador",
         choices=sorted(RENDERERS),
         help="Converte frontmatter estruturado usando um formato compartilhado.",
@@ -188,10 +194,12 @@ def describe_task(
     output: Path,
     options: GenerationOptions,
     author_id: str | None,
+    provider: str = "openai",
 ) -> None:
     digest = hashlib.sha256(prompt.encode("utf-8")).hexdigest()[:12]
     print(
         "Plano:",
+        f"provider={provider}",
         f"modelo={options.model}",
         f"tamanho={options.size}",
         f"qualidade={options.quality}",
@@ -250,11 +258,17 @@ def generate_direct(args: argparse.Namespace) -> int:
 
     print_prompt_findings(prompt, str(prompt_source or "prompt inline"))
     if args.dry_run:
-        describe_task(prompt, output, options, author.id if author else None)
+        describe_task(
+            prompt,
+            output,
+            options,
+            author.id if author else None,
+            args.provider,
+        )
         return 0
 
-    api_key = load_api_key(ROOT)
-    client = build_client(api_key, options)
+    api_key = load_api_key(ROOT, args.provider)
+    client = build_client(api_key, options, args.provider)
     result = generate_image(
         client=client,
         prompt=prompt,
@@ -263,6 +277,7 @@ def generate_direct(args: argparse.Namespace) -> int:
         overwrite=args.forcar,
         prompt_source=prompt_source,
         author_id=author.id if author else None,
+        provider=args.provider,
     )
     for path in result.output_paths:
         print(f"Imagem salva em: {path}")
@@ -334,17 +349,21 @@ def generate_project(args: argparse.Namespace) -> int:
                 task.output_path,
                 task.options,
                 author.id if author else None,
+                task.provider,
             )
         if plan.pdf_path:
             print(f"PDF planejado: {plan.pdf_path}")
         return 0
 
-    api_key = load_api_key(ROOT)
     all_outputs: list[Path] = []
-    clients: dict[tuple[float, int], Any] = {}
+    clients: dict[tuple[str, float, int], Any] = {}
     for task, prompt, author in prepared:
-        key = (task.options.timeout, task.options.max_retries)
-        client = clients.setdefault(key, build_client(api_key, task.options))
+        key = (task.provider, task.options.timeout, task.options.max_retries)
+        client = clients.get(key)
+        if client is None:
+            api_key = load_api_key(ROOT, task.provider)
+            client = build_client(api_key, task.options, task.provider)
+            clients[key] = client
         result = generate_image(
             client=client,
             prompt=prompt,
@@ -354,6 +373,7 @@ def generate_project(args: argparse.Namespace) -> int:
             prompt_source=task.prompt_path,
             author_id=author.id if author else None,
             project_source=plan.source,
+            provider=task.provider,
         )
         all_outputs.extend(result.output_paths)
         for path in result.output_paths:
@@ -382,8 +402,8 @@ def run(args: argparse.Namespace) -> int:
 
     if args.check_auth:
         options = direct_options(args)
-        api_key = load_api_key(ROOT)
-        client = build_client(api_key, options)
+        api_key = load_api_key(ROOT, args.provider)
+        client = build_client(api_key, options, args.provider)
         model_id = check_authentication(client, options.model)
         print(f"Autenticação e modelo: OK ({model_id})")
         return 0
@@ -401,7 +421,7 @@ def print_api_error(exc: openai.OpenAIError) -> None:
     request_id = getattr(exc, "request_id", None)
     body = getattr(exc, "body", None)
     details = body.get("moderation_details") if isinstance(body, dict) else None
-    parts = [f"Erro da OpenAI: {type(exc).__name__}"]
+    parts = [f"Erro da API de imagens: {type(exc).__name__}"]
     if status is not None:
         parts.append(f"status={status}")
     if code:
