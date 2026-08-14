@@ -9,6 +9,12 @@
 - modelo alternativo autorizado para amostras declaradas: xAI
   `grok-imagine-image-2.0`;
 - linguagem visual: colagem, sketchnote e visual note-taking;
+- fundo editorial: branco puro `#FFFFFF`, sem creme, grade ou pontilhado
+  contínuo;
+- composição: explicações distribuídas em recortes e boxes físicos separados,
+  com mais presença de colagem e respiro branco;
+- títulos: variar tamanho, posição, alinhamento e suporte entre páginas
+  consecutivas;
 - saída: sempre externa, primeiro em `_revisao`.
 
 ## Fonte inicial
@@ -27,3 +33,10 @@ Unidades 5 e 6. A limitação de seis páginas exige seleção editorial; o mapa
 Antes de gerar imagens, uma pessoa deve revisar cálculos, definições,
 classificações geométricas, adequação ao 3º ano e densidade de texto. O
 `--dry-run` não substitui essa revisão.
+
+## Ajuste visual aprovado em 14 de agosto de 2026
+
+Para os próximos lotes, evitar fundos quentes e cabeçalhos repetitivos. Usar
+branco puro, aumentar a presença de papéis recortados e separar melhor os
+núcleos didáticos. Em sequências, planejar os títulos como um conjunto variado,
+sem comprometer legibilidade ou continuidade.

@@ -23,6 +23,12 @@ cria propriedades, resultados ou fatos novos.
 ## Princípios visuais
 
 - seguir `PADRAO-VISUAL-3ANO.md`;
+- usar fundo branco puro como base da página, sem tom creme, grade ou
+  pontilhado contínuo;
+- separar explicações, exemplos, regras e sínteses em recortes de papel
+  distintos, com respiro branco entre eles;
+- variar escala, alinhamento, posição e tratamento dos títulos entre páginas
+  consecutivas, evitando repetir o mesmo cabeçalho centralizado;
 - manter tipografia grande e caminho de leitura evidente;
 - contar corretamente todos os objetos representados;
 - preservar literalmente números, sinais e unidades;

@@ -1,0 +1,34 @@
+projeto:
+  titulo: "Matemática EF1 — 3º ano — páginas 5 e 6 — correção isolada — Grok Imagine 2 — v5"
+  tipo: "colecao-apostila-fund1-2-paginas"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "autor-teste-mat3"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P5 — Planificação 3D e 2D — correção isolada — Grok Imagine 2 — v5"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p05-planificacao-3d-e-2d-v5-correcao-isolada.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-p05-p06-grok-v5-correcao-isolada/p05-planificacao-3d-e-2d-grok-v5-correcao-isolada.jpg"
+
+  - nome: "P6 — Polígonos e quadriláteros — correção isolada — Grok Imagine 2 — v5"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p06-poligonos-e-quadrilateros-v5-correcao-isolada.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-p05-p06-grok-v5-correcao-isolada/p06-poligonos-e-quadrilateros-grok-v5-correcao-isolada.jpg"

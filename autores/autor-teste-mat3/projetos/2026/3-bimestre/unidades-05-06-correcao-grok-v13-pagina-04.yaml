@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Matemática EF1 — 3º ano — Unidade 6 — face, vértice e aresta — Grok Imagine 2 — v13"
+  tipo: "apostila-fund1-correcao-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "autor-teste-mat3"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P4 — Sólidos geométricos — face, vértice e aresta — v13"
+    prompt: "autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p04-v13-face-vertice-aresta.md"
+    saida: "autor-teste-mat3/3ano/3-bimestre/unidades-05-06-correcao-grok-v13-pagina-04/p04-solidos-geometricos-grok-v13.jpg"
