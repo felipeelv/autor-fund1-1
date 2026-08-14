@@ -1,10 +1,20 @@
-# AGENTS.md — Autor-teste de Inglês · Fundamental I
+# AGENTS.md — Autor-teste · Fundamental I
 
 ## Escopo
 
-Este é um repositório autônomo e exclusivo do autor `autor-teste-fund1`, para
-imagens pedagógicas de Inglês do Fundamental I. Use somente a OpenAI Images API
-com `gpt-image-2`. Não introduza outros autores, disciplinas ou provedores.
+Este é o repositório autônomo do grupo `autor-teste`, com dois perfis autorais:
+
+- `autor-teste-fund1`: imagens pedagógicas de Inglês do Fundamental I;
+- `autor-teste-mat3`: imagens pedagógicas de Matemática do 3º ano do Fundamental I.
+
+Provedores de imagem autorizados:
+
+- OpenAI Images API com `gpt-image-2`;
+- xAI Images API com `grok-imagine-image-2.0`.
+
+Não introduza outros autores, disciplinas, modelos ou provedores sem
+autorização explícita. Cada projeto precisa declarar o provedor e o modelo;
+nunca troque um pelo outro silenciosamente.
 
 Não dependa de código, prompts, configurações ou credenciais fora desta pasta.
 
@@ -23,19 +33,23 @@ produção ou prévias.
 ## Conteúdo e identidade
 
 - Responda e documente em português brasileiro.
-- Preserve o autor `autor-teste-fund1` e o formato `apostila-fund1`.
+- Preserve os autores `autor-teste-fund1` e `autor-teste-mat3`.
+- Preserve o formato `apostila-fund1`.
 - Preserve a linguagem visual de colagem, sketchnote e visual note-taking.
+- Não misture conteúdos, fontes, prompts ou saídas entre os autores.
 - Não altere prompts aprovados durante mudanças puramente técnicas.
-- Não invente estatísticas, fontes, traduções ou fatos.
+- Não invente estatísticas, fontes, traduções, definições, propriedades ou fatos.
+- Inglês exige conferência literal de palavras, frases e traduções.
+- Matemática exige conferência de números, sinais, cálculos e classificações.
 - Dados factuais e citações exigem revisão humana.
 
 ## Fluxo
 
-1. selecionar fonte, conteúdo e prompt versionado;
-2. declarar ou revisar o projeto YAML;
+1. selecionar autor, fonte, conteúdo e prompt versionado;
+2. declarar ou revisar o projeto YAML do autor correto;
 3. executar `--dry-run`;
-4. gerar na área externa `_revisao`;
-5. conferir imagem, metadados, conteúdo e OCR;
+4. gerar na área externa `_revisao` do respectivo autor;
+5. conferir imagem, metadados, conteúdo, cálculos e OCR;
 6. promover com `aprovar.py` somente após revisão humana;
 7. manter versões anteriores; sobrescrever apenas com autorização e `--forcar`.
 
@@ -43,7 +57,10 @@ produção ou prévias.
 
 - Python mínimo: 3.10.
 - Dependências diretas ficam fixadas em `pyproject.toml` e `uv.lock`.
-- Nunca exponha ou registre `OPENAI_API_KEY`.
+- Nunca exponha ou registre `OPENAI_API_KEY` ou `XAI_API_KEY`.
+- Credenciais locais ficam separadas em `.env.openai.local` e `.env.grok.local`.
+- O adaptador xAI só pode usar projetos com `provider: xai`, formato JPEG,
+  proporção e resolução explícitas.
 - Testes e dry-runs não podem chamar a API nem consumir créditos.
 - Valide bytes, formato e dimensões antes de salvar.
 - Preserve gravação atômica e proteção contra sobrescrita.
@@ -58,6 +75,9 @@ uv run gerar.py --help
 uv run gerar.py --listar-autores
 uv run gerar.py \
   --projeto autores/autor-teste-fund1/projetos/2026/3-bimestre/unidade-03-bloco-01-autonomia-guiada-4paginas-v5.yaml \
+  --dry-run
+uv run gerar.py \
+  --projeto autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \
   --dry-run
 uv run validar.py --acervo
 ```

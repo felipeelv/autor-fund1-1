@@ -23,6 +23,7 @@ class ProjectTask:
     output_path: Path
     options: GenerationOptions
     author_id: str | None = None
+    provider: str = "openai"
 
 
 @dataclass(frozen=True)
@@ -134,8 +135,8 @@ def load_project(
     project_info = _mapping(raw.get("projeto"), "projeto")
     model_info = _mapping(raw.get("modelo"), "modelo")
     provider = str(model_info.get("provider", "openai")).lower()
-    if provider != "openai":
-        raise ConfigError("Esta pasta autônoma aceita apenas provider=openai.")
+    if provider not in {"openai", "xai"}:
+        raise ConfigError("Provider deve ser 'openai' ou 'xai'.")
 
     global_parameters = dict(_mapping(raw.get("parametros_api"), "parametros_api"))
     if model_info.get("id"):
@@ -180,6 +181,28 @@ def load_project(
             options,
         )
         options = options_from_mapping(overrides, options)
+        item_provider = str(item.get("provider") or provider).lower()
+        if item_provider not in {"openai", "xai"}:
+            raise ConfigError(
+                f"imagens[{index}].provider deve ser 'openai' ou 'xai'."
+            )
+        if item_provider == "xai":
+            if options.stream:
+                raise ConfigError("O provider xai não usa streaming neste gerador.")
+            if options.quality not in {"low", "medium"}:
+                raise ConfigError(
+                    "grok-imagine-image-2.0 aceita qualidade 'low' ou 'medium'."
+                )
+            if options.output_format != "jpeg":
+                raise ConfigError("O projeto xAI deve usar formato JPEG.")
+            if options.size != "auto":
+                raise ConfigError(
+                    "O projeto xAI usa tamanho=auto com proporcao e resolucao."
+                )
+            if options.aspect_ratio is None or options.resolution is None:
+                raise ConfigError(
+                    "O projeto xAI exige proporcao e resolucao em parametros_api."
+                )
         output_path = normalize_output_path(
             _resolve_output(
                 storage,
@@ -195,6 +218,7 @@ def load_project(
                 output_path=output_path,
                 options=options,
                 author_id=str(author_id) if author_id else None,
+                provider=item_provider,
             )
         )
 

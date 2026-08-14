@@ -41,6 +41,18 @@ class ConfigTests(unittest.TestCase):
         with self.assertRaises(ConfigError):
             GenerationOptions(stream=True, n=2).validated()
 
+    def test_xai_aspect_ratio_and_resolution_aliases(self) -> None:
+        options = options_from_mapping(
+            {
+                "tamanho": "auto",
+                "formato": "jpeg",
+                "proporcao": "2:3",
+                "resolucao": "2k",
+            }
+        )
+        self.assertEqual(options.aspect_ratio, "2:3")
+        self.assertEqual(options.resolution, "2k")
+
     def test_output_extension_and_numbering(self) -> None:
         path = normalize_output_path(Path("imagem"), "png")
         self.assertEqual(path, Path("imagem.png"))

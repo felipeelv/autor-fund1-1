@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import base64
+import json
 import tempfile
 import unittest
 from io import BytesIO
 from pathlib import Path
 from types import SimpleNamespace
+from unittest.mock import patch
 
 from PIL import Image
 
@@ -14,6 +16,7 @@ from gerador_imagens.core import (
     GenerationError,
     create_pdf,
     generate_image,
+    load_api_key,
     save_image,
 )
 
@@ -21,6 +24,12 @@ from gerador_imagens.core import (
 def png_base64(size: tuple[int, int] = (1024, 1024)) -> str:
     buffer = BytesIO()
     Image.new("RGB", size, "white").save(buffer, format="PNG")
+    return base64.b64encode(buffer.getvalue()).decode("ascii")
+
+
+def jpeg_base64(size: tuple[int, int] = (1365, 2048)) -> str:
+    buffer = BytesIO()
+    Image.new("RGB", size, "white").save(buffer, format="JPEG")
     return base64.b64encode(buffer.getvalue()).decode("ascii")
 
 
@@ -35,6 +44,36 @@ class FakeImages:
 
 
 class CoreTests(unittest.TestCase):
+    def test_openai_key_is_loaded_from_provider_specific_env(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / ".env.openai.local").write_text(
+                "OPENAI_API_KEY=sk-test-local\n",
+                encoding="utf-8",
+            )
+            with patch.dict("os.environ", {}, clear=True):
+                self.assertEqual(load_api_key(root), "sk-test-local")
+
+    def test_missing_openai_key_names_provider_specific_env(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with patch.dict("os.environ", {}, clear=True):
+                with self.assertRaisesRegex(
+                    GenerationError,
+                    r"\.env\.openai\.local",
+                ):
+                    load_api_key(root)
+
+    def test_xai_key_is_loaded_from_grok_env(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / ".env.grok.local").write_text(
+                "XAI_API_KEY=xai-test-local\n",
+                encoding="utf-8",
+            )
+            with patch.dict("os.environ", {}, clear=True):
+                self.assertEqual(load_api_key(root, "xai"), "xai-test-local")
+
     def test_valid_image_is_saved(self) -> None:
         options = GenerationOptions(size="1024x1024")
         data = base64.b64decode(png_base64())
@@ -91,6 +130,112 @@ class CoreTests(unittest.TestCase):
                     options=options,
                 )
             self.assertIsNone(images.kwargs)
+
+    def test_xai_generation_uses_imagine_contract_and_provider_metadata(self) -> None:
+        response = SimpleNamespace(
+            data=[SimpleNamespace(b64_json=jpeg_base64())],
+            usage=SimpleNamespace(
+                model_dump=lambda mode="json": {"cost_in_usd_ticks": 1}
+            ),
+            _request_id="req_xai_test",
+        )
+        images = FakeImages(response)
+        client = SimpleNamespace(images=images)
+        options = GenerationOptions(
+            model="grok-imagine-image-2.0",
+            size="auto",
+            quality="medium",
+            output_format="jpeg",
+            aspect_ratio="2:3",
+            resolution="2k",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "image.jpg"
+            result = generate_image(
+                client=client,
+                prompt="Página pedagógica de teste.",
+                output=output,
+                options=options,
+                provider="xai",
+            )
+            metadata = json.loads(
+                (Path(directory) / "image.metadata.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+        self.assertEqual(result.output_paths, [output])
+        self.assertEqual(images.kwargs["response_format"], "b64_json")
+        self.assertEqual(
+            images.kwargs["extra_body"],
+            {"aspect_ratio": "2:3", "resolution": "2k"},
+        )
+        self.assertNotIn("size", images.kwargs)
+        self.assertEqual(metadata["provider"], "xai")
+        self.assertEqual(metadata["model"], "grok-imagine-image-2.0")
+        self.assertEqual(metadata["image"]["source_format"], "jpeg")
+        self.assertFalse(metadata["image"]["transcoded"])
+
+    def test_xai_png_response_is_transcoded_to_requested_jpeg(self) -> None:
+        response = SimpleNamespace(
+            data=[SimpleNamespace(b64_json=png_base64((1365, 2048)))],
+            usage=None,
+            _request_id="req_xai_png_test",
+        )
+        client = SimpleNamespace(images=FakeImages(response))
+        options = GenerationOptions(
+            model="grok-imagine-image-2.0",
+            size="auto",
+            quality="medium",
+            output_format="jpeg",
+            aspect_ratio="2:3",
+            resolution="2k",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "image.jpg"
+            generate_image(
+                client=client,
+                prompt="Página pedagógica de teste.",
+                output=output,
+                options=options,
+                provider="xai",
+            )
+            with Image.open(output) as generated:
+                self.assertEqual(generated.format, "JPEG")
+                self.assertEqual(generated.size, (1365, 2048))
+                self.assertEqual(generated.mode, "RGB")
+            metadata = json.loads(
+                (Path(directory) / "image.metadata.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+        self.assertEqual(metadata["image"]["source_format"], "png")
+        self.assertTrue(metadata["image"]["transcoded"])
+
+    def test_openai_format_mismatch_remains_rejected(self) -> None:
+        response = SimpleNamespace(
+            data=[SimpleNamespace(b64_json=png_base64())],
+            usage=None,
+            _request_id="req_openai_mismatch_test",
+        )
+        client = SimpleNamespace(images=FakeImages(response))
+        options = GenerationOptions(
+            size="1024x1024",
+            output_format="jpeg",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "image.jpg"
+            with self.assertRaisesRegex(
+                GenerationError,
+                "retornou png, mas foi solicitado jpeg",
+            ):
+                generate_image(
+                    client=client,
+                    prompt="Página pedagógica de teste.",
+                    output=output,
+                    options=options,
+                    provider="openai",
+                )
+            self.assertFalse(output.exists())
 
     def test_streaming_saves_partial_and_final(self) -> None:
         events = [
