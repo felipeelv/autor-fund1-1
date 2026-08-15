@@ -57,7 +57,10 @@ Transcrição literal do que foi impresso, na ordem do prompt aprovado.
 - "Esta é a parte que os livros antigos costumavam esconder" (aposto de abertura).
 - "seu jeito de construir a casa e de pintar o corpo", condensado em "seu jeito de viver".
 
-## Pendências de revisão humana
+## Revisão humana
+
+**Conferido e aprovado por Felipe Rosa em 15 de agosto de 2026.** Os itens
+abaixo foram os verificados nesta conferência:
 
 - os 12.000 anos de presença humana no território;
 - a tabela de seis povos e suas regiões aproximadas.

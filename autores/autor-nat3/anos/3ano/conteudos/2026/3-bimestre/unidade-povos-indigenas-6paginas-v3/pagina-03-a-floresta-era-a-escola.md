@@ -52,7 +52,10 @@ Transcrição literal do que foi impresso, na ordem do prompt aprovado.
 - "foram os indígenas que ensinaram" e "Cientistas do mundo inteiro ainda
   estudam esse conhecimento".
 
-## Pendências de revisão humana
+## Revisão humana
+
+**Conferido e aprovado por Felipe Rosa em 15 de agosto de 2026.** Os itens
+abaixo foram os verificados nesta conferência:
 
 - a tabela de usos das quatro plantas;
 - a afirmação de que muitos remédios de farmácia começaram com plantas já

@@ -50,14 +50,24 @@ Antes de gerar imagens, uma pessoa deve revisar fatos, dados, linguagem,
 adequação ao 3º ano e todas as representações culturais. O `--dry-run` valida o
 contrato técnico, não a correção histórica ou antropológica.
 
+A regra vale para cada lote novo. O lote v3 já cumpriu essa etapa: o conteúdo
+foi conferido e aprovado pelo Felipe em 15 de agosto de 2026, com o registro
+do que foi verificado em cada página nos arquivos de
+`conteudos/2026/3-bimestre/unidade-povos-indigenas-6paginas-v3/`.
+
+Os avisos `[REVIEW]` do `validar.py` sobre percentuais e datas continuam
+aparecendo: são heurísticos e disparam a cada execução, inclusive em prompts
+antigos, sem saber que a conferência já foi feita.
+
 ## Fonte v2 e primeira página com Grok Imagine 2 — 15 de agosto de 2026
 
 - O Felipe entregou o texto-fonte revisado da Unidade 2 (páginas 5 a 10 do
   bimestre), registrado em
   `anos/3ano/fontes/2026-2-semestre/3bim-povos-indigenas-u2-paginas-5-10-v2.md`.
   Ele reintroduz os 12.000 anos, a tabela de seis povos com regiões, a
-  analogia do "europeu" e o boxe "A pergunta que fica"; esses dados seguem
-  condicionados à revisão humana.
+  analogia do "europeu" e o boxe "A pergunta que fica". Esses dados foram
+  conferidos e aprovados pelo Felipe em 15 de agosto de 2026, depois da
+  revisão factual do lote.
 - Divergências resolvidas pela direção: fundo permanece branco puro; as
   bordas usam grafismos geométricos abstratos e editoriais, sem imitar
   pintura corporal ou cerâmica de povo específico; a criança exploradora

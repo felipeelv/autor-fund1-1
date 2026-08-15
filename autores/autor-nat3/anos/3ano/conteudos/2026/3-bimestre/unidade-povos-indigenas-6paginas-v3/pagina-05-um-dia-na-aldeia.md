@@ -47,7 +47,10 @@ Transcrição literal do que foi impresso, na ordem do prompt aprovado.
   enfraquece o boxe de fecho sobre o ancião; vale restaurar numa próxima
   versão.
 
-## Pendências de revisão humana
+## Revisão humana
+
+**Conferido e aprovado por Felipe Rosa em 15 de agosto de 2026.** Os itens
+abaixo foram os verificados nesta conferência:
 
 - o cotidiano de aldeia descrito em tom geral, que a direção do autor pede
   não atribuir igualmente a todos os povos.

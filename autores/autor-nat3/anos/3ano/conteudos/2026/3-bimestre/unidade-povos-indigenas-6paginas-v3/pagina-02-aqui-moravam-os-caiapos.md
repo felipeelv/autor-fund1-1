@@ -46,7 +46,10 @@ Transcrição literal do que foi impresso, na ordem do prompt aprovado.
 - O bloco "A terra não estava vazia" (1856, bandeirantes) saiu desta página;
   a tese foi reintroduzida na página 6, dentro da linha do tempo.
 
-## Pendências de revisão humana
+## Revisão humana
+
+**Conferido e aprovado por Felipe Rosa em 15 de agosto de 2026.** Os itens
+abaixo foram os verificados nesta conferência:
 
 - a atribuição direta "Foram eles que viveram na região de Ribeirão Preto",
   que substitui a formulação genérica adotada no primeiro lote;

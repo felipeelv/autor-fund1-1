@@ -55,7 +55,10 @@ Transcrição literal do que foi impresso, na ordem do prompt aprovado.
 - Provérbios 31:8-9 e Miquéias 6:8; permanece apenas Atos 17:26.
 - O parágrafo sobre invasão de terras, garimpo e avanços recentes.
 
-## Pendências de revisão humana
+## Revisão humana
+
+**Conferido e aprovado por Felipe Rosa em 15 de agosto de 2026.** Os itens
+abaixo foram os verificados nesta conferência:
 
 - as datas da linha do tempo (1500, 1550, 1750);
 - a afirmação de que povos inteiros desapareceram com suas línguas;

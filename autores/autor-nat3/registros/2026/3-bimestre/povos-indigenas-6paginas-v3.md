@@ -60,15 +60,27 @@ encontrou dois problemas de conteúdo e as páginas 4 e 6 foram regeradas:
 As versões substituídas foram removidas de `aprovadas`; permanecem em
 `_revisao` como histórico.
 
-## Pendências que seguem abertas
+## Conferência de conteúdo
 
-- conferência histórica da atribuição direta dos Caiapós à região de Ribeirão
-  Preto (página 2);
-- generalização dos cinco princípios a povos indígenas em bloco (página 4);
-- cotidiano de aldeia descrito em tom geral (página 5);
-- ~~proporção da arte~~ — **resolvida em 15/08/2026**: o Felipe adotou 2:3 como
-  padrão e ajusta para A4 na diagramação. Os prompts deste lote ainda pedem
-  A4 no texto, porque prompts aprovados não são alterados depois da
-  aprovação; os próximos já nascem em 2:3;
-- adequação de vocabulário na analogia do "europeu" (página 1), a frase mais
-  longa da unidade.
+**Conferida e aprovada por Felipe Rosa em 15 de agosto de 2026**, depois da
+revisão factual. Os itens verificados foram:
+
+- os 12.000 anos de presença humana e a tabela de seis povos (página 1);
+- a atribuição direta dos Caiapós à região de Ribeirão Preto e a lista de
+  topônimos (página 2);
+- a tabela de usos das plantas e a afirmação sobre remédios de farmácia
+  (página 3);
+- o dado do MapBiomas e a atribuição dos cinco princípios a povos indígenas
+  em bloco (página 4);
+- o cotidiano de aldeia descrito em tom geral (página 5);
+- as datas da linha do tempo, os números do Censo IBGE 2022 e o versículo em
+  NVI (página 6);
+- a adequação de vocabulário ao 3º ano, incluindo a analogia do "europeu" na
+  capa.
+
+A proporção também foi resolvida: 2:3 como padrão, com ajuste para A4 na
+diagramação. Os prompts deste lote ainda pedem A4 no texto, porque prompts
+aprovados não são alterados depois da aprovação; os próximos já nascem em 2:3.
+
+Com isso o lote está fechado. Reabrir qualquer um destes pontos exige nova
+decisão editorial registrada aqui.
