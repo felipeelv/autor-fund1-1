@@ -1,0 +1,50 @@
+schema: 1
+
+disciplina:
+  id: natureza-e-sociedade
+  nome: "Natureza e Sociedade — 3º ano"
+  estado: ativo
+  escopo: >-
+    páginas de apostila de Natureza e Sociedade para o 3º ano do Fundamental I,
+    integrando Ciências da Natureza, Geografia e História do lugar de vivência
+  modelo_imagem: "grok-imagine-image-2.0"
+  modelos_imagem_autorizados:
+    - "grok-imagine-image-2.0"
+    - "gpt-image-2"
+  formato_padrao: "apostila-fund1"
+
+configuracao:
+  autor: "autor.yaml"
+  adaptacoes: "adaptacoes.yaml"
+  kit: null
+
+fonte_operacional:
+  tipo: "prompt versionado interno"
+  caminho: "anos/<ano>/prompts/<ano-letivo>/<bimestre>/<arquivo>.md"
+  selecao: "projeto YAML ou argumento --prompt da CLI"
+  dependencia_externa: false
+
+fonte_conteudo:
+  tipo: "fonte textual versionada interna"
+  caminho: "anos/<ano>/fontes/<periodo>/<arquivo>.md"
+  dependencia_externa: false
+  estado: "nenhuma fonte recebida até o momento"
+
+estrutura_por_ano:
+  fontes: "anos/<ano>/fontes/<periodo>"
+  conteudos: "anos/<ano>/conteudos/<ano-letivo>/<bimestre>"
+  prompts: "anos/<ano>/prompts/<ano-letivo>/<bimestre>"
+
+direcao:
+  autor: "direcao/AUTOR.md"
+  padrao_visual: "direcao/PADRAO-VISUAL-3ANO.md"
+  memoria: "direcao/MEMORIA.md"
+
+producao:
+  projetos: "projetos"
+  registros: "registros"
+  revisao_externa: "_revisao/natureza-e-sociedade/<ano>/<bimestre>/<unidade>"
+  aprovadas_externa: "aprovadas/natureza-e-sociedade/<ano>/<bimestre>/<unidade>"
+
+anos: [3ano]
+anos_planejados: []

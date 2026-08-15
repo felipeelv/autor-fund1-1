@@ -6,21 +6,30 @@ from pathlib import Path
 
 import yaml
 
+from gerador_imagens.authors import listar_autores
 from gerador_imagens.projects import load_project
 from gerador_imagens.storage import StorageSettings
 
 
 ROOT = Path(__file__).resolve().parents[1]
-AUTHOR_IDS = ("autor-teste-fund1", "autor-teste-mat3")
+AUTHOR_IDS = ("ingles", "matematica", "natureza-e-sociedade")
 
 
-class AuthorTestPackageContractTests(unittest.TestCase):
+class PackageContractTests(unittest.TestCase):
     def test_package_contains_the_expected_authors(self) -> None:
         authors = sorted(
             path.parent.name
             for path in (ROOT / "autores").glob("*/autor.yaml")
+            if not path.parent.name.startswith("_")
         )
         self.assertEqual(authors, sorted(AUTHOR_IDS))
+
+    def test_template_author_is_never_loadable(self) -> None:
+        template = ROOT / "autores" / "_modelo" / "autor.yaml"
+        self.assertTrue(template.is_file())
+        profile = yaml.safe_load(template.read_text(encoding="utf-8"))["autor"]
+        self.assertFalse(profile["ativo"])
+        self.assertNotIn("_modelo", [author.id for author in listar_autores(ROOT)])
 
     def test_authors_and_format_are_bidirectionally_authorized(self) -> None:
         format_profile = yaml.safe_load(
@@ -75,7 +84,7 @@ class AuthorTestPackageContractTests(unittest.TestCase):
         project_path = (
             ROOT
             / "autores"
-            / "autor-teste-mat3"
+            / "matematica"
             / "projetos"
             / "2026"
             / "3-bimestre"
@@ -84,7 +93,7 @@ class AuthorTestPackageContractTests(unittest.TestCase):
         source_path = (
             ROOT
             / "autores"
-            / "autor-teste-mat3"
+            / "matematica"
             / "anos"
             / "3ano"
             / "fontes"

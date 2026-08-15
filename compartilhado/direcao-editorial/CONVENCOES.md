@@ -1,16 +1,21 @@
-# _CONVENÇÕES — Ortografia e LaTeX (todas as disciplinas)
+# Convenções ortográficas
 
-> **Referência única de consulta**, compartilhada por todos os autores. Substitui as 12 cópias de `convencao-ortografica.md` e as 7 de `convencao-latex-mathjax.md` que existiam uma em cada kit. **Verificação obrigatória antes de entregar qualquer capítulo.**
+> **Referência única de consulta**, compartilhada por todos os autores deste
+> repositório. Verificação obrigatória antes de gerar qualquer página, porque
+> todo texto aqui é renderizado *dentro da imagem* — um erro de acentuação não
+> se corrige depois sem gerar de novo.
 >
-> A **notação específica** de cada disciplina (geométrica, estatística/financeira, unidades SI, equações químicas) está na seção NOTAÇÃO do `AUTOR.md` da disciplina — não aqui.
-
----
-
-## PARTE I — ORTOGRAFIA
-
-> **Referência de consulta e verificação obrigatória** antes da entrega de qualquer capítulo. Base normativa: **Acordo Ortográfico da Língua Portuguesa (1990)** — em vigor no Brasil desde 2009, **obrigatório desde 2016**. Fonte de grafia em caso de dúvida: **VOLP/ABL** (volp.abl.org.br).
+> Base normativa: **Acordo Ortográfico da Língua Portuguesa (1990)**, em vigor
+> no Brasil desde 2009 e obrigatório desde 2016. Fonte de grafia em caso de
+> dúvida: **VOLP/ABL** (volp.abl.org.br).
 >
-> ⚠️ **Não existe "novo acordo 2025/2026".** A CPLP reconheceu em 2024 a necessidade de retificações, mas nada oficial foi publicado. Ignorar conteúdos que anunciem "volta do trema" ou "fim dos acentos". Onde o Acordo permite dupla grafia, a escolha marcada como **[Convenção Eleve]** prevalece.
+> ⚠️ **Não existe "novo acordo 2025/2026".** A CPLP reconheceu em 2024 a
+> necessidade de retificações, mas nada oficial foi publicado. Ignore conteúdos
+> que anunciem "volta do trema" ou "fim dos acentos". Onde o Acordo permite
+> dupla grafia, a escolha marcada como **[Convenção Eleve]** prevalece.
+>
+> A notação específica de cada disciplina fica no `AUTOR.md` do autor
+> correspondente, não aqui.
 
 ---
 
@@ -147,160 +152,23 @@ Permanece **apenas** em nomes próprios estrangeiros e derivados: *Müller, mül
 
 ---
 
-### 7. Protocolo de verificação (antes de entregar qualquer capítulo)
+### 7. Protocolo de verificação (antes de gerar qualquer página)
 
-1. Rodar leitura de revisão contra as seções 2.6 (formas pré-Acordo), 3 (trema) e 4 (hífen) — são os três pontos de erro mais comuns.
-2. Conferir os **[Convenção Eleve]** — facultativos já decididos, não reabrir a escolha.
-3. Grafia de palavra específica em dúvida → **VOLP** (volp.abl.org.br). O VOLP prevalece sobre qualquer outra fonte.
-4. Conflito entre este arquivo e exemplo de capítulo anterior → **este arquivo prevalece** (e o capítulo anterior deve ser corrigido).
-
----
-
-*v1.1 · jul/2026 · base: Acordo Ortográfico 1990 (vigente) · pesquisado e verificado (double-check) via Perplexity em jul/2026 — fontes: Ciberdúvidas, Manual do Senado, VOLP/ABL, texto da Base XIX*
-
----
-
-## PARTE II — LATEX / MATHJAX
-
-> Só para as disciplinas com fórmula (as três matemáticas, Matemática EF1, Física, Química, Biologia). Renderização: add-on **Auto-LaTeX Equations** (Google Docs) com **MathJax**. ⚠️ As restrições antigas do **CodeCogs** (proibição de `\text{}`, `\;`, `\,`, `\quad`, `\begin{array}` e acentos) **estão revogadas** — inclusive onde ainda apareçam citadas em blueprints antigos: **este arquivo prevalece**.
-
-
-> **Referência de consulta e verificação obrigatória** antes da entrega de qualquer capítulo. Renderização: add-on **Auto-LaTeX Equations** (Google Docs) com renderizador **MathJax** — o LaTeX deve seguir o **padrão MathJax**. ⚠️ As restrições antigas do CodeCogs (proibição de `\text{}`, `\;`, `\,`, `\quad`, `\begin{array}` e acentos) **estão revogadas** — inclusive onde ainda apareçam citadas em blueprints antigos: **este arquivo prevalece**.
+1. Ler o prompt inteiro contra as seções 2.6 (formas pré-Acordo), 3 (trema) e 4
+   (hífen) — são os três pontos de erro mais comuns.
+2. Conferir os **[Convenção Eleve]** — facultativos já decididos, não reabrir a
+   escolha.
+3. Grafia de palavra específica em dúvida → **VOLP** (volp.abl.org.br). O VOLP
+   prevalece sobre qualquer outra fonte.
+4. Conflito entre este arquivo e uma página anterior → **este arquivo
+   prevalece**, e a página anterior entra na fila de correção.
+5. Depois de gerar, conferir a grafia **na imagem**, por leitura humana e OCR.
+   O modelo erra acento e til mesmo quando o prompt está correto.
 
 ---
 
-### Regras da casa
-
-| Regra | Exemplo |
-|---|---|
-| Toda expressão matemática entre `$$ ... $$` (delimitador único do projeto) | `$$\frac{7}{4}$$` |
-| Vírgula decimal com **`{,}`** | `$$0{,}25$$` · `$$1{,}5$$` |
-| Unidades em **`\mathrm{}`** com espaço fino **`\,`** | `$$12\,\mathrm{cm}$$` · `$$3\,\mathrm{km/h}$$` |
-| Dinheiro em fórmula: `\mathrm{R\$}` | `$$\mathrm{R\$}\,1\,500{,}00$$` |
-| Dinheiro em texto corrido: formato brasileiro normal | R$ 1.500,00 |
-| Conjuntos numéricos com `\mathbb{}` em fórmula; Unicode no texto | `$$\mathbb{Q}$$` · "o conjunto ℚ" |
-| **Intervalo aberto na notação brasileira: colchetes invertidos** (nunca parênteses) | `$$]a, b[$$` · `$$[0, 5[$$` |
-| Chaves de conjunto: `\{ ... \}` | `$$A = \{1, 2, 3\}$$` |
-| Conectivos "e"/"ou" dentro de fórmula: `\text{ e }` (a forma antiga `\mathrm{~e~}` segue válida) | `$$x > 2 \text{ e } x < 7$$` |
-| Milhar em fórmula separado por `\,` | `$$1\,500$$` |
-| `\text{}` permitido para **palavras curtas** (acentos funcionam no MathJax) | `$$\text{área} = b \cdot h$$` |
-| Frase explicativa longa fica **fora** do LaTeX | — |
-| **Toda fórmula com elementos definidos logo após** | onde $$a$$, $$b$$ e $$c$$ são os coeficientes... |
-| **Uma operação por linha** nos exemplos resolvidos — blocos `$$...$$` separados, sem `\begin{array}`/`aligned` | ver seção 3 |
-
-
-### Comandos frequentes (padrão MathJax)
-
-| Uso | Comando |
-|---|---|
-| Fração | `\frac{a}{b}` |
-| Número misto | `1\frac{3}{4}` |
-| Raiz quadrada / n-ésima | `\sqrt{x}` · `\sqrt[3]{x}` |
-| Potência / índice | `x^{2}` · `a_{n}` |
-| Multiplicação | `\cdot` (nunca letra x) |
-| Divisão | `\div` ou fração |
-| Conjuntos numéricos | `\mathbb{N}` · `\mathbb{Z}` · `\mathbb{Q}` · `\mathbb{R}` |
-| Pertence / não pertence | `\in` · `\notin` |
-| Diferente / aproximado | `\neq` · `\approx` |
-| Maior/menor ou igual | `\geq` · `\leq` |
-| Infinito | `\infty` |
-| Porcentagem | `\%` — ex.: `$$25\%$$` |
-| Pi | `\pi` |
-| Ângulo / grau | `\angle` · `^{\circ}` — ex.: `$$90^{\circ}$$` |
-| Paralelo / perpendicular | `\parallel` · `\perp` |
-| Triângulo / segmento | `\triangle ABC` · `\overline{AB}` |
-| Seno, cosseno, tangente | `\sin` · `\cos` · `\tan` |
-| Logaritmo | `\log` · `\log_{2}` · `\ln` |
-| Somatório | `\sum_{i=1}^{n}` |
-| Delta (discriminante) | `\Delta` |
-| Mais ou menos | `\pm` |
-| Equivalência de frações | `\frac{1}{2} = \frac{2}{4}` |
-
-### Exemplo resolvido — formato obrigatório
-
-- Exemplo resolvido com **rótulo = nome da situação em negrito** (`**Duas turmas com a mesma média**`) — nunca rótulo formal (`### EXERCÍCIO RESOLVIDO`) e **nunca frase de anúncio** ("Veja o exemplo abaixo.").
-- Estrutura: enunciado → `**Resolução:**` → passos com `- **Passo N:**` (marcador `-`, nunca `*`) → `**Resposta:**` em frase.
-- **Cada operação matemática em um bloco `$$...$$` próprio, em linha própria** — nunca compactar etapas, nunca pular passo.
-- **Resultado final sempre simplificado**, com unidade quando houver.
-
-```markdown
-**Notas de cinco alunos**
-
-Calcule: $$(3x^2 + 2x - 1) + (x^2 - 5x + 4)$$
-
-**Resolução:**
-
-- **Passo 1:** Agrupar os termos semelhantes.
-
-$$(3x^2 + x^2) + (2x - 5x) + (-1 + 4)$$
-
-- **Passo 2:** Somar os coeficientes de cada grupo.
-
-$$(3+1)x^2 + (2-5)x + (-1+4)$$
-
-$$= 4x^2 - 3x + 3$$
-
-**Resposta:** $$4x^2 - 3x + 3$$
-```
-
-
-### Protocolo de verificação (antes de entregar qualquer capítulo)
-
-1. **Recalcular todos os exemplos resolvidos** — aritmética, álgebra, simplificações e arredondamentos.
-2. Conferir **resultado simplificado** em todo exemplo (fração irredutível, radical simplificado, unidade correta).
-3. Varrer todos os `$$...$$`: vírgula decimal `{,}` · `\cdot` para multiplicação · `\mathbb{}` para conjuntos · intervalos abertos com colchetes invertidos `]a, b[` · `\mathrm{}` em unidades e R$ · uma operação por linha · matrizes uma por bloco.
-4. Frases explicativas longas fora do LaTeX; `\text{}` só para palavras curtas.
-5. Delimitador único `$$...$$` — sem `\[...\]`, sem `$...$` simples.
-6. Conflito entre este arquivo e blueprint antigo (restrições CodeCogs) ou capítulo anterior → **este arquivo prevalece**.
-
----
-
-*v1 · jul/2026 · padrão MathJax (Auto-LaTeX Equations/Google Docs) — herda a pesquisa e validação do kit de Química (jul/2026). Revoga as restrições CodeCogs citadas nos blueprints de Operações/Geometria/Financeira (escritas antes da migração para MathJax).*
-
-### Duas armadilhas que quebram a renderização
-
-Bugs reais, encontrados no material do 3º bimestre (21/07/2026). O `validar-capitulo.py` reprova os dois na seção `[2c]`.
-
-### Acento dentro de `\text{}` não renderiza
-
-`\text{}` não aceita caractere acentuado: o renderizador tenta interpretar o acento como comando matemático (`\hat{o}`) e imprime o erro literal na tela.
-
-```
-❌  $$\text{vôlei} = \frac{10}{40} = 0{,}25$$
-❌  $$g = \text{número de galinhas}$$
-❌  $$a = -2 < 0 \implies \text{há máximo}$$
-```
-
-**A correção não é escapar o acento — é tirar o texto de dentro da fórmula.** Rótulo e legenda ficam fora, e ganham a forma que o material já prefere:
-
-```
-✅  Tabela, quando são várias categorias:
-
-    | Categoria | $$f_r$$ | $$f_r$$ (%) |
-    |---|---|---|
-    | Vôlei | $$\frac{10}{40} = 0{,}25$$ | 25% |
-
-✅  Lista, quando é legenda de variável:
-
-    - $$g$$ — quantidade de galinhas;
-    - $$c$$ — quantidade de coelhos.
-
-✅  Frase, quando é conclusão:
-
-    $$a = -2 < 0$$
-
-    Concavidade para baixo, logo a função tem **máximo**.
-```
-
-Palavra **sem acento** dentro de `\text{}` continua válida (`\text{total}`, `\text{massa}`).
-
-### `%` sem escape apaga o resto da fórmula
-
-Em LaTeX, `%` inicia **comentário**: tudo o que vem depois na mesma linha é descartado em silêncio. O resultado é um número que aparece sem o símbolo, sem nenhum aviso de erro.
-
-```
-❌  $$0{,}50 = 50%$$     → renderiza "= 50"
-✅  $$0{,}50 = 50\%$$    → renderiza "= 50%"
-```
-
-Fora de `$$...$$`, em texto corrido, o `%` é caractere comum e **não** leva barra: escrever "40% da turma" está certo.
+*Base: Acordo Ortográfico de 1990 (vigente). Pesquisa e verificação originais
+de jul/2026 — fontes: Ciberdúvidas, Manual do Senado, VOLP/ABL, texto da Base
+XIX. A seção de LaTeX/MathJax que acompanhava este arquivo foi removida em
+ago/2026: pertencia ao fluxo de capítulos em Google Docs de outro repositório e
+não tem uso na geração de imagens dos anos iniciais.*

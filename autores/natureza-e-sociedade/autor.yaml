@@ -1,0 +1,65 @@
+autor:
+  id: natureza-e-sociedade
+  nome: "Natureza e Sociedade — 3º ano · Fundamental I"
+  disciplina: "Natureza e Sociedade — 3º ano"
+  ativo: true
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Use case: scientific-educational.
+    Asset type: página vertical de apostila brasileira de Natureza e Sociedade
+    para o 3º ano do Ensino Fundamental, destinada a crianças de
+    aproximadamente 8 anos. A disciplina integra Ciências da Natureza,
+    Geografia e História do lugar de vivência.
+
+    DIREÇÃO VISUAL ESTÁVEL: mistura de colagem editorial contemporânea com
+    sketchnote profissional e visual note-taking. Usar papéis recortados,
+    pintura guache, ilustrações semirrealistas e textura tátil discreta junto
+    de setas desenhadas a marcador, círculos, sublinhados, conectores e
+    mini-ícones. A página deve parecer um caderno de campo organizado e
+    refinado editorialmente, não uma grade rígida de cartões. Fundo branco puro
+    com respiro amplo entre os núcleos, margens seguras e caminho de leitura
+    imediato. Tipografia sans-serif arredondada, grande e muito legível;
+    lettering manual apenas em destaques curtos. O resultado deve ser
+    observador e acolhedor, sem infantilizar.
+
+    PALETA DIDÁTICA: grafite #263238 e branco #FFFFFF como estrutura; verde
+    #43A66B para seres vivos e ambiente, azul #2F6FD0 para água, céu e clima,
+    terracota #C4623D para solo, relevo e construções, amarelo #F6C945 para
+    destaques e luz, roxo #8B5FBF para tempo, memória e cultura. Contraste alto
+    e uso consistente: uma cor guarda sempre o mesmo papel dentro da página.
+
+    Representar crianças e famílias brasileiras diversas, em ambientes urbanos
+    e rurais reconhecíveis, com proporções naturais, expressões gentis e ações
+    de observação claras. Seres vivos aparecem com anatomia correta e
+    comportamento real, nunca antropomorfizados: sem roupa, fala, sorriso
+    humano ou olhos de desenho animado. Paisagens, moradias, plantas e animais
+    precisam corresponder exatamente ao que o conteúdo solicitado descreve. A
+    observação do fenômeno concreto vem antes do nome, da classificação e da
+    definição. Todo texto visível precisa ser um dos trechos literais do prompt
+    da página.
+
+  prompt_sufixo: |-
+    TRAVAS FINAIS: uma única página vertical 2:3; fundo opaco; composição de
+    visual note-taking rica, organizada e pronta para apostila. Nenhum texto
+    pode ficar pequeno, apertado ou sem relação visual com uma representação.
+    Renderizar cada texto literal exatamente uma vez, com ortografia, nomes
+    próprios, unidades e números corretos. Não inventar nome científico,
+    classificação, data, lugar, povo ou dado numérico. Não representar povos
+    indígenas, quilombolas, comunidades tradicionais, profissões ou arranjos
+    familiares por estereótipo, adereço genérico ou cena de museu. Não usar
+    logotipo, marca, QR code, assinatura, watermark, número de página, legenda
+    automática, texto aleatório, letra deformada, serifas, Comic Sans, 3D
+    decorativo, estética de filme infantil, mascote, animal falante,
+    personagem-narrador, gradientes neon ou fundo escuro.
+
+  parametros_api:
+    tamanho: "auto"
+    qualidade: "medium"
+    formato: "jpeg"
+    fundo: "auto"
+    moderacao: "auto"
+    proporcao: "2:3"
+    resolucao: "2k"
