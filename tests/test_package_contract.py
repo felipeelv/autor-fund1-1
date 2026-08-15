@@ -69,7 +69,10 @@ class AuthorPackageContractTests(unittest.TestCase):
                                 "grok-imagine-image-2.0",
                             )
                         elif task.provider == "openrouter":
-                            self.assertTrue(task.options.model)
+                            self.assertEqual(
+                                task.options.model,
+                                "qwen/qwen-image-3-pro",
+                            )
                         else:
                             self.fail(f"Provider inesperado: {task.provider}")
 

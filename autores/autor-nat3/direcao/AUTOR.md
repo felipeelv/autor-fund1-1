@@ -30,7 +30,8 @@ visual, mas não inventa povos, costumes, fronteiras, dados ou citações.
   discreto;
 - partir do esqueleto de `MODELO-DE-PROMPT.md` ao escrever qualquer prompt
   novo, em vez de inventar uma estrutura por página;
-- usar fundo branco puro e colagem editorial com respiro;
+- usar fundo branco puro e colagem densa em camadas, com o branco aparecendo
+  como fresta entre os papéis sobrepostos;
 - alternar títulos, bordas e caminhos de leitura nas páginas consecutivas;
 - não usar fantasia indígena, cocar genérico ou pintura corporal inventada;
 - não misturar adereços, grafismos ou moradias de povos diferentes;

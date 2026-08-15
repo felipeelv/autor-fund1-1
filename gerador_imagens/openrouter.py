@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 from typing import Any
@@ -11,10 +12,40 @@ from .config import GenerationOptions
 
 
 DEFAULT_OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+ALLOWED_OPENROUTER_HOSTS = frozenset({"openrouter.ai"})
 
 
 class OpenRouterError(RuntimeError):
     """Falha HTTP da Image API do OpenRouter."""
+
+
+def redact(text: str, api_key: str) -> str:
+    """Remove a credencial de qualquer texto vindo do upstream."""
+
+    key = (api_key or "").strip()
+    if not key:
+        return text
+    return text.replace(key, "[REDIGIDO]")
+
+
+def validate_base_url(base_url: str) -> str:
+    """A credencial viaja no header; só destinos confiáveis são aceitos."""
+
+    candidate = (base_url or "").strip().rstrip("/")
+    if not candidate:
+        raise OpenRouterError("A base URL da OpenRouter não pode ser vazia.")
+    parsed = urllib.parse.urlparse(candidate)
+    if parsed.scheme != "https":
+        raise OpenRouterError(
+            f"A base URL da OpenRouter precisa usar https: {candidate}"
+        )
+    if parsed.hostname not in ALLOWED_OPENROUTER_HOSTS:
+        permitidos = ", ".join(sorted(ALLOWED_OPENROUTER_HOSTS))
+        raise OpenRouterError(
+            f"Host não autorizado para a OpenRouter: {parsed.hostname}. "
+            f"Hosts permitidos: {permitidos}."
+        )
+    return candidate
 
 
 def _error_message(status: int, payload: Any) -> str:
@@ -62,7 +93,15 @@ def json_request(
         with urllib.request.urlopen(request, timeout=timeout) as response:
             raw = response.read().decode("utf-8")
             request_id = response.headers.get("x-request-id")
-            parsed = json.loads(raw) if raw.strip() else {}
+            if not raw.strip():
+                return {}, request_id
+            try:
+                parsed = json.loads(raw)
+            except json.JSONDecodeError as exc:
+                trecho = redact(raw[:300], api_key)
+                raise OpenRouterError(
+                    f"A OpenRouter devolveu resposta inválida, fora de JSON: {trecho}"
+                ) from exc
             return parsed, request_id
     except urllib.error.HTTPError as exc:
         raw = exc.read().decode("utf-8", errors="replace")
@@ -70,9 +109,11 @@ def json_request(
             parsed = json.loads(raw) if raw.strip() else {}
         except json.JSONDecodeError:
             parsed = {"error": {"message": raw[:300]}}
-        raise OpenRouterError(_error_message(exc.code, parsed)) from exc
+        mensagem = redact(_error_message(exc.code, parsed), api_key)
+        raise OpenRouterError(mensagem) from exc
     except urllib.error.URLError as exc:
-        raise OpenRouterError(f"Falha de rede na OpenRouter: {exc.reason}") from exc
+        motivo = redact(str(exc.reason), api_key)
+        raise OpenRouterError(f"Falha de rede na OpenRouter: {motivo}") from exc
     except TimeoutError as exc:
         raise OpenRouterError("Timeout na OpenRouter.") from exc
 
@@ -127,7 +168,7 @@ class OpenRouterClient:
         self.api_key = api_key
         self.timeout = options.timeout
         self.max_retries = options.max_retries
-        self.base_url = base_url.rstrip("/")
+        self.base_url = validate_base_url(base_url)
         self.images = OpenRouterImages(self)
 
     def request(

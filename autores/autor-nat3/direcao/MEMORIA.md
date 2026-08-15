@@ -10,7 +10,8 @@
   `grok-imagine-image-2.0` ou OpenRouter `qwen/qwen-image-3-pro`;
 - linguagem visual: colagem, sketchnote e visual note-taking;
 - fundo editorial: branco puro `#FFFFFF`;
-- composição: núcleos documentais em recortes separados e títulos variados;
+- composição: colagem densa em camadas sobrepostas, com hierarquia de capa
+  monumental e páginas internas de título discreto;
 - representação: diversidade contemporânea, sem estereótipos ou fusão de
   elementos culturais;
 - saída: sempre externa, primeiro em `_revisao`.
@@ -24,16 +25,24 @@ a IBGE, Funai, Prefeitura de Ribeirão Preto e pesquisa acadêmica.
 
 ## Decisões do primeiro lote
 
+> Duas destas decisões foram **revogadas em 15 de agosto de 2026**, quando o
+> Felipe entregou a fonte v2 e aprovou o lote v3. Estão marcadas abaixo.
+> As demais continuam valendo.
+
 - manter a ideia de que a história do território antecede 1500;
-- trocar a afirmação direta “Aqui moravam os Caiapós” por uma formulação que
-  explica o uso histórico e genérico do nome “Caiapó”;
+- ~~trocar a afirmação direta “Aqui moravam os Caiapós” por uma formulação que
+  explica o uso histórico e genérico do nome “Caiapó”~~ — **revogada**: a fonte
+  v2 afirma a atribuição direta, e a página 2 aprovada a imprime. A conferência
+  histórica segue pendente de revisão humana;
 - retirar números antigos ou sem base clara;
 - usar no fechamento os dados do Censo 2022: quase 1,7 milhão de indígenas,
   391 povos e 295 línguas;
 - não atribuir os mesmos hábitos, formas de decisão ou práticas ambientais a
   todos os povos;
-- não inserir conexão bíblica na imagem enquanto o formato institucional
-  correspondente permanecer em aberto.
+- ~~não inserir conexão bíblica na imagem enquanto o formato institucional
+  correspondente permanecer em aberto~~ — **revogada para este autor**: a fonte
+  v2 determina o bloco bíblico, e a página 6 aprovada imprime Atos 17:26 (NVI).
+  O formato institucional geral segue em aberto para as demais disciplinas.
 
 ## Pendência obrigatória
 
@@ -110,6 +119,29 @@ páginas seguintes deste autor:
   e marca-texto.
 - **Texto por página reduzido** a pedido do Felipe, sem simplificar as
   ideias; os cortes ficam registrados nos arquivos de conteúdo.
+
+### Revisão factual de 15 de agosto de 2026
+
+Depois da primeira aprovação, uma revisão do lote encontrou dois problemas de
+conteúdo, e as páginas 4 e 6 foram regeradas e reaprovadas:
+
+- a estatística "menos de 10% das terras / 80% da biodiversidade" saiu da
+  página 4. O número de 80% não tem base científica e foi contestado
+  publicamente em 2024; o de 10% aparenta ser confusão com a estimativa de
+  população. Entrou o dado do MapBiomas, série 1985–2023, com instituição e
+  período impressos na própria página;
+- a violência do período colonial havia desaparecido da unidade, deixando o
+  colapso demográfico atribuído apenas a doenças. A página 6 voltou a trazer a
+  captura para escravização, a ausência de imunidade prévia e a tese da fonte
+  "A terra não estava vazia. Ela tinha sido esvaziada".
+
+Lição para os próximos lotes: **todo número que entra no texto visível precisa
+nascer com instituição e ano impressos na página**. Número herdado de pauta,
+sem origem, não passa — mesmo quando soa favorável ao argumento.
+
+O conteúdo canônico do que foi impresso passou a viver em
+`conteudos/2026/3-bimestre/unidade-povos-indigenas-6paginas-v3/`. As pastas v1
+e v2 são histórico e não descrevem o material aprovado.
 
 ### Defeitos recorrentes do Grok Imagine 2 e como travar
 

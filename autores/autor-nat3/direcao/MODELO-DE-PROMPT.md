@@ -9,8 +9,9 @@ Regras de uso:
 
 - escolha a variante CAPA apenas para a primeira página da unidade; todas as
   demais usam a variante PÁGINA INTERNA;
-- mantenha o prompt final abaixo de 4.800 caracteres (a API xAI recusa
-  prompts maiores com erro 400);
+- mantenha o **corpo deste arquivo** abaixo de 4.800 caracteres; o gerador
+  soma a ele cerca de 2.700 caracteres de prefixo e sufixo do `autor.yaml`, e
+  corpos maiores já foram recusados pela API com erro 400;
 - os `TEXTOS EXATOS` vêm do arquivo de conteúdo derivado da fonte, um item
   por linha, sem nada além do que será impresso;
 - texto enxuto: frases curtas, uma ideia por bloco, sem simplificar as ideias.

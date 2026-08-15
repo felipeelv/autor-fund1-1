@@ -1,0 +1,48 @@
+{
+  "author": "autor-nat3",
+  "generated_at": "2026-08-15T22:35:44.363734+00:00",
+  "image": {
+    "bytes": 1706098,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/feliperosa/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-nat3/3ano/3-bimestre/povos-indigenas-6paginas-v3/p06-o-que-aconteceu-e-o-que-fazemos-agora-grok-v2.jpg",
+    "sha256": "782ea68854a0877f0fc455b0cabd3956df9ac48537d686063ec901a5004d1a6f",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosa/Documents/Codex/autor-fund1-1/autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-v3-p04-p06-grok-v3.yaml",
+  "prompt": {
+    "characters": 7307,
+    "sha256": "7f5ac56bc5960caee1d3ded4df26b553d5979b9a7928eba7da162ad797949019",
+    "source": "/Users/feliperosa/Documents/Codex/autor-fund1-1/autores/autor-nat3/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p06-o-que-aconteceu-e-o-que-fazemos-agora-v4.md",
+    "words": 1120
+  },
+  "provider": "xai",
+  "request_id": "06cd15c8-3095-999b-92b5-f7eda606ea78",
+  "schema_version": 1,
+  "usage": {
+    "cost_in_usd_ticks": 800000000,
+    "input_tokens": null,
+    "input_tokens_details": null,
+    "output_tokens": null,
+    "output_tokens_details": null,
+    "total_tokens": null
+  }
+}

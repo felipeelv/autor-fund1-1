@@ -60,6 +60,25 @@ def load_api_key(root: Path, provider: str = "openai") -> str:
     return api_key
 
 
+def enforce_openrouter_contract(options: GenerationOptions) -> None:
+    """Contrato do AGENTS.md, válido também fora do carregador de projeto."""
+
+    if options.output_format != "png":
+        raise GenerationError("O provider openrouter usa formato PNG.")
+    if options.size != "auto":
+        raise GenerationError(
+            "O provider openrouter usa tamanho=auto com proporcao e resolucao."
+        )
+    if options.aspect_ratio is None or options.resolution is None:
+        raise GenerationError(
+            "O provider openrouter exige proporcao e resolucao explícitas."
+        )
+    if options.n > 6:
+        raise GenerationError(
+            "O provider openrouter aceita no máximo 6 imagens por requisição."
+        )
+
+
 def build_client(
     api_key: str,
     options: GenerationOptions,
@@ -295,11 +314,15 @@ def _request_kwargs(
             "extra_body": extra_body,
         }
     if provider == "openrouter":
+        if options.resolution is None:
+            raise GenerationError(
+                "O provider openrouter exige resolucao explícita."
+            )
         return {
             "model": options.model,
             "prompt": prompt,
             "n": options.n,
-            "resolution": str(options.resolution or "2k").upper(),
+            "resolution": str(options.resolution).upper(),
             "aspect_ratio": options.aspect_ratio,
             "output_format": options.output_format,
         }
@@ -552,6 +575,8 @@ def generate_image(
         raise GenerationError(
             f"O provider {provider} não usa streaming neste gerador."
         )
+    if provider == "openrouter":
+        enforce_openrouter_contract(options)
     if options.stream:
         return _generate_streaming(
             client,

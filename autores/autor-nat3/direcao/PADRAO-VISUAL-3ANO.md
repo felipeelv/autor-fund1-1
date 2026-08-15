@@ -8,9 +8,15 @@
 
 ## Base
 
-- página A4 vertical, proporção 210:297, e fundo branco puro `#FFFFFF`;
+- página vertical com fundo branco puro `#FFFFFF`;
 - folha inteira visível, sem sangria, com margem branca contínua equivalente a
   12 mm nos quatro lados e todos os elementos dentro da área segura;
+- **proporção:** o prompt pede A4 (210:297) como referência editorial, mas o
+  `grok-imagine-image-2.0` não oferece essa proporção — a arte sai em 2:3
+  (1664×2496), que é o valor declarado nos projetos. A margem de segurança de
+  12 mm existe justamente para absorver o recorte na diagramação em A4.
+  Decisão pendente do Felipe: adotar 2:3 como padrão declarado ou manter o
+  A4 com recorte;
 - infográfico editorial contemporâneo: editorial collage infographic com
   scrapbook educativo sofisticado e visual note-taking;
 - pelo menos um box informativo claramente reconhecível por página, usando
@@ -125,8 +131,11 @@ Cada página deve ter identidade própria e continuidade cromática. Alternar:
 Aprendidas na produção do lote `povos-indigenas-6paginas-v3` com xAI
 `grok-imagine-image-2.0`. Repetir em todo prompt novo:
 
-- **limite de tamanho:** prompts acima de cerca de 5.000 caracteres são
-  recusados pela API com erro 400; manter abaixo de 4.800;
+- **limite de tamanho:** manter o **corpo do arquivo `.md`** abaixo de 4.800
+  caracteres. O gerador ainda soma a ele o `prompt_prefixo` e o
+  `prompt_sufixo` do `autor.yaml` — cerca de 2.700 caracteres —, então o
+  prompt realmente enviado fica perto de 7.400. Um corpo de 5.400 caracteres
+  já foi recusado pela API com erro 400;
 - **artefato com escrita:** pedir “relevo escultórico” sem qualificar faz o
   modelo gravar glifos que parecem escrita; exigir superfície lisa;
 - **roupa moderna na cena histórica:** listar explicitamente as peças

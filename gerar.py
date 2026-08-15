@@ -23,6 +23,7 @@ from gerador_imagens.core import (
     build_client,
     check_authentication,
     create_pdf,
+    enforce_openrouter_contract,
     generate_image,
     load_api_key,
     load_prompt,
@@ -264,6 +265,8 @@ def generate_direct(args: argparse.Namespace) -> int:
     output = normalize_output_path(output, options.output_format)
 
     print_prompt_findings(prompt, str(prompt_source or "prompt inline"))
+    if args.provider == "openrouter":
+        enforce_openrouter_contract(options)
     if args.dry_run:
         describe_task(
             prompt,

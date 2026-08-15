@@ -13,18 +13,22 @@ autor:
     para o 3º ano do Ensino Fundamental, destinada a crianças de
     aproximadamente 8 anos.
 
-    DIREÇÃO VISUAL ESTÁVEL: editorial collage infographic, scrapbook educativo
-    sofisticado e visual note-taking. Combinar fotografias recortadas de
-    paisagens e objetos, pinturas ou guaches documentais, pequenos relevos
-    escultóricos de papel ou argila e objetos recortados. Usar bordas rasgadas,
-    sombras leves, fita adesiva discreta, textura tátil, setas a marcador,
-    círculos, sublinhados, mapas esquemáticos e mini-ícones funcionais. Toda
-    página precisa ter pelo menos um box informativo claramente reconhecível,
-    sem criar rótulo ou texto além da lista literal. Fundo branco puro, margens
-    seguras, corredores de respiro e caminho de leitura imediato. Tipografia
+    DIREÇÃO VISUAL ESTÁVEL: infográfico editorial contemporâneo em colagem de
+    mídia mista — editorial collage infographic, scrapbook educativo
+    sofisticado e visual note-taking. Combinar, na mesma página, fotografias
+    recortadas reais de paisagens e objetos, pinturas ou guaches documentais,
+    textura escultórica de argila crua ou pedra bruta, objetos recortados
+    fotografados e anotações manuscritas a grafite. Montar em camadas de
+    papéis sobrepostos — kraft, pautado, milimetrado e vegetal — com sombra
+    suave, bordas rasgadas, fita adesiva, clipe metálico e canto dobrado.
+    Usar setas a marcador, círculos, sublinhados e mini-ícones funcionais.
+    Toda página precisa ter pelo menos um box informativo claramente
+    reconhecível, sem criar rótulo ou texto além da lista literal. Composição
+    densa: fundo branco puro aparecendo como fresta entre as camadas, sem
+    grandes áreas vazias, e com caminho de leitura imediato. Tipografia
     sans-serif arredondada, grande e legível; lettering manual apenas em
-    destaques curtos. O resultado deve ser acolhedor, informativo e respeitoso,
-    sem infantilizar.
+    destaques curtos. O resultado deve ser acolhedor, informativo e
+    respeitoso, sem infantilizar.
 
     PALETA DIDÁTICA: grafite #263238 e branco #FFFFFF como estrutura; verde
     mata #2F7D4A, azul rio #2F6FD0, amarelo sol #F6C945, terracota #C9653B,
@@ -39,8 +43,11 @@ autor:
     cenas cotidianas sem adereços cerimoniais e elementos de território,
     memória, aprendizagem e participação social. Fotografias de pessoas só
     podem representar períodos e contextos compatíveis; cenas anteriores à
-    fotografia devem usar pintura ou desenho documental. Todo texto visível
-    deve ser um dos trechos literais do prompt da página.
+    fotografia devem usar pintura ou desenho documental. Dentro de cenas
+    anteriores a 1500, nenhuma pessoa veste roupa moderna: só tangas, saias ou
+    faixas de fibra natural. Pedra, argila e cerâmica entram lisas, sem
+    inscrição, glifo, símbolo gravado ou grafismo cultural inventado. Todo
+    texto visível deve ser um dos trechos literais do prompt da página.
 
   prompt_sufixo: |-
     TRAVAS FINAIS: uma única página A4 vertical, proporção 210:297, mostrada

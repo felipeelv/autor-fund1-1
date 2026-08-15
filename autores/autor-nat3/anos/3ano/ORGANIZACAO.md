@@ -4,7 +4,7 @@
 
 | Bimestre | Tema | Estado |
 |---|---|---|
-| 3º | povos indígenas no passado e no presente | fonte consolidada; seis páginas prontas para revisão |
+| 3º | povos indígenas no passado e no presente | lote v3 aprovado em 15/08/2026; layout canônico do autor |
 
 Os prompts ficam em `prompts/2026/<bimestre>/`. Cada lote precisa de projeto
 YAML próprio, provedor e modelo declarados e saída externa em `_revisao`.

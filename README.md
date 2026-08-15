@@ -88,7 +88,7 @@ Dry-run de Natureza e Sociedade:
 
 ```bash
 uv run gerar.py \
-  --projeto autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-6paginas-v1.yaml \
+  --projeto autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-v3-p02-p06-grok-v1.yaml \
   --dry-run
 ```
 
@@ -117,13 +117,27 @@ Projeto:
 
 ## Lote de Natureza e Sociedade com seis páginas
 
-O lote inicial trabalha povos indígenas no passado e no presente: anterioridade
-histórica, registros do interior paulista, modos de aprender, cuidado com os
-territórios, diversidade e direitos. Dados e afirmações históricas permanecem
-condicionados à revisão humana.
+A unidade vigente é o **lote v3**, aprovado em 15 de agosto de 2026, sobre
+povos indígenas no passado e no presente:
 
-Projeto:
-`autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-6paginas-v1.yaml`.
+1. capa — o Brasil não começou em 1500;
+2. aqui moravam os Caiapós;
+3. a floresta era a escola;
+4. sabiam tudo — e mesmo assim não destruíram;
+5. um dia na aldeia;
+6. o que aconteceu — e o que fazemos agora.
+
+O conteúdo canônico do que foi impresso está em
+`autores/autor-nat3/anos/3ano/conteudos/2026/3-bimestre/unidade-povos-indigenas-6paginas-v3/`,
+e o layout aprovado está fixado em
+`autores/autor-nat3/direcao/PADRAO-VISUAL-3ANO.md`. Dados e afirmações
+históricas permanecem condicionados à revisão humana.
+
+Projetos do lote vigente (xAI `grok-imagine-image-2.0`):
+`autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-v3-*.yaml`.
+
+O lote `povos-indigenas-6paginas-v1.yaml` (OpenAI `gpt-image-2`) permanece
+como histórico da primeira geração e não descreve o material aprovado.
 
 ## Fluxo editorial
 

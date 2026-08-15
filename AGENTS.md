@@ -92,7 +92,7 @@ uv run gerar.py \
   --projeto autores/autor-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \
   --dry-run
 uv run gerar.py \
-  --projeto autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-6paginas-v1.yaml \
+  --projeto autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-v3-p02-p06-grok-v1.yaml \
   --dry-run
 uv run validar.py --acervo
 ```
