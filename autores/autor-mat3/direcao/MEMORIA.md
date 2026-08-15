@@ -7,7 +7,7 @@
 - formato: `apostila-fund1`;
 - modelo padrão: OpenAI `gpt-image-2`;
 - modelo alternativo autorizado para amostras declaradas: xAI
-  `grok-imagine-image-2.0`;
+  `grok-imagine-image-2.0` ou OpenRouter `qwen/qwen-image-3-pro`;
 - linguagem visual: colagem, sketchnote e visual note-taking;
 - fundo editorial: branco puro `#FFFFFF`, sem creme, grade ou pontilhado
   contínuo;

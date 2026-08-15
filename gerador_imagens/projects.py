@@ -8,6 +8,7 @@ import yaml
 
 from .authors import load_author
 from .config import (
+    PROVIDERS,
     ConfigError,
     GenerationOptions,
     normalize_output_path,
@@ -135,8 +136,8 @@ def load_project(
     project_info = _mapping(raw.get("projeto"), "projeto")
     model_info = _mapping(raw.get("modelo"), "modelo")
     provider = str(model_info.get("provider", "openai")).lower()
-    if provider not in {"openai", "xai"}:
-        raise ConfigError("Provider deve ser 'openai' ou 'xai'.")
+    if provider not in PROVIDERS:
+        raise ConfigError("Provider deve ser 'openai', 'xai' ou 'openrouter'.")
 
     global_parameters = dict(_mapping(raw.get("parametros_api"), "parametros_api"))
     if model_info.get("id"):
@@ -182,9 +183,9 @@ def load_project(
         )
         options = options_from_mapping(overrides, options)
         item_provider = str(item.get("provider") or provider).lower()
-        if item_provider not in {"openai", "xai"}:
+        if item_provider not in PROVIDERS:
             raise ConfigError(
-                f"imagens[{index}].provider deve ser 'openai' ou 'xai'."
+                f"imagens[{index}].provider deve ser 'openai', 'xai' ou 'openrouter'."
             )
         if item_provider == "xai":
             if options.stream:
@@ -202,6 +203,26 @@ def load_project(
             if options.aspect_ratio is None or options.resolution is None:
                 raise ConfigError(
                     "O projeto xAI exige proporcao e resolucao em parametros_api."
+                )
+        if item_provider == "openrouter":
+            if options.stream:
+                raise ConfigError(
+                    "O provider openrouter não usa streaming neste gerador."
+                )
+            if options.output_format != "png":
+                raise ConfigError("O projeto OpenRouter deve usar formato PNG.")
+            if options.size != "auto":
+                raise ConfigError(
+                    "O projeto OpenRouter usa tamanho=auto com proporcao e resolucao."
+                )
+            if options.aspect_ratio is None or options.resolution is None:
+                raise ConfigError(
+                    "O projeto OpenRouter exige proporcao e resolucao "
+                    "em parametros_api."
+                )
+            if options.n > 6:
+                raise ConfigError(
+                    "O provider openrouter aceita no máximo 6 imagens por requisição."
                 )
         output_path = normalize_output_path(
             _resolve_output(

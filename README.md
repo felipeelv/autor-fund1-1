@@ -2,12 +2,14 @@
 
 Repositório autônomo que reúne autores pedagógicos definitivos do Fundamental I
 com OpenAI Images API (`gpt-image-2`), xAI Images API
-(`grok-imagine-image-2.0`) e o formato visual `apostila-fund1`.
+(`grok-imagine-image-2.0`), OpenRouter Image API (`qwen/qwen-image-3-pro`) e
+o formato visual `apostila-fund1`.
 
 Autores disponíveis:
 
 - `autor-fund1`: Inglês do Fundamental I;
-- `autor-mat3`: Matemática do 3º ano do Fundamental I.
+- `autor-mat3`: Matemática do 3º ano do Fundamental I;
+- `autor-nat3`: Natureza e Sociedade do 3º ano do Fundamental I.
 
 Cada autor mantém fontes, direção, conteúdos, prompts, projetos e registros em
 sua própria pasta. O núcleo Python, o formato e as regras comuns são
@@ -20,9 +22,10 @@ fazem parte do acervo versionado.
 autor-fund1-1/
 ├── autores/
 │   ├── autor-fund1/      # Inglês · Fundamental I
-│   └── autor-mat3/       # Matemática · 3º ano
+│   ├── autor-mat3/       # Matemática · 3º ano
+│   └── autor-nat3/       # Natureza e Sociedade · 3º ano
 ├── compartilhado/              # regras editoriais e parâmetros comuns
-├── formatos/apostila-fund1/    # formato autorizado pelos dois autores
+├── formatos/apostila-fund1/    # formato autorizado pelos três autores
 ├── gerador_imagens/             # núcleo Python
 ├── modelos/                     # modelos de prompt e projeto
 ├── tests/                       # testes sem chamadas à API
@@ -35,25 +38,26 @@ autor-fund1-1/
 
 - Python 3.10 ou superior;
 - `uv`;
-- chave do provedor que será usado: OpenAI com acesso a `gpt-image-2` e/ou xAI
-  com acesso a `grok-imagine-image-2.0`;
+- chave do provedor que será usado: OpenAI com acesso a `gpt-image-2`, xAI
+  com acesso a `grok-imagine-image-2.0` e/ou OpenRouter com acesso a
+  `qwen/qwen-image-3-pro`;
 - pasta de saída fora deste repositório.
 
 ```bash
 cd /Users/feliperosa/Documents/Codex/autor-fund1-1
 uv sync --locked
-cp .env.openai.example .env.openai.local
-cp .env.grok.example .env.grok.local
+cp .env.example .env
 cp config.example.yaml config.local.yaml
 ```
 
-Informe cada chave somente no arquivo local correspondente e configure uma raiz
-externa em `config.local.yaml`. `.env.openai.local`, `.env.grok.local` e
-`config.local.yaml` são ignorados pelo Git.
+Informe as chaves em um único `.env` e configure uma raiz externa em
+`config.local.yaml`. Os dois arquivos são ignorados pelo Git.
 
-Projetos OpenAI usam `OPENAI_API_KEY` de `.env.openai.local`. Projetos xAI usam
-`XAI_API_KEY` de `.env.grok.local`. O provedor é declarado em cada projeto e
-nenhuma credencial altera silenciosamente o modelo selecionado.
+Projetos OpenAI usam `OPENAI_API_KEY`. Projetos xAI usam `XAI_API_KEY`.
+Projetos OpenRouter usam `OPENROUTER_API_KEY`. O provedor é declarado em
+cada projeto e nenhuma credencial altera silenciosamente o modelo
+selecionado. Arquivos separados (`.env.openai.local` e `.env.grok.local`)
+ainda são lidos se existirem.
 
 ## Verificação sem consumo de créditos
 
@@ -80,6 +84,14 @@ uv run gerar.py \
   --dry-run
 ```
 
+Dry-run de Natureza e Sociedade:
+
+```bash
+uv run gerar.py \
+  --projeto autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-6paginas-v1.yaml \
+  --dry-run
+```
+
 Dry-run da amostra de Matemática com Grok Imagine 2:
 
 ```bash
@@ -102,6 +114,16 @@ cria seis páginas sobre:
 
 Projeto:
 `autores/autor-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml`.
+
+## Lote de Natureza e Sociedade com seis páginas
+
+O lote inicial trabalha povos indígenas no passado e no presente: anterioridade
+histórica, registros do interior paulista, modos de aprender, cuidado com os
+territórios, diversidade e direitos. Dados e afirmações históricas permanecem
+condicionados à revisão humana.
+
+Projeto:
+`autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-6paginas-v1.yaml`.
 
 ## Fluxo editorial
 

@@ -2,16 +2,20 @@
 
 ## Escopo
 
-Este é o repositório autônomo de autores definitivos do Fundamental I, com dois
+Este é o repositório autônomo de autores definitivos do Fundamental I, com três
 perfis autorais:
 
 - `autor-fund1`: imagens pedagógicas de Inglês do Fundamental I;
-- `autor-mat3`: imagens pedagógicas de Matemática do 3º ano do Fundamental I.
+- `autor-mat3`: imagens pedagógicas de Matemática do 3º ano do Fundamental I;
+- `autor-nat3`: imagens pedagógicas de Natureza e Sociedade do 3º ano do
+  Fundamental I.
 
 Provedores de imagem autorizados:
 
 - OpenAI Images API com `gpt-image-2`;
-- xAI Images API com `grok-imagine-image-2.0`.
+- xAI Images API com `grok-imagine-image-2.0`;
+- OpenRouter Image API com `qwen/qwen-image-3-pro` (outros modelos
+  OpenRouter só com declaração explícita no projeto).
 
 Não introduza outros autores, disciplinas, modelos ou provedores sem
 autorização explícita. Cada projeto precisa declarar o provedor e o modelo;
@@ -34,7 +38,7 @@ produção ou prévias.
 ## Conteúdo e identidade
 
 - Responda e documente em português brasileiro.
-- Preserve os autores `autor-fund1` e `autor-mat3`.
+- Preserve os autores `autor-fund1`, `autor-mat3` e `autor-nat3`.
 - Preserve o formato `apostila-fund1`.
 - Preserve a linguagem visual de colagem, sketchnote e visual note-taking.
 - Não misture conteúdos, fontes, prompts ou saídas entre os autores.
@@ -42,6 +46,9 @@ produção ou prévias.
 - Não invente estatísticas, fontes, traduções, definições, propriedades ou fatos.
 - Inglês exige conferência literal de palavras, frases e traduções.
 - Matemática exige conferência de números, sinais, cálculos e classificações.
+- Natureza e Sociedade exige fontes internas, linguagem não estereotipada,
+  distinção entre povos e revisão de fatos históricos, territoriais e
+  estatísticos.
 - Dados factuais e citações exigem revisão humana.
 
 ## Fluxo
@@ -58,10 +65,14 @@ produção ou prévias.
 
 - Python mínimo: 3.10.
 - Dependências diretas ficam fixadas em `pyproject.toml` e `uv.lock`.
-- Nunca exponha ou registre `OPENAI_API_KEY` ou `XAI_API_KEY`.
-- Credenciais locais ficam separadas em `.env.openai.local` e `.env.grok.local`.
+- Nunca exponha ou registre `OPENAI_API_KEY`, `XAI_API_KEY` ou
+  `OPENROUTER_API_KEY`.
+- Credenciais locais ficam em `.env`. Arquivos separados
+  (`.env.openai.local` e `.env.grok.local`) ainda são lidos se existirem.
 - O adaptador xAI só pode usar projetos com `provider: xai`, formato JPEG,
   proporção e resolução explícitas.
+- O adaptador OpenRouter só pode usar projetos com `provider: openrouter`,
+  formato PNG, `tamanho: auto`, proporção e resolução explícitas.
 - Testes e dry-runs não podem chamar a API nem consumir créditos.
 - Valide bytes, formato e dimensões antes de salvar.
 - Preserve gravação atômica e proteção contra sobrescrita.
@@ -79,6 +90,9 @@ uv run gerar.py \
   --dry-run
 uv run gerar.py \
   --projeto autores/autor-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \
+  --dry-run
+uv run gerar.py \
+  --projeto autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-6paginas-v1.yaml \
   --dry-run
 uv run validar.py --acervo
 ```

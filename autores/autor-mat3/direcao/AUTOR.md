@@ -41,5 +41,6 @@ cria propriedades, resultados ou fatos novos.
 A produção usa somente fontes internas em
 `../anos/3ano/fontes/2026-2-semestre/`. Cada novo recorte exige conteúdo
 derivado, prompts próprios e projeto YAML. Cada projeto declara OpenAI
-`gpt-image-2` ou xAI `grok-imagine-image-2.0`, e toda geração grava na área
+`gpt-image-2`, xAI `grok-imagine-image-2.0` ou OpenRouter
+`qwen/qwen-image-3-pro`, e toda geração grava na área
 externa `_revisao`.

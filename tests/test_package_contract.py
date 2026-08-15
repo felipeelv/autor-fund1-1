@@ -11,7 +11,7 @@ from gerador_imagens.storage import StorageSettings
 
 
 ROOT = Path(__file__).resolve().parents[1]
-AUTHOR_IDS = ("autor-fund1", "autor-mat3")
+AUTHOR_IDS = ("autor-fund1", "autor-mat3", "autor-nat3")
 
 
 class AuthorPackageContractTests(unittest.TestCase):
@@ -68,6 +68,8 @@ class AuthorPackageContractTests(unittest.TestCase):
                                 task.options.model,
                                 "grok-imagine-image-2.0",
                             )
+                        elif task.provider == "openrouter":
+                            self.assertTrue(task.options.model)
                         else:
                             self.fail(f"Provider inesperado: {task.provider}")
 
@@ -90,6 +92,41 @@ class AuthorPackageContractTests(unittest.TestCase):
             / "fontes"
             / "2026-2-semestre"
             / "3bim-divisao-resto-geometria-v1.md"
+        )
+        self.assertTrue(source_path.is_file())
+        with tempfile.TemporaryDirectory() as directory:
+            storage = StorageSettings(
+                Path(directory).resolve(),
+                {
+                    "revisao": "_revisao",
+                    "aprovadas": "aprovadas",
+                    "historico": "historico-importado",
+                },
+            )
+            plan = load_project(ROOT, project_path, storage)
+        self.assertEqual(len(plan.tasks), 6)
+        self.assertEqual(len({task.prompt_path for task in plan.tasks}), 6)
+        self.assertEqual(len({task.output_path for task in plan.tasks}), 6)
+
+    def test_initial_nature_project_has_six_unique_pages(self) -> None:
+        project_path = (
+            ROOT
+            / "autores"
+            / "autor-nat3"
+            / "projetos"
+            / "2026"
+            / "3-bimestre"
+            / "povos-indigenas-6paginas-v1.yaml"
+        )
+        source_path = (
+            ROOT
+            / "autores"
+            / "autor-nat3"
+            / "anos"
+            / "3ano"
+            / "fontes"
+            / "2026-2-semestre"
+            / "3bim-povos-indigenas-v1.md"
         )
         self.assertTrue(source_path.is_file())
         with tempfile.TemporaryDirectory() as directory:

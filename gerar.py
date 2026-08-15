@@ -10,7 +10,9 @@ import openai
 
 from gerador_imagens.authors import aplicar_autor, listar_autores, load_author
 from gerador_imagens.config import (
+    DEFAULT_MODELS,
     PRESETS,
+    PROVIDERS,
     ConfigError,
     GenerationOptions,
     normalize_output_path,
@@ -25,6 +27,7 @@ from gerador_imagens.core import (
     load_api_key,
     load_prompt,
 )
+from gerador_imagens.openrouter import OpenRouterError
 from gerador_imagens.projects import ProjectPlan, load_project
 from gerador_imagens.quality import analyze_prompt
 from gerador_imagens.renderers import RENDERERS, render_prompt
@@ -37,7 +40,7 @@ DEFAULT_PROMPT = ROOT / "modelos" / "prompt.txt"
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Gerador autônomo de imagens pedagógicas com GPT Image 2.",
+        description="Gerador autônomo de imagens pedagógicas.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
@@ -64,7 +67,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--autor", help="ID de um perfil em autores/<id>/autor.yaml.")
     parser.add_argument(
         "--provider",
-        choices=("openai", "xai"),
+        choices=PROVIDERS,
         default="openai",
         help="Provedor da Images API para geração direta ou check-auth.",
     )
@@ -214,7 +217,9 @@ def describe_task(
 
 
 def direct_options(args: argparse.Namespace) -> GenerationOptions:
-    return options_from_mapping(cli_overrides(args))
+    overrides = cli_overrides(args)
+    overrides.setdefault("model", DEFAULT_MODELS[args.provider])
+    return options_from_mapping(overrides)
 
 
 def load_direct_prompt(args: argparse.Namespace) -> tuple[str, Path | None]:
@@ -247,7 +252,9 @@ def generate_direct(args: argparse.Namespace) -> int:
         if author and author.parameters
         else GenerationOptions()
     )
-    options = options_from_mapping(cli_overrides(args), base_options)
+    overrides = cli_overrides(args)
+    overrides.setdefault("model", DEFAULT_MODELS[args.provider])
+    options = options_from_mapping(overrides, base_options)
     storage = load_storage(ROOT, args.saida_root)
     output = resolve_external_output(
         storage,
@@ -268,7 +275,7 @@ def generate_direct(args: argparse.Namespace) -> int:
         return 0
 
     api_key = load_api_key(ROOT, args.provider)
-    client = build_client(api_key, options, args.provider)
+    client = build_client(api_key, options, args.provider, root=ROOT)
     result = generate_image(
         client=client,
         prompt=prompt,
@@ -362,7 +369,7 @@ def generate_project(args: argparse.Namespace) -> int:
         client = clients.get(key)
         if client is None:
             api_key = load_api_key(ROOT, task.provider)
-            client = build_client(api_key, task.options, task.provider)
+            client = build_client(api_key, task.options, task.provider, root=ROOT)
             clients[key] = client
         result = generate_image(
             client=client,
@@ -403,8 +410,8 @@ def run(args: argparse.Namespace) -> int:
     if args.check_auth:
         options = direct_options(args)
         api_key = load_api_key(ROOT, args.provider)
-        client = build_client(api_key, options, args.provider)
-        model_id = check_authentication(client, options.model)
+        client = build_client(api_key, options, args.provider, root=ROOT)
+        model_id = check_authentication(client, options.model, args.provider)
         print(f"Autenticação e modelo: OK ({model_id})")
         return 0
 
@@ -443,7 +450,7 @@ def main() -> int:
     args = parser.parse_args()
     try:
         return run(args)
-    except (ConfigError, GenerationError) as exc:
+    except (ConfigError, GenerationError, OpenRouterError) as exc:
         print(f"Erro: {exc}", file=sys.stderr)
         return 2
     except openai.OpenAIError as exc:

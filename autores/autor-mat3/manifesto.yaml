@@ -9,6 +9,7 @@ disciplina:
   modelos_imagem_autorizados:
     - "gpt-image-2"
     - "grok-imagine-image-2.0"
+    - "qwen/qwen-image-3-pro"
   formato_padrao: "apostila-fund1"
 
 configuracao:

@@ -16,6 +16,7 @@ from openai import OpenAI
 from PIL import Image, ImageOps, UnidentifiedImageError
 
 from .config import GenerationOptions, output_paths, validate_size
+from .openrouter import OpenRouterClient, OpenRouterError
 
 
 class GenerationError(RuntimeError):
@@ -33,16 +34,19 @@ class GenerationResult:
 
 def load_api_key(root: Path, provider: str = "openai") -> str:
     provider = provider.lower()
+    shared = root / ".env"
     if provider == "openai":
-        env_paths = (root / ".env.openai.local", root / ".env")
+        env_paths = (root / ".env.openai.local", shared)
         variable = "OPENAI_API_KEY"
-        example = root / ".env.openai.example"
-        local = root / ".env.openai.local"
+        hint = ".env ou .env.openai.local"
     elif provider == "xai":
-        env_paths = (root / ".env.grok.local",)
+        env_paths = (root / ".env.grok.local", shared)
         variable = "XAI_API_KEY"
-        example = root / ".env.grok.example"
-        local = root / ".env.grok.local"
+        hint = ".env ou .env.grok.local"
+    elif provider == "openrouter":
+        env_paths = (root / ".env.openrouter.local", shared)
+        variable = "OPENROUTER_API_KEY"
+        hint = ".env ou .env.openrouter.local"
     else:
         raise GenerationError(f"Provider de credencial inválido: {provider}")
     for env_path in env_paths:
@@ -51,7 +55,7 @@ def load_api_key(root: Path, provider: str = "openai") -> str:
     api_key = os.getenv(variable, "").strip()
     if not api_key:
         raise GenerationError(
-            f"{variable} não encontrada. Crie {local} a partir de {example}."
+            f"{variable} não encontrada. Defina-a em {hint}."
         )
     return api_key
 
@@ -60,7 +64,21 @@ def build_client(
     api_key: str,
     options: GenerationOptions,
     provider: str = "openai",
-) -> OpenAI:
+    *,
+    root: Path | None = None,
+) -> OpenAI | OpenRouterClient:
+    if provider == "openrouter":
+        base_url = os.getenv("OPENROUTER_BASE_URL", "").strip()
+        if not base_url and root is not None:
+            env_file = root / ".env"
+            if env_file.exists():
+                load_dotenv(env_file, override=False)
+            base_url = os.getenv("OPENROUTER_BASE_URL", "").strip()
+        return OpenRouterClient(
+            api_key,
+            options,
+            base_url=base_url or "https://openrouter.ai/api/v1",
+        )
     kwargs: dict[str, Any] = {
         "api_key": api_key,
         "timeout": options.timeout,
@@ -73,7 +91,19 @@ def build_client(
     return OpenAI(**kwargs)
 
 
-def check_authentication(client: OpenAI, model: str) -> str:
+def check_authentication(
+    client: OpenAI | OpenRouterClient,
+    model: str,
+    provider: str = "openai",
+) -> str:
+    if provider == "openrouter":
+        checker = getattr(client, "check_image_model", None)
+        if not callable(checker):
+            raise GenerationError("Cliente OpenRouter inválido.")
+        try:
+            return checker(model)
+        except OpenRouterError as exc:
+            raise GenerationError(str(exc)) from exc
     result = client.models.retrieve(model)
     return result.id
 
@@ -264,6 +294,15 @@ def _request_kwargs(
             "response_format": "b64_json",
             "extra_body": extra_body,
         }
+    if provider == "openrouter":
+        return {
+            "model": options.model,
+            "prompt": prompt,
+            "n": options.n,
+            "resolution": str(options.resolution or "2k").upper(),
+            "aspect_ratio": options.aspect_ratio,
+            "output_format": options.output_format,
+        }
     if provider != "openai":
         raise GenerationError(f"Provider de geração inválido: {provider}")
     kwargs: dict[str, Any] = {
@@ -355,7 +394,7 @@ def _protect_planned_paths(paths: list[Path], overwrite: bool) -> None:
 
 
 def _generate_regular(
-    client: OpenAI,
+    client: Any,
     prompt: str,
     output: Path,
     options: GenerationOptions,
@@ -370,7 +409,10 @@ def _generate_regular(
     if options.write_metadata:
         planned.extend(_metadata_path(path) for path in paths)
     _protect_planned_paths(planned, overwrite)
-    response = client.images.generate(**_request_kwargs(prompt, options, provider))
+    try:
+        response = client.images.generate(**_request_kwargs(prompt, options, provider))
+    except OpenRouterError as exc:
+        raise GenerationError(str(exc)) from exc
     data = list(response.data or [])
     if len(data) != options.n:
         raise GenerationError(
@@ -489,7 +531,7 @@ def _generate_streaming(
 
 def generate_image(
     *,
-    client: OpenAI,
+    client: Any,
     prompt: str,
     output: Path,
     options: GenerationOptions,
@@ -504,10 +546,12 @@ def generate_image(
         raise GenerationError("O prompt está vazio.")
     options = options.validated()
     provider = provider.lower()
-    if provider not in {"openai", "xai"}:
+    if provider not in {"openai", "xai", "openrouter"}:
         raise GenerationError(f"Provider de geração inválido: {provider}")
-    if provider == "xai" and options.stream:
-        raise GenerationError("O provider xai não usa streaming neste gerador.")
+    if provider in {"xai", "openrouter"} and options.stream:
+        raise GenerationError(
+            f"O provider {provider} não usa streaming neste gerador."
+        )
     if options.stream:
         return _generate_streaming(
             client,

@@ -53,6 +53,10 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual(options.aspect_ratio, "2:3")
         self.assertEqual(options.resolution, "2k")
 
+    def test_resolution_accepts_uppercase_openrouter_form(self) -> None:
+        options = options_from_mapping({"resolucao": "2K"})
+        self.assertEqual(options.resolution, "2k")
+
     def test_output_extension_and_numbering(self) -> None:
         path = normalize_output_path(Path("imagem"), "png")
         self.assertEqual(path, Path("imagem.png"))
