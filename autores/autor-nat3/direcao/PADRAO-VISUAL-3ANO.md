@@ -9,14 +9,13 @@
 ## Base
 
 - página vertical com fundo branco puro `#FFFFFF`;
+- **proporção 2:3** (1664×2496 px), decidida pelo Felipe em 15 de agosto de
+  2026: é a proporção vertical que o `grok-imagine-image-2.0` oferece, e a
+  adaptação para A4 é feita na diagramação, fora do gerador. Os prompts pedem
+  “página vertical, proporção 2:3”; não peça A4 nem 210:297;
 - folha inteira visível, sem sangria, com margem branca contínua equivalente a
-  12 mm nos quatro lados e todos os elementos dentro da área segura;
-- **proporção:** o prompt pede A4 (210:297) como referência editorial, mas o
-  `grok-imagine-image-2.0` não oferece essa proporção — a arte sai em 2:3
-  (1664×2496), que é o valor declarado nos projetos. A margem de segurança de
-  12 mm existe justamente para absorver o recorte na diagramação em A4.
-  Decisão pendente do Felipe: adotar 2:3 como padrão declarado ou manter o
-  A4 com recorte;
+  12 mm nos quatro lados e todos os elementos dentro da área segura — essa
+  margem também é a folga que a diagramação usa ao ajustar para A4;
 - infográfico editorial contemporâneo: editorial collage infographic com
   scrapbook educativo sofisticado e visual note-taking;
 - pelo menos um box informativo claramente reconhecível por página, usando

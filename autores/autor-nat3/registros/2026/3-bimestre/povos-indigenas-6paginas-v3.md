@@ -66,6 +66,9 @@ As versões substituídas foram removidas de `aprovadas`; permanecem em
   Preto (página 2);
 - generalização dos cinco princípios a povos indígenas em bloco (página 4);
 - cotidiano de aldeia descrito em tom geral (página 5);
-- proporção da arte: 2:3 gerado contra A4 pedido no prompt — decisão do Felipe;
+- ~~proporção da arte~~ — **resolvida em 15/08/2026**: o Felipe adotou 2:3 como
+  padrão e ajusta para A4 na diagramação. Os prompts deste lote ainda pedem
+  A4 no texto, porque prompts aprovados não são alterados depois da
+  aprovação; os próximos já nascem em 2:3;
 - adequação de vocabulário na analogia do "europeu" (página 1), a frase mais
   longa da unidade.

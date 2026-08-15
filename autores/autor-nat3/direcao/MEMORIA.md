@@ -119,6 +119,11 @@ páginas seguintes deste autor:
   e marca-texto.
 - **Texto por página reduzido** a pedido do Felipe, sem simplificar as
   ideias; os cortes ficam registrados nos arquivos de conteúdo.
+- **Proporção 2:3**, decidida pelo Felipe em 15 de agosto de 2026: é a
+  proporção vertical que o Grok oferece, e o ajuste para A4 acontece na
+  diagramação, fora do gerador. Os prompts do lote v3 ainda pedem A4 no texto,
+  porque prompts aprovados não são alterados depois da aprovação; os próximos
+  já nascem em 2:3.
 
 ### Revisão factual de 15 de agosto de 2026
 

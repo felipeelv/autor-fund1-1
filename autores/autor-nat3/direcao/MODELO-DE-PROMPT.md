@@ -24,7 +24,7 @@ Asset type: <capa | página interna> de uma sequência de Natureza e Sociedade d
 
 ## PEDIDO
 
-Página A4 vertical, proporção 210:297, <CAPA que abre a unidade | PÁGINA
+Página vertical, proporção 2:3, <CAPA que abre a unidade | PÁGINA
 INTERNA de apostila, não é capa>. Estilo: infográfico editorial contemporâneo
 em colagem de mídia mista — editorial collage infographic, scrapbook
 educativo sofisticado, visual note-taking. Composição densa e em camadas,
@@ -58,7 +58,7 @@ sempre legível. Assunto: <uma frase com o recorte da página>.
 
 ## COMPOSIÇÃO
 
-- folha A4 inteira, sem sangria, margem branca contínua de 12 mm;
+- folha inteira, sem sangria, margem branca contínua de 12 mm;
 - fundo branco puro com camadas de papéis sobrepostos: kraft, pautado,
   milimetrado e vegetal translúcido; cada camada com sombra suave, fita
   adesiva, clipe metálico e canto dobrado;
