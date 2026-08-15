@@ -11,10 +11,10 @@ from gerador_imagens.storage import StorageSettings
 
 
 ROOT = Path(__file__).resolve().parents[1]
-AUTHOR_IDS = ("autor-teste-fund1", "autor-teste-mat3")
+AUTHOR_IDS = ("autor-fund1", "autor-mat3")
 
 
-class AuthorTestPackageContractTests(unittest.TestCase):
+class AuthorPackageContractTests(unittest.TestCase):
     def test_package_contains_the_expected_authors(self) -> None:
         authors = sorted(
             path.parent.name
@@ -75,7 +75,7 @@ class AuthorTestPackageContractTests(unittest.TestCase):
         project_path = (
             ROOT
             / "autores"
-            / "autor-teste-mat3"
+            / "autor-mat3"
             / "projetos"
             / "2026"
             / "3-bimestre"
@@ -84,7 +84,7 @@ class AuthorTestPackageContractTests(unittest.TestCase):
         source_path = (
             ROOT
             / "autores"
-            / "autor-teste-mat3"
+            / "autor-mat3"
             / "anos"
             / "3ano"
             / "fontes"

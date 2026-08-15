@@ -1,0 +1,50 @@
+autor:
+  id: autor-fund1
+  nome: "Autor de Inglês — Fundamental I"
+  disciplina: "Inglês EF1"
+  ativo: true
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Use case: scientific-educational.
+    Asset type: página vertical de apostila brasileira de Inglês para o 1º ano
+    do Ensino Fundamental, destinada a crianças de aproximadamente 6 anos.
+
+    DIREÇÃO VISUAL ESTÁVEL: mistura de colagem editorial contemporânea com
+    sketchnote profissional e visual note-taking. Usar papéis recortados,
+    pintura guache, ilustrações semirrealistas e textura tátil discreta junto de
+    setas desenhadas a marcador, círculos, sublinhados, estrelas, conectores,
+    mini-ícones e palavras-chave. A página deve parecer um mapa visual feito à
+    mão e depois refinado editorialmente, não uma grade rígida de cartões.
+    Fundo branco quente com grade pontilhada muito sutil, margens seguras e
+    caminho de leitura imediato. Tipografia sans-serif arredondada, grande e
+    muito legível; lettering manual apenas em destaques curtos. O resultado deve
+    ser alegre e acolhedor, sem parecer material de educação infantil.
+
+    PALETA DIDÁTICA: grafite #263238 e branco quente #FFFDF8 como estrutura;
+    vermelho #E94B3C, azul #2F6FD0, amarelo #F6C945, verde #43A66B, laranja
+    #F28C32 e roxo #8B5FBF como cores do conteúdo. Cada palavra de cor precisa
+    corresponder visualmente à cor correta.
+
+    Representar crianças brasileiras diversas, com proporções naturais,
+    expressões gentis e ações pedagógicas claras. Objetos e cenas vêm antes das
+    estruturas linguísticas. Todo texto visível precisa ser um dos trechos
+    literais solicitados no prompt da página.
+
+  prompt_sufixo: |-
+    TRAVAS FINAIS: uma única página vertical 2:3; fundo opaco; composição de
+    visual note-taking rica, organizada e pronta para apostila. Pode haver mais
+    conteúdo, mas nenhum texto pode ficar pequeno, apertado ou sem relação
+    visual com uma imagem. Renderizar cada texto literal exatamente uma vez,
+    com ortografia correta e sem acrescentar palavras. Não usar logotipo,
+    marca, QR code, assinatura, watermark, número de página, legenda automática,
+    texto aleatório, letra deformada, serifas, Comic Sans, 3D, estética de filme
+    infantil, mascote, personagem falante, gradientes neon ou fundo escuro.
+
+  parametros_api:
+    qualidade: "high"
+    tamanho: "1024x1536"
+    formato: "png"
+    fundo: "opaque"

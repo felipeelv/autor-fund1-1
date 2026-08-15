@@ -3,5 +3,5 @@ formato:
   nome: "Apostila editorial — Fundamental I"
   renderizador: texto
   autores:
-    - autor-teste-fund1
-    - autor-teste-mat3
+    - autor-fund1
+    - autor-mat3

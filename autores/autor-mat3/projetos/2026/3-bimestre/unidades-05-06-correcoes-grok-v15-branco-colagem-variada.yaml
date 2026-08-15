@@ -1,0 +1,42 @@
+projeto:
+  titulo: "Matemática EF1 — 3º ano — correções do lote branco, segmentado e variado — Grok Imagine 2 — v15"
+  tipo: "colecao-apostila-fund1-correcoes-5-paginas"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "autor-mat3"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — Correção do sinal de adição — v15"
+    prompt: "autores/autor-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p02-v15-correcao-adicao.md"
+    saida: "autor-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v15-branco-colagem-variada/p02-verificar-e-interpretar-o-resto-grok-v15.jpg"
+  - nome: "P3 — Correção da pergunta sem numeração — v15"
+    prompt: "autores/autor-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p03-v15-correcao-pergunta.md"
+    saida: "autor-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v15-branco-colagem-variada/p03-as-quatro-operacoes-grok-v15.jpg"
+  - nome: "P4 — Correção de uma única aresta — v15"
+    prompt: "autores/autor-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p04-v15-correcao-aresta.md"
+    saida: "autor-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v15-branco-colagem-variada/p04-solidos-geometricos-grok-v15.jpg"
+  - nome: "P5 — Correção das redes — v15"
+    prompt: "autores/autor-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p05-v15-correcao-redes.md"
+    saida: "autor-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v15-branco-colagem-variada/p05-planificacao-e-figuras-planas-grok-v15.jpg"
+  - nome: "P6 — Correção das marcações geométricas — v15"
+    prompt: "autores/autor-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p06-v15-correcao-marcacoes.md"
+    saida: "autor-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v15-branco-colagem-variada/p06-poligonos-e-quadrilateros-grok-v15.jpg"

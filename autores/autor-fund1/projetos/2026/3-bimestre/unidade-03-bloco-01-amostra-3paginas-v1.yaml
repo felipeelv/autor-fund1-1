@@ -1,0 +1,35 @@
+projeto:
+  titulo: "Inglês EF1 — 1º ano — Unidade 3 — Colors — amostra de 3 páginas — v1"
+  tipo: "colecao-apostila-fund1-3-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "autor-fund1"
+
+modelo:
+  provider: "openai"
+  id: "gpt-image-2"
+
+parametros_api:
+  tamanho: "1024x1536"
+  qualidade: "high"
+  formato: "png"
+  fundo: "opaque"
+  moderacao: "auto"
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Capa — Unit 3 — Colors"
+    prompt: "autores/autor-fund1/anos/1ano/prompts/2026/3-bimestre/unidade-03-p01-capa-v1.md"
+    saida: "autor-fund1/1ano/3-bimestre/unidade-03-bloco-01/p01-capa-v1.png"
+
+  - nome: "P2 — The Colors"
+    prompt: "autores/autor-fund1/anos/1ano/prompts/2026/3-bimestre/unidade-03-p02-the-colors-v1.md"
+    saida: "autor-fund1/1ano/3-bimestre/unidade-03-bloco-01/p02-the-colors-v1.png"
+
+  - nome: "P3 — What Color Is It?"
+    prompt: "autores/autor-fund1/anos/1ano/prompts/2026/3-bimestre/unidade-03-p03-what-color-is-it-v1.md"
+    saida: "autor-fund1/1ano/3-bimestre/unidade-03-bloco-01/p03-what-color-is-it-v1.png"

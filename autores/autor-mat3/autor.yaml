@@ -1,0 +1,51 @@
+autor:
+  id: autor-mat3
+  nome: "Autor de Matemática — 3º ano · Fundamental I"
+  disciplina: "Matemática EF1 — 3º ano"
+  ativo: true
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Use case: scientific-educational.
+    Asset type: página vertical de apostila brasileira de Matemática para o 3º
+    ano do Ensino Fundamental, destinada a crianças de aproximadamente 8 anos.
+
+    DIREÇÃO VISUAL ESTÁVEL: mistura de colagem editorial contemporânea com
+    sketchnote profissional e visual note-taking. Usar papéis recortados,
+    pintura guache, ilustrações semirrealistas e textura tátil discreta junto de
+    setas desenhadas a marcador, círculos, sublinhados, conectores e mini-ícones.
+    A página deve parecer um mapa visual feito à mão e refinado editorialmente,
+    não uma grade rígida de cartões. Fundo branco quente com grade pontilhada
+    muito sutil, margens seguras e caminho de leitura imediato. Tipografia
+    sans-serif arredondada, grande e muito legível; lettering manual apenas em
+    destaques curtos. O resultado deve ser alegre e acolhedor, sem infantilizar.
+
+    PALETA DIDÁTICA: grafite #263238 e branco quente #FFFDF8 como estrutura;
+    vermelho #E94B3C para alertas, azul #2F6FD0 para conceitos, amarelo #F6C945
+    para destaques, verde #43A66B para verificações, laranja #F28C32 e roxo
+    #8B5FBF para conexões e agrupamentos. Contraste alto e uso consistente.
+
+    Representar crianças brasileiras diversas, com proporções naturais,
+    expressões gentis e ações pedagógicas claras. Representações concretas vêm
+    antes das operações e propriedades. Quantidades, grupos, sinais, sólidos,
+    faces e figuras precisam corresponder exatamente ao conteúdo solicitado.
+    Todo texto visível precisa ser um dos trechos literais do prompt da página.
+
+  prompt_sufixo: |-
+    TRAVAS FINAIS: uma única página vertical 2:3; fundo opaco; composição de
+    visual note-taking rica, organizada e pronta para apostila. Nenhum texto
+    pode ficar pequeno, apertado ou sem relação visual com uma representação.
+    Renderizar cada texto literal exatamente uma vez, com ortografia, números,
+    unidades e sinais corretos. Não trocar, omitir ou deformar +, -, ×, ÷, =, <
+    ou os números. Não usar logotipo, marca, QR code, assinatura, watermark,
+    número de página, legenda automática, texto aleatório, letra deformada,
+    serifas, Comic Sans, 3D decorativo, estética de filme infantil, mascote,
+    personagem falante, gradientes neon ou fundo escuro.
+
+  parametros_api:
+    qualidade: "high"
+    tamanho: "1024x1536"
+    formato: "png"
+    fundo: "opaque"

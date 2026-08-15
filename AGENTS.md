@@ -1,11 +1,12 @@
-# AGENTS.md — Autor-teste · Fundamental I
+# AGENTS.md — Autores · Fundamental I
 
 ## Escopo
 
-Este é o repositório autônomo do grupo `autor-teste`, com dois perfis autorais:
+Este é o repositório autônomo de autores definitivos do Fundamental I, com dois
+perfis autorais:
 
-- `autor-teste-fund1`: imagens pedagógicas de Inglês do Fundamental I;
-- `autor-teste-mat3`: imagens pedagógicas de Matemática do 3º ano do Fundamental I.
+- `autor-fund1`: imagens pedagógicas de Inglês do Fundamental I;
+- `autor-mat3`: imagens pedagógicas de Matemática do 3º ano do Fundamental I.
 
 Provedores de imagem autorizados:
 
@@ -33,7 +34,7 @@ produção ou prévias.
 ## Conteúdo e identidade
 
 - Responda e documente em português brasileiro.
-- Preserve os autores `autor-teste-fund1` e `autor-teste-mat3`.
+- Preserve os autores `autor-fund1` e `autor-mat3`.
 - Preserve o formato `apostila-fund1`.
 - Preserve a linguagem visual de colagem, sketchnote e visual note-taking.
 - Não misture conteúdos, fontes, prompts ou saídas entre os autores.
@@ -74,10 +75,10 @@ uv run python -m unittest discover -s tests -v
 uv run gerar.py --help
 uv run gerar.py --listar-autores
 uv run gerar.py \
-  --projeto autores/autor-teste-fund1/projetos/2026/3-bimestre/unidade-03-bloco-01-autonomia-guiada-4paginas-v5.yaml \
+  --projeto autores/autor-fund1/projetos/2026/3-bimestre/unidade-03-bloco-01-autonomia-guiada-4paginas-v5.yaml \
   --dry-run
 uv run gerar.py \
-  --projeto autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \
+  --projeto autores/autor-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \
   --dry-run
 uv run validar.py --acervo
 ```

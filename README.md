@@ -1,13 +1,13 @@
-# Autor-teste — Fundamental I
+# Autores — Fundamental I
 
-Repositório autônomo que reúne os autores pedagógicos do grupo `autor-teste`
+Repositório autônomo que reúne autores pedagógicos definitivos do Fundamental I
 com OpenAI Images API (`gpt-image-2`), xAI Images API
 (`grok-imagine-image-2.0`) e o formato visual `apostila-fund1`.
 
 Autores disponíveis:
 
-- `autor-teste-fund1`: Inglês do Fundamental I;
-- `autor-teste-mat3`: Matemática do 3º ano do Fundamental I.
+- `autor-fund1`: Inglês do Fundamental I;
+- `autor-mat3`: Matemática do 3º ano do Fundamental I.
 
 Cada autor mantém fontes, direção, conteúdos, prompts, projetos e registros em
 sua própria pasta. O núcleo Python, o formato e as regras comuns são
@@ -17,10 +17,10 @@ fazem parte do acervo versionado.
 ## Estrutura
 
 ```text
-autor-teste-fund1-independente/
+autor-fund1-1/
 ├── autores/
-│   ├── autor-teste-fund1/      # Inglês · Fundamental I
-│   └── autor-teste-mat3/       # Matemática · 3º ano
+│   ├── autor-fund1/      # Inglês · Fundamental I
+│   └── autor-mat3/       # Matemática · 3º ano
 ├── compartilhado/              # regras editoriais e parâmetros comuns
 ├── formatos/apostila-fund1/    # formato autorizado pelos dois autores
 ├── gerador_imagens/             # núcleo Python
@@ -40,7 +40,7 @@ autor-teste-fund1-independente/
 - pasta de saída fora deste repositório.
 
 ```bash
-cd /Users/feliperosamini/autor-teste-fund1-independente
+cd /Users/feliperosa/Documents/Codex/autor-fund1-1
 uv sync --locked
 cp .env.openai.example .env.openai.local
 cp .env.grok.example .env.grok.local
@@ -68,7 +68,7 @@ Dry-run de Inglês:
 
 ```bash
 uv run gerar.py \
-  --projeto autores/autor-teste-fund1/projetos/2026/3-bimestre/unidade-03-bloco-01-autonomia-guiada-4paginas-v5.yaml \
+  --projeto autores/autor-fund1/projetos/2026/3-bimestre/unidade-03-bloco-01-autonomia-guiada-4paginas-v5.yaml \
   --dry-run
 ```
 
@@ -76,7 +76,7 @@ Dry-run de Matemática:
 
 ```bash
 uv run gerar.py \
-  --projeto autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \
+  --projeto autores/autor-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \
   --dry-run
 ```
 
@@ -84,7 +84,7 @@ Dry-run da amostra de Matemática com Grok Imagine 2:
 
 ```bash
 uv run gerar.py \
-  --projeto autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-p01-amostra-grok-v1.yaml \
+  --projeto autores/autor-mat3/projetos/2026/3-bimestre/unidades-05-06-p01-amostra-grok-v1.yaml \
   --dry-run
 ```
 
@@ -101,7 +101,7 @@ cria seis páginas sobre:
 6. polígonos e quadriláteros.
 
 Projeto:
-`autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml`.
+`autores/autor-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml`.
 
 ## Fluxo editorial
 

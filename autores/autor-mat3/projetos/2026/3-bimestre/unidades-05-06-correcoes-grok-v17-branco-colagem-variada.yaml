@@ -1,0 +1,33 @@
+projeto:
+  titulo: "Matemática EF1 — 3º ano — correções de vértice e rede do prisma — Grok Imagine 2 — v17"
+  tipo: "colecao-apostila-fund1-correcoes-2-paginas"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "autor-mat3"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P4 — Vértice simplificado — v17"
+    prompt: "autores/autor-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p04-v17-vertice-simples.md"
+    saida: "autor-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v17-branco-colagem-variada/p04-solidos-geometricos-grok-v17.jpg"
+  - nome: "P5 — Rede do prisma com cinco peças — v17"
+    prompt: "autores/autor-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p05-v17-rede-prisma.md"
+    saida: "autor-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v17-branco-colagem-variada/p05-planificacao-e-figuras-planas-grok-v17.jpg"

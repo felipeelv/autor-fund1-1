@@ -12,8 +12,8 @@ Antes de alterar código, conteúdo, prompts ou projetos:
 
 Autores disponíveis:
 
-- `autor-teste-fund1`: Inglês do Fundamental I;
-- `autor-teste-mat3`: Matemática do 3º ano do Fundamental I.
+- `autor-fund1`: Inglês do Fundamental I;
+- `autor-mat3`: Matemática do 3º ano do Fundamental I.
 
 Os projetos declaram explicitamente OpenAI `gpt-image-2` ou xAI
 `grok-imagine-image-2.0`. O repositório não admite dependências operacionais de

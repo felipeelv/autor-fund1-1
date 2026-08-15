@@ -1,0 +1,40 @@
+projeto:
+  titulo: "Inglês EF1 — 1º ano — Unidade 3 — autonomia guiada — 4 páginas — v5"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "autor-fund1"
+
+modelo:
+  provider: "openai"
+  id: "gpt-image-2"
+
+parametros_api:
+  tamanho: "2048x3072"
+  qualidade: "high"
+  formato: "png"
+  fundo: "opaque"
+  moderacao: "auto"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Cores ao nosso redor — autonomia guiada v5"
+    prompt: "autores/autor-fund1/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p01-autonomia-guiada-v5.md"
+    saida: "autor-fund1/1ano/3-bimestre/unidade-03-bloco-01-autonomia-guiada-v5/p01-cores-ao-nosso-redor-v5.png"
+
+  - nome: "P2 — Como dizer a cor — autonomia guiada v5"
+    prompt: "autores/autor-fund1/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p02-autonomia-guiada-v5.md"
+    saida: "autor-fund1/1ano/3-bimestre/unidade-03-bloco-01-autonomia-guiada-v5/p02-como-dizer-a-cor-v5.png"
+
+  - nome: "P3 — Como perguntar e responder — autonomia guiada v5"
+    prompt: "autores/autor-fund1/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p03-autonomia-guiada-v5.md"
+    saida: "autor-fund1/1ano/3-bimestre/unidade-03-bloco-01-autonomia-guiada-v5/p03-como-perguntar-e-responder-v5.png"
+
+  - nome: "P4 — Preferência e revisão — autonomia guiada v5"
+    prompt: "autores/autor-fund1/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p04-autonomia-guiada-v5.md"
+    saida: "autor-fund1/1ano/3-bimestre/unidade-03-bloco-01-autonomia-guiada-v5/p04-preferencia-e-revisao-v5.png"
