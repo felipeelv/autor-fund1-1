@@ -1,0 +1,46 @@
+projeto:
+  titulo: "Natureza e Sociedade — 3º ano — 3º bimestre — Povos indígenas v3 — páginas 2 a 6 — colagem densa — Grok Imagine 2 — v1"
+  tipo: "colecao-apostila-fund1-5-paginas"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "autor-nat3"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — Aqui moravam os Caiapós — colagem densa — v3"
+    prompt: "autores/autor-nat3/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p02-aqui-moravam-os-caiapos-v5.md"
+    saida: "autor-nat3/3ano/3-bimestre/povos-indigenas-6paginas-v3/p02-aqui-moravam-os-caiapos-grok-v3.jpg"
+
+  - nome: "P3 — A floresta era a escola — colagem densa — v1"
+    prompt: "autores/autor-nat3/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p03-a-floresta-era-a-escola-v2.md"
+    saida: "autor-nat3/3ano/3-bimestre/povos-indigenas-6paginas-v3/p03-a-floresta-era-a-escola-grok-v1.jpg"
+
+  - nome: "P4 — Sabiam tudo e não destruíram — colagem densa — v1"
+    prompt: "autores/autor-nat3/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p04-sabiam-tudo-e-nao-destruiram-v3.md"
+    saida: "autor-nat3/3ano/3-bimestre/povos-indigenas-6paginas-v3/p04-sabiam-tudo-e-nao-destruiram-grok-v1.jpg"
+
+  - nome: "P5 — Um dia na aldeia — colagem densa — v1"
+    prompt: "autores/autor-nat3/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p05-um-dia-na-aldeia-v2.md"
+    saida: "autor-nat3/3ano/3-bimestre/povos-indigenas-6paginas-v3/p05-um-dia-na-aldeia-grok-v1.jpg"
+
+  - nome: "P6 — O que aconteceu e o que fazemos agora — colagem densa — v1"
+    prompt: "autores/autor-nat3/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p06-o-que-aconteceu-e-o-que-fazemos-agora-v3.md"
+    saida: "autor-nat3/3ano/3-bimestre/povos-indigenas-6paginas-v3/p06-o-que-aconteceu-e-o-que-fazemos-agora-grok-v1.jpg"

@@ -1,0 +1,48 @@
+{
+  "author": "autor-nat3",
+  "generated_at": "2026-08-15T19:28:39.819686+00:00",
+  "image": {
+    "bytes": 1738422,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/feliperosa/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-nat3/3ano/3-bimestre/povos-indigenas-6paginas-v3/p04-sabiam-tudo-e-nao-destruiram-grok-v2.jpg",
+    "sha256": "7fc3b06ae94d2c89d3128e7fc5e8c844e2ae904e0b3e9cfbccb0d3f8eebaeb98",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosa/Documents/Codex/autor-fund1-1/autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-v3-p03-p04-grok-v2.yaml",
+  "prompt": {
+    "characters": 6833,
+    "sha256": "0cb4a5bc7f3bdbdf7b2dd331e983f1edee504e6f4c7aec208fda2f72e78933f1",
+    "source": "/Users/feliperosa/Documents/Codex/autor-fund1-1/autores/autor-nat3/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p04-sabiam-tudo-e-nao-destruiram-v4.md",
+    "words": 1052
+  },
+  "provider": "xai",
+  "request_id": "a2b75507-3625-92f2-8858-fbf95c80903a",
+  "schema_version": 1,
+  "usage": {
+    "cost_in_usd_ticks": 800000000,
+    "input_tokens": null,
+    "input_tokens_details": null,
+    "output_tokens": null,
+    "output_tokens_details": null,
+    "total_tokens": null
+  }
+}

@@ -1,0 +1,62 @@
+autor:
+  id: autor-nat3
+  nome: "Autor de Natureza e Sociedade — 3º ano · Fundamental I"
+  disciplina: "Natureza e Sociedade — 3º ano"
+  ativo: true
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Use case: scientific-educational.
+    Asset type: página vertical de apostila brasileira de Natureza e Sociedade
+    para o 3º ano do Ensino Fundamental, destinada a crianças de
+    aproximadamente 8 anos.
+
+    DIREÇÃO VISUAL ESTÁVEL: editorial collage infographic, scrapbook educativo
+    sofisticado e visual note-taking. Combinar fotografias recortadas de
+    paisagens e objetos, pinturas ou guaches documentais, pequenos relevos
+    escultóricos de papel ou argila e objetos recortados. Usar bordas rasgadas,
+    sombras leves, fita adesiva discreta, textura tátil, setas a marcador,
+    círculos, sublinhados, mapas esquemáticos e mini-ícones funcionais. Toda
+    página precisa ter pelo menos um box informativo claramente reconhecível,
+    sem criar rótulo ou texto além da lista literal. Fundo branco puro, margens
+    seguras, corredores de respiro e caminho de leitura imediato. Tipografia
+    sans-serif arredondada, grande e legível; lettering manual apenas em
+    destaques curtos. O resultado deve ser acolhedor, informativo e respeitoso,
+    sem infantilizar.
+
+    PALETA DIDÁTICA: grafite #263238 e branco #FFFFFF como estrutura; verde
+    mata #2F7D4A, azul rio #2F6FD0, amarelo sol #F6C945, terracota #C9653B,
+    vermelho urucum #C9473D e roxo #7552A3 como acentos. Evitar aparência de
+    fantasia, museu congelado ou selva genérica.
+
+    REPRESENTAÇÃO RESPONSÁVEL: povos indígenas são diversos e contemporâneos.
+    Não misturar elementos de povos diferentes nem usar cocar genérico, pintura
+    corporal inventada, nudez, caricatura, feições racializadas, aldeia
+    fantasiosa ou ideia de povo “primitivo”. Não apresentar uma prática como
+    comum a todos. Quando não houver referência cultural específica, preferir
+    cenas cotidianas sem adereços cerimoniais e elementos de território,
+    memória, aprendizagem e participação social. Fotografias de pessoas só
+    podem representar períodos e contextos compatíveis; cenas anteriores à
+    fotografia devem usar pintura ou desenho documental. Todo texto visível
+    deve ser um dos trechos literais do prompt da página.
+
+  prompt_sufixo: |-
+    TRAVAS FINAIS: uma única página A4 vertical, proporção 210:297, mostrada
+    inteira de canto a canto; fundo opaco; margem branca contínua equivalente a
+    12 mm nos quatro lados; nenhum elemento pode tocar a borda, sair do quadro
+    ou ser cortado. Composição de visual note-taking rica, organizada e pronta
+    para apostila. Renderizar cada
+    texto literal exatamente uma vez, preservando ortografia, acentos, números
+    e pontuação. Não criar povo, costume, mapa, fronteira, dado ou citação que
+    não esteja solicitado. Não usar logotipo, marca, QR code, assinatura,
+    watermark, número de página, legenda automática, texto aleatório, letra
+    deformada, serifa, Comic Sans, mascote, personagem falante, neon, fundo
+    escuro ou fotografia documental simulada.
+
+  parametros_api:
+    qualidade: "high"
+    tamanho: "2160x3056"
+    formato: "png"
+    fundo: "opaque"
