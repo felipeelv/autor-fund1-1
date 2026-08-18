@@ -88,17 +88,18 @@ A raiz de saída configurada em `config.local.yaml` é compartilhada com
 `~/gerador-de-imagens`, o gerador do 4º ano em diante. Por isso o ID de um autor
 daqui nunca pode colidir com um ID de lá.
 
-As imagens de Natureza produzidas em 15/08 estão sob `autor-nat3/` no Drive e
-precisam ser renomeadas para `natureza-e-sociedade/` em `_revisao` e em
-`aprovadas`, para acompanhar o ID do repositório. Enquanto isso não for feito,
-uma nova geração grava em `natureza-e-sociedade/` e o histórico fica em duas
-pastas.
+As imagens de Natureza produzidas em 15/08 estavam sob `autor-nat3/` no Drive e
+foram renomeadas em 18/08 para `natureza-e-sociedade/`, acompanhando o ID do
+repositório: 50 arquivos em `_revisao` e 6 em `aprovadas`. Sem esse rename, uma
+nova geração gravaria em `natureza-e-sociedade/` e o histórico ficaria partido
+em duas pastas.
 
 ## A pasta antiga
 
-`~/Documents/Codex/autor-fund1-1` deve ser arquivada. Todo o seu conteúdo
-commitado está aqui: o `HEAD` dela era `edcb040`, que faz parte deste histórico.
-Ela ficava
+`~/Documents/Codex/autor-fund1-1` foi arquivada em 18/08 como
+`autor-fund1-1_ARQUIVADO-2026-08-18`, com um `LEIA-ME-ARQUIVADO.md` dentro. Todo
+o seu conteúdo commitado está aqui: o `HEAD` dela era `edcb040`, que faz parte
+deste histórico. Ela ficava
 dentro de `~/Documents`, que sincroniza com o iCloud, e por isso acumulou pastas
 duplicadas de conflito (`anos 2`, `projetos 2`, `registros 2`) e ficou lenta para
 operações de git.
