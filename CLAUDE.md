@@ -126,7 +126,17 @@ produção ou prévia. Só código e artefato textual.
   renderizado exatamente uma vez;
 - padrão de escrita: `compartilhado/direcao-editorial/PADRAO-GERAL-DE-ESCRITA.md`;
 - ortografia: `compartilhado/direcao-editorial/CONVENCOES.md`;
+- derivação entre anos: `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`;
 - conferência: `compartilhado/REVISAO-PEDAGOGICA.md`.
+
+Cada autor cobre os três anos com estrutura própria por ano — `anos/<n>ano/` com
+`REGRAS.md` e `ORGANIZACAO.md`, mais `direcao/PADRAO-VISUAL-<N>ANO.md`. O ano que
+já produziu página aprovada é a **referência**; os demais derivam dele, e o ano de
+referência não é o mesmo em todos os autores. Todo arquivo derivado diz, no topo,
+de onde veio e que ainda não tem fonte.
+
+Derivar não afrouxa trava: as regras invioláveis valem igualmente do 1º ao 3º
+ano. Simplificação que torna a informação falsa é erro, não adaptação.
 
 Conferência obrigatória por disciplina:
 

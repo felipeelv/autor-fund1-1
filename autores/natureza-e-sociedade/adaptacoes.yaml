@@ -1,6 +1,24 @@
 formato: apostila-fund1
 
 anos:
+  1ano:
+    publico: "crianças de aproximadamente 6 anos"
+    texto: >-
+      uma ideia por bloco, lida pelo professor; o nome vem depois da observação
+    visual: >-
+      o ser vivo ou o elemento da paisagem aparece grande, inteiro e
+      reconhecível; 2 a 3 núcleos por página
+    derivacao: "derivado do 3º ano; ajustar quando a fonte do 1º ano chegar"
+
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: >-
+      frase curta completa; comparação entre dois casos concretos do lugar de
+      vivência
+    visual: >-
+      os dois casos lado a lado, na mesma escala; 3 a 4 núcleos por página
+    derivacao: "derivado do 3º ano; ajustar quando a fonte do 2º ano chegar"
+
   3ano:
     publico: "crianças de aproximadamente 8 anos"
     texto: >-

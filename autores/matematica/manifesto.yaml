@@ -34,7 +34,10 @@ estrutura_por_ano:
 
 direcao:
   autor: "direcao/AUTOR.md"
-  padrao_visual: "direcao/PADRAO-VISUAL-3ANO.md"
+  padrao_visual:
+    1ano: "direcao/PADRAO-VISUAL-1ANO.md"
+    2ano: "direcao/PADRAO-VISUAL-2ANO.md"
+    3ano: "direcao/PADRAO-VISUAL-3ANO.md"
   memoria: "direcao/MEMORIA.md"
 
 producao:

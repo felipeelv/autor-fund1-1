@@ -1,6 +1,26 @@
 formato: apostila-fund1
 
 anos:
+  1ano:
+    publico: "crianças de aproximadamente 6 anos"
+    texto: >-
+      uma ideia por bloco, lida pelo professor; o número aparece sempre junto da
+      quantidade que ele representa
+    visual: >-
+      quantidade em objeto concreto e contável; o símbolo nunca aparece sozinho;
+      2 a 3 núcleos por página
+    derivacao: "derivado do 3º ano; ajustar quando a fonte do 1º ano chegar"
+
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: >-
+      frase curta completa; o nome da operação entra depois da situação que a
+      motiva
+    visual: >-
+      agrupamentos visíveis; o símbolo entra acompanhado do que representa;
+      3 a 4 núcleos por página
+    derivacao: "derivado do 3º ano; ajustar quando a fonte do 2º ano chegar"
+
   3ano:
     publico: "crianças de aproximadamente 8 anos"
     texto: "frases curtas, exemplos concretos, operações em etapas e tipografia grande"

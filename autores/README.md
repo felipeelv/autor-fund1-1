@@ -19,6 +19,28 @@ autores/<id>/
 `manifesto.yaml`, sob `producao`, e não precisam de diretório vazio nem de
 `.gitkeep`. Crie a pasta somente quando ela receber o primeiro arquivo real.
 
+## Estrutura por ano
+
+Todo autor cobre o 1º, o 2º e o 3º ano, com estrutura própria em cada um:
+
+```text
+autores/<id>/
+├── anos/1ano/REGRAS.md + ORGANIZACAO.md
+├── anos/2ano/REGRAS.md + ORGANIZACAO.md
+├── anos/3ano/REGRAS.md + ORGANIZACAO.md
+└── direcao/PADRAO-VISUAL-1ANO.md, -2ANO.md, -3ANO.md
+```
+
+O ano que já produziu página aprovada é a **referência** do autor; os demais
+derivam dele conforme
+`compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. A referência não é a
+mesma em todos: em `ingles` é o 1º ano, em `ingles-atividades`, `matematica` e
+`natureza-e-sociedade` é o 3º, e `portugues` ainda não tem nenhuma.
+
+Arquivos derivados dizem no topo de onde vieram e que não têm fonte. Ao receber
+a fonte de um ano, revise o `REGRAS.md` derivado contra o que ela pede e tire o
+ano de `manifesto.anos_planejados`.
+
 ## Autores ativos
 
 Cada disciplina tem um par: um autor de **conteúdo**, que apresenta e explica, e
