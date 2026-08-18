@@ -8,7 +8,6 @@ import yaml
 
 from .authors import load_author
 from .config import (
-    PROVIDERS,
     ConfigError,
     GenerationOptions,
     normalize_output_path,
@@ -70,52 +69,6 @@ def _mapping(value: Any, label: str) -> Mapping[str, Any]:
     return value
 
 
-def _validate_four_page_series(
-    project_info: Mapping[str, Any],
-    images: list[Any],
-    author_id: Any,
-) -> None:
-    if str(project_info.get("tipo") or "") != "serie-editorial-4-paginas":
-        return
-    if str(author_id or "") != "estudos-sociais":
-        raise ConfigError(
-            "serie-editorial-4-paginas exige projeto.autor=estudos-sociais."
-        )
-    if len(images) != 4:
-        raise ConfigError(
-            "A série editorial de Estudos Sociais exige exatamente 4 imagens."
-        )
-
-    expected_parent: Path | None = None
-    valid_years = {f"{year}ano" for year in range(4, 10)}
-    for index, item in enumerate(images, start=1):
-        if not isinstance(item, dict) or not item.get("saida"):
-            raise ConfigError(f"imagens[{index}] precisa de saida.")
-        output = Path(str(item["saida"]))
-        if output.is_absolute() or ".." in output.parts or len(output.parts) != 4:
-            raise ConfigError(
-                "Saídas da série precisam seguir "
-                "estudos-sociais/<ano>/capitulo-<numero>-<tema>/pN-<funcao>.png."
-            )
-        discipline, year, chapter, filename = output.parts
-        if (
-            discipline != "estudos-sociais"
-            or year not in valid_years
-            or not chapter.startswith("capitulo-")
-            or not filename.startswith(f"p{index}-")
-        ):
-            raise ConfigError(
-                "Saídas da série precisam seguir a disciplina, o ano, o capítulo "
-                "e a ordem p1, p2, p3, p4."
-            )
-        if expected_parent is None:
-            expected_parent = output.parent
-        elif output.parent != expected_parent:
-            raise ConfigError(
-                "As quatro páginas da série precisam usar a mesma pasta de capítulo."
-            )
-
-
 def load_project(
     root: Path,
     project_path: Path,
@@ -136,8 +89,8 @@ def load_project(
     project_info = _mapping(raw.get("projeto"), "projeto")
     model_info = _mapping(raw.get("modelo"), "modelo")
     provider = str(model_info.get("provider", "openai")).lower()
-    if provider not in PROVIDERS:
-        raise ConfigError("Provider deve ser 'openai', 'xai' ou 'openrouter'.")
+    if provider not in {"openai", "xai"}:
+        raise ConfigError("Provider deve ser 'openai' ou 'xai'.")
 
     global_parameters = dict(_mapping(raw.get("parametros_api"), "parametros_api"))
     if model_info.get("id"):
@@ -156,7 +109,6 @@ def load_project(
     images = raw.get("imagens")
     if not isinstance(images, list) or not images:
         raise ConfigError("O projeto precisa declarar ao menos um item em imagens.")
-    _validate_four_page_series(project_info, images, global_author)
 
     tasks: list[ProjectTask] = []
     for index, item in enumerate(images, start=1):
@@ -183,9 +135,9 @@ def load_project(
         )
         options = options_from_mapping(overrides, options)
         item_provider = str(item.get("provider") or provider).lower()
-        if item_provider not in PROVIDERS:
+        if item_provider not in {"openai", "xai"}:
             raise ConfigError(
-                f"imagens[{index}].provider deve ser 'openai', 'xai' ou 'openrouter'."
+                f"imagens[{index}].provider deve ser 'openai' ou 'xai'."
             )
         if item_provider == "xai":
             if options.stream:
@@ -203,26 +155,6 @@ def load_project(
             if options.aspect_ratio is None or options.resolution is None:
                 raise ConfigError(
                     "O projeto xAI exige proporcao e resolucao em parametros_api."
-                )
-        if item_provider == "openrouter":
-            if options.stream:
-                raise ConfigError(
-                    "O provider openrouter não usa streaming neste gerador."
-                )
-            if options.output_format != "png":
-                raise ConfigError("O projeto OpenRouter deve usar formato PNG.")
-            if options.size != "auto":
-                raise ConfigError(
-                    "O projeto OpenRouter usa tamanho=auto com proporcao e resolucao."
-                )
-            if options.aspect_ratio is None or options.resolution is None:
-                raise ConfigError(
-                    "O projeto OpenRouter exige proporcao e resolucao "
-                    "em parametros_api."
-                )
-            if options.n > 6:
-                raise ConfigError(
-                    "O provider openrouter aceita no máximo 6 imagens por requisição."
                 )
         output_path = normalize_output_path(
             _resolve_output(

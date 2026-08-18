@@ -14,8 +14,6 @@ from PIL import Image
 from gerador_imagens.config import GenerationOptions
 from gerador_imagens.core import (
     GenerationError,
-    _request_kwargs,
-    check_authentication,
     create_pdf,
     generate_image,
     load_api_key,
@@ -62,7 +60,7 @@ class CoreTests(unittest.TestCase):
             with patch.dict("os.environ", {}, clear=True):
                 with self.assertRaisesRegex(
                     GenerationError,
-                    r"\.env",
+                    r"\.env\.openai\.local",
                 ):
                     load_api_key(root)
 
@@ -75,25 +73,6 @@ class CoreTests(unittest.TestCase):
             )
             with patch.dict("os.environ", {}, clear=True):
                 self.assertEqual(load_api_key(root, "xai"), "xai-test-local")
-
-    def test_keys_are_loaded_from_shared_env(self) -> None:
-        with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
-            (root / ".env").write_text(
-                "OPENAI_API_KEY=sk-shared\n"
-                "XAI_API_KEY=xai-shared\n"
-                "OPENROUTER_API_KEY=sk-or-shared\n",
-                encoding="utf-8",
-            )
-            with patch.dict("os.environ", {}, clear=True):
-                self.assertEqual(load_api_key(root), "sk-shared")
-            with patch.dict("os.environ", {}, clear=True):
-                self.assertEqual(load_api_key(root, "xai"), "xai-shared")
-            with patch.dict("os.environ", {}, clear=True):
-                self.assertEqual(
-                    load_api_key(root, "openrouter"),
-                    "sk-or-shared",
-                )
 
     def test_valid_image_is_saved(self) -> None:
         options = GenerationOptions(size="1024x1024")
@@ -231,71 +210,6 @@ class CoreTests(unittest.TestCase):
             )
         self.assertEqual(metadata["image"]["source_format"], "png")
         self.assertTrue(metadata["image"]["transcoded"])
-
-    def test_openrouter_generation_uses_image_api_contract(self) -> None:
-        response = SimpleNamespace(
-            data=[SimpleNamespace(b64_json=png_base64((1360, 2048)))],
-            usage={"cost": 0.075},
-            _request_id="req_or_test",
-        )
-        images = FakeImages(response)
-        client = SimpleNamespace(images=images)
-        options = GenerationOptions(
-            model="qwen/qwen-image-3-pro",
-            size="auto",
-            quality="auto",
-            output_format="png",
-            aspect_ratio="2:3",
-            resolution="2k",
-        )
-        with tempfile.TemporaryDirectory() as directory:
-            output = Path(directory) / "image.png"
-            result = generate_image(
-                client=client,
-                prompt="Página pedagógica de teste.",
-                output=output,
-                options=options,
-                provider="openrouter",
-            )
-            metadata = json.loads(
-                (Path(directory) / "image.metadata.json").read_text(
-                    encoding="utf-8"
-                )
-            )
-        self.assertEqual(result.output_paths, [output])
-        self.assertEqual(images.kwargs["model"], "qwen/qwen-image-3-pro")
-        self.assertEqual(images.kwargs["resolution"], "2K")
-        self.assertEqual(images.kwargs["aspect_ratio"], "2:3")
-        self.assertEqual(images.kwargs["output_format"], "png")
-        self.assertNotIn("quality", images.kwargs)
-        self.assertNotIn("size", images.kwargs)
-        self.assertEqual(metadata["provider"], "openrouter")
-        self.assertEqual(metadata["model"], "qwen/qwen-image-3-pro")
-
-    def test_openrouter_request_kwargs_uppercase_resolution(self) -> None:
-        options = GenerationOptions(
-            model="qwen/qwen-image-3-pro",
-            size="auto",
-            output_format="png",
-            aspect_ratio="2:3",
-            resolution="2k",
-        )
-        kwargs = _request_kwargs("prompt", options, "openrouter")
-        self.assertEqual(kwargs["resolution"], "2K")
-        self.assertEqual(kwargs["n"], 1)
-
-    def test_openrouter_check_auth_uses_image_model_endpoint(self) -> None:
-        client = SimpleNamespace(
-            check_image_model=lambda model: model,
-        )
-        self.assertEqual(
-            check_authentication(
-                client,
-                "qwen/qwen-image-3-pro",
-                "openrouter",
-            ),
-            "qwen/qwen-image-3-pro",
-        )
 
     def test_openai_format_mismatch_remains_rejected(self) -> None:
         response = SimpleNamespace(

@@ -1,0 +1,47 @@
+formato: apostila-fund1
+
+anos:
+  1ano:
+    publico: "crianças de aproximadamente 6 anos"
+    texto: >-
+      uma ideia por bloco, lida pelo professor; o nome vem depois da observação
+    visual: >-
+      o ser vivo ou o elemento da paisagem aparece grande, inteiro e
+      reconhecível; 2 a 3 núcleos por página
+    derivacao: "derivado do 3º ano; ajustar quando a fonte do 1º ano chegar"
+
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: >-
+      frase curta completa; comparação entre dois casos concretos do lugar de
+      vivência
+    visual: >-
+      os dois casos lado a lado, na mesma escala; 3 a 4 núcleos por página
+    derivacao: "derivado do 3º ano; ajustar quando a fonte do 2º ano chegar"
+
+  3ano:
+    publico: "crianças de aproximadamente 8 anos"
+    texto: >-
+      frases curtas e afirmativas, ordem direta, vocabulário concreto, uma ideia
+      por bloco; o nome técnico e o termo histórico entram explicados e depois da
+      observação, nunca antes
+    visual: >-
+      fundo branco puro; infográfico editorial contemporâneo; editorial collage
+      infographic; scrapbook educativo sofisticado; visual note-taking; colagem
+      densa em camadas de papéis sobrepostos; cinco naturezas de imagem por
+      página (fotografia recortada, pintura documental, textura escultórica lisa,
+      objeto recortado e anotação manuscrita); capa de título monumental e
+      páginas internas de título discreto; ao menos um box informativo por
+      página; mapas apenas esquemáticos e sem fronteiras inventadas
+    natureza: >-
+      preservar nomes de seres vivos, partes do corpo, ciclos, elementos da
+      paisagem e relações ecológicas exatamente como a fonte descreve; anatomia
+      e comportamento reais, sem antropomorfizar
+    sociedade: >-
+      preservar nomes de lugares, períodos, ofícios e práticas culturais;
+      distinguir povos, tempos e territórios; evitar generalizações; representar
+      famílias, comunidades e povos com diversidade real e sem estereótipo,
+      mostrando a presença indígena no passado e no presente
+    revisao: >-
+      conferir fatos, datas, nomes, dados, fontes e representações culturais
+      antes da geração; todo dado numérico com ano e instituição de origem

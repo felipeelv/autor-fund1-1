@@ -1,0 +1,49 @@
+{
+  "author": "autor-teste-fund1",
+  "generated_at": "2026-08-13T19:10:25.267281+00:00",
+  "image": {
+    "bytes": 7048441,
+    "format": "png",
+    "height": 3072,
+    "path": "/Users/feliperosamini/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-teste-fund1/3ano/2-bimestre/unidade-02-homework-v2/p02-sports-and-can-atividades-6-a-9-v2.png",
+    "sha256": "26b41adb88770abb8bfd8346d1067a98a49db7440151b686e146b5d7819732ea",
+    "width": 2048
+  },
+  "model": "gpt-image-2",
+  "parameters": {
+    "background": "opaque",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "png",
+    "partial_images": 0,
+    "quality": "high",
+    "quantity": 1,
+    "size": "2048x3072",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosamini/gerador-de-imagens/autores/autor-teste-fund1/projetos/2026/2-bimestre/unidade-02-homework-2paginas-v2.yaml",
+  "prompt": {
+    "characters": 8580,
+    "sha256": "6a3641a96b8b238bf2c962643e0774e5d364eb9114737b6c58c51993ca4d8651",
+    "source": "/Users/feliperosamini/gerador-de-imagens/autores/autor-teste-fund1/anos/3ano/prompts/2026/2-bimestre/unidade-02-homework-p02-sports-and-can-v2.md",
+    "words": 1416
+  },
+  "provider": "openai",
+  "request_id": "req_057b9cf0522241fd94236e00b1413ee0",
+  "schema_version": 1,
+  "usage": {
+    "input_tokens": 2271,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 2271
+    },
+    "output_tokens": 12736,
+    "output_tokens_details": {
+      "image_tokens": 12736,
+      "text_tokens": 0
+    },
+    "total_tokens": 15007
+  }
+}

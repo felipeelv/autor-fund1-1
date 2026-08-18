@@ -10,13 +10,6 @@ class ConfigError(ValueError):
     """Configuração inválida informada antes de qualquer chamada à API."""
 
 
-PROVIDERS = ("openai", "xai", "openrouter")
-DEFAULT_MODELS: dict[str, str] = {
-    "openai": "gpt-image-2",
-    "xai": "grok-imagine-image-2.0",
-    "openrouter": "qwen/qwen-image-3-pro",
-}
-
 PRESETS: dict[str, str] = {
     "quadrado": "1024x1024",
     "retrato": "1024x1536",
@@ -108,24 +101,13 @@ class GenerationOptions:
             str(self.aspect_ratio),
         ):
             raise ConfigError(f"Proporção inválida: {self.aspect_ratio}")
-        resolution = normalize_resolution(self.resolution)
-        updates: dict[str, Any] = {}
+        if self.resolution is not None and self.resolution not in {"1k", "2k"}:
+            raise ConfigError("Resolução do provedor deve ser '1k' ou '2k'.")
         if output_format != self.output_format:
-            updates["output_format"] = output_format
-        if resolution != self.resolution:
-            updates["resolution"] = resolution
-        if updates:
-            return GenerationOptions(**{**asdict(self), **updates})
+            return GenerationOptions(
+                **{**asdict(self), "output_format": output_format}
+            )
         return self
-
-
-def normalize_resolution(value: str | None) -> str | None:
-    if value is None:
-        return None
-    normalized = str(value).strip().lower()
-    if normalized not in {"1k", "2k"}:
-        raise ConfigError("Resolução do provedor deve ser '1k' ou '2k'.")
-    return normalized
 
 
 def normalize_format(value: str) -> str:

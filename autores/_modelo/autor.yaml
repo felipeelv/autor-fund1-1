@@ -1,0 +1,38 @@
+# Modelo para iniciar um autor novo.
+#
+# Copie para autores/<id>/autor.yaml, troque o id pelo nome da pasta e mantenha
+# `ativo: false` até a direção da disciplina estar escrita e revisada. O
+# gerador ignora pastas que começam com "_", então este arquivo nunca é
+# carregado como autor real.
+#
+# Os parâmetros abaixo são a base do provedor padrão do repositório, xAI
+# `grok-imagine-image-2.0`. Cada projeto YAML pode sobrescrevê-los, e projetos
+# OpenAI precisam declarar os seus próprios (`formato: png`, `tamanho`
+# explícito, `qualidade` até `high`).
+
+autor:
+  id: "_modelo"
+  nome: "Nome do autor"
+  disciplina: "Disciplina"
+  ativo: false
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Direção pedagógica e visual estável deste autor. Descreve o público, a
+    linguagem visual, a paleta e o que precisa corresponder literalmente ao
+    conteúdo pedido.
+
+  prompt_sufixo: |-
+    Travas finais da disciplina. Repete o que nunca pode aparecer na página e
+    o que precisa ser renderizado exatamente uma vez.
+
+  parametros_api:
+    tamanho: "auto"
+    qualidade: "medium"
+    formato: "jpeg"
+    fundo: "auto"
+    moderacao: "auto"
+    proporcao: "2:3"
+    resolucao: "2k"

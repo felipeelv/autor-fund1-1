@@ -1,19 +1,58 @@
-provider: openai
-modelo: gpt-image-2
+# Padrões técnicos por provedor.
+#
+# Estes valores são referência de documentação. Quem decide de fato é o
+# `autor.yaml` (base) e o projeto YAML (sobrescrita). Nenhum projeto herda
+# provedor daqui: cada um declara `modelo.provider` e `modelo.id`
+# explicitamente.
 
-rascunho:
-  tamanho: "1024x1536"
-  qualidade: "low"
-  formato: "png"
-  fundo: "opaque"
-  moderacao: "auto"
+padrao: xai
 
-producao:
-  tamanho: "1024x1536"
-  qualidade: "high"
-  formato: "png"
-  fundo: "opaque"
-  moderacao: "auto"
+xai:
+  provider: xai
+  modelo: grok-imagine-image-2.0
+
+  rascunho:
+    tamanho: "auto"
+    qualidade: "low"
+    formato: "jpeg"
+    fundo: "auto"
+    moderacao: "auto"
+    proporcao: "2:3"
+    resolucao: "1k"
+
+  producao:
+    tamanho: "auto"
+    qualidade: "medium"
+    formato: "jpeg"
+    fundo: "auto"
+    moderacao: "auto"
+    proporcao: "2:3"
+    resolucao: "2k"
+
+  restricoes:
+    - "qualidade aceita somente 'low' ou 'medium'"
+    - "formato precisa ser JPEG"
+    - "tamanho precisa ser 'auto', com proporcao e resolucao explícitas"
+    - "resolucao aceita somente '1k' ou '2k'"
+    - "streaming não é suportado"
+
+openai:
+  provider: openai
+  modelo: gpt-image-2
+
+  rascunho:
+    tamanho: "1024x1536"
+    qualidade: "low"
+    formato: "png"
+    fundo: "opaque"
+    moderacao: "auto"
+
+  producao:
+    tamanho: "1024x1536"
+    qualidade: "high"
+    formato: "png"
+    fundo: "opaque"
+    moderacao: "auto"
 
 impressao_a4:
   observacao: >-

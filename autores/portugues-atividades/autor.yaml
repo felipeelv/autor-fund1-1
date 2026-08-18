@@ -1,0 +1,83 @@
+autor:
+  id: portugues-atividades
+  nome: "Português — atividades — Fundamental I"
+  disciplina: "Português — atividades — Fundamental I"
+  ativo: true
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Use case: scientific-educational.
+    Asset type: página vertical de atividades de Língua Portuguesa de apostila
+    brasileira do Ensino Fundamental I, para o aluno responder. A página não
+    apresenta conteúdo novo: ela pede que a criança trace, complete, leia e
+    escreva.
+
+    DIREÇÃO VISUAL ESTÁVEL: mistura de colagem editorial contemporânea com
+    sketchnote profissional e visual note-taking, na mesma família visual do
+    autor de conteúdo. Papéis recortados, rasgados e sobrepostos, fita adesiva,
+    post-its, pintura guache, ilustrações semirrealistas de contorno orgânico e
+    textura tátil discreta, junto de setas a marcador, círculos, sublinhados e
+    conectores. Fundo branco puro, com o branco aparecendo como corredor entre
+    os recortes; sem tom creme, sem textura geral, sem grade e sem pontilhado
+    contínuo cobrindo a página. Tipografia sans-serif arredondada, grande e
+    muito legível.
+
+    TRAVA TIPOGRÁFICA DA ALFABETIZAÇÃO: a letra é conteúdo, não decoração. Cada
+    letra impressa aparece com desenho correto, completo e reconhecível, no tipo
+    pedido — caixa alta ou minúscula de imprensa —, sem deformação, sem letra
+    espelhada, sem glifo inventado e sem misturar tipos dentro da mesma palavra.
+    Acento, cedilha e til inteiros e sobre a letra certa.
+
+    ESTRUTURA DE ATIVIDADE: cada atividade recebe número e enunciado próprios,
+    exatamente como a fonte os escreve, e um espaço de escrita real — pauta,
+    guia pontilhada de traçado, lacuna dentro da palavra, linha de frase ou
+    quadro de desenho. O espaço de escrita é parte do conteúdo da página, nunca
+    sobra de layout, e é dimensionado pela idade: quanto mais nova a criança,
+    mais alta a pauta e menos linhas por página.
+
+    PALETA DIDÁTICA: grafite #263238 sobre branco puro #FFFFFF como estrutura;
+    vermelho #E94B3C para alertas e exceções, azul #2F6FD0 para conceitos,
+    amarelo #F6C945 para destaques e sílaba tônica, verde #43A66B para
+    verificações, laranja #F28C32 para agrupamentos e famílias de palavras e
+    roxo #8B5FBF para conexões e pontuação. Uma cor guarda sempre o mesmo papel
+    dentro da página.
+
+    Representar crianças brasileiras diversas. A imagem dá a pista do sentido
+    sem entregar a resposta e sem invadir o espaço de escrita. Todo texto
+    visível precisa ser um dos trechos literais do prompt da página.
+
+  prompt_sufixo: |-
+    TRAVAS FINAIS: uma única página vertical 2:3; fundo opaco; composição
+    organizada e pronta para apostila. Renderizar cada texto literal exatamente
+    uma vez, com a ortografia e a acentuação da norma brasileira vigente.
+
+    TRAVA PRINCIPAL DA PÁGINA DE ATIVIDADE: **nada pode aparecer respondido**.
+    Nenhuma palavra escrita na pauta, nenhuma lacuna completada, nenhuma letra
+    traçada por cima do pontilhado, nenhuma alternativa assinalada, nenhuma
+    ligação já feita, nenhum quadro de desenho com desenho dentro. Toda linha de
+    escrita fica vazia e visível.
+
+    O pontilhado de traçado é a guia da letra a ser escrita e permanece
+    pontilhado: nunca aparece reforçado, preenchido ou convertido em letra
+    sólida.
+
+    Não criar, cortar, reescrever, reordenar nem renumerar atividade. Não trocar
+    palavra por sinônimo, não corrigir nem modernizar a grafia da fonte, não
+    deformar nem espelhar letra e não misturar caixa alta e minúscula dentro da
+    mesma palavra.
+
+    Não usar logotipo, marca, QR code, assinatura, watermark, número de página,
+    legenda automática, texto aleatório, letra deformada, letra espelhada,
+    serifas, Comic Sans, 3D decorativo, estética de filme infantil, mascote,
+    personagem falante, gradientes neon, fundo escuro ou fundo creme.
+
+  parametros_api:
+    tamanho: "auto"
+    qualidade: "medium"
+    formato: "jpeg"
+    fundo: "auto"
+    moderacao: "auto"
+    proporcao: "2:3"
+    resolucao: "2k"

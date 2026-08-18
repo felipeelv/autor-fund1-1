@@ -1,0 +1,50 @@
+schema: 1
+
+disciplina:
+  id: matematica
+  nome: "Matemática — 3º ano"
+  estado: ativo
+  escopo: "páginas de apostila de Matemática para o 3º ano do Fundamental I"
+  modelo_imagem: "gpt-image-2"
+  modelos_imagem_autorizados:
+    - "gpt-image-2"
+    - "grok-imagine-image-2.0"
+  formato_padrao: "apostila-fund1"
+
+configuracao:
+  autor: "autor.yaml"
+  adaptacoes: "adaptacoes.yaml"
+  kit: null
+
+fonte_operacional:
+  tipo: "prompt versionado interno"
+  caminho: "anos/<ano>/prompts/<ano-letivo>/<bimestre>/<arquivo>.md"
+  selecao: "projeto YAML ou argumento --prompt da CLI"
+  dependencia_externa: false
+
+fonte_conteudo:
+  tipo: "fonte textual versionada interna"
+  caminho: "anos/<ano>/fontes/<periodo>/<arquivo>.md"
+  dependencia_externa: false
+
+estrutura_por_ano:
+  fontes: "anos/<ano>/fontes/2026-2-semestre"
+  conteudos: "anos/<ano>/conteudos/<ano-letivo>/<bimestre>"
+  prompts: "anos/<ano>/prompts/<ano-letivo>/<bimestre>"
+
+direcao:
+  autor: "direcao/AUTOR.md"
+  padrao_visual:
+    1ano: "direcao/PADRAO-VISUAL-1ANO.md"
+    2ano: "direcao/PADRAO-VISUAL-2ANO.md"
+    3ano: "direcao/PADRAO-VISUAL-3ANO.md"
+  memoria: "direcao/MEMORIA.md"
+
+producao:
+  projetos: "projetos"
+  registros: "registros"
+  revisao_externa: "_revisao/matematica/<ano>/<bimestre>/<unidade>"
+  aprovadas_externa: "aprovadas/matematica/<ano>/<bimestre>/<unidade>"
+
+anos: [1ano, 2ano, 3ano]
+anos_planejados: [1ano, 2ano]

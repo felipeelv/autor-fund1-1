@@ -1,0 +1,48 @@
+{
+  "author": "autor-teste-mat3",
+  "generated_at": "2026-08-14T20:45:10.552882+00:00",
+  "image": {
+    "bytes": 1372580,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/feliperosamini/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-teste-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v15-branco-colagem-variada/p06-poligonos-e-quadrilateros-grok-v15.jpg",
+    "sha256": "e1f10887e1cfde198c03f577d70022370b05c9b375fc9cfcfda22f40024af813",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosamini/autor-teste-fund1-independente/autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-correcoes-grok-v15-branco-colagem-variada.yaml",
+  "prompt": {
+    "characters": 5382,
+    "sha256": "a87eabe1d007f0cf428f53d8f09fa4d2b4ac2f4749da1a51a826f45f41826800",
+    "source": "/Users/feliperosamini/autor-teste-fund1-independente/autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p06-v15-correcao-marcacoes.md",
+    "words": 789
+  },
+  "provider": "xai",
+  "request_id": "3dc82a48-cb4f-9636-b281-14783d4c5626",
+  "schema_version": 1,
+  "usage": {
+    "cost_in_usd_ticks": 800000000,
+    "input_tokens": null,
+    "input_tokens_details": null,
+    "output_tokens": null,
+    "output_tokens_details": null,
+    "total_tokens": null
+  }
+}

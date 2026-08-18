@@ -1,0 +1,46 @@
+projeto:
+  titulo: "Matemática EF1 — 3º ano — páginas 2 a 6 — correção visual didática — Grok Imagine 2 — v3"
+  tipo: "colecao-apostila-fund1-5-paginas"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — Verificar e interpretar o resto — correção visual — Grok Imagine 2 — v3"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p02-verificar-e-interpretar-o-resto-v3-correcao-visual.md"
+    saida: "matematica/3ano/3-bimestre/unidades-05-06-p02-p06-grok-v3-correcao-visual/p02-verificar-e-interpretar-o-resto-grok-v3-correcao-visual.jpg"
+
+  - nome: "P3 — As quatro operações — correção visual — Grok Imagine 2 — v3"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p03-as-quatro-operacoes-v3-correcao-visual.md"
+    saida: "matematica/3ano/3-bimestre/unidades-05-06-p02-p06-grok-v3-correcao-visual/p03-as-quatro-operacoes-grok-v3-correcao-visual.jpg"
+
+  - nome: "P4 — Sólidos geométricos — correção visual — Grok Imagine 2 — v3"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p04-solidos-geometricos-v3-correcao-visual.md"
+    saida: "matematica/3ano/3-bimestre/unidades-05-06-p02-p06-grok-v3-correcao-visual/p04-solidos-geometricos-grok-v3-correcao-visual.jpg"
+
+  - nome: "P5 — Planificação 3D e 2D — correção visual — Grok Imagine 2 — v3"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p05-planificacao-3d-e-2d-v3-correcao-visual.md"
+    saida: "matematica/3ano/3-bimestre/unidades-05-06-p02-p06-grok-v3-correcao-visual/p05-planificacao-3d-e-2d-grok-v3-correcao-visual.jpg"
+
+  - nome: "P6 — Polígonos e quadriláteros — correção visual — Grok Imagine 2 — v3"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p06-poligonos-e-quadrilateros-v3-correcao-visual.md"
+    saida: "matematica/3ano/3-bimestre/unidades-05-06-p02-p06-grok-v3-correcao-visual/p06-poligonos-e-quadrilateros-grok-v3-correcao-visual.jpg"

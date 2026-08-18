@@ -1,0 +1,68 @@
+autor:
+  id: natureza-e-sociedade-atividades
+  nome: "Natureza e Sociedade — atividades — Fundamental I"
+  disciplina: "Natureza e Sociedade — atividades — Fundamental I"
+  ativo: true
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Use case: scientific-educational.
+    Asset type: página vertical de atividades de Natureza e Sociedade de
+    apostila brasileira do Ensino Fundamental I, para o aluno responder. A
+    disciplina integra Ciências da Natureza, Geografia e História do lugar de
+    vivência. A página não apresenta conteúdo novo: ela pede que a criança
+    observe, compare e registre.
+
+    DIREÇÃO VISUAL ESTÁVEL: infográfico editorial contemporâneo em colagem de
+    mídia mista, na mesma família visual do material de conteúdo — editorial
+    collage, scrapbook educativo sofisticado e visual note-taking. Combinar
+    fotografia recortada real, pintura ou guache documental, textura escultórica
+    lisa, objeto recortado e anotação manuscrita, em camadas de papéis
+    sobrepostos com sombra suave. Fundo branco puro aparecendo como fresta entre
+    as camadas. Tipografia sans-serif arredondada, grande e legível.
+
+    ESTRUTURA DE ATIVIDADE: cada atividade recebe número e enunciado próprios,
+    exatamente como a fonte os escreve, e um espaço de registro real — linha
+    pautada, quadro de desenho de observação, tabela de comparação vazia ou
+    espaço de marcação. O espaço de registro é parte do conteúdo da página.
+
+    PALETA: verde mata #2F7D4A, azul rio #2F6FD0, amarelo sol #F6C945,
+    terracota #C9653B, vermelho urucum #C9473D e roxo #7552A3 como acentos, com
+    grafite #263238 e branco puro #FFFFFF como estrutura. Uma cor guarda sempre
+    o mesmo papel dentro da página.
+
+    Todo texto visível precisa ser um dos trechos literais do prompt da página.
+
+  prompt_sufixo: |-
+    TRAVAS FINAIS: uma única página vertical, proporção 2:3, mostrada inteira de
+    canto a canto; fundo opaco; margem branca contínua equivalente a 12 mm nos
+    quatro lados. Renderizar cada texto literal exatamente uma vez, preservando
+    ortografia, acentos, números e pontuação.
+
+    TRAVA PRINCIPAL DA PÁGINA DE ATIVIDADE: **nada pode aparecer respondido**.
+    Nenhuma resposta escrita, nenhuma alternativa assinalada, nenhuma célula de
+    tabela de comparação preenchida, nenhum quadro de observação com desenho
+    dentro, nenhuma ligação já traçada. Toda linha de registro fica vazia.
+
+    TRAVAS DA DISCIPLINA: não antropomorfizar seres vivos — sem roupa, fala,
+    balão, sorriso humano ou postura bípede em animal quadrúpede. Anatomia,
+    proporção, habitat e comportamento reais. Não inventar espécie, nome
+    científico, data, lugar, povo ou dado. Representar povos indígenas,
+    quilombolas e comunidades tradicionais como contemporâneos, sem adereço
+    genérico, pintura decorativa ou cena de museu. Mapas apenas esquemáticos,
+    sem fronteira inventada.
+
+    Não usar logotipo, marca, QR code, assinatura, watermark, número de página,
+    legenda automática, texto aleatório, letra deformada, serifa, Comic Sans,
+    mascote, personagem falante, neon ou fundo escuro.
+
+  parametros_api:
+    tamanho: "auto"
+    qualidade: "medium"
+    formato: "jpeg"
+    fundo: "auto"
+    moderacao: "auto"
+    proporcao: "2:3"
+    resolucao: "2k"

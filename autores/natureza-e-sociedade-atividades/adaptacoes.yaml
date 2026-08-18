@@ -1,0 +1,20 @@
+formato: apostila-fund1
+
+anos:
+  1ano:
+    publico: "crianças de aproximadamente 6 anos"
+    texto: "enunciado de uma linha, lido pelo professor; a criança observa, liga ou colore"
+    visual: "o ser vivo ou o elemento da paisagem aparece grande, inteiro e reconhecível"
+    resposta: "espaço largo; nada preenchido"
+
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: "enunciado curto; comparação entre dois casos concretos do lugar de vivência"
+    visual: "os dois casos aparecem lado a lado, na mesma escala"
+    resposta: "tabela de comparação com células vazias"
+
+  3ano:
+    publico: "crianças de aproximadamente 8 anos"
+    texto: "enunciado direto; observação, registro, comparação entre antes e agora"
+    visual: "cena real e datável; sem fantasia, museu congelado ou paisagem genérica"
+    resposta: "linha, quadro de observação e tabela, vazios"

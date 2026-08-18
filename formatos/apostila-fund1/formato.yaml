@@ -1,8 +1,13 @@
 formato:
   id: apostila-fund1
-  nome: "Apostila editorial — Fundamental I"
+  nome: "Apostila editorial — anos iniciais"
   renderizador: texto
   autores:
-    - autor-fund1
-    - autor-mat3
-    - autor-nat3
+    - ingles
+    - ingles-atividades
+    - matematica
+    - matematica-atividades
+    - natureza-e-sociedade
+    - natureza-e-sociedade-atividades
+    - portugues
+    - portugues-atividades

@@ -1,0 +1,40 @@
+projeto:
+  titulo: "Inglês EF1 — 1º ano — Unidade 3 — conteúdo integral — 4 páginas — v3"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openai"
+  id: "gpt-image-2"
+
+parametros_api:
+  tamanho: "2048x3072"
+  qualidade: "high"
+  formato: "png"
+  fundo: "opaque"
+  moderacao: "auto"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Abertura e vocabulário — conteúdo integral v3"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p01-conteudo-integral-v3.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-01-4paginas-v3/p01-abertura-e-vocabulario-v3.png"
+
+  - nome: "P2 — It is e The Color Song — conteúdo integral v3"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p02-conteudo-integral-v3.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-01-4paginas-v3/p02-it-is-e-the-color-song-v3.png"
+
+  - nome: "P3 — What Color Is It e diálogos — conteúdo integral v3"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p03-conteudo-integral-v3.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-01-4paginas-v3/p03-what-color-is-it-e-dialogos-v3.png"
+
+  - nome: "P4 — Música, I Like e revisão — conteúdo integral v3"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p04-conteudo-integral-v3.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-01-4paginas-v3/p04-musica-i-like-e-revisao-v3.png"

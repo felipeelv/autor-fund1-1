@@ -1,0 +1,28 @@
+formato: apostila-fund1
+
+anos:
+  1ano:
+    publico: "crianças de aproximadamente 6 anos, em alfabetização"
+    texto: >-
+      enunciado de uma linha, lido em voz alta pelo professor; traçado de letra,
+      ligação entre palavra e imagem, cópia de palavra em caixa alta
+    visual: "objeto concreto, grande e inteiro, reconhecível sem legenda"
+    resposta: >-
+      pauta alta e larga; pontilhado de traçado permanece pontilhado, nunca
+      reforçado
+
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: >-
+      enunciado curto; completar palavra, escolher entre duas grafias, escrever
+      frase curta
+    visual: "a cena dá a pista do sentido sem escrever a resposta"
+    resposta: "pauta média; lacunas dentro da palavra, vazias"
+
+  3ano:
+    publico: "crianças de aproximadamente 8 anos"
+    texto: >-
+      enunciado direto; leitura de texto curto, resposta escrita, pontuação e
+      acentuação em uso
+    visual: "o gênero textual é reconhecível pela forma visual da página"
+    resposta: "pauta de frase e quadro de resposta, vazios"

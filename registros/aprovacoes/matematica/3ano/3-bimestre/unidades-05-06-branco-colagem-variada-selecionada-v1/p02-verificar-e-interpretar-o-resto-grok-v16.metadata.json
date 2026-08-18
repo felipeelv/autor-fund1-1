@@ -1,0 +1,48 @@
+{
+  "author": "autor-teste-mat3",
+  "generated_at": "2026-08-14T20:51:01.734353+00:00",
+  "image": {
+    "bytes": 1817511,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/feliperosamini/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-teste-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v16-branco-colagem-variada/p02-verificar-e-interpretar-o-resto-grok-v16.jpg",
+    "sha256": "bf6086add98a6e2b8cce25b5ff30ec33320697075efc5e0c77cb071cb2c4e2e3",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosamini/autor-teste-fund1-independente/autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-correcoes-grok-v16-branco-colagem-variada.yaml",
+  "prompt": {
+    "characters": 5193,
+    "sha256": "73401ab3aa2a1b77b767f0f6f86bc3ff544c961a939d809f5793310c62028061",
+    "source": "/Users/feliperosamini/autor-teste-fund1-independente/autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p02-v16-soma-e-grupos.md",
+    "words": 849
+  },
+  "provider": "xai",
+  "request_id": "f038ba58-9b6a-9622-91ef-8321de603832",
+  "schema_version": 1,
+  "usage": {
+    "cost_in_usd_ticks": 800000000,
+    "input_tokens": null,
+    "input_tokens_details": null,
+    "output_tokens": null,
+    "output_tokens_details": null,
+    "total_tokens": null
+  }
+}

@@ -1,0 +1,36 @@
+projeto:
+  titulo: "Matemática EF1 — 3º ano — correções finais do lote branco e segmentado — Grok Imagine 2 — v16"
+  tipo: "colecao-apostila-fund1-correcoes-3-paginas"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — Soma e grupos sem pictogramas — v16"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p02-v16-soma-e-grupos.md"
+    saida: "matematica/3ano/3-bimestre/unidades-05-06-correcoes-grok-v16-branco-colagem-variada/p02-verificar-e-interpretar-o-resto-grok-v16.jpg"
+  - nome: "P4 — Vértice e aresta — v16"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p04-v16-vertice-e-aresta.md"
+    saida: "matematica/3ano/3-bimestre/unidades-05-06-correcoes-grok-v16-branco-colagem-variada/p04-solidos-geometricos-grok-v16.jpg"
+  - nome: "P5 — Prisma triangular — v16"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p05-v16-prisma-triangular.md"
+    saida: "matematica/3ano/3-bimestre/unidades-05-06-correcoes-grok-v16-branco-colagem-variada/p05-planificacao-e-figuras-planas-grok-v16.jpg"

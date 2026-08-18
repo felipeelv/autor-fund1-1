@@ -1,0 +1,20 @@
+formato: apostila-fund1
+
+anos:
+  1ano:
+    publico: "crianças de aproximadamente 6 anos"
+    texto: "enunciado de uma linha; contagem, comparação e soma simples"
+    visual: "quantidade representada por objeto concreto e contável"
+    resposta: "espaço largo, compatível com traço de quem está aprendendo a escrever"
+
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: "enunciado curto; adição e subtração com apoio visual"
+    visual: "agrupamentos visíveis; sinal da operação grande e legível"
+    resposta: "quadriculado para armar a conta, sempre vazio"
+
+  3ano:
+    publico: "crianças de aproximadamente 8 anos"
+    texto: "enunciado direto; as quatro operações, resto, sólidos e figuras planas"
+    visual: "figura corresponde exatamente ao que o enunciado nomeia"
+    resposta: "quadriculado para armar, linha para resposta e quadro para registro, vazios"

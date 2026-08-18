@@ -1,0 +1,34 @@
+projeto:
+  titulo: "Natureza e Sociedade — 3º ano — 3º bimestre — Povos indígenas v3 — páginas 1 e 2 — colagem densa — Grok Imagine 2 — v1"
+  tipo: "colecao-apostila-fund1-2-paginas"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "natureza-e-sociedade"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Capa — O Brasil não começou em 1500 — colagem densa — v1"
+    prompt: "autores/natureza-e-sociedade/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p01-o-brasil-nao-comecou-em-1500-v6.md"
+    saida: "natureza-e-sociedade/3ano/3-bimestre/povos-indigenas-6paginas-v3/p01-capa-o-brasil-nao-comecou-em-1500-grok-v1.jpg"
+
+  - nome: "P2 — Aqui moravam os Caiapós — colagem densa — v1"
+    prompt: "autores/natureza-e-sociedade/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p02-aqui-moravam-os-caiapos-v3.md"
+    saida: "natureza-e-sociedade/3ano/3-bimestre/povos-indigenas-6paginas-v3/p02-aqui-moravam-os-caiapos-grok-v1.jpg"

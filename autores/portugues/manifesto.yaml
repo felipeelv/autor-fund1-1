@@ -1,0 +1,52 @@
+schema: 1
+
+disciplina:
+  id: portugues
+  nome: "Português — Fundamental I"
+  estado: "direção provisória; nenhuma fonte recebida"
+  escopo: >-
+    páginas de apostila de Língua Portuguesa para os anos iniciais do
+    Fundamental I: alfabetização, leitura, escrita e uso da língua
+  modelo_imagem: "grok-imagine-image-2.0"
+  modelos_imagem_autorizados:
+    - "grok-imagine-image-2.0"
+    - "gpt-image-2"
+  formato_padrao: "apostila-fund1"
+
+configuracao:
+  autor: "autor.yaml"
+  adaptacoes: "adaptacoes.yaml"
+  kit: null
+
+fonte_operacional:
+  tipo: "prompt versionado interno"
+  caminho: "anos/<ano>/prompts/<ano-letivo>/<bimestre>/<arquivo>.md"
+  selecao: "projeto YAML ou argumento --prompt da CLI"
+  dependencia_externa: false
+
+fonte_conteudo:
+  tipo: "fonte textual versionada interna"
+  caminho: "anos/<ano>/fontes/<periodo>/<arquivo>.md"
+  dependencia_externa: false
+
+estrutura_por_ano:
+  fontes: "anos/<ano>/fontes/<periodo>"
+  conteudos: "anos/<ano>/conteudos/<ano-letivo>/<bimestre>"
+  prompts: "anos/<ano>/prompts/<ano-letivo>/<bimestre>"
+
+direcao:
+  autor: "direcao/AUTOR.md"
+  padrao_visual:
+    1ano: "direcao/PADRAO-VISUAL-1ANO.md"
+    2ano: "direcao/PADRAO-VISUAL-2ANO.md"
+    3ano: "direcao/PADRAO-VISUAL-3ANO.md"
+  memoria: "direcao/MEMORIA.md"
+
+producao:
+  projetos: "projetos"
+  registros: "registros"
+  revisao_externa: "_revisao/portugues/<ano>/<bimestre>/<unidade>"
+  aprovadas_externa: "aprovadas/portugues/<ano>/<bimestre>/<unidade>"
+
+anos: [1ano, 2ano, 3ano]
+anos_planejados: [1ano, 2ano, 3ano]
