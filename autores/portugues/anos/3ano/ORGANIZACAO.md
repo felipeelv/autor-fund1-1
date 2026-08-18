@@ -2,17 +2,24 @@
 
 ## Estado
 
-**Nenhuma fonte recebida.** As pastas `fontes/`, `conteudos/`, `prompts/`,
-`projetos/` e `registros/` deste ano ainda não existem fisicamente: são áreas
-lógicas declaradas em `../../manifesto.yaml` e devem ser criadas com o primeiro
-arquivo real, sem `.gitkeep`.
+**Fonte recebida, nada produzido ainda.**
 
-Este ano consta em `manifesto.anos_planejados`, que é a lista dos anos do escopo
-que ainda não têm material.
+| Fonte | Unidades |
+|---|---|
+| `3bim-realidade-e-imaginacao-v1.md` | UNIDADE 5 — Entre a realidade e a imaginação; UNIDADE 6 — Criando mundos imaginários |
+| `4bim-humor-poesia-e-escrever-para-ensinar-v1.md` | UNIDADE 7 — Humor e poesia na infância; UNIDADE 8 — Escrevendo para ensinar |
 
-## Quando a fonte chegar
+`conteudos/`, `prompts/`, `projetos/` e `registros/` ainda não existem
+fisicamente: são áreas lógicas declaradas em `../../manifesto.yaml` e devem ser
+criadas com o primeiro arquivo real, sem `.gitkeep`.
 
-1. copiar a fonte para `fontes/<periodo>/`, preservando o texto recebido;
+Este ano continua em `manifesto.anos_planejados`, que lista os anos do escopo
+sem material produzido. Ter fonte não é ter material: sai da lista quando a
+primeira página for aprovada.
+
+## Próximos passos
+
+1. mapear a fonte com `uv run preparar.py --inventario <fonte>`;
 2. derivar o recorte editorial em `conteudos/<ano-letivo>/<bimestre>/`;
 3. escrever os prompts em `prompts/<ano-letivo>/<bimestre>/`, versionados com
    sufixo `-vN`;
