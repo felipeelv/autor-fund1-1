@@ -23,6 +23,11 @@ Data de preparação: 14 de agosto de 2026.
 
 Pronto para testes, auditoria local e `--dry-run`. Nenhuma imagem foi gerada.
 
+Este planejamento não chegou a produzir imagem. A produção destas unidades
+migrou para xAI `grok-imagine-image-2.0` e está registrada em
+`unidades-05-06-branco-colagem-variada-selecionada-v1.md`, com o lote conferido
+e promovido em 18/08/2026.
+
 ## Pendências antes da geração
 
 1. revisão humana dos cálculos;

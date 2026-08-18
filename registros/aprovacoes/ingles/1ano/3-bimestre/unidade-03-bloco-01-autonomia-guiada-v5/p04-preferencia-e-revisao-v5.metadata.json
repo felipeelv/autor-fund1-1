@@ -1,0 +1,49 @@
+{
+  "author": "autor-teste-fund1",
+  "generated_at": "2026-08-13T18:25:00.825208+00:00",
+  "image": {
+    "bytes": 8868888,
+    "format": "png",
+    "height": 3072,
+    "path": "/Users/feliperosamini/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-teste-fund1/1ano/3-bimestre/unidade-03-bloco-01-autonomia-guiada-v5/p04-preferencia-e-revisao-v5.png",
+    "sha256": "16c95ab4fb1c98defe488e9fa9511a81525af4c8dd082f6ab3b7755b6c753416",
+    "width": 2048
+  },
+  "model": "gpt-image-2",
+  "parameters": {
+    "background": "opaque",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "png",
+    "partial_images": 0,
+    "quality": "high",
+    "quantity": 1,
+    "size": "2048x3072",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosamini/gerador-de-imagens/autores/autor-teste-fund1/projetos/2026/3-bimestre/unidade-03-bloco-01-autonomia-guiada-4paginas-v5.yaml",
+  "prompt": {
+    "characters": 4959,
+    "sha256": "0e17da6f300355021206fe08930d8a289794ec7ea0b1ab04a72e1ca3653705b8",
+    "source": "/Users/feliperosamini/gerador-de-imagens/autores/autor-teste-fund1/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-01-p04-autonomia-guiada-v5.md",
+    "words": 802
+  },
+  "provider": "openai",
+  "request_id": "req_f3d66c5ace74477491d7caa27209e44b",
+  "schema_version": 1,
+  "usage": {
+    "input_tokens": 1328,
+    "input_tokens_details": {
+      "image_tokens": 0,
+      "text_tokens": 1328
+    },
+    "output_tokens": 12736,
+    "output_tokens_details": {
+      "image_tokens": 12736,
+      "text_tokens": 0
+    },
+    "total_tokens": 14064
+  }
+}

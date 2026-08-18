@@ -1,0 +1,48 @@
+{
+  "author": "autor-teste-mat3",
+  "generated_at": "2026-08-14T20:58:17.324553+00:00",
+  "image": {
+    "bytes": 1416029,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/feliperosamini/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-teste-mat3/3ano/3-bimestre/unidades-05-06-correcoes-grok-v17-branco-colagem-variada/p05-planificacao-e-figuras-planas-grok-v17.jpg",
+    "sha256": "d29ca2afc778b48429bc94872c8d8783f6a27657bf173bcf6fc4fe4844cb881b",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosamini/autor-teste-fund1-independente/autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-correcoes-grok-v17-branco-colagem-variada.yaml",
+  "prompt": {
+    "characters": 5241,
+    "sha256": "ac3227dc99894bf644aad96e146892be14786d27e84d8a1790c349d4acc21acb",
+    "source": "/Users/feliperosamini/autor-teste-fund1-independente/autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p05-v17-rede-prisma.md",
+    "words": 787
+  },
+  "provider": "xai",
+  "request_id": "ad900d6e-c71c-97e8-9d70-360bd23652d5",
+  "schema_version": 1,
+  "usage": {
+    "cost_in_usd_ticks": 800000000,
+    "input_tokens": null,
+    "input_tokens_details": null,
+    "output_tokens": null,
+    "output_tokens_details": null,
+    "total_tokens": null
+  }
+}

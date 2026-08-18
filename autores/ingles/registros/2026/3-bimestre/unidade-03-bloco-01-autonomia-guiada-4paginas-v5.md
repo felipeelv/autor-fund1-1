@@ -1,7 +1,7 @@
 # Registro de produção — Unidade 3 · autonomia guiada · 4 páginas · v5
 
 Data: 13/08/2026  
-Estado: em revisão humana; não promovida para `aprovadas`.
+Estado: conferido e promovido para `aprovadas` em 18/08/2026, por Felipe Rosa.
 
 ## Pedido aprovado
 
@@ -51,8 +51,15 @@ do percurso com autonomia.
 - validação isolada dos quatro prompts sem erros ou avisos e nenhuma imagem
   proibida no repositório;
 - a auditoria global encontrou duas divergências em prompts de outro lote do
-  3º ano, criados fora da raiz declarada; elas não pertencem a esta produção;
-- nenhuma saída foi promovida para `aprovadas`.
+  3º ano, criados fora da raiz declarada; elas não pertencem a esta produção.
+
+## Conferência humana
+
+Felipe Rosa conferiu as quatro páginas e autorizou a promoção em 18 de agosto de
+2026. A conferência cobriu o que a disciplina exige: palavras, frases, traduções
+e ortografia inglesa, literalmente. As quatro imagens foram promovidas com
+`aprovar.py`; os registros assinados estão em
+`registros/aprovacoes/ingles/1ano/3-bimestre/unidade-03-bloco-01-autonomia-guiada-v5/`.
 
 ## Parecer visual
 

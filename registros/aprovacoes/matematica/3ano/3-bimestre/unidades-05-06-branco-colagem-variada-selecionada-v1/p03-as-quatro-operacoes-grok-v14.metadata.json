@@ -1,0 +1,48 @@
+{
+  "author": "autor-teste-mat3",
+  "generated_at": "2026-08-14T20:29:05.616375+00:00",
+  "image": {
+    "bytes": 1657041,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/feliperosamini/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-teste-mat3/3ano/3-bimestre/unidades-05-06-6paginas-grok-v14-branco-colagem-variada/p03-as-quatro-operacoes-grok-v14.jpg",
+    "sha256": "3a9708816dc0f340478107e28ee59015fb929f596091a23534d9fd6c50e3fcaa",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosamini/autor-teste-fund1-independente/autores/autor-teste-mat3/projetos/2026/3-bimestre/unidades-05-06-6paginas-grok-v14-branco-colagem-variada.yaml",
+  "prompt": {
+    "characters": 5334,
+    "sha256": "14edc9a08cf45a6755788178cb58661c48be1815ece6ffd739fe7377755b87e9",
+    "source": "/Users/feliperosamini/autor-teste-fund1-independente/autores/autor-teste-mat3/anos/3ano/prompts/2026/3-bimestre/unidades-05-06-p03-v14-branco-colagem-variada.md",
+    "words": 807
+  },
+  "provider": "xai",
+  "request_id": "59af025b-33d8-9c82-aacb-a959d7fcf570",
+  "schema_version": 1,
+  "usage": {
+    "cost_in_usd_ticks": 800000000,
+    "input_tokens": null,
+    "input_tokens_details": null,
+    "output_tokens": null,
+    "output_tokens_details": null,
+    "total_tokens": null
+  }
+}
