@@ -1,8 +1,8 @@
 # Padrão visual — Português · 2º ano
 
-> **Derivado** do padrão base do autor (`PADRAO-VISUAL-ANOS-INICIAIS.md`), em 18/08/2026, seguindo
-> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. Este autor ainda não
-> tem ano validado por produção, então o próprio padrão base é provisório.
+> **Derivado** do `PADRAO-VISUAL-3ANO.md` deste autor, em 18/08/2026, seguindo
+> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. O 3º ano, por sua
+> vez, foi derivado do autor `matematica`.
 >
 > **Nenhuma fonte deste ano foi recebida.** Ajustar com uma pessoa antes do
 > primeiro lote.
@@ -12,16 +12,30 @@
 | Eixo | 2º ano |
 |---|---|
 | público | crianças de aproximadamente 7 anos |
-| núcleos por página | 3 a 4 |
-| tipografia | corpo grande; minúscula de imprensa entra, sem misturar tipos na mesma palavra |
-| espaço de escrita | pauta média; lacunas dentro da palavra |
+| autonomia de leitura | a criança lê com apoio da imagem |
+| núcleos por página | 3 a 4, em 4 a 7 recortes |
+| tipografia | corpo grande; **minúscula de imprensa entra**, sem misturar tipos na mesma palavra |
+| unidade em foco | palavra e frase curta completa |
 | papel da ilustração | apoio: dá a pista do sentido, o texto conclui |
-| nível de abstração | representação do concreto; o símbolo entra acompanhado do que representa |
 | composição | imagem e texto em equilíbrio |
+
+## A transição tipográfica
+
+Este é o ano em que a minúscula de imprensa entra, e é a fonte que decide
+quando. Enquanto a decisão não vier, tratar caixa alta e minúscula como dois
+registros distintos: uma mesma palavra nunca mistura os dois, e a página deixa
+claro qual registro está em uso.
+
+Quando a página compara os dois registros, eles aparecem lado a lado, na mesma
+escala e com a mesma palavra — a comparação é o conteúdo, não um efeito visual.
+
+## Ortografia em foco
+
+Palavras que compartilham o mesmo padrão ortográfico ficam visualmente
+agrupadas, com o padrão destacado sempre da mesma forma dentro do agrupamento.
+Exceções recebem a cor de alerta, e não se misturam ao grupo regular.
 
 ## O que se mantém
 
-Tudo o que `PADRAO-VISUAL-ANOS-INICIAIS.md` define e não aparece abaixo **se mantém**.
-
-As travas invioláveis da disciplina valem igualmente neste ano, sem
-afrouxamento: elas não variam com a idade.
+Tudo o que `PADRAO-VISUAL-3ANO.md` define e não aparece acima, além das travas
+invioláveis, que não variam com a idade.

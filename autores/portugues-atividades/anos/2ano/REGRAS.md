@@ -1,8 +1,9 @@
 # Regras — atividades de Português · 2º ano
 
-> **Derivado** da direção provisória deste autor, em 18/08/2026, seguindo
-> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. Este autor ainda
-> não tem ano de referência validado por produção.
+> **Derivado** do autor `portugues` — que por sua vez deriva de `matematica` —
+> em 18/08/2026, seguindo
+> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`, com as travas de
+> página de atividade acrescentadas.
 >
 > **Nenhuma fonte deste ano foi recebida.** O recorte de conteúdo não existe
 > ainda e precisa de ajuste humano quando a fonte chegar.

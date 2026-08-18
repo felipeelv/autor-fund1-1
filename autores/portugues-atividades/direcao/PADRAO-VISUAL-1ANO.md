@@ -1,8 +1,8 @@
 # Padrão visual — atividades de Português · 1º ano
 
-> **Derivado** do padrão base do autor (`PADRAO-VISUAL-ANOS-INICIAIS.md`), em 18/08/2026, seguindo
-> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. Este autor ainda não
-> tem ano validado por produção, então o próprio padrão base é provisório.
+> **Derivado** do `PADRAO-VISUAL-3ANO.md` deste autor, em 18/08/2026, seguindo
+> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. A cadeia completa é
+> `matematica` → `portugues` → este autor.
 >
 > **Nenhuma fonte deste ano foi recebida.** Ajustar com uma pessoa antes do
 > primeiro lote.
@@ -12,16 +12,18 @@
 | Eixo | 1º ano |
 |---|---|
 | público | crianças de aproximadamente 6 anos |
-| núcleos por página | 2 a 3 |
-| tipografia | corpo grande; caixa alta de imprensa; lettering manual só em título |
+| autonomia de leitura | o professor lê o enunciado; a criança reconhece |
+| atividades por página | 2 a 3 |
+| tipografia | corpo grande; caixa alta de imprensa |
 | espaço de escrita | pauta alta e larga, poucas linhas por página |
-| papel da ilustração | protagonista: ocupa a maior parte da página e sustenta o sentido sozinha |
-| nível de abstração | objeto concreto e contável; símbolo nunca aparece sozinho |
-| composição | imagem domina a composição |
+| tipo de atividade | traçado de letra, ligação entre palavra e imagem, cópia de palavra |
+| papel da ilustração | protagonista: o objeto a reconhecer aparece grande e inteiro |
 
 ## O que se mantém
 
-Tudo o que `PADRAO-VISUAL-ANOS-INICIAIS.md` define e não aparece abaixo **se mantém**.
+Tudo o que `PADRAO-VISUAL-3ANO.md` define e não aparece acima, incluindo o
+espaço de escrita por tipo de atividade e as regras linguísticas visuais.
 
-As travas invioláveis da disciplina valem igualmente neste ano, sem
-afrouxamento: elas não variam com a idade.
+As duas travas centrais valem igualmente neste ano, sem afrouxamento por causa
+da idade: **nada aparece respondido** e **o pontilhado de traçado permanece
+pontilhado**.

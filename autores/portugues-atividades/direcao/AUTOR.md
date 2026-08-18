@@ -1,7 +1,15 @@
 # Direção — `portugues-atividades`
 
-> **Direção provisória.** Escrita em 18/08/2026, sem nenhuma fonte em mãos.
-> Precisa de ajuste humano antes da primeira produção.
+> Consulte o
+> [padrão compartilhado](../../../compartilhado/direcao-editorial/PADRAO-GERAL-DE-ESCRITA.md)
+> antes de preparar qualquer página.
+>
+> **Direção derivada** do autor `portugues` — que por sua vez deriva de
+> `matematica`, o mais maduro do repositório — em 18/08/2026, acrescida das
+> travas de página de atividade.
+>
+> **Nenhuma fonte foi recebida.** O recorte de conteúdo ainda não existe e o
+> padrão editorial aguarda ajuste humano.
 
 ## O que este autor faz
 

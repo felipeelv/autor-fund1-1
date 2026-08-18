@@ -23,11 +23,52 @@ em todos os autores, e a derivação corre em direções diferentes:
 | `natureza-e-sociedade` | 3º ano | 1º e 2º — descendo |
 | `matematica-atividades` | par de conteúdo | 1º, 2º e 3º |
 | `natureza-e-sociedade-atividades` | par de conteúdo | 1º, 2º e 3º |
-| `portugues` | — | direção provisória, sem referência |
-| `portugues-atividades` | — | direção provisória, sem referência |
+| `portugues` | autor `matematica` | derivação entre autores — ver abaixo |
+| `portugues-atividades` | autor `portugues` | derivação entre autores — ver abaixo |
 
 Quando um autor de atividades não tem ano de referência próprio, deriva do par
 de conteúdo do mesmo ano e acrescenta as travas de atividade.
+
+## Derivação entre autores
+
+Quando um autor inteiro nasce sem nenhum ano de referência, ele deriva de **outro
+autor** já maduro, e só então distribui a direção entre os seus anos.
+
+A cadeia atual do repositório é `ingles` → `matematica` → `portugues` →
+`portugues-atividades`. O padrão visual de `matematica` declara, no próprio
+cabeçalho, ter nascido do formato do autor de Inglês; `portugues` derivou de
+`matematica`, que é hoje o mais maduro — dezessete rodadas de produção e seis
+páginas conferidas.
+
+O que se herda numa derivação entre autores:
+
+- o DNA visual e a composição — colagem, sketchnote, recortes, respiro branco;
+- a paleta, com um papel semântico fixo por cor;
+- a hierarquia de núcleos e a densidade por página;
+- as regras de variação de título e de divisão de boxes;
+- a estrutura do `AUTOR.md` e do padrão visual.
+
+O que **não** se herda, e precisa ser reescrito para a disciplina de destino:
+
+- os princípios pedagógicos;
+- a trava central da disciplina;
+- as regras específicas de conferência visual.
+
+Esse último ponto é o que mais importa. Cada disciplina tem uma família de erros
+que a geração comete com frequência, e o padrão precisa nomeá-la: em
+`matematica` são as "regras matemáticas visuais" — quantidade que não bate com o
+número, sinal trocado, face apontando para a parte errada. Em `portugues`, o
+lugar equivalente é ocupado pelas "regras linguísticas visuais" — letra
+espelhada, mistura de caixa alta com minúscula, acento fora de lugar, palavra
+que não corresponde à imagem.
+
+Herdar a seção sem reescrevê-la para a disciplina de destino produz um padrão
+que parece completo e não protege contra nada.
+
+Uma derivação entre autores herda também o que estiver **desatualizado** na
+origem. Antes de derivar, confira se o `autor.yaml`, o padrão visual e a memória
+do autor de origem concordam entre si; quando divergirem, derive da decisão
+aprovada mais recente e registre a escolha.
 
 ## Os sete eixos que variam por ano
 
