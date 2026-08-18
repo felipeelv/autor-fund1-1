@@ -8,6 +8,7 @@ o que exige decisão editorial.
 
     uv run preparar.py --inventario <fonte.md>
     uv run preparar.py --recorte <recorte.yaml> [--forcar]
+    uv run preparar.py --aprovar <rascunho.md> --revisor "Nome"
 
 O inventário lista as seções da fonte com índice, para escolher o recorte. O
 recorte declara quais seções alimentam cada página e gera um rascunho por
@@ -19,13 +20,14 @@ from __future__ import annotations
 
 import argparse
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 import yaml
 
 from gerador_imagens.config import ConfigError
-from gerador_imagens.sources import build_prompt_draft, parse_source
+from gerador_imagens.sources import approve_draft, build_prompt_draft, parse_source
 
 ROOT = Path(__file__).resolve().parent
 
@@ -174,6 +176,22 @@ def run_recorte(recorte_path: Path, forcar: bool) -> int:
     return 0
 
 
+def run_aprovar(draft: Path, reviewer: str) -> int:
+    if not reviewer.strip():
+        raise ConfigError("--revisor é obrigatório para aprovar.")
+    if not draft.is_file():
+        raise ConfigError(f"rascunho não encontrado: {draft}")
+    today = datetime.now(timezone.utc).date().isoformat()
+    try:
+        destination = approve_draft(draft, reviewer=reviewer, approved_at=today)
+    except ValueError as error:
+        raise ConfigError(str(error)) from error
+    print(f"Aprovado: {destination}")
+    print(f"Rascunho preservado: {draft}")
+    print("O gerar.py já aceita este prompt; o rascunho continua recusado.")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Lê a fonte bruta e prepara rascunhos de prompt."
@@ -181,6 +199,8 @@ def build_parser() -> argparse.ArgumentParser:
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--inventario", metavar="FONTE", help="Lista as seções da fonte.")
     group.add_argument("--recorte", metavar="YAML", help="Gera rascunhos a partir do recorte.")
+    group.add_argument("--aprovar", metavar="RASCUNHO", help="Promove um rascunho a -v1.")
+    parser.add_argument("--revisor", default="", help="Quem aprovou, obrigatório com --aprovar.")
     parser.add_argument("--forcar", action="store_true", help="Sobrescreve rascunho existente.")
     return parser
 
@@ -190,6 +210,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.inventario:
             return run_inventory(Path(args.inventario))
+        if args.aprovar:
+            return run_aprovar(Path(args.aprovar), args.revisor)
         return run_recorte(Path(args.recorte), args.forcar)
     except ConfigError as error:
         print(f"Erro: {error}", file=sys.stderr)

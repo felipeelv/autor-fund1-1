@@ -124,6 +124,10 @@ produção ou prévia. Só código e artefato textual.
 - não altere prompt aprovado durante mudança puramente técnica;
 - todo texto visível na página precisa estar literal no prompt e ser
   renderizado exatamente uma vez;
+- **rascunho não gera imagem**: o `gerar.py` recusa prompt com sufixo
+  `-rascunho`, com `estado: rascunho` no front matter ou com decisão editorial
+  pendente. Elaboração e produção ficam separadas pelo estado do prompt, não por
+  pasta; o front matter nunca é enviado à API;
 - padrão de escrita: `compartilhado/direcao-editorial/PADRAO-GERAL-DE-ESCRITA.md`;
 - ortografia: `compartilhado/direcao-editorial/CONVENCOES.md`;
 - derivação entre anos: `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`;
@@ -154,8 +158,9 @@ Dado factual e citação exigem revisão humana registrada.
 0. opcional: `preparar.py --inventario` para mapear a fonte e
    `preparar.py --recorte` para gerar rascunhos de prompt. O rascunho sai com
    sufixo `-rascunho`, transporta texto literal da fonte e marca o que exige
-   decisão editorial; vira prompt só depois de uma pessoa resolver as marcações
-   e salvar como `-v1`;
+   decisão editorial. Promova com `preparar.py --aprovar --revisor "Nome"`, que
+   recusa aprovar enquanto houver marcação pendente e grava `-v1` com front
+   matter de estado, revisor e data;
 1. selecionar autor, fonte, conteúdo e prompt versionado;
 2. declarar ou revisar o projeto YAML do autor correto;
 3. executar `--dry-run`;

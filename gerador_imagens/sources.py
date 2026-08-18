@@ -18,11 +18,15 @@ import re
 from dataclasses import dataclass, field
 
 __all__ = [
+    "PENDING_DECISION",
     "Section",
+    "approve_draft",
     "build_prompt_draft",
     "clean_export_escapes",
     "parse_source",
+    "prompt_state",
     "section_literals",
+    "split_front_matter",
 ]
 
 # O Google Docs exporta markdown escapando pontuação: "\-", "\!", "\=".
@@ -35,6 +39,15 @@ _EMPHASIS = re.compile(r"[*_`]+")
 
 # Um literal muito longo não é texto de página: é parágrafo de apostila.
 _MAX_LITERAL = 160
+
+# Marca deixada pelo rascunho onde uma pessoa precisa decidir.
+PENDING_DECISION = "<<DECISÃO EDITORIAL"
+
+_DRAFT_SUFFIX = "-rascunho"
+_FRONT_MATTER = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
+_DRAFT_NOTICE = re.compile(
+    r"^> \*\*RASCUNHO.*?(?=\n[^>\n])", re.DOTALL | re.MULTILINE
+)
 
 
 def clean_export_escapes(text: str) -> str:
@@ -219,3 +232,78 @@ próprio, unidade ou termo técnico.
 
 {locks}
 """
+
+
+def split_front_matter(text: str) -> tuple[dict, str]:
+    """Separa o front matter YAML do corpo do prompt.
+
+    O front matter guarda estado, revisor e data. Ele nunca é enviado à API:
+    quem lê o prompt para gerar recebe apenas o corpo.
+    """
+    import yaml  # local: mantém o módulo utilizável sem carregar YAML à toa
+
+    match = _FRONT_MATTER.match(text)
+    if not match:
+        return {}, text
+    try:
+        meta = yaml.safe_load(match.group(1))
+    except yaml.YAMLError as exc:
+        raise ValueError(f"front matter inválido no prompt: {exc}") from exc
+    if meta is None:
+        meta = {}
+    if not isinstance(meta, dict):
+        raise ValueError("front matter do prompt deve ser um mapa YAML.")
+    return meta, text[match.end():]
+
+
+def prompt_state(path, meta: dict) -> str:
+    """Estado do prompt: 'rascunho' ou 'aprovado'.
+
+    O nome do arquivo manda. Um arquivo `-rascunho` continua rascunho mesmo que
+    o front matter diga o contrário, para que renomear seja o ato deliberado de
+    aprovar. Prompt legado, sem front matter e sem sufixo, conta como aprovado.
+    """
+    from pathlib import Path as _Path
+
+    if _Path(path).stem.endswith(_DRAFT_SUFFIX):
+        return "rascunho"
+    if str(meta.get("estado", "aprovado")).strip().lower() == "rascunho":
+        return "rascunho"
+    return "aprovado"
+
+
+def approve_draft(draft_path, *, reviewer: str, approved_at: str):
+    """Promove um rascunho a prompt aprovado `-v1`.
+
+    Recusa aprovar enquanto houver decisão editorial pendente. O rascunho é
+    preservado: a aprovação cria um arquivo novo, nunca sobrescreve.
+    """
+    from pathlib import Path as _Path
+
+    source = _Path(draft_path)
+    text = source.read_text(encoding="utf-8")
+    if PENDING_DECISION in text:
+        raise ValueError(
+            "há decisão editorial pendente no rascunho; resolva antes de aprovar."
+        )
+    if not source.stem.endswith(_DRAFT_SUFFIX):
+        raise ValueError(f"não é um rascunho: {source.name}")
+
+    destination = source.with_name(
+        f"{source.stem[: -len(_DRAFT_SUFFIX)]}-v1{source.suffix}"
+    )
+    if destination.exists():
+        raise ValueError(f"já existe: {destination.name}")
+
+    _, body = split_front_matter(text)
+    body = _DRAFT_NOTICE.sub("", body).lstrip()
+    header = (
+        "---\n"
+        "estado: aprovado\n"
+        f"revisor: {reviewer}\n"
+        f"aprovado_em: {approved_at}\n"
+        f"origem: {source.name}\n"
+        "---\n"
+    )
+    destination.write_text(header + body, encoding="utf-8")
+    return destination

@@ -16,6 +16,7 @@ from openai import OpenAI
 from PIL import Image, ImageOps, UnidentifiedImageError
 
 from .config import GenerationOptions, output_paths, validate_size
+from .sources import PENDING_DECISION, prompt_state, split_front_matter
 
 
 class GenerationError(RuntimeError):
@@ -79,11 +80,35 @@ def check_authentication(client: OpenAI, model: str) -> str:
 
 
 def load_prompt(path: Path) -> str:
+    """Carrega um prompt aprovado.
+
+    Rascunho não gera imagem: um arquivo `-rascunho`, um front matter com
+    `estado: rascunho` ou uma decisão editorial pendente interrompem aqui, antes
+    de qualquer chamada à API. O front matter é removido do texto enviado.
+    """
     if not path.exists():
         raise GenerationError(f"Prompt não encontrado: {path}")
     if not path.is_file():
         raise GenerationError(f"O caminho do prompt não é um arquivo: {path}")
-    prompt = path.read_text(encoding="utf-8").strip()
+    raw = path.read_text(encoding="utf-8")
+    try:
+        meta, body = split_front_matter(raw)
+    except ValueError as exc:
+        raise GenerationError(f"{exc} ({path})") from exc
+
+    if prompt_state(path, meta) == "rascunho":
+        raise GenerationError(
+            f"O prompt está como rascunho e não pode gerar imagem: {path}. "
+            "Revise, resolva as decisões editoriais e aprove como -vN "
+            "(uv run preparar.py --aprovar)."
+        )
+    if PENDING_DECISION in body:
+        raise GenerationError(
+            f"O prompt tem decisão editorial pendente: {path}. "
+            "Resolva as marcações antes de gerar."
+        )
+
+    prompt = body.strip()
     if not prompt:
         raise GenerationError(f"O prompt está vazio: {path}")
     return prompt
