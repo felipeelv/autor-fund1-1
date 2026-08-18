@@ -151,6 +151,11 @@ Dado factual e citação exigem revisão humana registrada.
 
 ## 7. Fluxo editorial
 
+0. opcional: `preparar.py --inventario` para mapear a fonte e
+   `preparar.py --recorte` para gerar rascunhos de prompt. O rascunho sai com
+   sufixo `-rascunho`, transporta texto literal da fonte e marca o que exige
+   decisão editorial; vira prompt só depois de uma pessoa resolver as marcações
+   e salvar como `-v1`;
 1. selecionar autor, fonte, conteúdo e prompt versionado;
 2. declarar ou revisar o projeto YAML do autor correto;
 3. executar `--dry-run`;
@@ -180,6 +185,7 @@ uv sync --locked
 uv run python -m unittest discover -s tests -v
 uv run gerar.py --help
 uv run gerar.py --listar-autores
+uv run preparar.py --help
 uv run validar.py --acervo
 uv run gerar.py \
   --projeto autores/matematica/projetos/2026/3-bimestre/unidades-05-06-6paginas-v1.yaml \

@@ -109,11 +109,11 @@ Podemos armar a divisão assim:
 
     14  |  3
 
-   \-12     4    ← quociente
+   `-12     4    ← quociente`
 
    \----
 
-     2         ← resto
+     `2         ← resto`
 
 **Passo a passo:**
 
@@ -179,7 +179,7 @@ Se o resto fosse igual ou maior que o divisor, significaria que ainda caberia ma
 > O resto deve ser SEMPRE menor que o divisor.  
 > 
 
-> - Se resto ≥ divisor → o quociente está pequeno demais\!  
+> - `Se resto ≥ divisor → o quociente está pequeno demais!`  
 > - Aumente o quociente e refaça a conta.
 
 ---
@@ -389,122 +389,6 @@ Mamãe fez 22 biscoitos para 4 filhos. Se ela dividir igualmente, quantos biscoi
 
 ---
 
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
 # **Capítulo 2**
 
 ## As Quatro Operações
@@ -527,8 +411,8 @@ Você já conhece as quatro operações básicas da matemática\! Vamos relembra
 > As operações formam pares de inversas:  
 > 
 
-> - Adição ↔ Subtração  
-> - Multiplicação ↔ Divisão
+> - `Adição ↔ Subtração`  
+> - `Multiplicação ↔ Divisão`
 
 ---
 
@@ -611,7 +495,7 @@ A multiplicação também expressa a ideia de "VEZES MAIOR" ou "VEZES MAIS".
 
 > **RESOLUÇÃO**  
 >   
-> "3 vezes mais alta" → multiplicar por 3  
+> `"3 vezes mais alta" → multiplicar por 3`  
 >   
 > 3 × 4 \= **12 metros**
 
@@ -625,7 +509,7 @@ A multiplicação também expressa a ideia de "VEZES MAIOR" ou "VEZES MAIS".
 
 > **💡 PARA LEMBRAR**  
 >   
-> Quando ouvir "vezes mais", "vezes maior", "dobro", "triplo" → pense em MULTIPLICAÇÃO\!
+> `Quando ouvir "vezes mais", "vezes maior", "dobro", "triplo" → pense em MULTIPLICAÇÃO!`
 
 ---
 
@@ -657,10 +541,10 @@ O segredo para resolver problemas é identificar qual operação usar\!
 
 | PERGUNTA | SE A RESPOSTA FOR "SIM" | OPERAÇÃO |
 | :---- | :---- | :---- |
-| Estou juntando ou acrescentando? | → | Adição (+) |
-| Estou tirando ou comparando? | → | Subtração (-) |
-| Tenho grupos iguais ou "vezes maior"? | → | Multiplicação (×) |
-| Estou repartindo ou fazendo grupos? | → | Divisão (÷) |
+| Estou juntando ou acrescentando? | `→` | Adição (+) |
+| Estou tirando ou comparando? | `→` | Subtração (-) |
+| Tenho grupos iguais ou "vezes maior"? | `→` | Multiplicação (×) |
+| Estou repartindo ou fazendo grupos? | `→` | Divisão (÷) |
 
 *\[Ilustração: Fluxograma de decisão para escolher a operação\]*
 
@@ -670,7 +554,7 @@ O segredo para resolver problemas é identificar qual operação usar\!
 
 **Problema 1:** João tem 45 figurinhas e Pedro tem 28\. Quantas figurinhas eles têm juntos?
 
-> "Juntos" → ADIÇÃO  
+> `"Juntos" → ADIÇÃO`  
 >   
 > 45 \+ 28 \= **73 figurinhas**
 
@@ -678,7 +562,7 @@ O segredo para resolver problemas é identificar qual operação usar\!
 
 **Problema 2:** Maria tinha R$ 50 e gastou R$ 32\. Quanto ela ainda tem?
 
-> "Gastou" → SUBTRAÇÃO  
+> `"Gastou" → SUBTRAÇÃO`  
 >   
 > 50 \- 32 \= **R$ 18**
 
@@ -686,7 +570,7 @@ O segredo para resolver problemas é identificar qual operação usar\!
 
 **Problema 3:** Cada caixa tem 6 ovos. São 8 caixas. Quantos ovos ao todo?
 
-> "Cada... são..." (grupos iguais) → MULTIPLICAÇÃO  
+> `"Cada... são..." (grupos iguais) → MULTIPLICAÇÃO`  
 >   
 > 8 × 6 \= **48 ovos**
 
@@ -694,7 +578,7 @@ O segredo para resolver problemas é identificar qual operação usar\!
 
 **Problema 4:** A professora tem 36 folhas para distribuir entre 9 alunos. Quantas folhas cada um recebe?
 
-> "Distribuir entre" → DIVISÃO  
+> `"Distribuir entre" → DIVISÃO`  
 >   
 > 36 ÷ 9 \= **4 folhas**
 
@@ -702,7 +586,7 @@ O segredo para resolver problemas é identificar qual operação usar\!
 
 **Problema 5:** Carlos tem 12 carrinhos. Seu primo tem 4 vezes mais. Quantos carrinhos o primo tem?
 
-> "Vezes mais" → MULTIPLICAÇÃO  
+> `"Vezes mais" → MULTIPLICAÇÃO`  
 >   
 > 4 × 12 \= **48 carrinhos**
 
@@ -710,7 +594,7 @@ O segredo para resolver problemas é identificar qual operação usar\!
 
 **Problema 6:** Uma fita tem 60 cm. Outra tem 45 cm. Qual a diferença entre elas?
 
-> "Diferença" → SUBTRAÇÃO  
+> `"Diferença" → SUBTRAÇÃO`  
 >   
 > 60 \- 45 \= **15 cm**
 
@@ -1282,7 +1166,7 @@ O cone tem 1 círculo (base) \+ 1 setor circular (lateral).
 
 ---
 
-### **Relação 3D ↔ 2D**
+### **`Relação 3D ↔ 2D`**
 
 Os sólidos (3D) são formados por figuras planas (2D)\!
 
