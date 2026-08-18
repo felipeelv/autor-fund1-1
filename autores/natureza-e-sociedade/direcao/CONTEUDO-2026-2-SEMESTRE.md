@@ -1,28 +1,16 @@
 # Conteúdo — 2026 · 2º semestre
 
-## Estado
-
-**Nenhuma fonte recebida.** Este arquivo existe para registrar o conteúdo do
-período assim que ele chegar, e hoje não descreve nenhum recorte real.
-
-Nada aqui deve ser preenchido por inferência: eixos, unidades e temas só entram
-depois que a fonte do bimestre for recebida e versionada em
-`../anos/3ano/fontes/`.
-
 ## 3º bimestre
 
-| Campo | Valor |
-|---|---|
-| Fonte interna | — |
-| Eixos recebidos | — |
-| Lote | — |
-| Estado editorial | aguardando fonte |
+Primeiro lote: povos indígenas no passado e no presente.
 
-## 4º bimestre
+- anterioridade histórica dos povos do território;
+- leitura cuidadosa de registros sobre grupos chamados “Caiapó” no interior
+  paulista;
+- diferentes modos indígenas de ensinar e aprender;
+- conhecimentos e cuidados ligados aos territórios;
+- diversidade de moradias, trabalhos, decisões e lugares de vida;
+- efeitos da colonização, resistência, presença atual e direitos.
 
-| Campo | Valor |
-|---|---|
-| Fonte interna | — |
-| Eixos recebidos | — |
-| Lote | — |
-| Estado editorial | aguardando fonte |
+O lote é introdutório. Não pretende representar todos os povos nem substituir
+fontes específicas sobre uma comunidade.

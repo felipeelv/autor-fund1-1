@@ -1,29 +1,31 @@
 # Autor `natureza-e-sociedade`
 
-Autor de Natureza e Sociedade do 3º ano do Fundamental I no formato
-`apostila-fund1`. A disciplina integra Ciências da Natureza, Geografia e
-História a partir do lugar de vivência da criança.
+Autor definitivo de Natureza e Sociedade do 3º ano do Fundamental I no
+formato `apostila-fund1`.
 
-**Estado: estrutura pronta, sem fonte de conteúdo.** Nenhuma fonte foi recebida
-até agora, então não existem conteúdos, prompts, projetos nem registros. A
-produção só começa depois que uma fonte interna versionada entrar em
-`anos/3ano/fontes/<periodo>/`.
+A unidade vigente é o lote v3 sobre povos indígenas, em seis páginas,
+aprovado em 15 de agosto de 2026 a partir do texto-fonte v2. A fonte interna
+combina o texto recebido com fontes públicas de IBGE, Funai, Prefeitura de
+Ribeirão Preto e pesquisa acadêmica.
+
+Cada página registra seus próprios cortes e pendências em
+`anos/3ano/conteudos/2026/3-bimestre/unidade-povos-indigenas-6paginas-v3/`.
+Afirmações factuais só entram no texto visível com ano e instituição
+declarados na própria página; o que ainda depende de conferência está listado
+como pendência de revisão humana em cada arquivo de conteúdo.
 
 Arquivos principais:
 
-- `direcao/AUTOR.md`: princípios pedagógicos e editoriais;
-- `direcao/PADRAO-VISUAL-3ANO.md`: linguagem visual estável;
-- `direcao/MEMORIA.md`: identidade estável e decisões acumuladas;
-- `anos/3ano/REGRAS.md`: regras invioláveis da disciplina no ano;
-- `anos/3ano/ORGANIZACAO.md`: estado por bimestre.
+- `direcao/AUTOR.md`: princípios pedagógicos, históricos e editoriais;
+- `direcao/PADRAO-VISUAL-3ANO.md`: layout canônico e travas de prompt;
+- `direcao/MODELO-DE-PROMPT.md`: esqueleto para escrever prompts novos;
+- `direcao/MEMORIA.md`: decisões editoriais e o que já foi revogado;
+- `direcao/CONTEUDO-2026-2-SEMESTRE.md`: recorte do semestre;
+- `anos/3ano/fontes/`: pauta recebida, fontes consultadas e notas de revisão;
+- `anos/3ano/conteudos/`: o que foi impresso em cada página, por lote;
+- `anos/3ano/prompts/`: prompts autocontidos e versionados;
+- `projetos/`: lotes com provedor e modelo declarados.
 
-## Para começar a produzir
-
-1. copiar a fonte recebida para `anos/3ano/fontes/<periodo>/<arquivo>.md`;
-2. registrar o recorte editorial em `anos/3ano/conteudos/<ano-letivo>/<bimestre>/`;
-3. escrever os prompts autocontidos em `anos/3ano/prompts/<ano-letivo>/<bimestre>/`;
-4. declarar o lote em `projetos/<ano-letivo>/<bimestre>/<nome>.yaml`, com
-   provedor e modelo explícitos;
-5. rodar `--dry-run`, gerar em `_revisao` e só então submeter à revisão humana.
-
-Nenhuma imagem, prévia ou PDF pode ser armazenado nesta pasta.
+Nenhuma imagem, referência visual, prévia ou PDF pode ser armazenado nesta
+pasta. Fatos, representações culturais e textos visíveis exigem revisão humana
+antes da geração.

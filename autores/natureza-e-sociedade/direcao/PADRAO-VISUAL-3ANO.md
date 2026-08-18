@@ -1,127 +1,148 @@
 # Padrão visual — Natureza e Sociedade · 3º ano
 
-Status: direção inicial, derivada do DNA visual do grupo e ainda sem validação
-por lote gerado. A primeira sequência produzida precisa ser revisada por uma
-pessoa antes de este documento virar referência estável.
+> **Layout canônico:** o formato descrito aqui foi aprovado pelo Felipe em
+> 15 de agosto de 2026, a partir do lote `povos-indigenas-6paginas-v3`, e
+> passa a valer para **todas as páginas deste autor**. As páginas aprovadas
+> desse lote são a referência visual de comparação. Não voltar ao layout
+> anterior, de núcleos soltos sobre grandes áreas brancas.
 
-## DNA visual
+## Base
 
-- página vertical 2:3 sobre fundo branco puro `#FFFFFF`, sem tom marfim,
-  textura geral, grade ou pontilhado contínuo;
-- colagem editorial presente, com papéis recortados, rasgados e sobrepostos,
-  fita adesiva, post-its e pintura guache;
-- sketchnote profissional com setas, círculos, sublinhados e conectores;
-- visual note-taking orgânico, com boxes pedagógicos visualmente separados,
-  sem aparência de grade digital rígida;
-- registro de **caderno de campo organizado**: o que a criança observaria e
-  anotaria, refinado editorialmente;
-- ilustração semirrealista com contornos orgânicos, fiel à anatomia do ser vivo
-  e à forma real da paisagem;
-- títulos em sans-serif arredondada com variação planejada de tamanho,
-  alinhamento, posição e suporte de papel entre páginas consecutivas;
-- cinco cores didáticas vivas sobre estrutura em grafite, cada uma com papel
-  semântico fixo;
-- seis a nove recortes de conteúdo por página, com fragmentos de papel,
-  post-its, fitas e sombras curtas que tornem a colagem inequívoca;
-- crianças e famílias brasileiras diversas como presença humana, em atitude de
-  observar, comparar, medir ou perguntar — nunca mascotes;
-- seres vivos, paisagens e objetos com leitura inequívoca;
-- densidade moderada, frases curtas, boxes menores e caminho de leitura
-  imediato;
-- cada texto ligado a uma observação, um ser vivo, um lugar, uma seta ou uma
-  comparação.
+- página vertical com fundo branco puro `#FFFFFF`;
+- **proporção 2:3** (1664×2496 px), decidida pelo Felipe em 15 de agosto de
+  2026: é a proporção vertical que o `grok-imagine-image-2.0` oferece, e a
+  adaptação para A4 é feita na diagramação, fora do gerador. Os prompts pedem
+  “página vertical, proporção 2:3”; não peça A4 nem 210:297;
+- folha inteira visível, sem sangria, com margem branca contínua equivalente a
+  12 mm nos quatro lados e todos os elementos dentro da área segura — essa
+  margem também é a folga que a diagramação usa ao ajustar para A4;
+- infográfico editorial contemporâneo: editorial collage infographic com
+  scrapbook educativo sofisticado e visual note-taking;
+- pelo menos um box informativo claramente reconhecível por página, usando
+  somente texto literal do prompt;
+- setas, linhas do tempo, círculos e mapas esquemáticos apenas quando ajudam a
+  explicar uma relação;
+- tipografia sans-serif arredondada, grande e de alto contraste.
 
-O branco puro deve permanecer visível nos espaços entre os recortes. Papéis
-coloridos ou levemente texturizados aparecem somente como elementos da colagem;
-nunca como uma tonalização que cubra toda a página.
+## Densidade e camadas
+
+A página é uma colagem em camadas, não um cartaz com elementos soltos.
+
+- camadas de papéis sobrepostos: kraft, pautado, milimetrado e vegetal
+  translúcido, cada um com sombra suave projetada, fita adesiva, clipe
+  metálico, alfinete ou canto dobrado;
+- os recortes entram com leve rotação e em alturas diferentes, nunca
+  alinhados em grade rígida;
+- densidade alta: o branco aparece como fresta entre as camadas, não como
+  fundo largo; sem grandes áreas vazias;
+- a legibilidade vence a densidade: nenhum texto pode ficar sobre imagem
+  concorrida ou espremido contra outro recorte.
+
+## Cinco naturezas de imagem por página
+
+Toda página combina, de forma reconhecível:
+
+1. **fotografia recortada real** de paisagem, textura ou objeto natural, com
+   bordas de tesoura;
+2. **pintura em guache documental** para cenas históricas — nunca simulando
+   fotografia de pessoas do período;
+3. **textura escultórica de apoio** em argila crua ou pedra bruta, de
+   superfície lisa;
+4. **objetos recortados fotografados** sobre fundo claro, botanicamente e
+   materialmente corretos;
+5. **anotações manuscritas a grafite**, setas à mão, círculos e sublinhados
+   de marca-texto, como caderno de campo.
+
+## Hierarquia por posição na unidade
+
+- **capa** (primeira página da unidade): título monumental em blocos de cor
+  sólida com recorte rasgado e leve rotação, ocupando o terço superior; é o
+  elemento mais forte da página;
+- **páginas internas**: título discreto em uma única linha, tipografia média,
+  sobre tarja fina de cor ou apenas com filete colorido embaixo, ocupando no
+  máximo duas linhas de altura; nelas o elemento mais forte é sempre a imagem
+  principal, nunca o título;
+- o subtítulo das internas vem em corpo pequeno, em itálico ou papel vegetal;
+- variar, entre páginas consecutivas, a posição do título e o caminho de
+  leitura, sem alterar essa hierarquia.
+
+## Personagem recorrente
+
+A criança exploradora contemporânea entra **colada como adesivo recortado
+fora das cenas históricas**, sobre o papel branco da margem. Ela nunca pisa
+dentro de uma pintura de período anterior a 1500 — é o que impede o modelo de
+vestir as figuras históricas com roupa atual.
 
 ## Paleta
 
-| Função | Cor |
-|---|---|
-| Fundo | branco puro `#FFFFFF` |
-| Texto e contornos | grafite `#263238` |
-| Seres vivos e ambiente | verde `#43A66B` |
-| Água, céu e clima | azul `#2F6FD0` |
-| Solo, relevo e construções | terracota `#C4623D` |
-| Destaques e luz | amarelo `#F6C945` |
-| Tempo, memória e cultura | roxo `#8B5FBF` |
+- grafite `#263238` para texto;
+- verde mata `#2F7D4A` para território e cuidado;
+- azul rio `#2F6FD0` para deslocamento, água e conexão;
+- amarelo sol `#F6C945` para destaques;
+- terracota `#C9653B` e vermelho urucum `#C9473D` para tempo e alertas;
+- roxo `#7552A3` para diversidade e memória.
 
-A cor guarda sempre o mesmo papel dentro da página e ao longo da sequência. Uma
-planta não muda de verde para roxo porque o layout pediu contraste.
+As cores são recursos editoriais. Não devem imitar grafismos de um povo sem
+fonte e autorização.
 
-## Hierarquia
+## Representação responsável
 
-1. título curto com composição própria para a página;
-2. observação concreta — o que se vê, onde, quando;
-3. nome, explicação ou relação;
-4. comparação, exemplo próximo ou síntese.
+- não existe “aparência indígena” única;
+- não usar cocar genérico, pintura corporal inventada, nudez ou fantasia;
+- não misturar objetos cerimoniais, casas ou grafismos de povos diferentes;
+- preferir cenas cotidianas e contemporâneas quando não houver referência
+  específica;
+- usar fotografia de pessoas somente quando o período e a fonte permitirem;
+  cenas anteriores à fotografia devem ser pintura ou desenho documental;
+- usar mapas apenas como localização aproximada, nunca como demarcação;
+- representar território como espaço de vida, memória e conhecimento, não como
+  cenário vazio;
+- variar idades, gêneros, tons de pele, ambientes e modos de vida;
+- evitar composição de “antes civilizado × depois indígena”.
 
-Uma página pode usar cinco a sete núcleos visuais, distribuídos em seis a nove
-recortes ou boxes físicos. A densidade vem de relações curtas — observar →
-nomear → relacionar → comparar — e não de parágrafos longos. Núcleos
-conceitualmente diferentes não devem compartilhar um único box amplo.
+## Sequência
 
-## Variação dos títulos
+Cada página deve ter identidade própria e continuidade cromática. Alternar:
 
-- não repetir em páginas consecutivas o mesmo tamanho, centralização e faixa;
-- alternar entre título alinhado à esquerda, composição em duas linhas,
-  recortes deslocados, faixa lateral ou título assimétrico no alto;
-- permitir que uma palavra-chave seja maior e outra funcione como complemento;
-- preservar a ordem e a leitura literal do título, mesmo quando dividido;
-- reservar o maior título da sequência para a abertura de unidade;
-- títulos internos podem ser menores para liberar espaço às observações;
-- evitar uma sequência de seis cabeçalhos centralizados com a mesma escala.
+1. linha do tempo e paisagem;
+2. mapa esquemático e nota histórica;
+3. percurso de aprendizagem;
+4. ciclos de observação e cuidado;
+5. mosaico de modos de vida atuais;
+6. dados e chamada de respeito.
 
-## Divisão dos boxes
+## Mídia mista e boxes
 
-- separar observação, nome, explicação, exemplo, alerta e síntese em recortes
-  próprios sempre que coexistirem;
-- usar bordas de papel, sobreposição leve, fita e sombra curta para diferenciar
-  os recortes;
-- manter corredores de fundo branco puro entre os boxes;
-- evitar um painel único ocupando toda a largura quando houver duas ou mais
-  ideias pedagógicas distintas;
-- preservar conexão visual por setas e linhas de sketchnote, sem transformar a
-  página em uma grade digital uniforme.
+- fotografias recortadas entram como paisagem, textura ou objeto real;
+- pinturas e guaches representam cenas históricas sem simular fotografia;
+- relevos de papel e argila devem ser editoriais, não cópias inventadas de
+  artefatos ou grafismos indígenas;
+- pedra, argila e cerâmica entram **lisas**: sem inscrição, símbolo, glifo,
+  letra ou número gravado, e sem pintura decorativa;
+- objetos recortados precisam apoiar uma ideia, nunca funcionar como fantasia;
+- objetos naturais precisam estar corretos: uma planta citada no texto é
+  desenhada como ela é de verdade;
+- o box informativo deve destacar uma frase central da página sem acrescentar
+  títulos, rótulos ou legendas.
 
-## Regras de representação
+## Travas de prompt já validadas
 
-**Seres vivos**
+Aprendidas na produção do lote `povos-indigenas-6paginas-v3` com xAI
+`grok-imagine-image-2.0`. Repetir em todo prompt novo:
 
-- anatomia correta: número de patas, asas, folhas, pétalas e partes do corpo
-  precisa bater com a espécie e com o texto;
-- comportamento e habitat reais; o animal aparece onde de fato vive;
-- proporção relativa plausível entre espécies mostradas juntas;
-- **nunca antropomorfizar**: sem roupa, fala, balão, sorriso humano, olhos de
-  desenho animado, postura bípede ou objeto humano na pata.
-
-**Lugar e paisagem**
-
-- moradias, ruas, comércio, transporte e vegetação reconhecíveis do Brasil,
-  urbanos e rurais;
-- relevo, curso d'água e vegetação coerentes entre si na mesma cena;
-- sem cartão-postal turístico e sem cenário genérico de livro importado.
-
-**Pessoas e comunidades**
-
-- diversidade real de cor de pele, textura de cabelo, idade, corpo e arranjo
-  familiar, distribuída ao longo da sequência e não concentrada em uma página;
-- povos indígenas, quilombolas e comunidades tradicionais representados como
-  contemporâneos, em atividade real, com referência étnica específica que a
-  fonte nomeie — nunca por adereço genérico, pintura decorativa ou cena de
-  museu;
-- ofícios representados sem hierarquia implícita e sem marcação de gênero.
-
-**Tempo**
-
-- comparação antes × agora por par de imagens concretas do mesmo lugar ou
-  objeto;
-- sem linha do tempo abstrata, sem século e sem data que a fonte não traga.
-
-## Exclusões
-
-Sem logotipo, número de página, mascote, animal falante, 3D decorativo, neon,
-fundo escuro ou creme, grade ou pontilhado cobrindo toda a página, tipografia
-serifada, texto aleatório, excesso de adesivos sem função, fotografia de banco
-de imagens ou estética de desenho animado comercial.
+- **limite de tamanho:** manter o **corpo do arquivo `.md`** abaixo de 4.800
+  caracteres. O gerador ainda soma a ele o `prompt_prefixo` e o
+  `prompt_sufixo` do `autor.yaml` — cerca de 2.700 caracteres —, então o
+  prompt realmente enviado fica perto de 7.400. Um corpo de 5.400 caracteres
+  já foi recusado pela API com erro 400;
+- **artefato com escrita:** pedir “relevo escultórico” sem qualificar faz o
+  modelo gravar glifos que parecem escrita; exigir superfície lisa;
+- **roupa moderna na cena histórica:** listar explicitamente as peças
+  proibidas dentro da moldura da pintura (blusa, moletom, capuz, camiseta,
+  shorts, calça, boné, tênis, mochila, pano azul) e manter a criança
+  exploradora fora da cena;
+- **objeto na linha errada:** em listas numeradas, dizer qual objeto pertence
+  a cada número, ligado por seta curta e reta;
+- **acentuação em corpo pequeno:** a palavra “indígenas” sai sem acento com
+  frequência em texto miúdo; preferir reescrever a frase (“esses povos”) a
+  insistir na trava de grafia.

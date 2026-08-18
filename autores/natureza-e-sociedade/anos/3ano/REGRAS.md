@@ -11,11 +11,26 @@
 - limitar cada página a uma intenção pedagógica principal;
 - não inventar espécie, nome científico, classificação, ciclo, data, lugar,
   povo, ofício ou dado numérico ausente da fonte;
-- não criar exercícios, respostas ou exemplos que a fonte não traga;
+- não criar exercícios, respostas, falas, citações ou exemplos que a fonte não
+  traga;
+- todo dado numérico entra com ano e instituição de origem impressos na página;
+- frases curtas e concretas, sem simplificar a ponto de distorcer;
 - tempo histórico entra por comparação concreta entre antes e agora, sem
   século e sem linha do tempo abstrata;
-- revisar nomes de espécies, lugares, povos e períodos por leitura humana antes
-  da geração.
+- revisar nomes de espécies, lugares, povos, períodos e números por leitura
+  humana antes da geração.
+
+## Povos indígenas
+
+- usar “povos indígenas” no plural, salvo quando a fonte nomear um povo;
+- nunca apresentar os povos indígenas somente no passado;
+- não generalizar moradia, alimentação, crenças, decisões ou manejo: o que vale
+  para um povo não vale automaticamente para os demais;
+- diferenciar registro histórico de autodenominação contemporânea;
+- não desenhar fronteira, roupa, grafismo ou objeto sem fonte adequada;
+- em cenas anteriores a 1500, nenhuma pessoa veste roupa moderna;
+- pedra, argila e cerâmica entram lisas, sem inscrição, glifo ou grafismo
+  cultural inventado.
 
 ## Representação
 
@@ -31,6 +46,9 @@
 - povos indígenas, quilombolas e comunidades tradicionais como contemporâneos,
   em atividade real e com referência étnica que a fonte nomeie — nunca por
   adereço genérico, pintura decorativa ou cena de museu;
+- fotografia de pessoas só representa períodos e contextos compatíveis; cena
+  anterior à fotografia usa pintura ou desenho documental;
+- mapas apenas esquemáticos, sem fronteira inventada;
 - ofícios sem hierarquia implícita e sem marcação de gênero.
 
 ## Produção

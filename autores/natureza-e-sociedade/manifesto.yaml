@@ -2,7 +2,7 @@ schema: 1
 
 disciplina:
   id: natureza-e-sociedade
-  nome: "Natureza e Sociedade — 3º ano"
+  nome: "Natureza e Sociedade — 3º ano · Fundamental I"
   estado: ativo
   escopo: >-
     páginas de apostila de Natureza e Sociedade para o 3º ano do Fundamental I,
@@ -28,7 +28,6 @@ fonte_conteudo:
   tipo: "fonte textual versionada interna"
   caminho: "anos/<ano>/fontes/<periodo>/<arquivo>.md"
   dependencia_externa: false
-  estado: "nenhuma fonte recebida até o momento"
 
 estrutura_por_ano:
   fontes: "anos/<ano>/fontes/<periodo>"

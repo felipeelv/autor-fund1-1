@@ -1,0 +1,48 @@
+{
+  "author": "autor-nat3",
+  "generated_at": "2026-08-15T19:36:25.381161+00:00",
+  "image": {
+    "bytes": 2010328,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/feliperosa/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Imagens/_revisao/autor-nat3/3ano/3-bimestre/povos-indigenas-6paginas-v3/p03-a-floresta-era-a-escola-grok-v3.jpg",
+    "sha256": "1801ca796d2cf90f2b5f7b7c29b96f24339d857272b024643af33c6fc1538ec6",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/feliperosa/Documents/Codex/autor-fund1-1/autores/autor-nat3/projetos/2026/3-bimestre/povos-indigenas-v3-p03-grok-v3.yaml",
+  "prompt": {
+    "characters": 6912,
+    "sha256": "9b2ac774750419ec8fb7919314c56890bace3d47669205485ecea7c8b3b0d657",
+    "source": "/Users/feliperosa/Documents/Codex/autor-fund1-1/autores/autor-nat3/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-p03-a-floresta-era-a-escola-v4.md",
+    "words": 1052
+  },
+  "provider": "xai",
+  "request_id": "301e6a69-f411-9a71-9bbc-4eb377703281",
+  "schema_version": 1,
+  "usage": {
+    "cost_in_usd_ticks": 800000000,
+    "input_tokens": null,
+    "input_tokens_details": null,
+    "output_tokens": null,
+    "output_tokens_details": null,
+    "total_tokens": null
+  }
+}

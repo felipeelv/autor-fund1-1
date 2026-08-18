@@ -2,20 +2,9 @@
 
 ## 2026 · 2º semestre
 
-| Bimestre | Unidades | Estado |
+| Bimestre | Tema | Estado |
 |---|---|---|
-| 3º | — | aguardando fonte |
-| 4º | — | aguardando fonte |
+| 3º | povos indígenas no passado e no presente | lote v3 aprovado em 15/08/2026; layout canônico do autor |
 
-Nenhuma fonte foi recebida, então `fontes/`, `conteudos/`, `prompts/`,
-`projetos/` e `registros/` ainda não existem fisicamente. As áreas estão
-declaradas em `../../manifesto.yaml` e devem ser criadas com o primeiro arquivo
-real, sem `.gitkeep`.
-
-Quando a fonte chegar:
-
-- fontes em `fontes/<periodo>/`;
-- recorte editorial em `conteudos/<ano-letivo>/<bimestre>/`;
-- prompts em `prompts/<ano-letivo>/<bimestre>/`, versionados com sufixo `-vN`;
-- lotes em `../../projetos/<ano-letivo>/<bimestre>/`, com saída externa em
-  `_revisao`.
+Os prompts ficam em `prompts/2026/<bimestre>/`. Cada lote precisa de projeto
+YAML próprio, provedor e modelo declarados e saída externa em `_revisao`.
