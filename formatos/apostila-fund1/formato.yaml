@@ -4,5 +4,10 @@ formato:
   renderizador: texto
   autores:
     - ingles
+    - ingles-atividades
     - matematica
+    - matematica-atividades
     - natureza-e-sociedade
+    - natureza-e-sociedade-atividades
+    - portugues
+    - portugues-atividades

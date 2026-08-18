@@ -34,5 +34,5 @@ producao:
   revisao_externa: "_revisao/ingles/<ano>/<bimestre>/<unidade>"
   aprovadas_externa: "aprovadas/ingles/<ano>/<bimestre>/<unidade>"
 
-anos: [1ano, 3ano]
-anos_planejados: []
+anos: [1ano, 2ano, 3ano]
+anos_planejados: [2ano, 3ano]

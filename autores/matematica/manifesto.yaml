@@ -43,5 +43,5 @@ producao:
   revisao_externa: "_revisao/matematica/<ano>/<bimestre>/<unidade>"
   aprovadas_externa: "aprovadas/matematica/<ano>/<bimestre>/<unidade>"
 
-anos: [3ano]
-anos_planejados: []
+anos: [1ano, 2ano, 3ano]
+anos_planejados: [1ano, 2ano]

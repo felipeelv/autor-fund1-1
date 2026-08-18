@@ -1,0 +1,23 @@
+formato: apostila-fund1
+
+anos:
+  1ano:
+    publico: "crianças de aproximadamente 6 anos, em alfabetização"
+    texto: >-
+      letra, sílaba e palavra; caixa alta de imprensa; a palavra sempre
+      acompanhada da imagem do que ela nomeia
+    visual: "objeto concreto, grande e inteiro, reconhecível sem legenda"
+
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: >-
+      palavra e frase curta; minúscula de imprensa entra; ortografia regular
+      antes das irregularidades
+    visual: "a cena sustenta o sentido da frase, sem substituí-la"
+
+  3ano:
+    publico: "crianças de aproximadamente 8 anos"
+    texto: >-
+      frase e texto curto de gênero reconhecível; pontuação e acentuação
+      explicadas em uso, não em regra abstrata
+    visual: "o gênero textual é reconhecível pela forma visual da página"

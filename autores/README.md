@@ -21,11 +21,30 @@ autores/<id>/
 
 ## Autores ativos
 
-| ID | Disciplina | Anos atendidos |
-|---|---|---|
-| `ingles` | Inglês | 1º e 3º ano |
-| `matematica` | Matemática | 3º ano |
-| `natureza-e-sociedade` | Natureza e Sociedade | 3º ano |
+Cada disciplina tem um par: um autor de **conteúdo**, que apresenta e explica, e
+um autor de **atividades**, que entrega enunciado e espaço de resposta. A
+separação é de função, não de assunto — os dois cobrem o mesmo currículo e usam
+a mesma linguagem visual.
+
+| Conteúdo | Atividades | Disciplina | Anos com material |
+|---|---|---|---|
+| `ingles` | | Inglês | 1º ano |
+| | `ingles-atividades` | Inglês | 3º ano |
+| `matematica` | | Matemática | 3º ano |
+| | `matematica-atividades` | Matemática | — |
+| `natureza-e-sociedade` | | Natureza e Sociedade | 3º ano |
+| | `natureza-e-sociedade-atividades` | Natureza e Sociedade | — |
+| `portugues` | | Português | — |
+| | `portugues-atividades` | Português | — |
+
+Todos declaram como escopo o 1º, o 2º e o 3º ano; `manifesto.anos` lista os anos
+que já têm material e `manifesto.anos_planejados`, os demais.
+
+Os autores sem material têm direção editorial **provisória**, marcada como tal
+no topo de `direcao/AUTOR.md` e no `estado` do `manifesto.yaml`. Eles ficam
+`ativo: true` porque o acervo não admite autor inativo, mas não produzem nada
+sem fonte e sem projeto: esperam a primeira fonte e o ajuste humano da direção
+antes do primeiro lote.
 
 Todos usam o formato `apostila-fund1`, autorizado nos dois sentidos: o autor
 declara o formato em `autor.yaml` e o formato declara o autor em

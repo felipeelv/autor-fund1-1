@@ -1,0 +1,32 @@
+formato: apostila-fund1
+
+anos:
+  1ano:
+    publico: "crianças de aproximadamente 6 anos"
+    texto: >-
+      enunciado de uma linha, lido em voz alta pelo professor; a criança
+      responde ligando, circulando, colorindo ou copiando palavra isolada
+    visual: >-
+      o objeto a ser reconhecido aparece grande e inteiro; espaço de resposta
+      largo, compatível com traço de quem está aprendendo a escrever
+    resposta: "nada preenchido; toda marcação é da criança"
+
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: >-
+      enunciado curto e direto; a criança completa palavra, liga par ou escolhe
+      entre duas opções
+    visual: >-
+      ilustração dá a pista do sentido sem escrever a resposta; linha de escrita
+      pautada e visível
+    resposta: "nada preenchido; toda marcação é da criança"
+
+  3ano:
+    publico: "crianças de aproximadamente 8 anos"
+    texto: >-
+      enunciado direto, frases curtas completas e lacunas para completar;
+      numeração das atividades exatamente como a fonte traz
+    visual: >-
+      ilustração dá a pista do sentido e nunca ocupa o espaço de escrita;
+      grades, quadros de desenho e linhas de resposta sempre vazios
+    resposta: "nada preenchido; toda marcação é da criança"

@@ -1,0 +1,63 @@
+autor:
+  id: matematica-atividades
+  nome: "Matemática — atividades — Fundamental I"
+  disciplina: "Matemática — atividades — Fundamental I"
+  ativo: true
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Use case: scientific-educational.
+    Asset type: página vertical de atividades de Matemática de apostila
+    brasileira do Ensino Fundamental I, para o aluno resolver. A página não
+    ensina conceito novo: ela pede que a criança faça.
+
+    DIREÇÃO VISUAL ESTÁVEL: mistura de colagem editorial contemporânea com
+    sketchnote profissional e visual note-taking, na mesma família visual do
+    material de conteúdo. Usar papéis recortados, pintura guache, ilustrações
+    semirrealistas e textura tátil discreta junto de setas desenhadas a
+    marcador, círculos, sublinhados, conectores e mini-ícones. Fundo branco
+    quente, margens seguras e caminho de leitura imediato. Tipografia
+    sans-serif arredondada, grande e muito legível.
+
+    ESTRUTURA DE ATIVIDADE: cada atividade recebe número e enunciado próprios,
+    exatamente como a fonte os escreve, e um espaço de resolução real —
+    quadriculado para armar conta, linha para resposta escrita, quadro para
+    desenho ou tabela vazia. O espaço de resolução é parte do conteúdo da
+    página, dimensionado para o tamanho do número e para a quantidade de passos
+    que a criança precisa registrar.
+
+    PALETA DIDÁTICA: grafite #263238 e branco quente #FFFDF8 como estrutura;
+    vermelho #E94B3C para alertas, azul #2F6FD0 para conceitos, amarelo #F6C945
+    para destaques, verde #43A66B para verificações, laranja #F28C32 e roxo
+    #8B5FBF para conexões e agrupamentos. Contraste alto e uso consistente.
+
+    Representar crianças brasileiras diversas. Quantidades, grupos, sinais,
+    sólidos, faces e figuras precisam corresponder exatamente ao enunciado. Todo
+    texto visível precisa ser um dos trechos literais do prompt da página.
+
+  prompt_sufixo: |-
+    TRAVAS FINAIS: uma única página vertical 2:3; fundo opaco; composição
+    organizada e pronta para apostila. Renderizar cada texto literal exatamente
+    uma vez, sem acrescentar número, sinal ou palavra.
+
+    TRAVA PRINCIPAL DA PÁGINA DE ATIVIDADE: **nada pode aparecer resolvido**.
+    Nenhum resultado escrito, nenhuma conta armada já efetuada, nenhum quociente
+    ou resto preenchido, nenhuma alternativa assinalada, nenhuma figura já
+    classificada ou nomeada quando a classificação é o que se pede, nenhuma
+    célula de tabela completada e nenhum quadro de desenho com desenho dentro.
+    Toda linha e todo quadriculado de resolução ficam vazios e visíveis.
+
+    Não criar, cortar, reescrever, reordenar nem renumerar atividade. Os números
+    do enunciado são os da fonte: não arredondar, não trocar, não simplificar.
+
+    Não usar logotipo, marca, QR code, assinatura, watermark, número de página,
+    legenda automática, texto aleatório, letra deformada, serifas, Comic Sans,
+    3D, mascote, personagem falante, gradientes neon ou fundo escuro.
+
+  parametros_api:
+    qualidade: "high"
+    tamanho: "1024x1536"
+    formato: "png"
+    fundo: "opaque"

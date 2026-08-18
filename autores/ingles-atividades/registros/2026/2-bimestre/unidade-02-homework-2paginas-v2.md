@@ -19,8 +19,8 @@ página 2 à `v2`.
 
 | Página | Caminho relativo externo | Prompt | SHA-256 |
 |---|---|---|---|
-| Atividades 1 a 5 | `ingles/3ano/2-bimestre/unidade-02-homework-v2/p01-sports-and-can-atividades-1-a-5-v3.png` | `unidade-02-homework-p01-sports-and-can-v3.md` | `3c6d97c5e32a2f372c56804e413c961ad31f7151ca9ed36f053f4a4fa5c4c1b1` |
-| Atividades 6 a 9 | `ingles/3ano/2-bimestre/unidade-02-homework-v2/p02-sports-and-can-atividades-6-a-9-v2.png` | `unidade-02-homework-p02-sports-and-can-v2.md` | `26b41adb88770abb8bfd8346d1067a98a49db7440151b686e146b5d7819732ea` |
+| Atividades 1 a 5 | `ingles-atividades/3ano/2-bimestre/unidade-02-homework-v2/p01-sports-and-can-atividades-1-a-5-v3.png` | `unidade-02-homework-p01-sports-and-can-v3.md` | `3c6d97c5e32a2f372c56804e413c961ad31f7151ca9ed36f053f4a4fa5c4c1b1` |
+| Atividades 6 a 9 | `ingles-atividades/3ano/2-bimestre/unidade-02-homework-v2/p02-sports-and-can-atividades-6-a-9-v2.png` | `unidade-02-homework-p02-sports-and-can-v2.md` | `26b41adb88770abb8bfd8346d1067a98a49db7440151b686e146b5d7819732ea` |
 
 ## Execução
 
@@ -38,6 +38,17 @@ Felipe Rosa conferiu as duas páginas e autorizou a promoção em 18 de agosto d
 além da continuidade visual que motivou a v2.
 
 As duas imagens foram promovidas com `aprovar.py`; os registros assinados estão
-em `registros/aprovacoes/ingles/3ano/2-bimestre/unidade-02-homework-v2/`.
+em `registros/aprovacoes/ingles-atividades/3ano/2-bimestre/unidade-02-homework-v2/`.
 
 O lote v1 permanece registrado como histórico e não foi promovido.
+
+## Migração de autor
+
+Em 18/08/2026, na separação entre conteúdo e atividades, este lote passou do
+autor `ingles` para o autor `ingles-atividades`. Os caminhos externos citados
+acima já são os novos: as imagens foram movidas de `ingles/3ano/` para
+`ingles-atividades/3ano/`, em `_revisao` e em `aprovadas`.
+
+Os arquivos `.approval.json` e `.metadata.json` não foram editados: eles citam
+os caminhos antigos porque descrevem onde as imagens estavam no momento da
+aprovação.

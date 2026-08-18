@@ -20,13 +20,29 @@ Responda e documente sempre em português brasileiro.
 Gerador oficial de imagens pedagógicas dos **anos iniciais** do Colégio Eleve —
 Educação Infantil 4 e 5 até o 3º ano do Ensino Fundamental.
 
-Autores ativos:
+Cada disciplina tem **dois autores**: um de conteúdo, que apresenta e explica, e
+um de atividades, que entrega enunciado e espaço de resposta. A separação é de
+função, não de assunto: o par cobre o mesmo currículo, com a mesma linguagem
+visual. Nunca misture os dois num autor só.
 
-| ID | Disciplina | Anos |
-|---|---|---|
-| `ingles` | Inglês | 1º e 3º ano |
-| `matematica` | Matemática | 3º ano |
-| `natureza-e-sociedade` | Natureza e Sociedade | 3º ano |
+| Conteúdo | Atividades | Disciplina | Anos com material |
+|---|---|---|---|
+| `ingles` | `ingles-atividades` | Inglês | 1º ano / 3º ano |
+| `matematica` | `matematica-atividades` | Matemática | 3º ano / — |
+| `natureza-e-sociedade` | `natureza-e-sociedade-atividades` | Natureza e Sociedade | 3º ano / — |
+| `portugues` | `portugues-atividades` | Português | — / — |
+
+Os oito atendem o 1º, o 2º e o 3º ano: `manifesto.anos` declara o escopo
+completo e `manifesto.anos_planejados`, os anos que ainda não têm material.
+
+Os autores sem fonte têm direção editorial **provisória**, marcada no topo de
+`direcao/AUTOR.md` e no `estado` do `manifesto.yaml`. Ficam `ativo: true` porque
+o acervo não admite autor inativo, mas não produzem nada sem fonte e sem
+projeto. Ajuste a direção com uma pessoa antes do primeiro lote.
+
+A regra que define um autor de atividades: **nada aparece respondido** — nenhuma
+resposta escrita, alternativa assinalada, lacuna completada, conta efetuada,
+tabela preenchida ou quadro de desenho com desenho dentro.
 
 Formato autorizado: `apostila-fund1`. Etapas canônicas: `compartilhado/series.yaml`.
 

@@ -1,16 +1,16 @@
 schema: 1
 
 disciplina:
-  id: natureza-e-sociedade
-  nome: "Natureza e Sociedade — 3º ano · Fundamental I"
+  id: ingles-atividades
+  nome: "Inglês — atividades — Fundamental I"
   estado: ativo
   escopo: >-
-    páginas de apostila de Natureza e Sociedade para o 3º ano do Fundamental I,
-    integrando Ciências da Natureza, Geografia e História do lugar de vivência
-  modelo_imagem: "grok-imagine-image-2.0"
+    páginas de atividades de Inglês para o Fundamental I: caderno de casa,
+    exercícios de fixação e revisão, para o aluno responder
+  modelo_imagem: "gpt-image-2"
   modelos_imagem_autorizados:
-    - "grok-imagine-image-2.0"
     - "gpt-image-2"
+    - "grok-imagine-image-2.0"
   formato_padrao: "apostila-fund1"
 
 configuracao:
@@ -42,8 +42,8 @@ direcao:
 producao:
   projetos: "projetos"
   registros: "registros"
-  revisao_externa: "_revisao/natureza-e-sociedade/<ano>/<bimestre>/<unidade>"
-  aprovadas_externa: "aprovadas/natureza-e-sociedade/<ano>/<bimestre>/<unidade>"
+  revisao_externa: "_revisao/ingles-atividades/<ano>/<bimestre>/<unidade>"
+  aprovadas_externa: "aprovadas/ingles-atividades/<ano>/<bimestre>/<unidade>"
 
 anos: [1ano, 2ano, 3ano]
 anos_planejados: [1ano, 2ano]

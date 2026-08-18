@@ -33,8 +33,8 @@ itens da Atividade 1 fica na página 1 e os três quadros de desenho da Atividad
 
 | Página | Caminho relativo externo | SHA-256 |
 |---|---|---|
-| Atividades 1 a 5 | `ingles/3ano/2-bimestre/unidade-02-homework-v1/p01-sports-and-can-atividades-1-a-5-v1.png` | `8c4b1b3e73f968ff5141bb5c21d556755c319189e9b067fd159b97bacf09b860` |
-| Atividades 6 a 9 | `ingles/3ano/2-bimestre/unidade-02-homework-v1/p02-sports-and-can-atividades-6-a-9-v1.png` | `d45456241c27c60cc9c275dfd256cda4d898171e5e5a10419588e792fb70572c` |
+| Atividades 1 a 5 | `ingles-atividades/3ano/2-bimestre/unidade-02-homework-v1/p01-sports-and-can-atividades-1-a-5-v1.png` | `8c4b1b3e73f968ff5141bb5c21d556755c319189e9b067fd159b97bacf09b860` |
+| Atividades 6 a 9 | `ingles-atividades/3ano/2-bimestre/unidade-02-homework-v1/p02-sports-and-can-atividades-6-a-9-v1.png` | `d45456241c27c60cc9c275dfd256cda4d898171e5e5a10419588e792fb70572c` |
 
 ## Verificação
 

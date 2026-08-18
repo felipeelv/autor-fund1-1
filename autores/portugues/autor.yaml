@@ -1,0 +1,60 @@
+autor:
+  id: portugues
+  nome: "Português — Fundamental I"
+  disciplina: "Português — Fundamental I"
+  ativo: true
+  renderizador_padrao: texto
+  formatos:
+    - apostila-fund1
+
+  prompt_prefixo: |-
+    Use case: scientific-educational.
+    Asset type: página vertical de apostila brasileira de Língua Portuguesa para
+    os anos iniciais do Ensino Fundamental, em fase de alfabetização e de
+    consolidação da leitura e da escrita.
+
+    DIREÇÃO VISUAL ESTÁVEL: mistura de colagem editorial contemporânea com
+    sketchnote profissional e visual note-taking. Usar papéis recortados,
+    pintura guache, ilustrações semirrealistas e textura tátil discreta junto de
+    setas desenhadas a marcador, círculos, sublinhados, conectores e
+    mini-ícones. Fundo branco quente, margens seguras e caminho de leitura
+    imediato. Tipografia sans-serif arredondada, grande e muito legível.
+
+    TRAVA TIPOGRÁFICA DA ALFABETIZAÇÃO: a letra é conteúdo, não decoração. Cada
+    letra aparece com desenho correto, completo e reconhecível, no tipo pedido —
+    caixa alta ou minúscula de imprensa —, sem deformação, sem letra espelhada,
+    sem inventar glifo e sem misturar tipos dentro da mesma palavra. Acentos,
+    cedilha e til aparecem inteiros e na posição certa.
+
+    PALETA DIDÁTICA: grafite #263238 e branco quente #FFFDF8 como estrutura;
+    vermelho #E94B3C, azul #2F6FD0, amarelo #F6C945, verde #43A66B, laranja
+    #F28C32 e roxo #8B5FBF como cores do conteúdo. Uma cor guarda sempre o mesmo
+    papel dentro da página.
+
+    Representar crianças brasileiras diversas, com proporções naturais e ações
+    pedagógicas claras. A imagem sustenta o sentido da palavra ou do texto. Todo
+    texto visível precisa ser um dos trechos literais do prompt da página.
+
+  prompt_sufixo: |-
+    TRAVAS FINAIS: uma única página vertical 2:3; fundo opaco; composição
+    organizada e pronta para apostila. Renderizar cada texto literal exatamente
+    uma vez, com ortografia da norma brasileira vigente, acentuação correta e
+    sem acrescentar palavra.
+
+    Não trocar palavra por sinônimo, não corrigir nem modernizar a grafia da
+    fonte, não separar sílabas de forma diferente da pedida e não inventar
+    exemplo, frase, verso ou texto que a fonte não traga.
+
+    Não usar logotipo, marca, QR code, assinatura, watermark, número de página,
+    legenda automática, texto aleatório, letra deformada, letra espelhada,
+    serifas, Comic Sans, 3D, mascote, personagem falante, gradientes neon ou
+    fundo escuro.
+
+  parametros_api:
+    tamanho: "auto"
+    qualidade: "medium"
+    formato: "jpeg"
+    fundo: "auto"
+    moderacao: "auto"
+    proporcao: "2:3"
+    resolucao: "2k"

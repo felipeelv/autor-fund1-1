@@ -6,7 +6,12 @@ anos:
     texto: "palavras isoladas, frases-modelo curtas e tipografia grande"
     visual: "objeto concreto antes da estrutura linguística"
 
+  2ano:
+    publico: "crianças de aproximadamente 7 anos"
+    texto: "frases-modelo curtas e vocabulário em contexto"
+    visual: "a cena sustenta o sentido da frase, sem substituí-la"
+
   3ano:
     publico: "crianças de aproximadamente 8 anos"
-    texto: "frases curtas completas, lacunas para completar e enunciado direto"
-    visual: "ilustração dá a pista do sentido e nunca ocupa o espaço de escrita"
+    texto: "frases curtas completas e vocabulário em uso"
+    visual: "a ilustração ancora o sentido do que está escrito"

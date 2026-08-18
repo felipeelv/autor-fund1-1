@@ -1,12 +1,12 @@
 schema: 1
 
 disciplina:
-  id: natureza-e-sociedade
-  nome: "Natureza e Sociedade — 3º ano · Fundamental I"
-  estado: ativo
+  id: portugues
+  nome: "Português — Fundamental I"
+  estado: "direção provisória; nenhuma fonte recebida"
   escopo: >-
-    páginas de apostila de Natureza e Sociedade para o 3º ano do Fundamental I,
-    integrando Ciências da Natureza, Geografia e História do lugar de vivência
+    páginas de apostila de Língua Portuguesa para os anos iniciais do
+    Fundamental I: alfabetização, leitura, escrita e uso da língua
   modelo_imagem: "grok-imagine-image-2.0"
   modelos_imagem_autorizados:
     - "grok-imagine-image-2.0"
@@ -36,14 +36,14 @@ estrutura_por_ano:
 
 direcao:
   autor: "direcao/AUTOR.md"
-  padrao_visual: "direcao/PADRAO-VISUAL-3ANO.md"
+  padrao_visual: "direcao/PADRAO-VISUAL-ANOS-INICIAIS.md"
   memoria: "direcao/MEMORIA.md"
 
 producao:
   projetos: "projetos"
   registros: "registros"
-  revisao_externa: "_revisao/natureza-e-sociedade/<ano>/<bimestre>/<unidade>"
-  aprovadas_externa: "aprovadas/natureza-e-sociedade/<ano>/<bimestre>/<unidade>"
+  revisao_externa: "_revisao/portugues/<ano>/<bimestre>/<unidade>"
+  aprovadas_externa: "aprovadas/portugues/<ano>/<bimestre>/<unidade>"
 
 anos: [1ano, 2ano, 3ano]
-anos_planejados: [1ano, 2ano]
+anos_planejados: [1ano, 2ano, 3ano]

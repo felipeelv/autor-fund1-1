@@ -12,7 +12,16 @@ from gerador_imagens.storage import StorageSettings
 
 
 ROOT = Path(__file__).resolve().parents[1]
-AUTHOR_IDS = ("ingles", "matematica", "natureza-e-sociedade")
+AUTHOR_IDS = (
+    "ingles",
+    "ingles-atividades",
+    "matematica",
+    "matematica-atividades",
+    "natureza-e-sociedade",
+    "natureza-e-sociedade-atividades",
+    "portugues",
+    "portugues-atividades",
+)
 
 
 class PackageContractTests(unittest.TestCase):
