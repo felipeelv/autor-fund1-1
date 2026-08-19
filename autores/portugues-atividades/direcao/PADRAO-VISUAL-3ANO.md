@@ -2,7 +2,8 @@
 
 Status: direção derivada do autor `portugues` — que por sua vez deriva de
 `matematica` — em 18/08/2026, acrescida das travas de página de atividade.
-Nenhuma fonte foi recebida; aguarda revisão humana antes do primeiro lote.
+Base curricular do 3º ano mapeada em 19/08/2026; primeiro caderno planejado
+para a Unidade 6, ainda sem fonte própria de atividades, recorte ou lote.
 
 ## DNA visual
 
@@ -59,6 +60,15 @@ sólida, a atividade já está feita.
 
 O espaço de escrita nunca é comprimido para caber mais atividade. Se não cabe,
 a atividade vai para a página seguinte.
+
+## Aplicação ao primeiro caderno
+
+Na Unidade 6, a ficção científica pode aparecer como apoio visual — planetas,
+naves, cenários e tecnologias imaginárias — sem escrever a resposta no lugar
+da criança. Transformações com `-OSO/-OSA` e `-EZA`, destaques de sílaba tônica,
+classificações e palavras compostas permanecem sem resolução visual quando
+forem a ação pedida. A página de descrição reserva pauta de frase ou quadro de
+resposta vazio, em vez de trazer um cenário já descrito por texto.
 
 ## Exclusões
 

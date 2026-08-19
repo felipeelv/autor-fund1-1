@@ -3,7 +3,7 @@ schema: 1
 disciplina:
   id: portugues-atividades
   nome: "Português — atividades — Fundamental I"
-  estado: "direção provisória; nenhuma fonte recebida"
+  estado: "direção provisória; 3ano com base curricular mapeada, sem fonte própria de atividades"
   escopo: >-
     páginas de atividades de Língua Portuguesa para os anos iniciais do
     Fundamental I: traçado, leitura, escrita e revisão, para o aluno responder
