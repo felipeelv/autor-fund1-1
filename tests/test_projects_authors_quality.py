@@ -127,6 +127,54 @@ imagens:
         self.assertEqual(task.options.aspect_ratio, "2:3")
         self.assertEqual(task.options.resolution, "2k")
 
+    def test_openrouter_project_requires_explicit_image_parameters(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            root = base / "project"
+            root.mkdir()
+            (root / "prompts").mkdir()
+            (root / "modelos").mkdir()
+            (root / "prompts" / "page.md").write_text(
+                "Prompt",
+                encoding="utf-8",
+            )
+            project = root / "modelos" / "project.yaml"
+            project.write_text(
+                """
+projeto:
+  titulo: Teste OpenRouter
+modelo:
+  provider: openrouter
+  id: x-ai/grok-imagine-image-2.0
+parametros_api:
+  tamanho: auto
+  qualidade: medium
+  formato: jpeg
+  proporcao: "2:3"
+  resolucao: 2k
+imagens:
+  - prompt: prompts/page.md
+    saida: page.jpg
+""",
+                encoding="utf-8",
+            )
+            output_root = base / "outputs"
+            output_root.mkdir()
+            storage = StorageSettings(
+                output_root,
+                {
+                    "revisao": "_revisao",
+                    "aprovadas": "aprovadas",
+                    "historico": "historico-importado",
+                },
+            )
+            plan = load_project(root, project, storage)
+        task = plan.tasks[0]
+        self.assertEqual(task.provider, "openrouter")
+        self.assertEqual(task.options.model, "x-ai/grok-imagine-image-2.0")
+        self.assertEqual(task.options.aspect_ratio, "2:3")
+        self.assertEqual(task.options.resolution, "2k")
+
     def test_prompt_analysis_and_ocr_comparison(self) -> None:
         findings = analyze_prompt(
             "Pesquisas mostram que 9 em cada 10 estudantes fazem algo."

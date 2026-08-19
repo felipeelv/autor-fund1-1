@@ -9,11 +9,14 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
+import httpx
 from PIL import Image
 
 from gerador_imagens.config import GenerationOptions
 from gerador_imagens.core import (
     GenerationError,
+    build_client,
+    check_authentication,
     create_pdf,
     generate_image,
     load_api_key,
@@ -73,6 +76,30 @@ class CoreTests(unittest.TestCase):
             )
             with patch.dict("os.environ", {}, clear=True):
                 self.assertEqual(load_api_key(root, "xai"), "xai-test-local")
+
+    def test_openrouter_key_is_loaded_from_openrouter_env(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / ".env.openrouter.local").write_text(
+                "OPENROUTER_API_KEY=sk-or-v1-test-local\n",
+                encoding="utf-8",
+            )
+            with patch.dict("os.environ", {}, clear=True):
+                self.assertEqual(
+                    load_api_key(root, "openrouter"), "sk-or-v1-test-local"
+                )
+
+    def test_openrouter_client_is_an_httpx_client_with_bearer_auth(self) -> None:
+        options = GenerationOptions(timeout=42.0)
+        client = build_client("sk-or-v1-test", options, "openrouter")
+        try:
+            self.assertIsInstance(client, httpx.Client)
+            self.assertEqual(str(client.base_url), "https://openrouter.ai/api/v1/")
+            self.assertEqual(
+                client.headers.get("authorization"), "Bearer sk-or-v1-test"
+            )
+        finally:
+            client.close()
 
     def test_valid_image_is_saved(self) -> None:
         options = GenerationOptions(size="1024x1024")
@@ -210,6 +237,193 @@ class CoreTests(unittest.TestCase):
             )
         self.assertEqual(metadata["image"]["source_format"], "png")
         self.assertTrue(metadata["image"]["transcoded"])
+
+    def test_openrouter_generation_uses_images_endpoint_and_provider_metadata(
+        self,
+    ) -> None:
+        captured: dict[str, object] = {}
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            captured["method"] = request.method
+            captured["path"] = request.url.path
+            captured["body"] = json.loads(request.content)
+            return httpx.Response(
+                200,
+                json={
+                    "id": "gen_openrouter_test",
+                    "data": [{"b64_json": jpeg_base64(), "media_type": "image/jpeg"}],
+                    "usage": {"cost": 0.08},
+                },
+            )
+
+        client = httpx.Client(
+            base_url="https://openrouter.ai/api/v1",
+            transport=httpx.MockTransport(handler),
+        )
+        options = GenerationOptions(
+            model="x-ai/grok-imagine-image-2.0",
+            size="auto",
+            quality="medium",
+            output_format="jpeg",
+            aspect_ratio="2:3",
+            resolution="2k",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "image.jpg"
+            result = generate_image(
+                client=client,
+                prompt="Página pedagógica de teste.",
+                output=output,
+                options=options,
+                provider="openrouter",
+            )
+            metadata = json.loads(
+                (Path(directory) / "image.metadata.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+        client.close()
+        self.assertEqual(result.output_paths, [output])
+        self.assertEqual(captured["method"], "POST")
+        self.assertEqual(captured["path"], "/api/v1/images")
+        self.assertEqual(captured["body"]["model"], "x-ai/grok-imagine-image-2.0")
+        self.assertEqual(captured["body"]["aspect_ratio"], "2:3")
+        self.assertEqual(captured["body"]["resolution"], "2K")
+        self.assertEqual(result.request_id, "gen_openrouter_test")
+        self.assertEqual(metadata["provider"], "openrouter")
+        self.assertEqual(metadata["model"], "x-ai/grok-imagine-image-2.0")
+        self.assertFalse(metadata["image"]["transcoded"])
+
+    def test_openrouter_png_response_is_transcoded_to_requested_jpeg(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(
+                200,
+                json={"data": [{"b64_json": png_base64((1365, 2048))}]},
+            )
+
+        client = httpx.Client(
+            base_url="https://openrouter.ai/api/v1",
+            transport=httpx.MockTransport(handler),
+        )
+        options = GenerationOptions(
+            model="x-ai/grok-imagine-image-2.0",
+            size="auto",
+            quality="medium",
+            output_format="jpeg",
+            aspect_ratio="2:3",
+            resolution="2k",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "image.jpg"
+            generate_image(
+                client=client,
+                prompt="Página pedagógica de teste.",
+                output=output,
+                options=options,
+                provider="openrouter",
+            )
+            with Image.open(output) as generated:
+                self.assertEqual(generated.format, "JPEG")
+        client.close()
+
+    def test_openrouter_error_response_is_reported_without_saving(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(
+                402, json={"error": {"message": "Insufficient credits"}}
+            )
+
+        client = httpx.Client(
+            base_url="https://openrouter.ai/api/v1",
+            transport=httpx.MockTransport(handler),
+        )
+        options = GenerationOptions(
+            model="x-ai/grok-imagine-image-2.0",
+            size="auto",
+            quality="medium",
+            output_format="jpeg",
+            aspect_ratio="2:3",
+            resolution="2k",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "image.jpg"
+            with self.assertRaisesRegex(GenerationError, "Insufficient credits"):
+                generate_image(
+                    client=client,
+                    prompt="Teste",
+                    output=output,
+                    options=options,
+                    provider="openrouter",
+                )
+            self.assertFalse(output.exists())
+        client.close()
+
+    def test_openrouter_stream_is_rejected(self) -> None:
+        client = httpx.Client(
+            base_url="https://openrouter.ai/api/v1",
+            transport=httpx.MockTransport(
+                lambda request: httpx.Response(200, json={"data": []})
+            ),
+        )
+        options = GenerationOptions(
+            model="x-ai/grok-imagine-image-2.0",
+            size="auto",
+            quality="medium",
+            output_format="jpeg",
+            aspect_ratio="2:3",
+            resolution="2k",
+            stream=True,
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "image.jpg"
+            with self.assertRaisesRegex(GenerationError, "streaming"):
+                generate_image(
+                    client=client,
+                    prompt="Teste",
+                    output=output,
+                    options=options,
+                    provider="openrouter",
+                )
+        client.close()
+
+    def test_check_authentication_openrouter_validates_key_and_model(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            if request.url.path == "/api/v1/key":
+                return httpx.Response(200, json={"data": {"label": "test"}})
+            if request.url.path == "/api/v1/models":
+                return httpx.Response(
+                    200,
+                    json={"data": [{"id": "x-ai/grok-imagine-image-2.0"}]},
+                )
+            return httpx.Response(404, json={"error": {"message": "not found"}})
+
+        client = httpx.Client(
+            base_url="https://openrouter.ai/api/v1",
+            transport=httpx.MockTransport(handler),
+        )
+        try:
+            model_id = check_authentication(
+                client, "x-ai/grok-imagine-image-2.0", "openrouter"
+            )
+        finally:
+            client.close()
+        self.assertEqual(model_id, "x-ai/grok-imagine-image-2.0")
+
+    def test_check_authentication_openrouter_rejects_invalid_key(self) -> None:
+        client = httpx.Client(
+            base_url="https://openrouter.ai/api/v1",
+            transport=httpx.MockTransport(
+                lambda request: httpx.Response(
+                    401, json={"error": {"message": "Invalid API key"}}
+                )
+            ),
+        )
+        try:
+            with self.assertRaisesRegex(GenerationError, "Invalid API key"):
+                check_authentication(
+                    client, "x-ai/grok-imagine-image-2.0", "openrouter"
+                )
+        finally:
+            client.close()
 
     def test_openai_format_mismatch_remains_rejected(self) -> None:
         response = SimpleNamespace(

@@ -64,9 +64,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--autor", help="ID de um perfil em autores/<id>/autor.yaml.")
     parser.add_argument(
         "--provider",
-        choices=("openai", "xai"),
+        choices=("openai", "xai", "openrouter"),
         default="openai",
-        help="Provedor da Images API para geração direta ou check-auth.",
+        help=(
+            "Provedor da Images API para geração direta ou check-auth. "
+            "'openrouter' roteia para o modelo Grok da xAI quando não há "
+            "XAI_API_KEY nativa disponível."
+        ),
     )
     parser.add_argument(
         "--renderizador",
@@ -404,7 +408,7 @@ def run(args: argparse.Namespace) -> int:
         options = direct_options(args)
         api_key = load_api_key(ROOT, args.provider)
         client = build_client(api_key, options, args.provider)
-        model_id = check_authentication(client, options.model)
+        model_id = check_authentication(client, options.model, args.provider)
         print(f"Autenticação e modelo: OK ({model_id})")
         return 0
 

@@ -13,7 +13,8 @@ Autores ativos:
 |---|---|---|---|
 | `ingles` | Inglês | 1º e 3º ano | em produção |
 | `matematica` | Matemática | 3º ano | em produção |
-| `natureza-e-sociedade` | Natureza e Sociedade | 3º ano | estrutura pronta, aguardando fonte |
+| `natureza-e-sociedade` | Natureza e Sociedade | 3º ano | em produção |
+| `portugues` | Português | 2º ano | em produção |
 
 Cada autor mantém fontes, direção, conteúdos, prompts, projetos e registros na
 própria pasta. O núcleo Python, o formato e as regras comuns são compartilhados.
@@ -28,16 +29,21 @@ As regras completas estão em [CLAUDE.md](CLAUDE.md) — fonte única, sem
 ```text
 .
 ├── CLAUDE.md                   # regras do repositório (fonte única)
+├── PROGRESSO.md                # índice de continuidade entre sessões
+├── MEMORIA.md                  # observações técnicas/editoriais entre autores
 ├── autores/
-│   ├── _modelo/                # template para autor novo
-│   ├── ingles/                 # Inglês · 1º e 3º ano
-│   ├── matematica/             # Matemática · 3º ano
-│   └── natureza-e-sociedade/   # Natureza e Sociedade · 3º ano
+│   ├── _modelo/                          # template para autor novo
+│   ├── ingles/ · ingles-atividades/
+│   ├── matematica/ · matematica-atividades/
+│   ├── natureza-e-sociedade/ · natureza-e-sociedade-atividades/
+│   └── portugues/ · portugues-atividades/
 ├── compartilhado/              # regras editoriais e parâmetros comuns
-├── formatos/apostila-fund1/    # formato autorizado pelos três autores
+├── formatos/apostila-fund1/    # formato autorizado por todos os autores
 ├── gerador_imagens/            # núcleo Python
 ├── modelos/                    # modelos de prompt e projeto
+├── registros/aprovacoes/       # registros textuais de aprovação (sem imagem)
 ├── tests/                      # testes sem chamadas à API
+├── preparar.py                 # inventário, recorte e aprovação de prompt
 ├── gerar.py                    # geração e dry-run
 ├── validar.py                  # auditoria local
 └── aprovar.py                  # promoção para aprovadas
@@ -66,16 +72,21 @@ autores/<id>/
 uv sync --locked
 cp .env.grok.example .env.grok.local
 cp .env.openai.example .env.openai.local
+cp .env.openrouter.example .env.openrouter.local
 cp config.example.yaml config.local.yaml
 ```
 
 Informe cada chave somente no arquivo local correspondente e configure uma raiz
-externa em `config.local.yaml`. Os três arquivos `.local` são ignorados pelo
+externa em `config.local.yaml`. Os quatro arquivos `.local` são ignorados pelo
 Git.
 
 Projetos xAI usam `XAI_API_KEY` de `.env.grok.local`. Projetos OpenAI usam
 `OPENAI_API_KEY` de `.env.openai.local`. O provedor é declarado em cada projeto
 e nenhuma credencial altera silenciosamente o modelo selecionado.
+
+Quando não há `XAI_API_KEY` nativa, `modelo.provider: openrouter` (com
+`modelo.id: x-ai/grok-imagine-image-2.0`) roteia para o mesmo modelo Grok via
+`OPENROUTER_API_KEY` em `.env.openrouter.local` — ver CLAUDE.md, seção 3.
 
 ## Verificação sem consumo de créditos
 

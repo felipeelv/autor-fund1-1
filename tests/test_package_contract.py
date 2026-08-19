@@ -86,6 +86,11 @@ class PackageContractTests(unittest.TestCase):
                                 task.options.model,
                                 "grok-imagine-image-2.0",
                             )
+                        elif task.provider == "openrouter":
+                            self.assertEqual(
+                                task.options.model,
+                                "x-ai/grok-imagine-image-2.0",
+                            )
                         else:
                             self.fail(f"Provider inesperado: {task.provider}")
 

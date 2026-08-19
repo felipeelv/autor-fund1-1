@@ -11,6 +11,11 @@ Antes de alterar código, conteúdo, prompts, projetos ou modelos YAML:
 4. leia `autores/<id>/direcao/AUTOR.md`;
 5. leia `autores/<id>/direcao/MEMORIA.md`.
 
+Além disso, `PROGRESSO.md` (índice de continuidade entre sessões, não fonte
+de verdade) e `MEMORIA.md` (observações técnicas e editoriais que valem para
+qualquer autor) ficam na raiz e vale abrir os dois antes de um lote novo ou
+de retomar um trabalho parado.
+
 Responda e documente sempre em português brasileiro.
 
 ---
@@ -75,12 +80,23 @@ Provedor preservado: **OpenAI Images API** com `gpt-image-2`.
 - nenhum projeto herda provedor de configuração global;
 - nunca troque um provedor pelo outro silenciosamente, nem em mudança
   puramente técnica;
-- credenciais ficam separadas em `.env.grok.local` e `.env.openai.local`;
+- credenciais ficam separadas em `.env.grok.local`, `.env.openai.local` e
+  `.env.openrouter.local`;
 - referência de parâmetros por provedor: `compartilhado/parametros-api.yaml`.
 
 Restrições do adaptador xAI, validadas em `gerador_imagens/projects.py`:
 qualidade `low` ou `medium`, formato JPEG, `tamanho: auto` com `proporcao` e
 `resolucao` explícitas, `resolucao` em `1k` ou `2k`, sem streaming.
+
+**Roteamento por `openrouter`** — autorizado em 19/08/2026, exclusivamente para
+alcançar o modelo Grok da xAI quando não há `XAI_API_KEY` nativa disponível.
+Não é um provedor de conteúdo próprio: `modelo.provider: openrouter` só é
+válido com `modelo.id: x-ai/grok-imagine-image-2.0` — o mesmo modelo do
+adaptador xAI, sob as mesmas restrições acima, chamado por `POST /images` da
+OpenRouter em vez de `api.x.ai`. Credencial em `OPENROUTER_API_KEY`, via
+`.env.openrouter.local`. Uma chave da OpenRouter nunca é gravada como
+`XAI_API_KEY`: os dois provedores têm endpoint, autenticação e contrato de
+requisição diferentes.
 
 ## 4. Nomenclatura
 

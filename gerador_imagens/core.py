@@ -11,6 +11,7 @@ from io import BytesIO
 from pathlib import Path
 from typing import Any
 
+import httpx
 from dotenv import load_dotenv
 from openai import OpenAI
 from PIL import Image, ImageOps, UnidentifiedImageError
@@ -44,6 +45,11 @@ def load_api_key(root: Path, provider: str = "openai") -> str:
         variable = "XAI_API_KEY"
         example = root / ".env.grok.example"
         local = root / ".env.grok.local"
+    elif provider == "openrouter":
+        env_paths = (root / ".env.openrouter.local",)
+        variable = "OPENROUTER_API_KEY"
+        example = root / ".env.openrouter.example"
+        local = root / ".env.openrouter.local"
     else:
         raise GenerationError(f"Provider de credencial inválido: {provider}")
     for env_path in env_paths:
@@ -57,11 +63,20 @@ def load_api_key(root: Path, provider: str = "openai") -> str:
     return api_key
 
 
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+
+
 def build_client(
     api_key: str,
     options: GenerationOptions,
     provider: str = "openai",
-) -> OpenAI:
+) -> OpenAI | httpx.Client:
+    if provider == "openrouter":
+        return httpx.Client(
+            base_url=OPENROUTER_BASE_URL,
+            headers={"Authorization": f"Bearer {api_key}"},
+            timeout=options.timeout,
+        )
     kwargs: dict[str, Any] = {
         "api_key": api_key,
         "timeout": options.timeout,
@@ -74,7 +89,53 @@ def build_client(
     return OpenAI(**kwargs)
 
 
-def check_authentication(client: OpenAI, model: str) -> str:
+def _raise_for_openrouter_error(response: httpx.Response) -> None:
+    if response.status_code < 400:
+        return
+    message = None
+    try:
+        body = response.json()
+    except ValueError:
+        body = None
+    if isinstance(body, dict):
+        error = body.get("error")
+        if isinstance(error, dict):
+            message = error.get("message")
+    parts = [f"Erro da OpenRouter: status={response.status_code}"]
+    if message:
+        parts.append(f"mensagem={message}")
+    raise GenerationError("; ".join(parts))
+
+
+def check_authentication(
+    client: OpenAI | httpx.Client,
+    model: str,
+    provider: str = "openai",
+) -> str:
+    if provider == "openrouter":
+        try:
+            key_response = client.get("/key")
+        except httpx.HTTPError as exc:
+            raise GenerationError(
+                f"Falha de rede ao validar a chave na OpenRouter: {exc}"
+            ) from exc
+        _raise_for_openrouter_error(key_response)
+        try:
+            models_response = client.get(
+                "/models", params={"output_modalities": "image"}
+            )
+        except httpx.HTTPError as exc:
+            raise GenerationError(
+                f"Falha de rede ao listar modelos na OpenRouter: {exc}"
+            ) from exc
+        _raise_for_openrouter_error(models_response)
+        payload = models_response.json()
+        available = {
+            item.get("id") for item in payload.get("data", []) if isinstance(item, dict)
+        }
+        if model not in available:
+            raise GenerationError(f"Modelo não encontrado na OpenRouter: {model}")
+        return model
     result = client.models.retrieve(model)
     return result.id
 
@@ -171,7 +232,7 @@ def _prepare_provider_image_bytes(
     if source_format == options.output_format:
         return data, source_format, False
     if not (
-        provider == "xai"
+        provider in {"xai", "openrouter"}
         and source_format == "png"
         and options.output_format == "jpeg"
     ):
@@ -201,7 +262,7 @@ def _prepare_provider_image_bytes(
             converted.close()
     except (OSError, SyntaxError) as exc:
         raise GenerationError(
-            "Não foi possível converter a resposta PNG da xAI para JPEG."
+            f"Não foi possível converter a resposta PNG do provider {provider} para JPEG."
         ) from exc
     return buffer.getvalue(), source_format, True
 
@@ -309,6 +370,48 @@ def _request_kwargs(
     return kwargs
 
 
+def _openrouter_body(prompt: str, options: GenerationOptions) -> dict[str, Any]:
+    return {
+        "model": options.model,
+        "prompt": prompt,
+        "quality": options.quality,
+        "n": options.n,
+        "output_format": options.output_format,
+        "aspect_ratio": options.aspect_ratio,
+        # A OpenRouter espera "1K"/"2K"; internamente usamos a convenção
+        # minúscula do adaptador xAI ("1k"/"2k").
+        "resolution": options.resolution.upper() if options.resolution else None,
+    }
+
+
+def _openrouter_generate(
+    client: httpx.Client,
+    prompt: str,
+    options: GenerationOptions,
+) -> tuple[list[bytes], str | None, dict[str, Any] | None]:
+    """Gera pelo endpoint dedicado da OpenRouter (`POST /images`).
+
+    A OpenRouter não expõe `/images/generations` como a OpenAI: é um endpoint
+    próprio, por isso a chamada usa `httpx` direto em vez do SDK da OpenAI.
+    """
+    try:
+        response = client.post("/images", json=_openrouter_body(prompt, options))
+    except httpx.HTTPError as exc:
+        raise GenerationError(f"Falha de rede ao chamar a OpenRouter: {exc}") from exc
+    _raise_for_openrouter_error(response)
+    try:
+        payload = response.json()
+    except ValueError as exc:
+        raise GenerationError("A OpenRouter retornou um corpo que não é JSON.") from exc
+    items = payload.get("data")
+    if not isinstance(items, list) or not items:
+        raise GenerationError("A OpenRouter não retornou nenhuma imagem.")
+    decoded = [_decode_base64(str(item.get("b64_json", ""))) for item in items]
+    usage = payload.get("usage") if isinstance(payload.get("usage"), dict) else None
+    request_id = payload.get("id")
+    return decoded, request_id, usage
+
+
 def _metadata_payload(
     *,
     prompt: str,
@@ -380,7 +483,7 @@ def _protect_planned_paths(paths: list[Path], overwrite: bool) -> None:
 
 
 def _generate_regular(
-    client: OpenAI,
+    client: OpenAI | httpx.Client,
     prompt: str,
     output: Path,
     options: GenerationOptions,
@@ -395,15 +498,22 @@ def _generate_regular(
     if options.write_metadata:
         planned.extend(_metadata_path(path) for path in paths)
     _protect_planned_paths(planned, overwrite)
-    response = client.images.generate(**_request_kwargs(prompt, options, provider))
-    data = list(response.data or [])
-    if len(data) != options.n:
+    if provider == "openrouter":
+        decoded, request_id, usage = _openrouter_generate(client, prompt, options)
+    else:
+        response = client.images.generate(**_request_kwargs(prompt, options, provider))
+        data = list(response.data or [])
+        if len(data) != options.n:
+            raise GenerationError(
+                f"A API retornou {len(data)} imagem(ns); eram esperadas {options.n}."
+            )
+        request_id = getattr(response, "_request_id", None)
+        usage = _serialize(getattr(response, "usage", None))
+        decoded = [_decode_base64(getattr(item, "b64_json", "")) for item in data]
+    if len(decoded) != options.n:
         raise GenerationError(
-            f"A API retornou {len(data)} imagem(ns); eram esperadas {options.n}."
+            f"A API retornou {len(decoded)} imagem(ns); eram esperadas {options.n}."
         )
-    request_id = getattr(response, "_request_id", None)
-    usage = _serialize(getattr(response, "usage", None))
-    decoded = [_decode_base64(getattr(item, "b64_json", "")) for item in data]
     prepared = [
         _prepare_provider_image_bytes(image_bytes, options, provider)
         for image_bytes in decoded
@@ -514,7 +624,7 @@ def _generate_streaming(
 
 def generate_image(
     *,
-    client: OpenAI,
+    client: OpenAI | httpx.Client,
     prompt: str,
     output: Path,
     options: GenerationOptions,
@@ -529,10 +639,10 @@ def generate_image(
         raise GenerationError("O prompt está vazio.")
     options = options.validated()
     provider = provider.lower()
-    if provider not in {"openai", "xai"}:
+    if provider not in {"openai", "xai", "openrouter"}:
         raise GenerationError(f"Provider de geração inválido: {provider}")
-    if provider == "xai" and options.stream:
-        raise GenerationError("O provider xai não usa streaming neste gerador.")
+    if provider in {"xai", "openrouter"} and options.stream:
+        raise GenerationError(f"O provider {provider} não usa streaming neste gerador.")
     if options.stream:
         return _generate_streaming(
             client,

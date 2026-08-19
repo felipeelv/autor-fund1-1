@@ -89,8 +89,8 @@ def load_project(
     project_info = _mapping(raw.get("projeto"), "projeto")
     model_info = _mapping(raw.get("modelo"), "modelo")
     provider = str(model_info.get("provider", "openai")).lower()
-    if provider not in {"openai", "xai"}:
-        raise ConfigError("Provider deve ser 'openai' ou 'xai'.")
+    if provider not in {"openai", "xai", "openrouter"}:
+        raise ConfigError("Provider deve ser 'openai', 'xai' ou 'openrouter'.")
 
     global_parameters = dict(_mapping(raw.get("parametros_api"), "parametros_api"))
     if model_info.get("id"):
@@ -135,26 +135,33 @@ def load_project(
         )
         options = options_from_mapping(overrides, options)
         item_provider = str(item.get("provider") or provider).lower()
-        if item_provider not in {"openai", "xai"}:
+        if item_provider not in {"openai", "xai", "openrouter"}:
             raise ConfigError(
-                f"imagens[{index}].provider deve ser 'openai' ou 'xai'."
+                f"imagens[{index}].provider deve ser 'openai', 'xai' ou 'openrouter'."
             )
-        if item_provider == "xai":
+        if item_provider in {"xai", "openrouter"}:
             if options.stream:
-                raise ConfigError("O provider xai não usa streaming neste gerador.")
+                raise ConfigError(
+                    f"O provider {item_provider} não usa streaming neste gerador."
+                )
             if options.quality not in {"low", "medium"}:
                 raise ConfigError(
-                    "grok-imagine-image-2.0 aceita qualidade 'low' ou 'medium'."
+                    "grok-imagine-image-2.0 aceita qualidade 'low' ou 'medium', "
+                    "seja via xai ou via openrouter."
                 )
             if options.output_format != "jpeg":
-                raise ConfigError("O projeto xAI deve usar formato JPEG.")
+                raise ConfigError(
+                    f"O projeto {item_provider} deve usar formato JPEG."
+                )
             if options.size != "auto":
                 raise ConfigError(
-                    "O projeto xAI usa tamanho=auto com proporcao e resolucao."
+                    f"O projeto {item_provider} usa tamanho=auto com proporcao e "
+                    "resolucao."
                 )
             if options.aspect_ratio is None or options.resolution is None:
                 raise ConfigError(
-                    "O projeto xAI exige proporcao e resolucao em parametros_api."
+                    f"O projeto {item_provider} exige proporcao e resolucao em "
+                    "parametros_api."
                 )
         output_path = normalize_output_path(
             _resolve_output(
