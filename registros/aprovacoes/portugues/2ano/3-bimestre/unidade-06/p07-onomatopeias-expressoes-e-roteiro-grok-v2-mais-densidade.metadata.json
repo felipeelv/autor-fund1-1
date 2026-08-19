@@ -1,0 +1,59 @@
+{
+  "author": "portugues",
+  "generated_at": "2026-08-19T14:27:06.129674+00:00",
+  "image": {
+    "bytes": 2093494,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/3-bimestre/unidade-06/p07-onomatopeias-expressoes-e-roteiro-grok-v2-mais-densidade.jpg",
+    "sha256": "47c60f2dc7ccbc03d55b4b78dee57a69334ca645bb7efef8efe9b078ac24e3d2",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/projetos/2026/3-bimestre/unidade-06-p07-onomatopeias-expressoes-e-roteiro-grok-v2-mais-densidade.yaml",
+  "prompt": {
+    "characters": 7306,
+    "sha256": "af00cea14b9cd69f391ebb0c7954437594258b7047dd88c58cf3bb4d03ee5b31",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/3-bimestre/unidade-06-p07-onomatopeias-expressoes-e-roteiro-v2-mais-densidade.md",
+    "words": 1128
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1928,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6103
+  }
+}

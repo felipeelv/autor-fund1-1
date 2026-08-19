@@ -48,15 +48,22 @@ na geração e os primeiros que a conferência humana precisa olhar.
 
 ## Estado
 
-**Nenhuma fonte recebida.** A direção é derivada e provisória.
+**Fonte recebida (18-19/08/2026) para 1º, 2º e 3º ano.** Primeiro lote real:
+2º ano, 3º bimestre, Unidade 6 ("Criando Quadrinhos"), 8 páginas, aprovadas em
+19/08/2026 por Nicolas Basso. A direção segue derivada do `matematica`, mas o
+ajuste humano que faltava (ver seção acima) já aconteceu na prática, dentro
+desse lote — registrado em `PADRAO-VISUAL-2ANO.md`.
 
-O autor está ativo porque o acervo não admite autor inativo, mas não produz nada
-sem fonte e sem projeto.
+O que esse lote confirmou para o 2º ano: minúscula de imprensa já em uso no
+corpo do texto (caixa alta só em onomatopeia, ênfase e sigla, como a própria
+fonte já grafa); 3-4 núcleos por página funcionam bem quando a colagem é
+densa, sem faixas horizontais soltas; material e formato do recorte devem
+variar página a página, inclusive o estilo do título; tabela solta na fonte
+precisa ser reconstituída como tabela real na composição, não como lista.
 
-Continuam em aberto, e dependem da fonte:
+Continuam em aberto para 1º e 3º ano, que ainda não têm recorte:
 
 - quais eixos o material cobre em cada ano;
 - se a alfabetização segue método específico e qual;
 - quais gêneros textuais entram, e em que ano;
-- se a letra cursiva entra em algum momento, e quando;
-- em que ponto do 2º ano a minúscula de imprensa entra.
+- se a letra cursiva entra em algum momento, e quando.

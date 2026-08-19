@@ -1,12 +1,12 @@
 # Regras — Português · 2º ano
 
 > **Derivado** do autor `matematica`, em 18/08/2026, seguindo
-> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. A disciplina não tem
-> ano próprio validado por produção: a direção veio do autor mais maduro do
-> repositório e foi adaptada ao que Português exige.
+> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. Validado por
+> produção real em 19/08/2026: 3º bimestre, Unidade 6, 8 páginas aprovadas —
+> ver `autores/portugues/anos/2ano/ORGANIZACAO.md`.
 >
-> **Nenhuma fonte deste ano foi recebida.** O recorte de conteúdo não existe
-> ainda e precisa de ajuste humano quando a fonte chegar.
+> Fonte recebida em 18-19/08/2026. Unidade 5 do 3º bimestre ainda não tem
+> recorte.
 
 ## Travas invioláveis
 
@@ -41,7 +41,11 @@ melhor os que ficam e reancorar o conteúdo no concreto.
 
 Nada abaixo pode ser preenchido por inferência:
 
-- quais unidades e eixos o material cobre neste ano;
+- quais unidades e eixos o material cobre em bimestres ainda sem recorte;
 - a progressão entre bimestres;
-- o vocabulário e os exemplos específicos;
-- quantas páginas cada unidade recebe.
+- o vocabulário e os exemplos específicos de cada unidade.
+
+Já resolvido pela produção real da Unidade 6 (3º bimestre): quantas páginas
+uma unidade de dois capítulos recebe (8, a ~2 seções por página) e que a
+divisão em páginas é decisão editorial por unidade, não uma regra fixa —
+outras unidades podem pedir número diferente.

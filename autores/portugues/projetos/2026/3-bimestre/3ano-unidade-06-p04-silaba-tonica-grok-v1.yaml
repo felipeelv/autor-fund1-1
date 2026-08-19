@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Português — 3º ano — 3º bimestre — Unidade 6 — página 4 — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P4 — Sílaba tônica: a sílaba mais forte — Grok Imagine 2 — v1"
+    prompt: "autores/portugues/anos/3ano/prompts/2026/3-bimestre/unidade-06-p04-silaba-tonica-v1.md"
+    saida: "portugues/3ano/3-bimestre/unidade-06/p04-silaba-tonica-grok-v1.jpg"

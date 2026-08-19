@@ -3,7 +3,7 @@ schema: 1
 disciplina:
   id: portugues
   nome: "Português — Fundamental I"
-  estado: "direção provisória; nenhuma fonte recebida"
+  estado: "produção iniciada no 2º ano (Unidade 6 aprovada); 1º e 3º ano com fonte recebida, ainda sem recorte"
   escopo: >-
     páginas de apostila de Língua Portuguesa para os anos iniciais do
     Fundamental I: alfabetização, leitura, escrita e uso da língua
@@ -49,4 +49,4 @@ producao:
   aprovadas_externa: "aprovadas/portugues/<ano>/<bimestre>/<unidade>"
 
 anos: [1ano, 2ano, 3ano]
-anos_planejados: [1ano, 2ano, 3ano]
+anos_planejados: [1ano, 3ano]

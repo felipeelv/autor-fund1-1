@@ -5,9 +5,12 @@
 > antes de preparar qualquer página.
 >
 > **Direção derivada** do autor `matematica`, em 18/08/2026, conforme
-> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. Nenhuma fonte de
-> Português foi recebida: o recorte de conteúdo ainda não existe e o padrão
-> editorial aguarda ajuste humano.
+> `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`. Fonte recebida em
+> 18-19/08/2026 para os três anos. Primeiro lote real produzido e aprovado em
+> 19/08/2026 — 2º ano, Unidade 6, 8 páginas — e é nesse lote que o ajuste
+> humano da direção aconteceu na prática; ver
+> `PADRAO-VISUAL-2ANO.md`, seção "Densidade e camadas". 1º e 3º ano ainda sem
+> recorte.
 
 Este autor produz páginas de apoio visual de Língua Portuguesa para crianças dos
 anos iniciais. A fonte interna versionada determina letras, palavras, frases,

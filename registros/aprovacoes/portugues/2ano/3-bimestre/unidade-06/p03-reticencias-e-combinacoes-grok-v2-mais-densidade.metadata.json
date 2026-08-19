@@ -1,0 +1,59 @@
+{
+  "author": "portugues",
+  "generated_at": "2026-08-19T14:17:58.995694+00:00",
+  "image": {
+    "bytes": 1645011,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/3-bimestre/unidade-06/p03-reticencias-e-combinacoes-grok-v2-mais-densidade.jpg",
+    "sha256": "c4e65b78048a0fe7036afd71158f8954c9f9400b4b2c821713dd022fbcfd56c8",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/projetos/2026/3-bimestre/unidade-06-p03-reticencias-e-combinacoes-grok-v2-mais-densidade.yaml",
+  "prompt": {
+    "characters": 6742,
+    "sha256": "54db7e1bf48b4cfee77fba3b28d5806a77fcca7d15c5c4a808fab14f6bddcbed",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/3-bimestre/unidade-06-p03-reticencias-e-combinacoes-v2-mais-densidade.md",
+    "words": 1038
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5965
+  }
+}

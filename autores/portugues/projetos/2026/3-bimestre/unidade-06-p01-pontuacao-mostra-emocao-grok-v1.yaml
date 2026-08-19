@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Português — 2º ano — 3º bimestre — Unidade 6 — página 1 — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Como a pontuação mostra emoção — Grok Imagine 2 — v1"
+    prompt: "autores/portugues/anos/2ano/prompts/2026/3-bimestre/unidade-06-p01-pontuacao-mostra-emocao-v1.md"
+    saida: "portugues/2ano/3-bimestre/unidade-06/p01-pontuacao-mostra-emocao-grok-v1.jpg"

@@ -1,0 +1,59 @@
+{
+  "author": "portugues",
+  "generated_at": "2026-08-19T13:56:59.021320+00:00",
+  "image": {
+    "bytes": 1693997,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/3-bimestre/unidade-06/p01-pontuacao-mostra-emocao-grok-v2-mais-densidade.jpg",
+    "sha256": "c03609ed5b092b8e358f4abcadd74b782d88b40d8617a015651edb84be51be6c",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/projetos/2026/3-bimestre/unidade-06-p01-pontuacao-mostra-emocao-grok-v2-mais-densidade.yaml",
+  "prompt": {
+    "characters": 7288,
+    "sha256": "5b99e7959e96667677ea48d4ad8630c469f1b63d9d28a4ea9fdafabaac2cc814",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/3-bimestre/unidade-06-p01-pontuacao-mostra-emocao-v2-mais-densidade.md",
+    "words": 1142
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1938,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6113
+  }
+}
