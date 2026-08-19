@@ -1,0 +1,53 @@
+recorte:
+  autor: "matematica"
+  ano: "3ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidades-07-08"
+  disciplina: "Matemática"
+  fonte: "autores/matematica/anos/3ano/fontes/2026-2-semestre/4bim-grandezas-medidas-e-estatistica-v1.md"
+
+paginas:
+  - numero: 1
+    slug: "unidades-de-comprimento"
+    titulo: "Metro, centímetro e milímetro"
+    secoes: [4, 5, 8, 9, 10]
+
+  - numero: 2
+    slug: "conversoes-de-comprimento"
+    titulo: "Convertendo unidades de comprimento"
+    secoes: [11, 13]
+
+  - numero: 3
+    slug: "perimetro"
+    titulo: "O perímetro: a medida do contorno"
+    secoes: [15, 16, 17]
+
+  - numero: 4
+    slug: "capacidade-e-massa"
+    titulo: "Capacidade e massa: qual unidade usar"
+    secoes: [21, 25, 29]
+
+  - numero: 5
+    slug: "pesquisa-e-tabelas"
+    titulo: "Pesquisa e organização em tabelas"
+    secoes: [31, 32, 35, 36, 37]
+
+  # Seção 42 (Gráfico de Barras Duplas) fica de fora: o ASCII da fonte é
+  # internamente inconsistente — a mesma coluna aparece como Meninos numa
+  # linha e Meninas na outra —, e reproduzi-lo exigiria inventar valores.
+  # Registrado em COBERTURA-DA-FONTE.md como pendência para decisão humana.
+  - numero: 6
+    slug: "grafico-de-barras"
+    titulo: "Gráfico de barras: ler e construir"
+    secoes: [40, 41]
+
+  - numero: 7
+    slug: "grafico-de-linhas"
+    titulo: "Gráfico de linhas e qual gráfico usar"
+    secoes: [44, 45, 46]
+
+  - numero: 8
+    slug: "probabilidade"
+    titulo: "Probabilidade: certo, impossível e possível"
+    secoes: [55, 56, 57, 58]

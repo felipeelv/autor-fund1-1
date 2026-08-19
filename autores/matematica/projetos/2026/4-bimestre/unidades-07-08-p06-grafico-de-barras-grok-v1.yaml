@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Matemática — 3º ano — 4º bimestre — Unidades 7 e 8 — página 6 — Grok Imagine 2 via OpenRouter — v3 barras na malha"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P6 — Gráfico de barras: ler e construir — Grok Imagine 2 — v3 barras na malha"
+    prompt: "autores/matematica/anos/3ano/prompts/2026/4-bimestre/unidades-07-08-p06-grafico-de-barras-v3-barras-na-malha.md"
+    saida: "matematica/3ano/4-bimestre/unidades-07-08/p06-grafico-de-barras-grok-v3-barras-na-malha.jpg"
