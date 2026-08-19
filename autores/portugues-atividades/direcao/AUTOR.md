@@ -8,8 +8,9 @@
 > `matematica`, o mais maduro do repositório — em 18/08/2026, acrescida das
 > travas de página de atividade.
 >
-> **Nenhuma fonte foi recebida.** O recorte de conteúdo ainda não existe e o
-> padrão editorial aguarda ajuste humano.
+> **Nenhuma fonte própria de atividades foi aprovada.** Em 19/08/2026, a base
+> curricular do 3º ano foi mapeada a partir do autor-par `portugues` e o
+> primeiro caderno foi planejado, mas ainda não há recorte, prompt ou lote.
 
 ## O que este autor faz
 
@@ -51,6 +52,11 @@ escrever é grande e pouco firme:
 Nenhuma atividade é criada, cortada, reescrita, reordenada ou renumerada.
 Nenhuma palavra é trocada por sinônimo e nenhuma grafia da fonte é corrigida ou
 modernizada.
+
+A fonte curricular do autor-par orienta **o que ensinar**, mas não substitui a
+fonte própria de atividades, que precisa registrar **o que o aluno fará**. Um
+mapa de temas ou um lote de conteúdo não autoriza inferir enunciados, itens ou
+respostas silenciosamente.
 
 ## Conferência obrigatória
 

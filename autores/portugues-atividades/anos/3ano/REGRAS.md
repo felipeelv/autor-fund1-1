@@ -5,8 +5,10 @@
 > `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`, com as travas de
 > página de atividade acrescentadas.
 >
-> **Nenhuma fonte deste ano foi recebida.** O recorte de conteúdo não existe
-> ainda e precisa de ajuste humano quando a fonte chegar.
+> Em 19/08/2026, as fontes curriculares do autor-par `portugues` foram
+> mapeadas para este ano. Ainda não existe fonte própria de atividades nem
+> recorte aprovado; a sequência inicial registrada em `ORGANIZACAO.md` é
+> planejamento de cobertura, não autorização para inventar enunciados.
 
 ## Travas invioláveis
 
@@ -41,11 +43,30 @@ que torna a informação falsa é erro, não adaptação.
 Reduzir a idade não é apagar texto: é remover núcleos inteiros, desenvolver
 melhor os que ficam e reancorar o conteúdo no concreto.
 
-## O que depende da fonte
+## Limite entre conteúdo e atividade
 
-Nada abaixo pode ser preenchido por inferência:
+O autor-par `portugues` determina o conceito, o vocabulário e os exemplos
+curriculares. A fonte própria deste autor precisa determinar, literalmente:
 
-- quais unidades e eixos o material cobre neste ano;
-- a progressão entre bimestres;
-- o vocabulário e os exemplos específicos;
-- quantas páginas cada unidade recebe.
+- número e enunciado de cada atividade;
+- palavras, frases, alternativas e itens apresentados à criança;
+- ordem das atividades;
+- ação esperada — completar, classificar, ligar, responder ou escrever;
+- gabarito usado somente na conferência, nunca renderizado na página;
+- quantidade e tipo de espaço de resposta.
+
+Não transformar automaticamente cada box da página de conteúdo em exercício.
+A sequência de oito temas da Unidade 6 define cobertura e pareamento; os
+enunciados ainda precisam ser escritos, revisados e versionados como fonte de
+atividades antes do primeiro prompt.
+
+## Cuidados do primeiro caderno
+
+- preservar exatamente `-OSO/-OSA` com S e `-EZA` com Z;
+- não pré-destacar a resposta quando a ação pedida for identificar ou
+  classificar a sílaba tônica;
+- não preencher transformações, classificações ou palavras compostas;
+- na produção de frase ou descrição, oferecer pauta de frase ou quadro de
+  resposta realmente vazio;
+- não usar `ja-NE-la (penúltima = NI)` enquanto a divergência da fonte não
+  tiver decisão humana registrada.
