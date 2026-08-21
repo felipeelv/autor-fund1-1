@@ -2,14 +2,14 @@
 
 ## Estado
 
-**Em produção.** A Unidade 6 do 3º bimestre está recortada em quatro páginas e
-a página 1 foi gerada em 21/08/2026 — primeiro lote deste ano neste autor.
-Nenhuma imagem promovida para `aprovadas` ainda.
+**Em produção.** As quatro páginas da Unidade 6 do 3º bimestre foram geradas
+em 21/08/2026 — primeiro lote deste ano neste autor. Nenhuma imagem promovida
+para `aprovadas` ainda; as quatro aguardam revisão humana em `_revisao`.
 
 | Fonte | Unidades | Estado |
 |---|---|---|
 | `3bim-plantas-e-agua-v1.md` | Unidade 5 — As Plantas ao Nosso Redor | não produzida, sem recorte |
-| `3bim-plantas-e-agua-v1.md` | Unidade 6 — A Água e Suas Transformações | recortada em 4 páginas; p1 gerada, p2 a p4 sem prompt |
+| `3bim-plantas-e-agua-v1.md` | Unidade 6 — A Água e Suas Transformações | 4 páginas geradas, aguardando revisão |
 | `4bim-animais-e-ambiente-v1.md` | Unidade 7 — Classificação e Transformação dos Animais; Unidade 8 — O Ser Humano e o Ambiente | não produzidas |
 
 Este ano continua em `manifesto.anos_planejados`: sai da lista quando a
@@ -17,10 +17,17 @@ primeira página for promovida para `aprovadas`.
 
 Material da Unidade 6:
 
+| Página | Título | Versão corrente | Estado |
+|---|---|---|---|
+| 1 | A água é vida | `v2-correcao-percentual-adulto` | correta |
+| 2 | Onde tem água e os três estados | `v3-icones-explicitos` | correta |
+| 3 | Como a água muda de estado | `v1` | correta |
+| 4 | Cuidando da água | `v1` | correta |
+
 - conteúdo: `conteudos/2026/3-bimestre/unidade-06-4paginas-v1/`;
-- prompts: `prompts/2026/3-bimestre/unidade-06-p01-a-agua-e-vida-v1.md` e
-  `-v2-correcao-percentual-adulto.md` (a v2 é a versão corrente);
-- projetos: `../../projetos/2026/3-bimestre/2ano-4paginas-unidade-06-p01-*`;
+- prompts: `prompts/2026/3-bimestre/unidade-06-p01..p04-*.md` (versão corrente
+  de cada uma na tabela acima; as demais são histórico de correção);
+- projetos: `../../projetos/2026/3-bimestre/2ano-4paginas-unidade-06-p01..p04-*`;
 - imagens em revisão:
   `_revisao/natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/`.
 
@@ -51,7 +58,15 @@ da banda. O raciocínio completo, com a medição do teto de densidade, está em
    registrada no 1º ano: vale avaliar um `prompt_prefixo` por ano;
 5. a trava de margem de 12 mm do `prompt_sufixo` **não é cumprida** nem aqui
    nem nas páginas já aprovadas do 1º ano, onde elementos também encostam nas
-   quatro bordas. Decidir se a trava vale ou se sai do sufixo.
+   quatro bordas. Decidir se a trava vale ou se sai do sufixo;
+6. **ícone errado em grade de rótulos curtos não é estável entre gerações.**
+   Nomear o ícone de uma única linha errada e regenerar corrigiu aquela linha
+   mas embaralhou ~8 outras que já estavam certas (página 2, tentativa
+   `v2-correcao-icone-torneira`). O que funcionou foi nomear o ícone de
+   **todas** as linhas de uma vez (`v3-icones-explicitos`): de 8 ícones
+   errados para nenhum claramente errado, restando só um termômetro
+   duplicado onde devia haver um ícone de forma — imperfeição cosmética,
+   sem nova rodada.
 
 ## Pendências deste ano
 

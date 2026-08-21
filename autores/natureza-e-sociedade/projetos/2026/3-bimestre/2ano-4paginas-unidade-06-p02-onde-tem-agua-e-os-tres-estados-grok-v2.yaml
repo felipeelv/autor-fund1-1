@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Natureza e Sociedade — 2º ano — 3º bimestre — Unidade 6 — página 2 — Grok Imagine 2 via OpenRouter — v2 (correção do ícone de torneira)"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "natureza-e-sociedade"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — Onde tem água e os três estados — Grok Imagine 2 — v2 (correção do ícone de torneira)"
+    prompt: "autores/natureza-e-sociedade/anos/2ano/prompts/2026/3-bimestre/unidade-06-p02-onde-tem-agua-e-os-tres-estados-v2-correcao-icone-torneira.md"
+    saida: "natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/p02-onde-tem-agua-e-os-tres-estados-grok-v2.jpg"
