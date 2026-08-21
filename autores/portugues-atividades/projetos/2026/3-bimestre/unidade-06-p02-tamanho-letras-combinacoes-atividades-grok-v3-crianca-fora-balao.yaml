@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Português atividades — 2º ano — 3º bimestre — Unidade 6 — página 2 — Grok Imagine 2 — v3 criança fora do balão"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues-atividades"
+
+modelo:
+  provider: "xai"
+  id: "grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — Tamanho das letras e combinações de pontuação (atividades) — Grok Imagine 2 — v3 criança fora do balão"
+    prompt: "autores/portugues-atividades/anos/2ano/prompts/2026/3-bimestre/unidade-06-p02-tamanho-letras-combinacoes-atividades-v3-crianca-fora-balao.md"
+    saida: "portugues-atividades/2ano/3-bimestre/unidade-06/p02-tamanho-letras-combinacoes-atividades-grok-v3-crianca-fora-balao.jpg"
