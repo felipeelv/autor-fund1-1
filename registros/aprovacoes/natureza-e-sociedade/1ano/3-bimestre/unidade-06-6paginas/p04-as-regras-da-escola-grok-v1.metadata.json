@@ -1,0 +1,59 @@
+{
+  "author": "natureza-e-sociedade",
+  "generated_at": "2026-08-21T14:32:34.833363+00:00",
+  "image": {
+    "bytes": 1597870,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/1ano/3-bimestre/unidade-06-6paginas/p04-as-regras-da-escola-grok-v1.jpg",
+    "sha256": "302b686554a4d483202ead1b32d0322f7d650ba4e33a294d267f84c1ea7d9c72",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/projetos/2026/3-bimestre/1ano-6paginas-unidade-06-p04-as-regras-da-escola-grok-v1.yaml",
+  "prompt": {
+    "characters": 6545,
+    "sha256": "76f0036061f33128ec871c56d7547b994ceb6cb818061e20324b51673357819b",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/anos/1ano/prompts/2026/3-bimestre/unidade-06-p04-as-regras-da-escola-v1.md",
+    "words": 988
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1716,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5891
+  }
+}

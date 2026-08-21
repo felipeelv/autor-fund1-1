@@ -1,0 +1,59 @@
+{
+  "author": "natureza-e-sociedade",
+  "generated_at": "2026-08-21T14:24:51.261061+00:00",
+  "image": {
+    "bytes": 1991156,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/1ano/3-bimestre/unidade-06-6paginas/p01-abertura-da-unidade-grok-v2.jpg",
+    "sha256": "ac92c64187dc944a3feffa0948a7665c27b8af265ea66b596ae58cb0e23e9398",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/projetos/2026/3-bimestre/1ano-6paginas-unidade-06-p01-abertura-da-unidade-grok-v2.yaml",
+  "prompt": {
+    "characters": 6927,
+    "sha256": "4dedd2791f89be256e7cf04ee7fc48f222655af4e20182d868df2a9adb1b1924",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/anos/1ano/prompts/2026/3-bimestre/unidade-06-p01-abertura-da-unidade-v2-com-gancho-de-conteudo.md",
+    "words": 1063
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1816,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5991
+  }
+}
