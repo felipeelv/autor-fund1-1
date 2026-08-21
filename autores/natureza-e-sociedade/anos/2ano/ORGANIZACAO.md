@@ -2,29 +2,72 @@
 
 ## Estado
 
-**Fonte recebida, nada produzido ainda.**
+**Em produção.** A Unidade 6 do 3º bimestre está recortada em quatro páginas e
+a página 1 foi gerada em 21/08/2026 — primeiro lote deste ano neste autor.
+Nenhuma imagem promovida para `aprovadas` ainda.
 
-| Fonte | Unidades |
-|---|---|
-| `3bim-plantas-e-agua-v1.md` | Unidade 5 — As Plantas ao Nosso Redor; Unidade 6 — A Água e Suas Transformações |
-| `4bim-animais-e-ambiente-v1.md` | Unidade 7 — Classificação e Transformação dos Animais; Unidade 8 — O Ser Humano e o Ambiente |
+| Fonte | Unidades | Estado |
+|---|---|---|
+| `3bim-plantas-e-agua-v1.md` | Unidade 5 — As Plantas ao Nosso Redor | não produzida, sem recorte |
+| `3bim-plantas-e-agua-v1.md` | Unidade 6 — A Água e Suas Transformações | recortada em 4 páginas; p1 gerada, p2 a p4 sem prompt |
+| `4bim-animais-e-ambiente-v1.md` | Unidade 7 — Classificação e Transformação dos Animais; Unidade 8 — O Ser Humano e o Ambiente | não produzidas |
 
-`conteudos/`, `prompts/`, `projetos/` e `registros/` ainda não existem
-fisicamente: são áreas lógicas declaradas em `../../manifesto.yaml` e devem ser
-criadas com o primeiro arquivo real, sem `.gitkeep`.
+Este ano continua em `manifesto.anos_planejados`: sai da lista quando a
+primeira página for promovida para `aprovadas`.
 
-Este ano continua em `manifesto.anos_planejados`, que lista os anos do escopo
-sem material produzido. Ter fonte não é ter material: sai da lista quando a
-primeira página for aprovada.
+Material da Unidade 6:
+
+- conteúdo: `conteudos/2026/3-bimestre/unidade-06-4paginas-v1/`;
+- prompts: `prompts/2026/3-bimestre/unidade-06-p01-a-agua-e-vida-v1.md` e
+  `-v2-correcao-percentual-adulto.md` (a v2 é a versão corrente);
+- projetos: `../../projetos/2026/3-bimestre/2ano-4paginas-unidade-06-p01-*`;
+- imagens em revisão:
+  `_revisao/natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/`.
+
+## Por que quatro páginas
+
+Contagem par, pedida por Nicolas Basso. Os 14 blocos da unidade dão 3,75
+núcleos por página em quatro — dentro da banda de 3 a 4 do
+`../../direcao/PADRAO-VISUAL-2ANO.md`. Em seis páginas cairia para 2,3, abaixo
+da banda. O raciocínio completo, com a medição do teto de densidade, está em
+`conteudos/2026/3-bimestre/unidade-06-4paginas-v1/PROPOSTA-PEDAGOGICA.md`.
+
+## O que a página 1 ensinou sobre este ano
+
+1. **O orçamento de prompt é de ~4.717 bytes**, não os 5.468 que sobram depois
+   do `prompt_prefixo`. O cap de 8.000 bytes da OpenRouter cobre a string
+   montada por `aplicar_autor` (`gerador_imagens/authors.py:78`), que é
+   prefixo (2.532 B) + página + **sufixo (747 B)**. A primeira geração tomou
+   400 por ter contado só o prefixo;
+2. como o prefixo e o sufixo já fixam paleta, camadas, 2:3, margem e a regra
+   de renderizar uma vez, o corpo do prompt só precisa carregar o **delta**.
+   Cortar a repetição liberou ~875 bytes sem tocar em texto visível;
+3. **percentual em rótulo de figura duplica o número da frase.** Pedir "cada
+   silhueta rotulada com o seu percentual" e ter o mesmo número dentro de um
+   texto literal fez o modelo imprimir "78%" duas vezes, contra a regra de
+   renderizar exatamente uma vez. A v2 resolveu deixando o número só na frase;
+4. o contra-bloco anti-povos-indígenas nas TRAVAS **funcionou** — nenhum
+   elemento do prefixo do 3º ano vazou para a página. Confirma a pendência já
+   registrada no 1º ano: vale avaliar um `prompt_prefixo` por ano;
+5. a trava de margem de 12 mm do `prompt_sufixo` **não é cumprida** nem aqui
+   nem nas páginas já aprovadas do 1º ano, onde elementos também encostam nas
+   quatro bordas. Decidir se a trava vale ou se sai do sufixo.
+
+## Pendências deste ano
+
+1. `REGRAS.md` e `../../direcao/PADRAO-VISUAL-2ANO.md` continuam **derivados**
+   do 3º ano. A Unidade 6 é o primeiro teste real deles contra uma fonte deste
+   ano, mas eles ainda não foram revisados por uma pessoa com a fonte em mãos;
+2. decidir se o fundo da página 1 saiu com cast creme demais — o `CLAUDE.md`
+   §1 e a `MEMORIA.md` fixam branco puro `#FFFFFF`. O prompt do 1º ano traz
+   uma trava explícita ("sem creme") que o desta página não tem;
+3. o termo *fotossíntese*, impresso na página 1, é definido na Unidade 5, que
+   não faz parte deste lote.
 
 ## Próximos passos
 
-1. mapear a fonte com `uv run preparar.py --inventario <fonte>`;
-2. derivar o recorte editorial em `conteudos/<ano-letivo>/<bimestre>/`;
-3. escrever os prompts em `prompts/<ano-letivo>/<bimestre>/`, versionados com
-   sufixo `-vN`;
-4. declarar o lote em `../../projetos/<ano-letivo>/<bimestre>/`, com provedor e
-   modelo explícitos e saída externa em `_revisao`;
-5. revisar `REGRAS.md` deste ano, que hoje é derivado, contra o que a fonte
-   realmente pede;
-6. tirar o ano de `manifesto.anos_planejados`.
+1. aprovar o estilo da página 1 e escrever os prompts das páginas 2 a 4;
+2. gerar, conferir e promover as quatro com `aprovar.py`;
+3. tirar o ano de `manifesto.anos_planejados` e atualizar o `PROGRESSO.md`;
+4. produzir a Unidade 5 do 3º bimestre e as Unidades 7 e 8 do 4º bimestre;
+5. revisar `REGRAS.md` deste ano contra o que as fontes realmente pedem.
