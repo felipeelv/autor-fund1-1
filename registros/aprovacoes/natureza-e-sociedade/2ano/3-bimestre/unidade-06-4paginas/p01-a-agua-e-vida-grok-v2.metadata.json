@@ -1,0 +1,59 @@
+{
+  "author": "natureza-e-sociedade",
+  "generated_at": "2026-08-21T17:48:13.374313+00:00",
+  "image": {
+    "bytes": 1771832,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/p01-a-agua-e-vida-grok-v2.jpg",
+    "sha256": "8a404c281ef67bb0adc3074e0a17a30e05115b2362953c42fa392f707db76e2f",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/projetos/2026/3-bimestre/2ano-4paginas-unidade-06-p01-a-agua-e-vida-grok-v2.yaml",
+  "prompt": {
+    "characters": 7634,
+    "sha256": "c4876bec2323b0cafb4dc29b1fde44d8a59dbff44a159c727cba27e3a4a64a9d",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/anos/2ano/prompts/2026/3-bimestre/unidade-06-p01-a-agua-e-vida-v2-correcao-percentual-adulto.md",
+    "words": 1224
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 2010,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6185
+  }
+}

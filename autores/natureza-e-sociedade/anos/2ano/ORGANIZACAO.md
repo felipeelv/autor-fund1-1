@@ -2,18 +2,18 @@
 
 ## Estado
 
-**Em produção.** As quatro páginas da Unidade 6 do 3º bimestre foram geradas
-em 21/08/2026 — primeiro lote deste ano neste autor. Nenhuma imagem promovida
-para `aprovadas` ainda; as quatro aguardam revisão humana em `_revisao`.
+**Unidade 6 completa e aprovada em 21/08/2026** (revisor: Nicolas Basso) —
+primeiro lote deste ano neste autor. As quatro páginas foram promovidas para
+`aprovadas` com `aprovar.py`.
 
 | Fonte | Unidades | Estado |
 |---|---|---|
 | `3bim-plantas-e-agua-v1.md` | Unidade 5 — As Plantas ao Nosso Redor | não produzida, sem recorte |
-| `3bim-plantas-e-agua-v1.md` | Unidade 6 — A Água e Suas Transformações | 4 páginas geradas, aguardando revisão |
+| `3bim-plantas-e-agua-v1.md` | Unidade 6 — A Água e Suas Transformações | 4 páginas aprovadas |
 | `4bim-animais-e-ambiente-v1.md` | Unidade 7 — Classificação e Transformação dos Animais; Unidade 8 — O Ser Humano e o Ambiente | não produzidas |
 
-Este ano continua em `manifesto.anos_planejados`: sai da lista quando a
-primeira página for promovida para `aprovadas`.
+O ano saiu de `manifesto.anos_planejados` em 21/08/2026, quando as primeiras
+páginas foram promovidas.
 
 Material da Unidade 6:
 
@@ -28,8 +28,10 @@ Material da Unidade 6:
 - prompts: `prompts/2026/3-bimestre/unidade-06-p01..p04-*.md` (versão corrente
   de cada uma na tabela acima; as demais são histórico de correção);
 - projetos: `../../projetos/2026/3-bimestre/2ano-4paginas-unidade-06-p01..p04-*`;
-- imagens em revisão:
-  `_revisao/natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/`.
+- imagens aprovadas:
+  `aprovadas/natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/`;
+- registros de aprovação:
+  `registros/aprovacoes/natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/`.
 
 ## Por que quatro páginas
 
@@ -81,8 +83,9 @@ da banda. O raciocínio completo, com a medição do teto de densidade, está em
 
 ## Próximos passos
 
-1. aprovar o estilo da página 1 e escrever os prompts das páginas 2 a 4;
-2. gerar, conferir e promover as quatro com `aprovar.py`;
-3. tirar o ano de `manifesto.anos_planejados` e atualizar o `PROGRESSO.md`;
-4. produzir a Unidade 5 do 3º bimestre e as Unidades 7 e 8 do 4º bimestre;
-5. revisar `REGRAS.md` deste ano contra o que as fontes realmente pedem.
+1. produzir a Unidade 5 do 3º bimestre (As Plantas ao Nosso Redor), ainda sem
+   recorte;
+2. produzir as Unidades 7 e 8 do 4º bimestre;
+3. revisar `REGRAS.md` e `PADRAO-VISUAL-2ANO.md` deste ano contra o que as
+   fontes realmente pedem — continuam derivados do 3º ano (pendência 1
+   acima).

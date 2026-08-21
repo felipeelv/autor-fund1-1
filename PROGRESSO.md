@@ -9,15 +9,50 @@ precisar reler tudo do zero — e deve ser atualizado a cada lote aprovado.
 Antes de qualquer trabalho novo, leia `CLAUDE.md` e, para o autor em uso,
 `direcao/AUTOR.md` e `direcao/MEMORIA.md` — este arquivo não substitui isso.
 
-## Snapshot por autor (19/08/2026)
+## Snapshot por autor (21/08/2026)
 
 | Autor | Anos com fonte | Anos com material aprovado | Próximo passo natural |
 |---|---|---|---|
 | `ingles` | 1º, 3º | 1º, 3º | ver `autores/ingles/anos/*/ORGANIZACAO.md` |
 | `matematica` | 3º | 3º | 4º bimestre (Unidades 7-8, 8 páginas) em `_revisao`: 6 corretas, p5 e p7 pendentes |
-| `natureza-e-sociedade` | 1º, 2º, 3º | 3º | 1º/2º ano ainda sem recorte |
-| `portugues` | 1º, 2º, 3º | 2º (Unidade 6) | Unidade 6 do 3º ano em `_revisao`, falta aprovar; 1º ano e Unidade 5 dos outros dois sem recorte |
+| `natureza-e-sociedade` | 1º, 2º, 3º | 2º, 3º | 1º ano ainda sem recorte; Unidade 5 do 2º ano sem recorte |
+| `portugues` | 1º, 2º, 3º | 1º (Unidade 6), 2º (Unidade 6) | Unidade 6 do 3º ano em `_revisao`, falta aprovar; Unidade 5 dos três anos sem recorte |
 | `*-atividades` (par de cada disciplina) | — | — | nenhum lote iniciado ainda |
+
+## Português — 1º ano — 3º bimestre — Unidade 6 ("Somos escritores")
+
+**Status: completo e aprovado em 20/08/2026** (revisor: Nicolas Basso).
+Primeiro lote real deste ano. A fonte rotula a unidade como "UNIDADE 8", mas
+ela ocupa a posição da Unidade 6 do 3º bimestre — rótulo da própria fonte,
+não corrigido; ver `autores/portugues/anos/1ano/ORGANIZACAO.md`.
+
+Reorganizado de 6 para 4 páginas a pedido de Nicolas Basso (crianças do 1º
+ano ainda leem pouco; menos páginas mais densas concentram melhor a
+atenção): cada página junta dois sub-temas que a própria fonte já encadeia.
+O recorte original de 6 páginas e seus prompts continuam no repositório como
+histórico, sem uso ativo.
+
+| Página | Título | Recorte da fonte |
+|---|---|---|
+| 1 | Vamos criar nossa própria história! + índice da unidade + regra de S/Z | Cap. 1, abertura |
+| 2 | O roteiro da história + início, meio e fim | Cap. 1, planejamento |
+| 3 | C e Ç: quando usar? | Cap. 2, abertura |
+| 4 | Nunca existe ÇE nem ÇI! + quadro comparativo + palavras do livro | Cap. 2, fecho |
+
+A página 1 passou por uma correção de defeito de geração antes da aprovação:
+o cartão da palavra MESA saiu com um livro em vez de uma mesa (v1 →
+`v2-correcao-mesa`, especificando o móvel explicitamente no prompt).
+
+Caminhos: prompts em
+`autores/portugues/anos/1ano/prompts/2026/3-bimestre/unidade-06-p01..04-*-v1.md`
+(p01 final é `v2-correcao-mesa`); projetos com prefixo `1ano-4paginas-` em
+`autores/portugues/projetos/2026/3-bimestre/`; imagens aprovadas em
+`aprovadas/portugues/1ano/3-bimestre/unidade-06-4paginas/`; registros de
+aprovação em
+`registros/aprovacoes/portugues/1ano/3-bimestre/unidade-06-4paginas/`.
+
+Pendente: Unidade 5 ("O mundo das histórias") do mesmo bimestre e fonte,
+ainda sem recorte.
 
 ## Português — 2º ano — 3º bimestre — Unidade 6 ("Criando Quadrinhos")
 
@@ -92,6 +127,39 @@ imagens em `_revisao/portugues/3ano/3-bimestre/unidade-06/`.
 Pendente: aprovação final das imagens; Unidade 5 do mesmo bimestre e fonte,
 ainda sem recorte.
 
+## Natureza e Sociedade — 2º ano — 3º bimestre — Unidade 6 ("A Água e Suas Transformações")
+
+**Status: completo e aprovado em 21/08/2026** (revisor: Nicolas Basso).
+Primeiro lote real deste autor no 2º ano. Contagem par (pedida por Nicolas
+Basso), 4 páginas, 3,75 núcleos por página — dentro da banda de 3 a 4 do
+`PADRAO-VISUAL-2ANO.md`. A Unidade 5 da mesma fonte ("As Plantas ao Nosso
+Redor") não faz parte deste lote.
+
+A fonte trazia seis números sem instituição nem ano — proibido pela
+`MEMORIA.md` deste autor. Cinco foram cortados; o "70% do corpo humano" foi
+substituído pelos valores do USGS (2019), impressos na página 1.
+
+| Página | Título | Estado |
+|---|---|---|
+| 1 | A água é vida | correta (v2: corrigiu percentual do adulto e duplicação de número) |
+| 2 | Onde tem água e os três estados | correta (v3: corrigiu ícones de característica, ver `ORGANIZACAO.md` do ano) |
+| 3 | Como a água muda de estado | correta na primeira geração |
+| 4 | Cuidando da água | correta na primeira geração |
+
+Caminhos: conteúdo em
+`autores/natureza-e-sociedade/anos/2ano/conteudos/2026/3-bimestre/unidade-06-4paginas-v1/`;
+prompts em
+`autores/natureza-e-sociedade/anos/2ano/prompts/2026/3-bimestre/unidade-06-p01..04-*.md`
+(versão corrente de cada página no `ORGANIZACAO.md` do ano); projetos com
+prefixo `2ano-4paginas-` em
+`autores/natureza-e-sociedade/projetos/2026/3-bimestre/`; imagens aprovadas em
+`aprovadas/natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/`;
+registros de aprovação em
+`registros/aprovacoes/natureza-e-sociedade/2ano/3-bimestre/unidade-06-4paginas/`.
+
+Pendente: Unidade 5 do mesmo bimestre e fonte, ainda sem recorte; Unidades 7
+e 8 do 4º bimestre.
+
 ## Matemática — 3º ano — 4º bimestre — Unidades 7 e 8
 
 **Status: 8 páginas em `_revisao`, seis corretas e duas pendentes**
@@ -144,3 +212,19 @@ ASCII é inconsistente; e a aprovação das seis páginas corretas com `aprovar.
   trocado). Também descoberto: o limite de tamanho do prompt é em **bytes
   UTF-8**, não caracteres — texto acentuado pesa mais em bytes; ver
   `MEMORIA.md`.
+- **20/08/2026** — Português 1º ano, Unidade 6 completa e aprovada (4
+  páginas): recorte inicial em 6 páginas, reorganizado para 4 a pedido de
+  Nicolas Basso (crianças do 1º ano leem pouco; menos páginas mais densas
+  concentram a atenção — cada página junta dois sub-temas que a fonte já
+  encadeia). Uma rodada de correção de defeito de geração (cartão MESA saiu
+  com um livro em vez de uma mesa). Aprovação final das 4 imagens.
+- **21/08/2026** — Natureza e Sociedade 2º ano, Unidade 6 completa e
+  aprovada (4 páginas): primeiro lote deste autor no 2º ano. Contagem par
+  pedida por Nicolas Basso; seis números da fonte sem instituição nem ano
+  foram cortados ou substituídos pelos valores do USGS (2019). Duas rodadas
+  de correção: percentual do adulto e duplicação de número na página 1;
+  ícone de característica errado espalhado por regeneração na página 2 —
+  corrigido nomeando o ícone de todas as linhas de uma vez, não só a errada.
+  Descoberto: o cap de 8.000 bytes da OpenRouter cobre a string montada por
+  `aplicar_autor` (prefixo **+ sufixo**, não só o prefixo); ver
+  `autores/natureza-e-sociedade/anos/2ano/ORGANIZACAO.md`.

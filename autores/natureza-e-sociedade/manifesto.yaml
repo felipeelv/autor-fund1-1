@@ -49,4 +49,4 @@ producao:
   aprovadas_externa: "aprovadas/natureza-e-sociedade/<ano>/<bimestre>/<unidade>"
 
 anos: [1ano, 2ano, 3ano]
-anos_planejados: [1ano, 2ano]
+anos_planejados: [1ano]
