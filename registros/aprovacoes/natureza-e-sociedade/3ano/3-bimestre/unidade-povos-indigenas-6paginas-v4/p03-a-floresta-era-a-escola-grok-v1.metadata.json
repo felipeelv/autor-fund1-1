@@ -1,0 +1,59 @@
+{
+  "author": "natureza-e-sociedade",
+  "generated_at": "2026-08-22T13:37:33.763715+00:00",
+  "image": {
+    "bytes": 1802511,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/3ano/3-bimestre/unidade-povos-indigenas-6paginas-v4/p03-a-floresta-era-a-escola-grok-v1.jpg",
+    "sha256": "ef97254a34494576d315e9f00ab0c2ed4b3c8488f7b3477e47e56757ff55d33b",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/projetos/2026/3-bimestre/povos-indigenas-v4-p03-a-floresta-era-a-escola-grok-v1.yaml",
+  "prompt": {
+    "characters": 4526,
+    "sha256": "864baa18ccd40e3ac2ec0ea5a5a8cb94ff2d4f8a9c3712d5d6b65e8ab8db1a33",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-v4-p03-a-floresta-era-a-escola-v1.md",
+    "words": 666
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1191,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5366
+  }
+}

@@ -120,35 +120,33 @@ ASCII é inconsistente; e a aprovação das seis páginas corretas com `aprovar.
 
 ## Natureza e Sociedade — 3º ano — 3º bimestre — Povos Indígenas (v4)
 
-**Status: 6 páginas geradas em `_revisao`, todas corretas, aguardando
-revisão humana** (22/08/2026). Quarto lote da mesma unidade (v1/v2/v3
-usaram fonte mais curta; v3 foi aprovado em 15/08/2026 e é a referência
-visual canônica do autor). A fonte combinada recebida em 19/08/2026 é bem
+**Status: completo e aprovado em 22/08/2026** (revisor: Nicolas Basso).
+Quarto lote da mesma unidade (v1/v2/v3 usaram fonte mais curta; v3 foi
+aprovado em 15/08/2026). A fonte combinada recebida em 19/08/2026 é bem
 mais rica — duas seções novas (organização social, arte e cultura) sem
-equivalente no v3 — por isso este não é uma correção, é uma refeitura.
+equivalente no v3 — por isso este não foi uma correção, foi uma refeitura.
+O v4 passa a ser a referência visual corrente do autor no lugar do v3
+(que permanece aprovado e no acervo).
 
 | Página | Título | Estado |
 |---|---|---|
-| 1 | O Brasil não começou em 1500 (capa) | correta |
-| 2 | Aqui moravam os Caiapós | correta (v2; v1 tinha roupa moderna na cena histórica) |
-| 3 | A floresta era a escola | correta |
-| 4 | Sabiam tudo — e mesmo assim não destruíram | correta |
-| 5 | Como a aldeia se organizava | correta, com pendência de generalização registrada |
-| 6 | O que aconteceu — e o que fazemos agora | correta |
+| 1 | O Brasil não começou em 1500 (capa) | aprovada (v3; v1 sem os 5 objetivos da unidade, v2 com defeito de acento) |
+| 2 | Aqui moravam os Caiapós | aprovada (v2; v1 tinha roupa moderna na cena histórica) |
+| 3 | A floresta era a escola | aprovada |
+| 4 | Sabiam tudo — e mesmo assim não destruíram | aprovada |
+| 5 | Como a aldeia se organizava | aprovada, com pendência de generalização registrada |
+| 6 | O que aconteceu — e o que fazemos agora | aprovada |
 
-Três decisões mudam o que estava aprovado no v3 e exigem confirmação
-humana explícita: o versículo bíblico (Romanos 12:4 no lugar de Atos
-17:26 — este não está na fonte nova), a tabela de povos da página 1
-(Xavantes no lugar de Quéchuas, que não são um povo brasileiro), e a
-página 2 (carrega a formulação já corrigida do v3 sobre "a terra não
-estava vazia", revertendo o que a fonte nova reintroduzia). Detalhe
-completo em
+Três decisões mudam o que estava aprovado no v3, confirmadas por Nicolas
+Basso: o versículo bíblico (Romanos 12:4 no lugar de Atos 17:26 — este não
+está na fonte nova), a tabela de povos da página 1 (Xavantes no lugar de
+Quéchuas, que não são um povo brasileiro), e a página 2 (carrega a
+formulação já corrigida do v3 sobre "a terra não estava vazia",
+revertendo o que a fonte nova reintroduzia). Detalhe completo em
 `autores/natureza-e-sociedade/anos/3ano/ORGANIZACAO.md` e
 `registros/2026/3-bimestre/povos-indigenas-6paginas-v4.md`.
 
-Pendente: revisão humana das três decisões, decisão sobre se o v4
-substitui o v3 como referência visual, aprovação com `aprovar.py`; a
-Unidade 1 (O Solo) do mesmo bimestre, ainda sem recorte.
+Pendente: a Unidade 1 (O Solo) do mesmo bimestre, ainda sem recorte.
 
 ## Como continuar um autor/ano parado
 
@@ -176,9 +174,11 @@ Unidade 1 (O Solo) do mesmo bimestre, ainda sem recorte.
   trocado). Também descoberto: o limite de tamanho do prompt é em **bytes
   UTF-8**, não caracteres — texto acentuado pesa mais em bytes; ver
   `MEMORIA.md`.
-- **22/08/2026** — Natureza e Sociedade 3º ano, Povos Indígenas refeito em
-  6 páginas (v4), a partir de uma fonte mais rica que o v3 aprovado. Três
-  decisões editoriais mudam o que estava aprovado (versículo bíblico,
-  tabela de povos, formulação sobre "terra vazia") e aguardam confirmação
-  humana antes de `aprovar.py`. Uma correção de defeito de geração (roupa
-  moderna em cena anterior a 1500, página 2).
+- **22/08/2026** — Natureza e Sociedade 3º ano, Povos Indígenas refeito e
+  aprovado em 6 páginas (v4), a partir de uma fonte mais rica que o v3
+  aprovado. Três decisões editoriais mudam o que estava aprovado
+  (versículo bíblico, tabela de povos, formulação sobre "terra vazia"),
+  confirmadas por Nicolas Basso. Uma correção de defeito de geração (roupa
+  moderna em cena anterior a 1500, página 2) e uma correção de acento em
+  corpo pequeno (página 1). O v4 passa a ser a referência visual corrente
+  do autor, no lugar do v3.

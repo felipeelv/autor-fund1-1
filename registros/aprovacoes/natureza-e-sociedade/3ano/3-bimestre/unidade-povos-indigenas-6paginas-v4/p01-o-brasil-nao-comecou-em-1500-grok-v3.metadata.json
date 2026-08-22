@@ -1,0 +1,59 @@
+{
+  "author": "natureza-e-sociedade",
+  "generated_at": "2026-08-22T14:01:57.998741+00:00",
+  "image": {
+    "bytes": 1751144,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/3ano/3-bimestre/unidade-povos-indigenas-6paginas-v4/p01-o-brasil-nao-comecou-em-1500-grok-v3.jpg",
+    "sha256": "213cece2f98f23c9c677e1cecb4ac8852bb2db641bfc8d18e315dee3a7b48f5e",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/projetos/2026/3-bimestre/povos-indigenas-v4-p01-o-brasil-nao-comecou-em-1500-grok-v3.yaml",
+  "prompt": {
+    "characters": 5798,
+    "sha256": "cb804c25d87180036b97d599ca7848cb7fc2aa1896c766680089ec4844b03320",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/anos/3ano/prompts/2026/3-bimestre/povos-indigenas-v4-p01-o-brasil-nao-comecou-em-1500-v3-correcao-acento.md",
+    "words": 890
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1525,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5700
+  }
+}

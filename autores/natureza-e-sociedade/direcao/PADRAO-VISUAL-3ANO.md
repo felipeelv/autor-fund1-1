@@ -2,9 +2,14 @@
 
 > **Layout canônico:** o formato descrito aqui foi aprovado pelo Felipe em
 > 15 de agosto de 2026, a partir do lote `povos-indigenas-6paginas-v3`, e
-> passa a valer para **todas as páginas deste autor**. As páginas aprovadas
-> desse lote são a referência visual de comparação. Não voltar ao layout
+> passa a valer para **todas as páginas deste autor**. Não voltar ao layout
 > anterior, de núcleos soltos sobre grandes áreas brancas.
+>
+> **Referência visual de comparação:** o lote `povos-indigenas-6paginas-v4`
+> (aprovado por Nicolas Basso em 22/08/2026, mesmo layout, conteúdo mais
+> completo a partir de fonte mais rica) é a referência corrente. O `v3`
+> continua aprovado e no acervo, mas não é mais o material de comparação
+> para lotes novos — usar o `v4`.
 
 ## Base
 

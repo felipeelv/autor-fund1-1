@@ -5,7 +5,7 @@
 | Bimestre | Tema | Estado |
 |---|---|---|
 | 3º | Unidade 1 — O Solo: Base da Vida | sem recorte |
-| 3º | Unidade 2 — Povos Indígenas (posição da Unidade 6 do bimestre) | lote v3 aprovado em 15/08/2026 (fonte curta); lote v4 gerado em 22/08/2026 a partir de fonte mais rica, aguardando revisão humana |
+| 3º | Unidade 2 — Povos Indígenas (posição da Unidade 6 do bimestre) | lote v3 aprovado em 15/08/2026 (fonte curta); lote v4 aprovado em 22/08/2026 (fonte mais rica) — referência visual corrente |
 | 4º | Unidade 1/2 — Biodiversidade e Ecossistemas | sem recorte |
 
 Os prompts ficam em `prompts/2026/<bimestre>/`. Cada lote precisa de projeto
@@ -19,9 +19,10 @@ não usou. Detalhe completo em
 `conteudos/2026/3-bimestre/unidade-povos-indigenas-6paginas-v4/COBERTURA-DA-FONTE.md`
 e `PROPOSTA-PEDAGOGICA.md`.
 
-Seis páginas geradas em `_revisao`, todas corretas — a página 2 precisou de
-uma segunda rodada por defeito de geração (roupa moderna na cena histórica).
-Nenhuma promovida para `aprovadas` ainda.
+**Completo e aprovado em 22/08/2026** (revisor: Nicolas Basso), incluindo as
+três decisões editoriais abaixo. A página 2 precisou de uma segunda rodada
+por defeito de geração (roupa moderna na cena histórica). As seis páginas
+foram promovidas para `aprovadas` com `aprovar.py`.
 
 | Página | Título | Versão corrente |
 |---|---|---|
@@ -32,7 +33,7 @@ Nenhuma promovida para `aprovadas` ainda.
 | 5 | Como a aldeia se organizava | v1 |
 | 6 | O que aconteceu — e o que fazemos agora | v1 |
 
-### Três decisões que mudam o que estava aprovado no v3 — exigem confirmação humana
+### Três decisões que mudam o que estava aprovado no v3 — confirmadas por Nicolas Basso em 22/08/2026
 
 1. **versículo bíblico trocado**: Romanos 12:4 no lugar de Atos 17:26 — este
    não consta na fonte nova; aquele é o que a fonte liga ao tema da
@@ -52,11 +53,11 @@ lote, é construída sobre generalizações da própria fonte sobre povos
 indígenas em bloco — mesma pendência que `MEMORIA.md` já registrou a partir
 da página 4 do v3, agora numa página inteira. Ver `COBERTURA-DA-FONTE.md`.
 
-### Pendência herdada
+### Referência visual atualizada
 
-`../../direcao/PADRAO-VISUAL-3ANO.md` nomeia as páginas do v3 como "a
-referência visual de comparação para as próximas unidades". Se o v4 for
-aprovado, decidir se ele substitui essa referência.
+`../../direcao/PADRAO-VISUAL-3ANO.md` foi atualizado em 22/08/2026: o `v4`
+passa a ser a referência visual de comparação para lotes novos deste
+autor, no lugar do `v3`. O `v3` continua aprovado e no acervo.
 
 ### O que a página 1 ensinou
 
@@ -85,7 +86,19 @@ sufixo cerca de 2.700 caracteres") estava desatualizada — não contava o
 `prompt_sufixo`. Corrigida em 22/08/2026 para os valores medidos: prefixo
 2.532 B + sufixo 747 B = 3.279 B fixos, ~4.721 B de orçamento por página.
 
-## Pendência obrigatória
+## Pendência aberta
 
-Antes de promover qualquer imagem do v4 para `aprovadas`, uma pessoa deve
-revisar as três decisões acima e a pendência de generalização da página 5.
+A generalização sobre povos indígenas em bloco (página 5, "Pendência que
+se agrava" acima) foi aprovada junto com o restante do lote, mas continua
+registrada como pendência editorial de longo prazo — não é um erro deste
+lote, é uma característica da própria fonte que os lotes futuros devem ter
+em mente.
+
+Caminhos: prompts em
+`prompts/2026/3-bimestre/povos-indigenas-v4-p01..p06-*.md` (versão corrente
+de cada página na tabela acima); projetos em
+`../../projetos/2026/3-bimestre/povos-indigenas-v4-p01..p06-*.yaml`; imagens
+aprovadas em
+`aprovadas/natureza-e-sociedade/3ano/3-bimestre/unidade-povos-indigenas-6paginas-v4/`;
+registros de aprovação em
+`registros/aprovacoes/natureza-e-sociedade/3ano/3-bimestre/unidade-povos-indigenas-6paginas-v4/`.

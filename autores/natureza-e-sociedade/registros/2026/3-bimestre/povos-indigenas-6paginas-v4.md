@@ -17,21 +17,23 @@ usado pelo v3. Detalhe completo em
 
 ## Estado
 
-Seis páginas geradas em `_revisao`, todas corretas. Nenhuma promovida para
-`aprovadas`. A página 2 precisou de uma segunda rodada (roupa moderna na
-cena histórica, corrigida especificando as peças proibidas no corpo do
-prompt, além do que o `prompt_prefixo` já cobre).
+**Completo e aprovado em 22/08/2026** (revisor: Nicolas Basso). As seis
+páginas foram promovidas para `aprovadas` com `aprovar.py`. A página 1
+passou por duas rodadas depois da geração inicial (objetivos da unidade
+ausentes, depois defeito de acento); a página 2 precisou de uma rodada
+(roupa moderna na cena histórica, corrigida especificando as peças
+proibidas no corpo do prompt, além do que o `prompt_prefixo` já cobre).
 
-| Página | Título | Versão | Estado |
+| Página | Título | Versão aprovada | Estado |
 |---|---|---|---|
-| 1 | O Brasil não começou em 1500 (capa) | v1 | correta |
-| 2 | Aqui moravam os Caiapós | v2 | correta (v1 tinha roupa moderna) |
-| 3 | A floresta era a escola | v1 | correta |
-| 4 | Sabiam tudo — e mesmo assim não destruíram | v1 | correta |
-| 5 | Como a aldeia se organizava | v1 | correta, com pendência registrada |
-| 6 | O que aconteceu — e o que fazemos agora | v1 | correta |
+| 1 | O Brasil não começou em 1500 (capa) | v3 | aprovada (v1 sem os 5 objetivos; v2 com defeito de acento) |
+| 2 | Aqui moravam os Caiapós | v2 | aprovada (v1 tinha roupa moderna) |
+| 3 | A floresta era a escola | v1 | aprovada |
+| 4 | Sabiam tudo — e mesmo assim não destruíram | v1 | aprovada |
+| 5 | Como a aldeia se organizava | v1 | aprovada, com pendência registrada |
+| 6 | O que aconteceu — e o que fazemos agora | v1 | aprovada |
 
-## Três decisões que precisam de confirmação humana antes da aprovação
+## Três decisões que mudam o que estava aprovado no v3 — confirmadas por Nicolas Basso
 
 1. **versículo bíblico**: Romanos 12:4 no lugar do Atos 17:26 do v3 — a
    fonte nova não contém Atos 17:26; Romanos 12:4 é o que ela liga à
@@ -68,7 +70,18 @@ usa "em muitos povos" em vez de afirmação fechada.
   corpo do prompt da página para funcionar, mesma lição que
   `PADRAO-VISUAL-3ANO.md` já registrava de forma mais genérica;
 - a nota de orçamento de bytes do `PADRAO-VISUAL-3ANO.md` estava
-  desatualizada (não contava o sufixo) — corrigida neste lote.
+  desatualizada (não contava o sufixo) — corrigida neste lote;
+- página 1 também precisou reforçar, no corpo do prompt, uma frase que o
+  modelo perdia acento em corpo pequeno ("Há", "indígenas") — resolvido
+  reescrevendo a frase, mesma trava já registrada no padrão visual.
+
+## Aprovação
+
+`povos-indigenas-6paginas-v4` passa a ser a referência visual corrente do
+autor em `PADRAO-VISUAL-3ANO.md`, no lugar do `v3` — que permanece aprovado
+e no acervo. A pendência de generalização da página 5 (ver acima) foi
+aprovada junto com o lote, mas continua registrada como característica
+estrutural da fonte, a ter em mente em lotes futuros.
 
 ## Pendência obrigatória
 
