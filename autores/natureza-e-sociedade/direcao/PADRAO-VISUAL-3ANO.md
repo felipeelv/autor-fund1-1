@@ -130,11 +130,12 @@ Cada página deve ter identidade própria e continuidade cromática. Alternar:
 Aprendidas na produção do lote `povos-indigenas-6paginas-v3` com xAI
 `grok-imagine-image-2.0`. Repetir em todo prompt novo:
 
-- **limite de tamanho:** manter o **corpo do arquivo `.md`** abaixo de 4.800
-  caracteres. O gerador ainda soma a ele o `prompt_prefixo` e o
-  `prompt_sufixo` do `autor.yaml` — cerca de 2.700 caracteres —, então o
-  prompt realmente enviado fica perto de 7.400. Um corpo de 5.400 caracteres
-  já foi recusado pela API com erro 400;
+- **limite de tamanho:** o cap de 8.000 bytes UTF-8 da OpenRouter cobre a
+  string **montada** por `aplicar_autor` (`gerador_imagens/authors.py:78`) —
+  `prompt_prefixo` + corpo da página + `prompt_sufixo`. Medido em 21/08/2026:
+  prefixo 2.532 B + sufixo 747 B = 3.279 B fixos, sobrando **~4.721 B para o
+  corpo**. Contar só o prefixo (esquecendo o sufixo) já causou um erro 400 com
+  um corpo que a conta de cabeça dizia caber;
 - **artefato com escrita:** pedir “relevo escultórico” sem qualificar faz o
   modelo gravar glifos que parecem escrita; exigir superfície lisa;
 - **roupa moderna na cena histórica:** listar explicitamente as peças
