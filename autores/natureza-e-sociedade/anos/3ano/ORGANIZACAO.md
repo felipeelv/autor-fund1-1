@@ -25,7 +25,7 @@ Nenhuma promovida para `aprovadas` ainda.
 
 | Página | Título | Versão corrente |
 |---|---|---|
-| 1 | O Brasil não começou em 1500 (capa) | v1 |
+| 1 | O Brasil não começou em 1500 (capa) | v3 (objetivos da unidade + correção de acento) |
 | 2 | Aqui moravam os Caiapós | v2 (correção de roupa moderna) |
 | 3 | A floresta era a escola | v1 |
 | 4 | Sabiam tudo — e mesmo assim não destruíram | v1 |
@@ -57,6 +57,17 @@ da página 4 do v3, agora numa página inteira. Ver `COBERTURA-DA-FONTE.md`.
 `../../direcao/PADRAO-VISUAL-3ANO.md` nomeia as páginas do v3 como "a
 referência visual de comparação para as próximas unidades". Se o v4 for
 aprovado, decidir se ele substitui essa referência.
+
+### O que a página 1 ensinou
+
+A v1 tinha cortado, sem registrar, três dos cinco objetivos da unidade
+("Nesta unidade, você vai:") — a proposta pedagógica já dizia que os cinco
+entravam, mas o prompt só trazia dois. A pedido de Nicolas Basso, a v2
+imprimiu os cinco; a v3 corrigiu um efeito colateral: a frase "Há mais de
+12.000 anos, povos indígenas..." perdeu o acento de "Há" e de "indígenas"
+em corpo pequeno. Resolvido reescrevendo a frase ("esses povos", "doze mil"
+por extenso) em vez de insistir na grafia — mesma trava já validada em
+`PADRAO-VISUAL-3ANO.md`.
 
 ### O que a página 2 ensinou
 
