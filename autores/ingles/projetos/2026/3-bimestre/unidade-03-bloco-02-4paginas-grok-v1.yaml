@@ -1,0 +1,42 @@
+projeto:
+  titulo: "Inglês EF1 — 1º ano — Unidade 3 — Bloco 2 — Shapes & Numbers — 4 páginas — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Formas e cores juntas — v2 correção título em inglês"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p01-formas-e-cores-juntas-v2-correcao-titulo-en.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p01-formas-e-cores-juntas-v2.jpg"
+
+  - nome: "P2 — Contando formas — v1"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p02-contando-formas-v1.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p02-contando-formas-v1.jpg"
+
+  - nome: "P3 — What is this + I like — v1"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p03-o-que-e-isto-e-eu-gosto-v1.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p03-o-que-e-isto-e-eu-gosto-v1.jpg"
+
+  - nome: "P4 — Revisão do bloco — v1"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p04-revisao-do-bloco-v1.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p04-revisao-do-bloco-v1.jpg"

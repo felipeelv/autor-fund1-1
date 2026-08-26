@@ -3,8 +3,8 @@
 > **Derivado** do 1º ano deste mesmo autor, em 18/08/2026, seguindo
 > `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`.
 >
-> **Nenhuma fonte deste ano foi recebida.** O recorte de conteúdo não existe
-> ainda e precisa de ajuste humano quando a fonte chegar.
+> Primeira fonte recebida em 26/08/2026: `fontes/2026-2-semestre/3bim-bloco2.md`
+> (Unidade 3, Bloco 2 — Clothes & Seasons). Não há bloco 1 anterior deste ano.
 
 ## Travas invioláveis
 

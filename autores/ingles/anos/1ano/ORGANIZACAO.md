@@ -4,8 +4,8 @@
 
 | Bimestre | Bloco | Estado |
 |---|---|---|
-| 3º | 1 | fonte recebida; amostra de três páginas |
-| 3º | 2 | fonte não fornecida |
+| 3º | 1 | fonte recebida; aprovada em 4 páginas (autonomia guiada v5) |
+| 3º | 2 | fonte recebida; conteúdo em paginação |
 | 4º | 1 | fonte não fornecida |
 | 4º | 2–3 | fonte não fornecida |
 

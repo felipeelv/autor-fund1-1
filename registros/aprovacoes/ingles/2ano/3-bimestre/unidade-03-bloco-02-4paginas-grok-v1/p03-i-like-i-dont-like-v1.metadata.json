@@ -1,0 +1,59 @@
+{
+  "author": "ingles",
+  "generated_at": "2026-08-25T22:17:37.534087+00:00",
+  "image": {
+    "bytes": 1543176,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles/2ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p03-i-like-i-dont-like-v1.jpg",
+    "sha256": "50aa092459a08a6a979f0bf25c2d4801fc7aeff039b581176791b7fea16b7ef1",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles/projetos/2026/3-bimestre/2ano-unidade-03-bloco-02-4paginas-grok-v1.yaml",
+  "prompt": {
+    "characters": 4458,
+    "sha256": "22ed701c51c2189be89003d1d7b6571cfc3c755607b0f2088793e534cdeb50a6",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles/anos/2ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p03-i-like-i-dont-like-v1.md",
+    "words": 689
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1178,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5353
+  }
+}

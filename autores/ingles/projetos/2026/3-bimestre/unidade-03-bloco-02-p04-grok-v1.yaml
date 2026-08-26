@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Inglês EF1 — 1º ano — Unidade 3 — Bloco 2 — página 4 — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "colecao-apostila-fund1-1-pagina"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P4 — Revisão do bloco — v1"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p04-revisao-do-bloco-v1.md"
+    saida: "ingles/1ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p04-revisao-do-bloco-v1.jpg"

@@ -1,0 +1,59 @@
+{
+  "author": "ingles",
+  "generated_at": "2026-08-25T21:53:11.352559+00:00",
+  "image": {
+    "bytes": 1474475,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles/1ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p02-contando-formas-v2.jpg",
+    "sha256": "7dd696107d9e3ab83f067c5c7bb9c2793e7f9e6772b9c45331e0adade3abad1b",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles/projetos/2026/3-bimestre/unidade-03-bloco-02-p02-grok-v2.yaml",
+  "prompt": {
+    "characters": 5549,
+    "sha256": "72cdad25b3947e2a4a4782a357d3322091405b95882f2f00da1d542174b9ddf8",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles/anos/1ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p02-contando-formas-v2-correcao-contagem.md",
+    "words": 881
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1463,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5638
+  }
+}

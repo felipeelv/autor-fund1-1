@@ -3,8 +3,9 @@
 > **Derivado** do padrão do 1º ano (`PADRAO-VISUAL-1ANO.md`), em 18/08/2026,
 > seguindo `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`.
 >
-> **Nenhuma fonte deste ano foi recebida.** Ajustar com uma pessoa antes do
-> primeiro lote.
+> Primeiro lote em produção desde 26/08/2026 (Unidade 3, Bloco 2 — Clothes &
+> Seasons), autorizado por Nicolas Basso. Ajustes abaixo continuam
+> provisórios até a primeira página aprovada deste ano.
 
 ## O que muda neste ano
 

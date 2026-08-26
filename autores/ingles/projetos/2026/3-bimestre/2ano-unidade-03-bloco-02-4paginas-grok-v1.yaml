@@ -1,0 +1,42 @@
+projeto:
+  titulo: "Inglês EF1 — 2º ano — Unidade 3 — Bloco 2 — Wild Animals — 4 páginas — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Conheça os animais — v2 abertura da unidade"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p01-conheca-os-animais-v2-abertura-da-unidade.md"
+    saida: "ingles/2ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p01-conheca-os-animais-v2.jpg"
+
+  - nome: "P2 — What animal is it? — v1"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p02-what-animal-is-it-v1.md"
+    saida: "ingles/2ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p02-what-animal-is-it-v1.jpg"
+
+  - nome: "P3 — I like / I don't like — v1"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p03-i-like-i-dont-like-v1.md"
+    saida: "ingles/2ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p03-i-like-i-dont-like-v1.jpg"
+
+  - nome: "P4 — Revisão do bloco — v1"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p04-revisao-do-bloco-v1.md"
+    saida: "ingles/2ano/3-bimestre/unidade-03-bloco-02-4paginas-grok-v1/p04-revisao-do-bloco-v1.jpg"
