@@ -1,0 +1,59 @@
+{
+  "author": "ingles-atividades",
+  "generated_at": "2026-09-14T15:15:49.662301+00:00",
+  "image": {
+    "bytes": 1093467,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles-atividades/2ano/3-bimestre/unidade-03-bloco-02/p02-animals-atividades-4-a-7-grok-v1.jpg",
+    "sha256": "5320fc596078256d0c83a799649bd9cf4d2b7f58c40e4f8de335a78ae62ce5e9",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles-atividades/projetos/2026/3-bimestre/unidade-03-bloco-02-p02-p03-grok-v1.yaml",
+  "prompt": {
+    "characters": 7276,
+    "sha256": "c61cffa0ecd4f90c88544fc5df8aa1035dcb9a20a91fa3ce38847e5bce6d485a",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles-atividades/anos/2ano/prompts/2026/3-bimestre/unidade-03-bloco-02-p02-animals-v1.md",
+    "words": 1203
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1895,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6070
+  }
+}

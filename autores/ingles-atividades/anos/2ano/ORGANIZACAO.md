@@ -1,23 +1,16 @@
 # Organização — atividades de Inglês · 2º ano
 
-## Estado
+## 2026 · 2º semestre
 
-**Nenhuma fonte recebida.** As pastas `fontes/`, `conteudos/`, `prompts/`,
-`projetos/` e `registros/` deste ano ainda não existem fisicamente: são áreas
-lógicas declaradas em `../../manifesto.yaml` e devem ser criadas com o primeiro
-arquivo real, sem `.gitkeep`.
+| Bimestre | Unidade | Estado |
+|---|---|---|
+| 3º | 3 Bloco 2 — revisão de animais (pets, farm, wild) | caderno de atividades para casa em 3 páginas; promovido em 14/09/2026 |
 
-Este ano consta em `manifesto.anos_planejados`, que é a lista dos anos do escopo
-que ainda não têm material.
+O Bloco 1 (pets e farm animals) desta mesma Unidade 3 ainda não foi
+produzido — fica para uma rodada futura. A fonte completa (blocos 1 e 2,
+mais músicas, checklist e versículo) está em
+`fontes/2026-2-semestre/3bim-unidade-03-bloco-02-homework.md`, junto da nota
+de que esta rodada cobriu só o Bloco 2, por decisão de Nicolas Basso.
 
-## Quando a fonte chegar
-
-1. copiar a fonte para `fontes/<periodo>/`, preservando o texto recebido;
-2. derivar o recorte editorial em `conteudos/<ano-letivo>/<bimestre>/`;
-3. escrever os prompts em `prompts/<ano-letivo>/<bimestre>/`, versionados com
-   sufixo `-vN`;
-4. declarar o lote em `../../projetos/<ano-letivo>/<bimestre>/`, com provedor e
-   modelo explícitos e saída externa em `_revisao`;
-5. revisar `REGRAS.md` deste ano, que hoje é derivado, contra o que a fonte
-   realmente pede;
-6. tirar o ano de `manifesto.anos_planejados`.
+Os prompts de produção ficam em `prompts/<ano-letivo>/<bimestre>/`. Cada lote
+precisa de projeto YAML próprio e saída externa em `_revisao`.

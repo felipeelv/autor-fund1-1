@@ -3,8 +3,8 @@
 > **Derivado** do 3º ano deste mesmo autor, em 18/08/2026, seguindo
 > `compartilhado/direcao-editorial/DERIVACAO-ENTRE-ANOS.md`.
 >
-> **Nenhuma fonte deste ano foi recebida.** O recorte de conteúdo não existe
-> ainda e precisa de ajuste humano quando a fonte chegar.
+> Primeira fonte recebida em 14/09/2026 (Unidade 3 Bloco 2, revisão de
+> animais). O Bloco 1 desta unidade e as demais unidades ainda não têm fonte.
 
 ## Travas invioláveis
 
