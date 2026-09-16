@@ -67,3 +67,68 @@ Continuam em aberto para 1º e 3º ano, que ainda não têm recorte:
 - se a alfabetização segue método específico e qual;
 - quais gêneros textuais entram, e em que ano;
 - se a letra cursiva entra em algum momento, e quando.
+
+## Segundo lote do 2º ano (Unidades 7-8, 4º bimestre) — 08/09/2026
+
+12 páginas aprovadas por Nicolas Basso. Confirma tudo do primeiro lote e
+acrescenta:
+
+- **checklist ou lista longa de itens: sempre em coluna única, nunca em
+  grade fixa de 3 colunas.** Numa página de revisão com 5 sub-listas de
+  tamanhos diferentes (7, 6, 9, 5 e 7 itens), pedir grade 3x3 fez o modelo
+  inventar item para completar a última linha (texto corrompido tipo "OJ
+  problerma?" e "Uetra miáscuiro ruviodo?"), duplicar item ou omitir um. A
+  correção — trocar para lista vertical de 1 coluna e declarar a contagem
+  exata de itens por bloco — resolveu de primeira;
+- **"Nesta unidade, você vai:" (capa/objetivos no início da fonte de cada
+  unidade) precisa entrar na primeira página.** Ficou de fora por engano na
+  Unidade 6 (nunca usado) e de novo na v1 deste lote; passa a ser regra:
+  todo primeiro recorte de uma unidade nova inclui esse bloco;
+- limite de 8.000 bytes do prompt (ver `PADRAO-VISUAL-2ANO.md`) aperta
+  bastante em página com banco de palavras grande — a prosa de SISTEMA
+  VISUAL/COMPOSIÇÃO precisa ficar telegráfica para sobrar espaço para a
+  lista de TEXTOS EXATOS, que não pode ser cortada;
+- o parser de `preparar.py --inventario`/`--recorte` pode perder um trecho
+  de fonte dentro de uma seção (aconteceu com o exemplo do "Passo 6:
+  Planejar a Solução" — só a palavra "Exemplo:" foi extraída, a frase entre
+  aspas ficou de fora). Conferir sempre o rascunho contra a fonte bruta
+  antes de escrever o prompt final, não só contra a lista de TEXTOS EXATOS
+  gerada automaticamente;
+- defeito recorrente e de baixa severidade: vírgula ou aspas de fechamento
+  sobrando no fim da última linha de uma lista/citação. Não vale regenerar
+  a página inteira por isso — é item de revisão humana final, não de
+  correção de prompt.
+
+## Unidades 7-8 do 3º ano, 4º bimestre (09/09/2026)
+
+16 páginas aprovadas por Nicolas Basso (Unidade 7 — humor, discurso
+direto/indireto e verbos; Unidade 8 — textos instrucionais e numerais).
+Ver `../anos/3ano/ORGANIZACAO.md` para o detalhamento por página. O que
+este lote acrescenta às regras já registradas:
+
+- **erro ortográfico pontual que resiste a um simples aviso de correção
+  no prompt pode precisar de isolamento visual, não só texto de aviso.**
+  Três palavras (verbo "Misture", "xícaras", "Ordem") saíram erradas duas
+  vezes seguidas mesmo com "CORREÇÃO SOBRE O V1/V2" explicando o defeito
+  em prosa. Só resolveu quando a composição pediu a palavra isolada,
+  sozinha, em destaque (selo, letras grandes) imediatamente antes da frase
+  completa — o modelo copia corretamente a partir do próprio destaque
+  vizinho. Vale como segunda tentativa de correção quando a primeira
+  (só descrever o defeito) não resolver;
+- **quando o volume de conteúdo entre unidades do mesmo bimestre é muito
+  desigual, a divisão de páginas não precisa ser simétrica.** A Unidade 8
+  tinha ~60% mais conteúdo extraível que a Unidade 7 no primeiro capítulo;
+  dividir 4+4 teria comprimido desproporcionalmente o capítulo maior. A
+  divisão ficou 5+3, proporcional ao volume real de cada capítulo;
+- condensação editorial (remover exemplo, reduzir lista a amostra
+  representativa) é diferente de inventar — mas precisa ficar registrada
+  no `recorte.yaml` e no `PEDIDO` de cada prompt, com a contagem explícita
+  do que ficou de fora (ex.: "amostra de 12 verbos, dos 20 da fonte");
+- o parser de `preparar.py --recorte` perde passos escritos em linha
+  corrida sem marcador de lista (não só o caso já registrado de frase
+  dentro de seção) — conferir sempre contra a fonte bruta, seção a seção,
+  antes de fechar o prompt final;
+- prompt no limite de 8000 bytes: adicionar uma nota de correção
+  ("CORREÇÃO SOBRE O V1") a um prompt já denso pode ele mesmo estourar o
+  limite — cortar prosa de SISTEMA VISUAL/COMPOSIÇÃO antes de cortar
+  TEXTOS EXATOS.

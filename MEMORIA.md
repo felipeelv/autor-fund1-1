@@ -30,6 +30,13 @@ qualquer autor.
   extração trouxe (aconteceu com um bloco "Em HQs" numa correção real desta
   produção — o item ficou de fora da composição na primeira escrita e só foi
   notado ao comparar as duas listas lado a lado).
+- o extrator também pode perder um parágrafo inteiro dentro de uma seção,
+  não só duplicata — aconteceu com uma frase de exemplo entre aspas logo
+  após um rótulo "Exemplo:" (a fonte tinha o rótulo numa linha e a frase
+  solta na linha seguinte, sem marcador de lista; só o rótulo foi extraído).
+  Conferir o rascunho contra a fonte bruta, não só contra si mesmo, pega
+  esse tipo de lacuna; o texto que falta pode ser copiado à mão para o
+  prompt final, registrando a lacuna em `nota_correcao`.
 
 ## Limite de tamanho do prompt
 
@@ -118,6 +125,20 @@ autor que peça quantidade desenhada:
 Conferir contagem e posição por análise de pixels, não por impressão visual:
 recortar e ampliar a região com pillow revela erro que passa batido na leitura
 da página inteira.
+
+## Grade de colunas fixa vs. contagem real de itens
+
+Pedir uma grade fixa (por exemplo 3 colunas) para uma lista de checklist ou
+categorias cuja contagem não é múltiplo exato do número de colunas leva o
+modelo a inventar um item para fechar a última linha (texto corrompido,
+sem sentido em português), duplicar um item já usado, ou simplesmente
+omitir um. Aconteceu em uma página de revisão de Português com 5
+sub-listas (7, 6, 9, 5 e 7 itens) — só a de 9 itens, múltiplo exato de 3,
+saiu limpa. A correção foi trocar a instrução de composição para lista
+vertical de 1 coluna e declarar a contagem exata de cada bloco ("exatamente
+estes N itens, cada um uma vez") — resolveu de primeira. Vale para
+qualquer autor: se a contagem de itens não é redonda para a grade que fica
+mais bonita, prefira a lista vertical à estética da grade.
 
 ## Revisão humana da imagem gerada
 

@@ -2,8 +2,43 @@
 
 ## Estado
 
-**Unidade 6 completa (8 páginas) em `_revisao`, aguardando aprovação final
-das imagens.** Primeiro lote real deste ano.
+**Unidades 7 e 8 do 4º bimestre aprovadas (16 páginas, 09/09/2026).**
+Primeiro lote aprovado deste ano — a Unidade 6 (3º bimestre), embora
+produzida antes, segue em `_revisao` aguardando aprovação.
+
+UNIDADES 7-8 (4º bimestre), 16 páginas — humor, discurso direto/indireto e
+verbos (Unidade 7, 8 páginas); textos instrucionais e numerais (Unidade 8,
+8 páginas):
+
+- divisão combinada com Nicolas Basso em 09/09/2026: proposta inicial de
+  12 páginas (6 por capítulo) recusada em favor de 8 páginas por unidade,
+  "mais comprimido" — mesma contagem numérica da Unidade 6, mesmo com a
+  Unidade 8 tendo ~60% mais conteúdo extraível que a Unidade 7 no Capítulo
+  1; a divisão da Unidade 8 ficou assimétrica (5 páginas Cap. 1, 3 Cap. 2)
+  para não comprimir o capítulo maior desproporcionalmente;
+- condensação editorial extensa na Unidade 8 (autorizada pela densidade
+  escolhida): listas de verbos, conectivos e numerais cardinais/ordinais
+  da fonte foram reduzidas a amostras representativas; as caixas de
+  "Análise" da p05 (repetição do que já é ensinado nas páginas 2-4) foram
+  cortadas;
+- o parser de `preparar.py --recorte` perdeu passos inteiros em dois
+  exemplos da p08 da Unidade 8 (MODO DE PREPARO da Vitamina de Banana e
+  INSTRUÇÕES da Mochila) porque a fonte escreve esses passos em linha
+  corrida, sem marcador de lista — completados manualmente a partir da
+  fonte bruta antes de escrever o prompt final;
+- três defeitos ortográficos pontuais na Unidade 8 resistiram a uma
+  primeira correção (mesma palavra saindo errada de novo: "Mistre" por
+  "Misture" na p03, "xicaras" sem acento na p04, "Qrdem" por "Ordem" na
+  p06) — só se resolveram isolando a palavra sozinha em destaque (selo,
+  letras grandes) antes da frase completa, técnica registrada aqui para
+  reuso;
+- prompts `-v1`/`-v2`/`-v3` em `prompts/2026/4-bimestre/unidade-07-p01..08-*`
+  e `unidade-08-p01..08-*`; projetos YAML com prefixo `3ano-` em
+  `../../projetos/2026/4-bimestre/`;
+- imagens aprovadas em
+  `aprovadas/portugues/3ano/4-bimestre/unidade-07/` e `unidade-08/`.
+
+## Unidade 6 (3º bimestre) — ainda em _revisao
 
 | Fonte | Unidades |
 |---|---|
@@ -55,9 +90,13 @@ recorte.
 
 ## Próximos passos
 
-1. aprovar as imagens da Unidade 6 com `aprovar.py` (ou pedir mais ajustes);
-2. ao aprovar a primeira, tirar o 3º ano de `manifesto.anos_planejados`;
-3. revisar `REGRAS.md` deste ano contra o que esta unidade real ensinou
-   (por exemplo, "núcleos por página: 4 a 6" já se confirmou funcional);
-4. Unidade 5 ("Entre a realidade e a imaginação") segue os mesmos passos de
+1. aprovar as imagens da Unidade 6 (3º bimestre) com `aprovar.py` (ou pedir
+   mais ajustes);
+2. revisar `REGRAS.md` deste ano contra o que as Unidades 7-8 confirmaram
+   (por exemplo, se "núcleos por página: 4 a 6" ainda vale diante da
+   densidade "mais comprimido" usada aqui);
+3. Unidade 5 ("Entre a realidade e a imaginação") segue os mesmos passos de
    `preparar.py --inventario` → `--recorte` → `--aprovar`.
+
+`manifesto.anos_planejados` já foi esvaziado — o 3º ano tem produção
+aprovada.

@@ -16,7 +16,7 @@ Antes de qualquer trabalho novo, leia `CLAUDE.md` e, para o autor em uso,
 | `ingles` | 1º, 3º | 1º, 3º | ver `autores/ingles/anos/*/ORGANIZACAO.md` |
 | `matematica` | 3º | 3º | 4º bimestre (Unidades 7-8, 8 páginas) em `_revisao`: 6 corretas, p5 e p7 pendentes |
 | `natureza-e-sociedade` | 1º, 2º, 3º | 3º | 1º/2º ano ainda sem recorte |
-| `portugues` | 1º, 2º, 3º | 2º (Unidade 6) | Unidade 6 do 3º ano em `_revisao`, falta aprovar; 1º ano e Unidade 5 dos outros dois sem recorte |
+| `portugues` | 1º, 2º, 3º | 1º, 2º, 3º (Unidades 7-8 do 4º bim.) | Unidade 6 do 3º ano (3º bim.) em `_revisao`, falta aprovar; Unidade 5 sem recorte |
 | `*-atividades` (par de cada disciplina) | — | — | nenhum lote iniciado ainda |
 
 ## Português — 2º ano — 3º bimestre — Unidade 6 ("Criando Quadrinhos")
@@ -182,3 +182,13 @@ Pendente: a Unidade 1 (O Solo) do mesmo bimestre, ainda sem recorte.
   moderna em cena anterior a 1500, página 2) e uma correção de acento em
   corpo pequeno (página 1). O v4 passa a ser a referência visual corrente
   do autor, no lugar do v3.
+- **09/09/2026** — Português 3º ano, 4º bimestre, Unidades 7 e 8 completas e
+  aprovadas (16 páginas): primeiro lote aprovado deste ano (a Unidade 6, do
+  3º bimestre, segue em `_revisao`). Densidade "8 páginas, mais comprimido"
+  escolhida por Nicolas Basso sobre uma proposta inicial de 12; como a
+  Unidade 8 tem ~60% mais conteúdo que a Unidade 7, a divisão ficou
+  assimétrica (5+3 páginas) em vez de 4+4. Três defeitos ortográficos
+  pontuais (palavra errada repetindo-se mesmo após aviso de correção em
+  prosa) só se resolveram isolando a palavra em destaque visual antes da
+  frase — técnica nova registrada em `direcao/MEMORIA.md`. `manifesto.
+  anos_planejados` do autor foi esvaziado.
