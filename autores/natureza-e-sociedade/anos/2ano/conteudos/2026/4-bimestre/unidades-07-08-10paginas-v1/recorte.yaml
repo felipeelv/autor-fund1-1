@@ -1,0 +1,105 @@
+recorte:
+  autor: "natureza-e-sociedade"
+  ano: "2ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidades-07-08"
+  disciplina: "Natureza e Sociedade"
+  fonte: "autores/natureza-e-sociedade/anos/2ano/fontes/2026-2-semestre/4bim-animais-e-ambiente-v1.md"
+
+# Primeiro lote de Natureza e Sociedade do 2º ano. A fonte cobre duas
+# unidades — Unidade 7 (Classificação e Transformação dos Animais) e
+# Unidade 8 (O Ser Humano e o Ambiente) — em 10 páginas. Fonte muito mais
+# densa que a de Português (quase toda seção tem tabela): 49 seções, a
+# maioria com 1-2 tabelas. Números entre colchetes são o "#" do
+# `preparar.py --inventario` desta fonte.
+#
+# Decisão de Nicolas Basso em 08/09/2026: 10 páginas, não 12+ — controlar
+# densidade consolidando tabelas paralelas em vez de dar uma página por
+# subtópico. Ficam fora do recorte, em toda a fonte:
+# - as seções "🗣️ Hora de conversar" (roteiro de sala, mesmo critério do
+#   lote de Português);
+# - callouts "No Xº bimestre você aprendeu..." (referência cruzada, não
+#   conteúdo novo).
+#
+# UNIDADE 7 — CLASSIFICAÇÃO E TRANSFORMAÇÃO DOS ANIMAIS
+#
+# p01 = "Como os cientistas classificam os animais" -> [4, 5, 6]
+# p02 = "Os 5 grupos de vertebrados"                -> [7, 8, 9, 10, 11, 12]
+# p03 = "Invertebrados e metamorfose"                -> [13, 15, 16, 17]
+# p04 = "Cadeias alimentares, relações e ecossistema" -> [18, 19, 20, 22, 23, 24, 25]
+#
+# p02 vira 1 tabela comparativa só (cobertura, nascimento, temperatura,
+# respiração por grupo), sem as sub-tabelas de curiosidade de cada grupo
+# ("mamíferos especiais" [8], "aves que não voam" [9], "tipos de peixes"
+# [10], "diferença sapo/rã/perereca" [11], "grupos de répteis" [12]) —
+# ficam fora, são bônus, não a característica central do grupo.
+# Em p03, a tabela de patas dos invertebrados e "insetos são campeões" [13]
+# ficam fora; a metamorfose da borboleta [16] e do sapo [17] entram só com
+# a tabela de fases, sem as tabelas de comparação extra ("o que muda",
+# "comparando girino e sapo").
+#
+# UNIDADE 8 — O SER HUMANO E O AMBIENTE
+#
+# p05 = "O impacto humano na natureza"           -> [28, 29, 30, 32]
+# p06 = "Poluição do ar e da água"                -> [35, 36]
+# p07 = "Poluição do solo e desmatamento"         -> [37, 38]
+# p08 = "Queimadas e desenvolvimento sustentável" -> [39, 42]
+# p09 = "O que você pode fazer + os 6 Rs"         -> [43, 44]
+# p10 = "Áreas de preservação e fechamento"       -> [45, 46, 48, 49]
+#
+# "A população humana" [31] (gráfico 1800-2024) fica fora — estatística de
+# apoio, não um dos 5 objetivos declarados da Unidade 8. Em p07, a tabela
+# de tempo de decomposição (poluição do solo) é reduzida das 6 linhas da
+# fonte para as mais didáticas (não elimina categoria, reduz amostra).
+
+paginas:
+  - numero: 1
+    slug: "como-os-cientistas-classificam-os-animais"
+    titulo: "Como os Cientistas Classificam os Animais"
+    secoes: [4, 5, 6]
+
+  - numero: 2
+    slug: "os-5-grupos-de-vertebrados"
+    titulo: "Os 5 Grupos de Vertebrados"
+    secoes: [7, 8, 9, 10, 11, 12]
+
+  - numero: 3
+    slug: "invertebrados-e-metamorfose"
+    titulo: "Invertebrados e Metamorfose"
+    secoes: [13, 15, 16, 17]
+
+  - numero: 4
+    slug: "cadeias-alimentares-relacoes-e-ecossistema"
+    titulo: "Cadeias Alimentares, Relações e Ecossistema"
+    secoes: [18, 19, 20, 22, 23, 24, 25]
+
+  - numero: 5
+    slug: "o-impacto-humano-na-natureza"
+    titulo: "O Impacto Humano na Natureza"
+    secoes: [28, 29, 30, 32]
+
+  - numero: 6
+    slug: "poluicao-do-ar-e-da-agua"
+    titulo: "Poluição do Ar e da Água"
+    secoes: [35, 36]
+
+  - numero: 7
+    slug: "poluicao-do-solo-e-desmatamento"
+    titulo: "Poluição do Solo e Desmatamento"
+    secoes: [37, 38]
+
+  - numero: 8
+    slug: "queimadas-e-desenvolvimento-sustentavel"
+    titulo: "Queimadas e Desenvolvimento Sustentável"
+    secoes: [39, 42]
+
+  - numero: 9
+    slug: "o-que-voce-pode-fazer-e-os-6-rs"
+    titulo: "O Que Você Pode Fazer + Os 6 Rs"
+    secoes: [43, 44]
+
+  - numero: 10
+    slug: "areas-de-preservacao-e-fechamento"
+    titulo: "Áreas de Preservação e Fechamento"
+    secoes: [45, 46, 48, 49]

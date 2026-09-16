@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Natureza e Sociedade — 2º ano — 4º bimestre — Unidades 7-8 — página 6 — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "natureza-e-sociedade"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P6 — Poluição do Ar e da Água — Grok Imagine 2 — v1"
+    prompt: "autores/natureza-e-sociedade/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p06-poluicao-do-ar-e-da-agua-v1.md"
+    saida: "natureza-e-sociedade/2ano/4-bimestre/unidades-07-08/p06-poluicao-do-ar-e-da-agua-grok-v1.jpg"

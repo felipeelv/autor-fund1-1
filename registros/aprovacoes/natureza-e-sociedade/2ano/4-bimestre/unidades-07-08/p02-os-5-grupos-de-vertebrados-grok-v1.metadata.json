@@ -1,0 +1,59 @@
+{
+  "author": "natureza-e-sociedade",
+  "generated_at": "2026-09-08T14:46:56.735487+00:00",
+  "image": {
+    "bytes": 1537347,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/2ano/4-bimestre/unidades-07-08/p02-os-5-grupos-de-vertebrados-grok-v1.jpg",
+    "sha256": "501b1553148a64f634d1d6fe2301270cb82b0a3575d2695b41959ae2fad5e42e",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/projetos/2026/4-bimestre/2ano-unidade-07-08-p02-os-5-grupos-de-vertebrados-grok-v1.yaml",
+  "prompt": {
+    "characters": 7352,
+    "sha256": "43eb8deb75a5c8119984cc6a2482636b6e2c4e8f261751ea34ef3c120bc57911",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p02-os-5-grupos-de-vertebrados-v1.md",
+    "words": 1094
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1932,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6107
+  }
+}
