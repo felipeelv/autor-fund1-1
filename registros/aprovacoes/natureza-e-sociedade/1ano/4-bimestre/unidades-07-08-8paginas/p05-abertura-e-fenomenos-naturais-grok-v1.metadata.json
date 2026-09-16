@@ -1,0 +1,59 @@
+{
+  "author": "natureza-e-sociedade",
+  "generated_at": "2026-09-04T20:09:19.502216+00:00",
+  "image": {
+    "bytes": 1777914,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/1ano/4-bimestre/unidades-07-08-8paginas/p05-abertura-e-fenomenos-naturais-grok-v1.jpg",
+    "sha256": "9df117be9b73b1d37b7a2c049337d46c8d02446b83b81a24e91f7d4a425e4fce",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/projetos/2026/4-bimestre/1ano-8paginas-unidade-08-p01-abertura-e-fenomenos-naturais-grok-v1.yaml",
+  "prompt": {
+    "characters": 6818,
+    "sha256": "e0a8346d0a9530c7dacecec66ba461d94d7b83a5fabfe3e5ac33d05edb4f2716",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/anos/1ano/prompts/2026/4-bimestre/unidade-08-p01-abertura-e-fenomenos-naturais-v1.md",
+    "words": 1043
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1790,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5965
+  }
+}
