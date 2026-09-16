@@ -1,0 +1,93 @@
+recorte:
+  autor: "portugues"
+  ano: "3ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidade-07"
+  disciplina: "Português"
+  fonte: "autores/portugues/anos/3ano/fontes/2026-2-semestre/4bim-humor-poesia-e-escrever-para-ensinar-v1.md"
+
+# Primeiro lote de Português do 3º ano no 4º bimestre (a Unidade 6, produzida
+# antes, é do 3º bimestre). A fonte cobre duas unidades — Unidade 7 (Humor e
+# poesia na infância) e Unidade 8 (Escrevendo para ensinar) — e este recorte
+# cobre só a Unidade 7, em 8 páginas, 4 por capítulo, seguindo o mesmo padrão
+# de proporção da Unidade 6. Números entre colchetes são o "#" do
+# `preparar.py --inventario` desta fonte.
+#
+# Densidade combinada com Nicolas Basso em 09/09/2026: densidade "8 páginas,
+# mais denso" preferida sobre a proposta inicial de 12 (que dava uma página
+# por bloco temático). Ficam fora do recorte as seções "🗣️ HORA DE
+# CONVERSAR" em toda a fonte — são roteiro de conversa em sala, não conteúdo
+# de página (mesmo critério já usado nas Unidades 6 deste autor e 7-8 do
+# 2º ano).
+#
+# CAPÍTULO 1 — A LINGUAGEM DO HUMOR
+#
+# p01 = "Humor e poesia na infância: gênero e características" -> [4, 6, 8, 9]
+# p02 = "Histórias em quadrinhos e os recursos do humor"        -> [10, 11]
+# p03 = "Os quatro recursos do humor"                            -> [12, 13, 14, 15]
+# p04 = "Discurso direto e indireto"                              -> [16, 17, 18, 19]
+#
+# p03 junta os 4 recursos (exagero, situações absurdas, brincadeira com
+# palavras, quebra de expectativa) num só painel de 4 quadrantes — são
+# estruturalmente paralelos (definição + 1-2 exemplos cada), o que permite
+# comprimir sem misturar conteúdo de tipos diferentes no mesmo bloco. p04
+# junta a explicação de cada discurso com a comparação final (seção 19),
+# que já é a mesma ideia revisitada, não conteúdo novo.
+#
+# CAPÍTULO 2 — VERBOS: AÇÕES E TEMPO
+#
+# p05 = "O que são verbos e os três tempos verbais"              -> [21, 22, 23]
+# p06 = "Presente e passado"                                      -> [24, 25, 26]
+# p07 = "Futuro e comparando os três tempos"                      -> [27, 28, 29, 30]
+# p08 = "Verbos em histórias, consistência e humor"                -> [31, 32, 33, 34]
+#
+# p06 e p07 juntam duas conjugações completas (4 verbos x 3 pessoas cada)
+# por página — mais denso que uma conjugação isolada por página, mas os
+# quatro verbos (CORRER, BRINCAR, ESTUDAR, COMER) se repetem nos três
+# tempos, então a composição pode usar uma única tabela-mestra com uma
+# coluna por tempo em vez de blocos separados, evitando repetir o rótulo de
+# cada verbo três vezes. p07 fecha com a comparação dos três tempos e o
+# passo a passo de identificação, que reusam o mesmo verbo BRINCAR já visto
+# em p06 — reforço, não conteúdo novo.
+
+paginas:
+  - numero: 1
+    slug: "humor-e-poesia-genero-e-caracteristicas"
+    titulo: "Humor e Poesia na Infância: Gênero e Características"
+    secoes: [4, 6, 8, 9]
+
+  - numero: 2
+    slug: "historias-em-quadrinhos-e-os-recursos-do-humor"
+    titulo: "Histórias em Quadrinhos e os Recursos do Humor"
+    secoes: [10, 11]
+
+  - numero: 3
+    slug: "os-quatro-recursos-do-humor"
+    titulo: "Os Quatro Recursos do Humor"
+    secoes: [12, 13, 14, 15]
+
+  - numero: 4
+    slug: "discurso-direto-e-indireto"
+    titulo: "Discurso Direto e Indireto"
+    secoes: [16, 17, 18, 19]
+
+  - numero: 5
+    slug: "o-que-sao-verbos-e-os-tres-tempos-verbais"
+    titulo: "O Que São Verbos e os Três Tempos Verbais"
+    secoes: [21, 22, 23]
+
+  - numero: 6
+    slug: "presente-e-passado"
+    titulo: "Presente e Passado"
+    secoes: [24, 25, 26]
+
+  - numero: 7
+    slug: "futuro-e-comparando-os-tres-tempos"
+    titulo: "Futuro e Comparando os Três Tempos"
+    secoes: [27, 28, 29, 30]
+
+  - numero: 8
+    slug: "verbos-em-historias-consistencia-e-humor"
+    titulo: "Verbos em Histórias, Consistência e Humor"
+    secoes: [31, 32, 33, 34]

@@ -1,0 +1,96 @@
+recorte:
+  autor: "portugues"
+  ano: "3ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidade-08"
+  disciplina: "Português"
+  fonte: "autores/portugues/anos/3ano/fontes/2026-2-semestre/4bim-humor-poesia-e-escrever-para-ensinar-v1.md"
+
+# Segundo lote de Português do 3º ano no 4º bimestre (a Unidade 7, produzida
+# antes, cobriu humor e verbos). Este recorte cobre a Unidade 8 (Escrevendo
+# para ensinar) em 8 páginas. Números entre colchetes são o "#" do
+# `preparar.py --inventario` desta fonte. Ficam fora do recorte as seções
+# "🗣️ HORA DE CONVERSAR" em toda a fonte — mesmo critério já usado nas
+# Unidades anteriores.
+#
+# Densidade combinada com Nicolas Basso em 09/09/2026: a Unidade 8 tem cerca
+# de 60% mais conteúdo extraível que a Unidade 7 (230 trechos literais só no
+# Capítulo 1, contra 88 do Capítulo 1 da Unidade 7), mas o lote continua em
+# 8 páginas — "mais comprimido" foi a densidade escolhida, repetindo o
+# padrão numérico da Unidade 7. Como os capítulos NÃO são equilibrados em
+# volume (Capítulo 1 tem o dobro de conteúdo do Capítulo 2), a divisão é
+# assimétrica: 5 páginas para o Capítulo 1, 3 para o Capítulo 2 — em vez de
+# 4+4, que comprimiria o capítulo maior desproporcionalmente.
+#
+# CAPÍTULO 1 — TEXTOS QUE ENSINAM: RECEITAS E MANUAIS
+#
+# p01 = "Textos que ensinam: o que são e para que servem" -> [36, 38, 40, 41, 42]
+# p02 = "A estrutura de um texto instrucional"              -> [43, 44, 45, 46, 47]
+# p03 = "Verbos no imperativo"                                -> [48, 49, 50, 51, 52]
+# p04 = "Linguagem clara, conectivos e organização visual"    -> [53, 54, 55, 56, 57, 58]
+# p05 = "Três exemplos de texto instrucional"                 -> [59, 60, 61, 62]
+#
+# p04 e p05 exigem condensação editorial forte (autorizada pela densidade
+# "mais comprimido"): p04 reduz a lista de conectivos de sequência (18
+# trechos na fonte) e a lista de elementos visuais a uma seleção
+# representativa, sem inventar conectivo ou elemento ausente da fonte. p05
+# reduz cada um dos três exemplos (receita, manual, manual do Menino
+# Maluquinho — 24+22+30 trechos na fonte) a um cartão compacto por exemplo,
+# preservando título, 2-3 materiais/passos centrais e o traço que diferencia
+# cada gênero — não os 76 trechos completos.
+#
+# CAPÍTULO 2 — NUMERAL: A CLASSE QUE INDICA QUANTIDADE E ORDEM
+#
+# p06 = "O que são numerais e os numerais cardinais"          -> [64, 66, 67, 68, 69, 70, 71, 72, 73, 74]
+# p07 = "Numerais ordinais e comparação com cardinais"        -> [75, 76, 77, 78, 79, 80, 81, 82]
+# p08 = "Numerais em textos instrucionais: integração final"  -> [83, 84, 85, 86, 87]
+#
+# p06 junta a introdução do numeral com o bloco cardinal completo (definição,
+# lista, formação de compostos, uso, cardinal em texto instrucional) — a
+# lista de numerais cardinais (fonte lista de 1 a 20 + dezenas) é reduzida a
+# uma amostra representativa (1-10, depois 20, 30... 100), sem inventar
+# número. p07 espelha a mesma estrutura para os ordinais e fecha com a
+# comparação cardinal x ordinal. p08 é a página de síntese com os dois
+# exemplos integrados da fonte.
+
+paginas:
+  - numero: 1
+    slug: "textos-que-ensinam-o-que-sao-e-para-que-servem"
+    titulo: "Textos que Ensinam: O Que São e Para Que Servem"
+    secoes: [36, 38, 40, 41, 42]
+
+  - numero: 2
+    slug: "a-estrutura-de-um-texto-instrucional"
+    titulo: "A Estrutura de um Texto Instrucional"
+    secoes: [43, 44, 45, 46, 47]
+
+  - numero: 3
+    slug: "verbos-no-imperativo"
+    titulo: "Verbos no Imperativo"
+    secoes: [48, 49, 50, 51, 52]
+
+  - numero: 4
+    slug: "linguagem-clara-conectivos-e-organizacao-visual"
+    titulo: "Linguagem Clara, Conectivos e Organização Visual"
+    secoes: [53, 54, 55, 56, 57, 58]
+
+  - numero: 5
+    slug: "tres-exemplos-de-texto-instrucional"
+    titulo: "Três Exemplos de Texto Instrucional"
+    secoes: [59, 60, 61, 62]
+
+  - numero: 6
+    slug: "o-que-sao-numerais-e-os-numerais-cardinais"
+    titulo: "O Que São Numerais e os Numerais Cardinais"
+    secoes: [64, 66, 67, 68, 69, 70, 71, 72, 73, 74]
+
+  - numero: 7
+    slug: "numerais-ordinais-e-comparacao-com-cardinais"
+    titulo: "Numerais Ordinais e Comparação com Cardinais"
+    secoes: [75, 76, 77, 78, 79, 80, 81, 82]
+
+  - numero: 8
+    slug: "numerais-em-textos-instrucionais-integracao-final"
+    titulo: "Numerais em Textos Instrucionais: Integração Final"
+    secoes: [83, 84, 85, 86, 87]

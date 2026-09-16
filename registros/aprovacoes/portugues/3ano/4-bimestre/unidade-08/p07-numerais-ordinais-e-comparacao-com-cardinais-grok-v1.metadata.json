@@ -1,0 +1,59 @@
+{
+  "author": "portugues",
+  "generated_at": "2026-09-09T14:26:16.500885+00:00",
+  "image": {
+    "bytes": 1914963,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/3ano/4-bimestre/unidade-08/p07-numerais-ordinais-e-comparacao-com-cardinais-grok-v1.jpg",
+    "sha256": "8320f8846f66f62d129f80b61f376ceff1c0a203fc23670326c93356ce30cf07",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/projetos/2026/4-bimestre/3ano-unidade-08-p07-numerais-ordinais-e-comparacao-com-cardinais-grok-v1.yaml",
+  "prompt": {
+    "characters": 7027,
+    "sha256": "2ca33dba026bdc62cba20d094a955fee13f9982f3508213bb81e1e56ed04a1e0",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/3ano/prompts/2026/4-bimestre/unidade-08-p07-numerais-ordinais-e-comparacao-com-cardinais-v1.md",
+    "words": 1097
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1861,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6036
+  }
+}
