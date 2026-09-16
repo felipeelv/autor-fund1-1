@@ -1,0 +1,39 @@
+projeto:
+  titulo: "Natureza e Sociedade atividades — 2º ano — 3º bimestre — Tarefa de casa avulsa (água) — P2 a P5 — Grok Imagine 2 — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "natureza-e-sociedade-atividades"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — O ciclo da água I (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/natureza-e-sociedade-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-agua-p02-ciclo-da-agua-i-v1.md"
+    saida: "natureza-e-sociedade-atividades/2ano/3-bimestre/tarefa-casa-agua/p02-ciclo-da-agua-i-grok-v1.jpg"
+  - nome: "P3 — Onde encontramos água (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/natureza-e-sociedade-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-agua-p03-ciclo-da-agua-ii-v1.md"
+    saida: "natureza-e-sociedade-atividades/2ano/3-bimestre/tarefa-casa-agua/p03-onde-encontramos-agua-grok-v1.jpg"
+  - nome: "P4 — Estados da água (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/natureza-e-sociedade-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-agua-p04-estados-fisicos-v1.md"
+    saida: "natureza-e-sociedade-atividades/2ano/3-bimestre/tarefa-casa-agua/p04-estados-da-agua-grok-v1.jpg"
+  - nome: "P5 — Cuidar da água (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/natureza-e-sociedade-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-agua-p05-economizar-e-registrar-v1.md"
+    saida: "natureza-e-sociedade-atividades/2ano/3-bimestre/tarefa-casa-agua/p05-cuidar-da-agua-grok-v1.jpg"
