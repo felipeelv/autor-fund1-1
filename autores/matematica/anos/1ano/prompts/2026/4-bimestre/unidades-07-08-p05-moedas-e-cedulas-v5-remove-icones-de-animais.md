@@ -1,0 +1,148 @@
+---
+estado: aprovado
+revisor: Nicolas Basso
+aprovado_em: 2026-09-04
+origem: unidades-07-08-p05-moedas-e-cedulas-v4-correcao-icone-mico-leao.md
+nota_correcao: |-
+  Correção de defeito de geração (v4 -> v5), 04/09/2026. A tabela de moedas
+  ficou correta na v4. Na tabela de cédulas, 3 tentativas seguidas (v2, v3,
+  v4) erraram o ícone do mico-leão-dourado (saiu como leão de grande porte
+  mesmo com a descrição "nunca um leão"); a v4 também introduziu uma coluna
+  extra de ícones duplicados/desalinhados. A fonte pede, na nota de
+  ilustração, só "Cédulas de 2, 5, 10, 20, 50 e 100 reais em tamanho
+  reduzido" — nunca ícones de animal desenhados; a coluna ANIMAL da tabela é
+  texto. Esta versão remove os ícones de animal da composição (o nome do
+  animal continua como texto na tabela, igual à fonte) e mantém só as
+  miniaturas das cédulas, eliminando o ponto que falhava repetidamente.
+---
+Use case: scientific-educational
+Asset type: página 5 de uma sequência didática de Matemática do 1º ano
+
+
+## PEDIDO
+
+Abrir a Unidade 8 apresentando o dinheiro brasileiro para uma criança de
+aproximadamente 6 anos: os quatro objetivos da unidade, as moedas de
+centavos e a moeda de 1 real, e as cédulas com sua cor e animal
+característicos. Calendário, números até 100 e gráficos ficam para as
+páginas 6, 7 e 8.
+
+Título previsto: Moedas e Cédulas do Brasil
+
+## SISTEMA VISUAL
+
+Seguir `PADRAO-VISUAL-1ANO.md`: fundo branco puro `#FFFFFF`, ilustração
+protagonista, 3 núcleos em recortes de papel separados por corredores de
+branco, tipografia grande em caixa alta de imprensa. Papel fixo por cor:
+azul `#2F6FD0` na abertura (conceito, é a primeira página da Unidade 8),
+amarelo `#F6C945` nas moedas (destaque), laranja `#F28C32` nas cédulas
+(valores maiores). Texto e contornos em grafite `#263238`. Colagem com papel
+liso, bordas rasgadas, fita e sombra curta; sem grade digital.
+
+## COMPOSIÇÃO E TÍTULO
+
+- título `MOEDAS E CÉDULAS DO BRASIL` em caixa alta de imprensa sobre papel
+  azul rasgado, alto e à esquerda — o maior título da sequência de 4 páginas
+  da Unidade 8, por ser abertura;
+- núcleo 1, abertura, papel azul: `O QUE VAMOS APRENDER?` com as quatro
+  metas em lista; ilustração de uma criança brasileira com moedas e cédulas
+  na mão;
+- núcleo 2, papel amarelo, tabela de 4 colunas — `MOEDA` / `VALOR` / `COR` /
+  `TAMANHO` — e 4 linhas. Cada coluna só seu próprio conteúdo: `MOEDA` só o
+  desenho, sem texto; `VALOR` só "N CENTAVOS" (número e palavra juntos, uma
+  coluna só); `COR` só "Dourada"/"Prateada"; `TAMANHO` só
+  "Pequena"/"Média"/"Grande". Linhas: 5 CENTAVOS/Dourada/Pequena; 10
+  CENTAVOS/Dourada/Média; 25 CENTAVOS/Dourada/Média; 50
+  CENTAVOS/Prateada/Grande. Post-it `📌 VOCÊ SABIA?` com a frase sobre a
+  moeda de 1 centavo; ao lado, a moeda de 1 real em destaque, duas cores
+  (dourada por fora, prateada por dentro), post-it `💡 PARA LEMBRAR` com a
+  frase sobre 100 centavos = 1 real;
+- núcleo 3, papel laranja: frase `CÉDULAS são feitas de papel especial e
+  valem mais que as moedas.`; miniaturas das cédulas de 2, 5, 10, 20, 50 e
+  100 reais em tamanho reduzido, lado a lado ou em fileira, SEM desenhar
+  nenhum ícone de animal separado — só a nota impressa reduzida de cada
+  cédula. Ao lado ou abaixo, tabela `CÉDULA` / `COR` / `ANIMAL` só com
+  texto (três colunas de palavras, nenhum desenho dentro da tabela) com as
+  sete linhas: 2 REAIS/Azul/Tartaruga marinha; 5 REAIS/Roxa/Garça; 10
+  REAIS/Vermelha/Arara; 20 REAIS/Amarela/Mico-leão-dourado; 50
+  REAIS/Marrom/Onça-pintada; 100 REAIS/Azul-turquesa/Garoupa; 200
+  REAIS/Cinza/Lobo-guará. Post-it `📌 DICA PARA LEMBRAR` com a frase final.
+
+## TEXTOS EXATOS
+
+Extraídos literalmente da fonte. Revisar: remover o que não cabe na página,
+ajustar a ordem e condensar onde a leitura pedir — sem trocar número, nome
+próprio, unidade ou termo técnico.
+
+- O QUE VAMOS APRENDER?
+- - Conhecer moedas e cédulas (dinheiro)
+- - Usar o calendário para encontrar datas
+- - Números até 100
+- - Ler gráficos com figuras
+- MOEDA
+- VALOR
+- COR
+- TAMANHO
+- 5 CENTAVOS
+- Dourada
+- Pequena
+- 10 CENTAVOS
+- Dourada
+- Média
+- 25 CENTAVOS
+- Dourada
+- Média
+- 50 CENTAVOS
+- Prateada
+- Grande
+- 📌 VOCÊ SABIA?
+- As moedas de 1 centavo não são mais fabricadas, mas ainda existem algumas por aí!
+- A moeda de 1 REAL é especial! Ela tem duas cores: dourada por fora e prateada por dentro.
+- 💡 PARA LEMBRAR
+- 100 centavos = 1 real. Quando juntamos 100 centavos, temos 1 real!
+- CÉDULAS são feitas de papel especial e valem mais que as moedas.
+- CÉDULA
+- COR
+- ANIMAL
+- 2 REAIS
+- Azul
+- Tartaruga marinha
+- 5 REAIS
+- Roxa
+- Garça
+- 10 REAIS
+- Vermelha
+- Arara
+- 20 REAIS
+- Amarela
+- Mico-leão-dourado
+- 50 REAIS
+- Marrom
+- Onça-pintada
+- 100 REAIS
+- Azul-turquesa
+- Garoupa
+- 200 REAIS
+- Cinza
+- Lobo-guará
+- 📌 DICA PARA LEMBRAR
+- Cada cédula tem uma cor diferente e um animal brasileiro! Isso ajuda a identificar rapidamente.
+
+## TRAVAS
+
+Valem as travas de `autores/matematica/anos/1ano/REGRAS.md` e o `prompt_sufixo` do autor, que o gerador
+injeta automaticamente.
+
+Invioláveis, independentes de ano: não inventar número, nome próprio, data,
+lugar, povo ou termo ausente da fonte; renderizar cada texto literal exatamente
+uma vez; nenhum texto além da lista de TEXTOS EXATOS.
+
+Fundo branco puro `#FFFFFF`; proibido creme, grade ou pontilhado contínuo. Na
+tabela de moedas, cada coluna só seu conteúdo — nunca duplicar
+"Dourada"/"Prateada" em `VALOR`, nunca separar o número de "CENTAVOS". A
+tabela `CÉDULA`/`COR`/`ANIMAL` é só texto — proibido desenhar ícone de
+animal dentro dela; o reconhecimento visual das cédulas vem só das
+miniaturas das notas, não de ícones de bicho. 4 moedas de centavos (5, 10,
+25, 50) mais a moeda de 1 real — 5 no total; 7 linhas na tabela de cédulas,
+cor e animal exatos da lista. Não fundir os três núcleos. Sem fotografia,
+sem balão de fala, sem mascote.

@@ -1,0 +1,59 @@
+{
+  "author": "matematica",
+  "generated_at": "2026-09-04T17:44:00.307020+00:00",
+  "image": {
+    "bytes": 1699915,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/1ano/4-bimestre/unidades-07-08-8paginas/p03-simbolo-menos-grok-v4-tabela-2-linhas.jpg",
+    "sha256": "2bad4a408aabd2167005cc72369087166d709204c1d18a9b30c4f429fb768974",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/projetos/2026/4-bimestre/1ano-8paginas-unidades-07-08-p03-simbolo-menos-grok-v4-tabela-2-linhas.yaml",
+  "prompt": {
+    "characters": 6108,
+    "sha256": "7e22c2290312f6584eefb0667687e942263c5800ae649de9cd31228e35a54df3",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/1ano/prompts/2026/4-bimestre/unidades-07-08-p03-simbolo-menos-v4-tabela-2-linhas.md",
+    "words": 969
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1610,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5785
+  }
+}

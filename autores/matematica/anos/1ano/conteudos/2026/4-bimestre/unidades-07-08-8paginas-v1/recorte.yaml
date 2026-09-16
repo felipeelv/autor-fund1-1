@@ -1,0 +1,93 @@
+recorte:
+  autor: "matematica"
+  ano: "1ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidades-07-08"
+  disciplina: "Matemática"
+  fonte: "autores/matematica/anos/1ano/fontes/2026-2-semestre/4bim-operacoes-medidas-e-dados-v1.md"
+
+# Segundo lote de Matemática do 1º ano (primeiro foi a Unidade 6, 3º bimestre,
+# 4 páginas). A fonte cobre duas unidades — Unidade 7 (Operações com Símbolos)
+# e Unidade 8 (Medidas e Dados) — cada uma recebendo 4 páginas, na mesma
+# proporção usada na Unidade 6 e no mesmo total que o 3º ano usou para estas
+# mesmas unidades. Números entre colchetes são o "#" do
+# `preparar.py --inventario` desta fonte.
+#
+# UNIDADE 7 — OPERAÇÕES COM SÍMBOLOS
+#
+# p1 = "O símbolo + e o símbolo ="        -> [4, 8, 9, 11]
+# p2 = "Resolvendo problemas de juntar"    -> [12, 13]
+# p3 = "O símbolo - e o símbolo de separar" -> [17, 19]
+# p4 = "Problemas de separar e formas de fazer um número" -> [20, 23]
+#
+# Decisão de Nicolas Basso em 03/09/2026: ficam fora do recorte a
+# decomposição do 6 e do 10 [24] e a tabela-resumo "Juntar ou Separar" [25]
+# — redundantes com o que as páginas 1-4 já cobrem (símbolo, exemplo,
+# problema, uma forma de decompor). "Escrevendo a Conta de Juntar/Separar"
+# [10, 18] não vira box próprio: o passo a passo fica implícito no exemplo
+# de conta de cada página, para não estourar o limite de núcleos por página.
+# As tabelas de treino [13, 21] são reduzidas de 10 para ~5-6 linhas na
+# escrita do prompt — recorte de densidade, não de conteúdo (mesmas contas
+# da fonte, só um subconjunto).
+#
+# UNIDADE 8 — MEDIDAS E DADOS
+#
+# p5 = "Moedas e cédulas do Brasil"  -> [27, 31, 32, 33]
+# p6 = "O calendário"                -> [35, 36, 37]
+# p7 = "Contando até 100"            -> [41, 42, 43]
+# p8 = "Gráficos e possibilidades"   -> [45, 48, 49, 50]
+#
+# Moedas de centavos [31] e a moeda de 1 real [32] viram um único núcleo
+# visual (mesmo assunto — moedas). "Datas Importantes" [38] fica fora do
+# recorte — um terceiro núcleo denso na página do calendário, quando os dois
+# primeiros (meses do ano + como achar uma data) já preenchem a página.
+# "Como Ler um Gráfico" [46] não vira box separado: as perguntas do próprio
+# pictograma [45] já ensinam o procedimento. Em "certo / impossível / talvez"
+# [48, 49, 50], cada categoria fica com 1 exemplo em vez dos 3 da fonte.
+#
+# "RESUMO DO BIMESTRE" [51] e "PARABÉNS!" [52] ficam fora — são de
+# fechamento de ano/bimestre, comuns a outras unidades, tratados à parte
+# quando todas as unidades do semestre estiverem prontas (mesma decisão já
+# registrada para a Unidade 6).
+
+paginas:
+  - numero: 1
+    slug: "simbolo-mais-e-igual"
+    titulo: "O Símbolo + e o Símbolo ="
+    secoes: [4, 8, 9, 11]
+
+  - numero: 2
+    slug: "problemas-de-juntar"
+    titulo: "Resolvendo Problemas de Juntar"
+    secoes: [12, 13]
+
+  - numero: 3
+    slug: "simbolo-menos"
+    titulo: "O Símbolo - e o Símbolo de Separar"
+    secoes: [17, 19]
+
+  - numero: 4
+    slug: "problemas-de-separar-e-decomposicao"
+    titulo: "Problemas de Separar e Formas de Fazer um Número"
+    secoes: [20, 23]
+
+  - numero: 5
+    slug: "moedas-e-cedulas"
+    titulo: "Moedas e Cédulas do Brasil"
+    secoes: [27, 31, 32, 33]
+
+  - numero: 6
+    slug: "o-calendario"
+    titulo: "O Calendário"
+    secoes: [35, 36, 37]
+
+  - numero: 7
+    slug: "contando-ate-100"
+    titulo: "Contando até 100"
+    secoes: [41, 42, 43]
+
+  - numero: 8
+    slug: "graficos-e-possibilidades"
+    titulo: "Gráficos e Possibilidades"
+    secoes: [45, 48, 49, 50]

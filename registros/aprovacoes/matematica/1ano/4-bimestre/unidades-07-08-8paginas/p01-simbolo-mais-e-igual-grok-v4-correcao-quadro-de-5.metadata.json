@@ -1,0 +1,59 @@
+{
+  "author": "matematica",
+  "generated_at": "2026-09-04T14:48:07.598657+00:00",
+  "image": {
+    "bytes": 1986251,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/1ano/4-bimestre/unidades-07-08-8paginas/p01-simbolo-mais-e-igual-grok-v4-correcao-quadro-de-5.jpg",
+    "sha256": "5496369fcb2f26f2468fb1798b6f15097533e31be3bb0079393ad6eceecd6b9b",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/projetos/2026/4-bimestre/1ano-8paginas-unidades-07-08-p01-simbolo-mais-e-igual-grok-v4-correcao-quadro-de-5.yaml",
+  "prompt": {
+    "characters": 7581,
+    "sha256": "8731be9e7745a4f93d0b2c722b9847f1289c318a77183453ead9d6565ec4ea3c",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/1ano/prompts/2026/4-bimestre/unidades-07-08-p01-simbolo-mais-e-igual-v4-correcao-quadro-de-5.md",
+    "words": 1265
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1993,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6168
+  }
+}

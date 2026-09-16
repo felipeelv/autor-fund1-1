@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Matemática — 1º ano — 4º bimestre — Unidades 7-8 — página 1 — Grok Imagine 2 via OpenRouter — v2 (correção fundo e soma)"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — O Símbolo + e o Símbolo = — Grok Imagine 2 — v2 correção fundo e soma"
+    prompt: "autores/matematica/anos/1ano/prompts/2026/4-bimestre/unidades-07-08-p01-simbolo-mais-e-igual-v2-correcao-fundo-e-soma.md"
+    saida: "matematica/1ano/4-bimestre/unidades-07-08-8paginas/p01-simbolo-mais-e-igual-grok-v2-correcao-fundo-e-soma.jpg"
