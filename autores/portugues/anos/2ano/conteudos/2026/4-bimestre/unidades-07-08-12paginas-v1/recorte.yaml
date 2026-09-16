@@ -1,0 +1,115 @@
+recorte:
+  autor: "portugues"
+  ano: "2ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidades-07-08"
+  disciplina: "Português"
+  fonte: "autores/portugues/anos/2ano/fontes/2026-2-semestre/4bim-contos-e-criadores-de-historias-v1.md"
+
+# Segundo lote de Português do 2º ano (primeiro foi a Unidade 6, 3º bimestre,
+# 8 páginas). A fonte cobre duas unidades — Unidade 7 (O Mundo dos Contos,
+# capítulos 1 e 2) e Unidade 8 (Criadores de Histórias, capítulo 1) — em 12
+# páginas, na mesma proporção de densidade da Unidade 6 (fonte de tamanho
+# quase idêntico: 605 x 604 linhas). Números entre colchetes são o "#" do
+# `preparar.py --inventario` desta fonte.
+#
+# p01 recebeu sign-off (v2, com a capa "Nesta unidade, você vai" da seção 4,
+# que faltava na v1) em 08/09/2026. Lote completo liberado nesse padrão de
+# estilo. Ficam fora do recorte as seções "🗣️ HORA DE CONVERSAR" em toda a
+# fonte — são roteiro de conversa em sala, não conteúdo de página (mesmo
+# critério já usado na Unidade 6).
+#
+# UNIDADE 7 — O MUNDO DOS CONTOS, CAPÍTULO 1 — ELEMENTOS QUE CONTAM HISTÓRIAS
+#
+# p01 = "O que é um conto e os elementos da narrativa"      -> [4, 6, 8, 10]
+# p02 = "Personagem e Espaço"                                -> [11, 12]
+# p03 = "Tempo e Problema"                                    -> [13, 14]
+# p04 = "Solução e Estrutura do Conto"                        -> [15, 16, 17, 18, 19, 20]
+# p05 = "Vocabulário emocional e expressões idiomáticas"      -> [21, 22, 23, 24, 25, 26, 27]
+#
+# p02-p04 usam o mesmo exemplo do livro "O Homem que Amava Caixas" (o
+# personagem = o homem/o filho) para dar continuidade visual entre as três
+# páginas. Em p05, cada uma das 5 categorias de sentimento é reduzida de
+# 5-6 palavras da fonte para 3-4 (mesmas palavras, corte de densidade).
+#
+# UNIDADE 7 — CAPÍTULO 2 — O SEGREDO DA CEDILHA
+#
+# p06 = "Cedilha e o que é plural"                            -> [30, 31, 32]
+# p07 = "Regras do plural: +S, +ES, L→IS"                     -> [33, 34, 35]
+# p08 = "Regra do ÃO, concordância e resumo do plural"        -> [36, 37, 38]
+#
+# UNIDADE 8 — CRIADORES DE HISTÓRIAS, CAPÍTULO 1 — ANTES DE ESCREVER
+#
+# p09 = "Os 6 passos do planejamento e Passo 1: Personagem"   -> [44, 45, 46, 47]
+# p10 = "Passo 2, 3 e 4: Espaço, Tempo e Problema"             -> [48, 49, 50]
+# p11 = "Passo 5 e 6: Ações e Solução + banco de palavras"     -> [51, 52, 53, 54, 55, 56]
+# p12 = "Revisão em 5 camadas"                                 -> [57, 58, 59, 60, 61, 62, 63]
+#
+# p09-p11 usam o mesmo exemplo "Lucas" da fonte para dar continuidade visual
+# entre as páginas de planejamento. Em p12, a Camada 3 (Ortografia
+# Consolidada, 31 linhas de fonte) é condensada a uma linha por item do
+# checklist, sem as sub-explicações — mesmos itens, corte de densidade — e
+# "Reescrevendo e melhorando" [63] vira uma caixa pequena de fechamento, não
+# um núcleo próprio.
+
+paginas:
+  - numero: 1
+    slug: "o-que-e-um-conto-e-os-elementos-da-narrativa"
+    titulo: "O que é um conto e os elementos da narrativa"
+    secoes: [4, 6, 8, 10]
+
+  - numero: 2
+    slug: "personagem-e-espaco"
+    titulo: "Personagem e Espaço"
+    secoes: [11, 12]
+
+  - numero: 3
+    slug: "tempo-e-problema"
+    titulo: "Tempo e Problema"
+    secoes: [13, 14]
+
+  - numero: 4
+    slug: "solucao-e-estrutura-do-conto"
+    titulo: "Solução e Estrutura do Conto"
+    secoes: [15, 16, 17, 18, 19, 20]
+
+  - numero: 5
+    slug: "vocabulario-emocional-e-expressoes-idiomaticas"
+    titulo: "Vocabulário Emocional e Expressões Idiomáticas"
+    secoes: [21, 22, 23, 24, 25, 26, 27]
+
+  - numero: 6
+    slug: "cedilha-e-o-que-e-plural"
+    titulo: "Cedilha e o que é Plural"
+    secoes: [30, 31, 32]
+
+  - numero: 7
+    slug: "regras-do-plural-mais-s-mais-es-l-para-is"
+    titulo: "Regras do Plural: +S, +ES, L→IS"
+    secoes: [33, 34, 35]
+
+  - numero: 8
+    slug: "regra-do-ao-concordancia-e-resumo-do-plural"
+    titulo: "Regra do ÃO, Concordância e Resumo do Plural"
+    secoes: [36, 37, 38]
+
+  - numero: 9
+    slug: "os-6-passos-do-planejamento-e-passo-1-personagem"
+    titulo: "Os 6 Passos do Planejamento e Passo 1: Personagem"
+    secoes: [44, 45, 46, 47]
+
+  - numero: 10
+    slug: "passo-2-3-e-4-espaco-tempo-e-problema"
+    titulo: "Passo 2, 3 e 4: Espaço, Tempo e Problema"
+    secoes: [48, 49, 50]
+
+  - numero: 11
+    slug: "passo-5-e-6-acoes-e-solucao-e-banco-de-palavras"
+    titulo: "Passo 5 e 6: Ações e Solução + Banco de Palavras"
+    secoes: [51, 52, 53, 54, 55, 56]
+
+  - numero: 12
+    slug: "revisao-em-5-camadas"
+    titulo: "Revisão em 5 Camadas"
+    secoes: [57, 58, 59, 60, 61, 62, 63]

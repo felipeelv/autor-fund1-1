@@ -1,0 +1,59 @@
+{
+  "author": "portugues",
+  "generated_at": "2026-09-08T13:37:47.626567+00:00",
+  "image": {
+    "bytes": 1596503,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p07-regras-do-plural-mais-s-mais-es-l-para-is-grok-v1.jpg",
+    "sha256": "116e4038f309dca2f5c9dcb976d35fcc02d335ee48ea9fb322a1926ee83c45ac",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/projetos/2026/4-bimestre/2ano-unidade-07-08-p07-regras-do-plural-mais-s-mais-es-l-para-is-grok-v1.yaml",
+  "prompt": {
+    "characters": 6355,
+    "sha256": "34254c21e82a648ef076a7107ffbb328921db7e28f4ba693ffb62c00f0f85300",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p07-regras-do-plural-mais-s-mais-es-l-para-is-v1.md",
+    "words": 1048
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1697,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5872
+  }
+}
