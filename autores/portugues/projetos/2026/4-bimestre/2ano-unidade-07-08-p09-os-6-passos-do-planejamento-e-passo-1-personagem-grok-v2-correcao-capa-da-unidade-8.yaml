@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Português — 2º ano — 4º bimestre — Unidades 7-8 — página 9 — correção capa da Unidade 8 — Grok Imagine 2 via OpenRouter — v2"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P9 — Os 6 Passos do Planejamento e Passo 1: Personagem — correção capa da Unidade 8 — Grok Imagine 2 — v2"
+    prompt: "autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p09-os-6-passos-do-planejamento-e-passo-1-personagem-v2-correcao-capa-da-unidade-8.md"
+    saida: "portugues/2ano/4-bimestre/unidades-07-08/p09-os-6-passos-do-planejamento-e-passo-1-personagem-grok-v2-correcao-capa-da-unidade-8.jpg"
