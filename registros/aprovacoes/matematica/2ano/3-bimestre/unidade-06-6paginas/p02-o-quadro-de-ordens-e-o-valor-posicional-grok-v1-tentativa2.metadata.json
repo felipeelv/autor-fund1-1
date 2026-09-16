@@ -1,0 +1,59 @@
+{
+  "author": "matematica",
+  "generated_at": "2026-08-25T13:36:20.167775+00:00",
+  "image": {
+    "bytes": 1686140,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/3-bimestre/unidade-06-6paginas/p02-o-quadro-de-ordens-e-o-valor-posicional-grok-v1-tentativa2.jpg",
+    "sha256": "f689d09dd9c694db931f32b0891b0c6b2d53f72f59a1e82372ca7c7ec5cb2d5b",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/projetos/2026/3-bimestre/2ano-6paginas-unidade-06-p02-o-quadro-de-ordens-e-o-valor-posicional-grok-v1-tentativa2.yaml",
+  "prompt": {
+    "characters": 7193,
+    "sha256": "233ced1be3f51a42baa0143e65db6d7cdf14379b1873db662a422852c494b1f3",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/3-bimestre/unidade-06-p02-o-quadro-de-ordens-e-o-valor-posicional-v1.md",
+    "words": 1263
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1897,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6072
+  }
+}

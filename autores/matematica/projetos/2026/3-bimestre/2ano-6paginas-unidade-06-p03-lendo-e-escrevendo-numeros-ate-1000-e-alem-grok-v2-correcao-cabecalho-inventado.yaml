@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Matemática — 2º ano — 3º bimestre — Unidade 6 — página 3 — Grok Imagine 2 via OpenRouter — v2 correção cabeçalho inventado"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P3 — Lendo e Escrevendo Números até 1000 e Além — Grok Imagine 2 — v2 correção cabeçalho inventado"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/3-bimestre/unidade-06-p03-lendo-e-escrevendo-numeros-ate-1000-e-alem-v2-correcao-cabecalho-inventado.md"
+    saida: "matematica/2ano/3-bimestre/unidade-06-6paginas/p03-lendo-e-escrevendo-numeros-ate-1000-e-alem-grok-v2-correcao-cabecalho-inventado.jpg"

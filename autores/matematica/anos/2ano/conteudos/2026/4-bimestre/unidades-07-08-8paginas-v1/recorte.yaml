@@ -1,0 +1,89 @@
+recorte:
+  autor: "matematica"
+  ano: "2ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidades-07-08"
+  disciplina: "Matemática"
+  fonte: "autores/matematica/anos/2ano/fontes/2026-2-semestre/4bim-medidas-dados-e-graficos-v1.md"
+
+# Primeiro lote de Matemática do 2º ano para o 4º bimestre. A fonte cobre duas
+# unidades — Unidade 7 (Medidas) e Unidade 8 (Dados e Gráficos) — cada uma
+# recebendo 4 páginas, no mesmo total usado pelo 1º ano e pelo 3º ano para
+# estas mesmas unidades. Números entre colchetes são o "#" do
+# `preparar.py --inventario` desta fonte.
+#
+# UNIDADE 7 — MEDIDAS
+#
+# p1 = "Medindo com o corpo e por que precisamos de padrão" -> [9, 10, 11, 12, 13, 14]
+# p2 = "Metro e centímetro"                                  -> [15, 16, 17, 18, 19, 20]
+# p3 = "Capacidade: o litro"                                 -> [22, 23, 24, 25, 26]
+# p4 = "O relógio: horas exatas e meia hora"                 -> [30, 31, 32, 33]
+#
+# Decisão de Nicolas Basso em 08/09/2026: "Horas do Dia" [34] e "Duração de
+# Eventos" [35] ficam fora do recorte — redundantes com o que a p4 já cobre
+# (partes do relógio, hora exata, meia hora); um terceiro e quarto núcleo
+# estourariam a página. "Estimando Comprimentos" [21] fica fora da p2 pelo
+# mesmo motivo de densidade — o núcleo de régua/exemplo já ensina a medir.
+#
+# UNIDADE 8 — DINHEIRO, DADOS E GRÁFICOS
+#
+# p5 = "Dinheiro brasileiro: moedas e cédulas" -> [36, 37, 38, 39, 40]
+# p6 = "Troco e problemas com dinheiro"        -> [41, 44, 45]
+# p7 = "Pesquisa e tabelas"                    -> [50, 53, 54, 56, 57]
+# p8 = "Gráficos"                              -> [61, 62, 66, 67]
+#
+# "Compondo Valores" [42] e "Calculando o Total" [43] ficam fora da p6 —
+# comparar e trocar já cobrem a ideia de somar/subtrair dinheiro sem repetir
+# um terceiro núcleo de composição. "Construindo um Gráfico de Colunas" [63],
+# "Lendo Gráficos de Colunas" [64], "Comparando no Gráfico" [65],
+# "Interpretando Gráficos no Dia a Dia" [68] e "Resolvendo Problemas com
+# Gráficos" [69] ficam fora da p8 — o par colunas+pictograma [61, 62, 66, 67]
+# já demonstra os dois tipos mais distintos (com barra e com desenho) sem
+# repetir o mesmo procedimento de leitura três vezes.
+#
+# "RESUMO DO BIMESTRE" [70, 71] e "PARABÉNS!" [72] ficam fora — são de
+# fechamento de ano/bimestre, comuns a outras unidades, tratados à parte
+# quando todas as unidades do semestre estiverem prontas (mesma decisão já
+# registrada para as demais unidades).
+
+paginas:
+  - numero: 1
+    slug: "medindo-com-o-corpo-e-a-necessidade-de-padrao"
+    titulo: "Medindo com o Corpo e a Necessidade de Padrão"
+    secoes: [9, 10, 11, 12, 13, 14]
+
+  - numero: 2
+    slug: "metro-e-centimetro"
+    titulo: "Metro e Centímetro"
+    secoes: [15, 16, 17, 18, 19, 20]
+
+  - numero: 3
+    slug: "capacidade-o-litro"
+    titulo: "Capacidade: o Litro"
+    secoes: [22, 23, 24, 25, 26]
+
+  - numero: 4
+    slug: "o-relogio-horas-exatas-e-meia-hora"
+    titulo: "O Relógio: Horas Exatas e Meia Hora"
+    secoes: [30, 31, 32, 33]
+
+  - numero: 5
+    slug: "dinheiro-brasileiro-moedas-e-cedulas"
+    titulo: "Dinheiro Brasileiro: Moedas e Cédulas"
+    secoes: [36, 37, 38, 39, 40]
+
+  - numero: 6
+    slug: "troco-e-problemas-com-dinheiro"
+    titulo: "Troco e Problemas com Dinheiro"
+    secoes: [41, 44, 45]
+
+  - numero: 7
+    slug: "pesquisa-e-tabelas"
+    titulo: "Pesquisa e Tabelas"
+    secoes: [50, 53, 54, 56, 57]
+
+  - numero: 8
+    slug: "graficos"
+    titulo: "Gráficos"
+    secoes: [61, 62, 66, 67]

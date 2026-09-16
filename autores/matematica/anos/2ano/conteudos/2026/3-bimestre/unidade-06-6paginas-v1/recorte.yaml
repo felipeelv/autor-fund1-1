@@ -1,0 +1,77 @@
+recorte:
+  autor: "matematica"
+  ano: "2ano"
+  ano_letivo: "2026"
+  bimestre: "3-bimestre"
+  unidade: "unidade-06"
+  disciplina: "Matemática"
+  fonte: "autores/matematica/anos/2ano/fontes/2026-2-semestre/3bim-multiplicacao-numeros-e-formas-v1.md"
+
+# Primeiro lote de Matemática do 2º ano (nenhuma página deste ano foi
+# produzida antes). A Unidade 6 ("NÚMEROS MAIORES E FORMAS") declara 6
+# objetivos em "O QUE VAMOS APRENDER NESTA UNIDADE?" (seção 31) e se divide,
+# na própria fonte, em 2 capítulos: Sistema de Numeração (seções 33-51) e
+# Polígonos (seções 53-64). A régua de densidade do 2º ano é 3 a 4 núcleos
+# por página (DERIVACAO-ENTRE-ANOS.md) — por isso o capítulo de numeração,
+# muito mais extenso, ocupa 4 páginas e o de polígonos, 2 páginas.
+#
+# p1 = abertura da unidade + Unidade de Milhar      -> seções 31,34,38,39
+# p2 = valor posicional (quadro UM-C-D-U)           -> seções 40,41,42
+# p3 = ler e escrever números até 1000 e além       -> seções 43,44,45,46,47
+# p4 = compor, decompor, comparar e localizar       -> seções 48,49,50,51
+# p5 = polígonos: lados, vértices, triângulo, quadrilátero -> seções 54,55,56,57
+# p6 = pentágono, hexágono e comparação dos polígonos      -> seções 58,59,60,61,62
+#
+# Fora do recorte:
+# - seções 35, 36, 37 (Unidades, Dezenas, Centenas isoladas, 1 tabela de
+#   1 linha cada): conteúdo de revisão de bimestre anterior, e o mesmo fato
+#   já aparece por inteiro no quadro de 4 peças da seção 39 e na "GRANDE
+#   DESCOBERTA" da seção 38. Manter as três tabelas soltas duplicaria, em
+#   3 núcleos extras, o que 1 tabela e 1 destaque já mostram juntos.
+# - seções 63 e 64 (Polígonos nas Formas Espaciais; Construindo com
+#   Polígonos): extensão além dos 6 objetivos declarados da unidade
+#   ("lados e vértices", "comparar e classificar polígonos"); não cabem
+#   sem estourar a densidade de núcleos das páginas 5 e 6.
+# - seções 65-66 (RESUMO DO BIMESTRE): comum à Unidade 5 e à Unidade 6, não
+#   pertence só a esta unidade — mesma decisão já tomada no recorte do 1º
+#   ano para este autor.
+#
+# Dentro das páginas 3 e 4, várias seções trazem tabelas com linhas
+# repetidas do mesmo padrão (ex.: 10 centenas redondas, 6 exemplos de
+# leitura, 4 exemplos extras de composição/decomposição). A seleção de
+# quais linhas entram como TEXTOS EXATOS de cada página é decisão do
+# rascunho, não deste recorte — o rascunho gerado traz a seção inteira, e o
+# corte de linhas repetidas é resolvido ao revisar cada `-rascunho.md`,
+# documentado ali, antes de salvar como `-v1` (mesmo método usado no
+# `unidade-06-4paginas-v1` do 1º ano).
+
+paginas:
+  - numero: 1
+    slug: "numeros-maiores-a-unidade-de-milhar"
+    titulo: "Números Maiores: a Unidade de Milhar"
+    secoes: [31, 34, 38, 39]
+
+  - numero: 2
+    slug: "o-quadro-de-ordens-e-o-valor-posicional"
+    titulo: "O Quadro de Ordens e o Valor Posicional"
+    secoes: [40, 41, 42]
+
+  - numero: 3
+    slug: "lendo-e-escrevendo-numeros-ate-1000-e-alem"
+    titulo: "Lendo e Escrevendo Números até 1000 e Além"
+    secoes: [43, 44, 45, 46, 47]
+
+  - numero: 4
+    slug: "compondo-decompondo-comparando-e-localizando"
+    titulo: "Compondo, Decompondo, Comparando e Localizando Números"
+    secoes: [48, 49, 50, 51]
+
+  - numero: 5
+    slug: "poligonos-lados-vertices-triangulo-e-quadrilatero"
+    titulo: "Polígonos: Lados, Vértices, Triângulo e Quadrilátero"
+    secoes: [54, 55, 56, 57]
+
+  - numero: 6
+    slug: "pentagono-hexagono-e-a-comparacao-dos-poligonos"
+    titulo: "Pentágono, Hexágono e a Comparação dos Polígonos"
+    secoes: [58, 59, 60, 61, 62]
