@@ -1,0 +1,59 @@
+{
+  "author": "portugues",
+  "generated_at": "2026-08-26T20:58:56.714704+00:00",
+  "image": {
+    "bytes": 1727176,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/1ano/4-bimestre/unidade-07-4paginas/p04-quando-usar-rr-grok-v1.jpg",
+    "sha256": "a37d29deabcf3663c2707c2b897e7ef6e3bc1614da88e85fb145ec8985c4f708",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/projetos/2026/4-bimestre/1ano-4paginas-unidade-07-p04-quando-usar-rr-grok-v1.yaml",
+  "prompt": {
+    "characters": 5977,
+    "sha256": "91d09d2c817b176a7e673104e7bf9b3094b1095ed1f3e03c276b7947e4228b3c",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/1ano/prompts/2026/4-bimestre/unidade-07-p04-quando-usar-rr-v1.md",
+    "words": 942
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1574,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5749
+  }
+}

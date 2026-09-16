@@ -1,0 +1,59 @@
+{
+  "author": "portugues",
+  "generated_at": "2026-08-20T18:10:55.401241+00:00",
+  "image": {
+    "bytes": 2182176,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/1ano/3-bimestre/unidade-06-4paginas/p01-vamos-criar-nossa-historia-e-som-de-z-grok-v2-correcao-mesa.jpg",
+    "sha256": "c2b9f847fcd2985682d52fa7ecae60746ce126f976f396dc690cce657d0fe149",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/projetos/2026/3-bimestre/1ano-4paginas-unidade-06-p01-vamos-criar-nossa-historia-e-som-de-z-grok-v2-correcao-mesa.yaml",
+  "prompt": {
+    "characters": 7710,
+    "sha256": "5e590cf020eb83bedf0ed4f2df86d0b22cd6e0e17c7b014fa4713ac97cf98e8c",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/1ano/prompts/2026/3-bimestre/unidade-06-p01-vamos-criar-nossa-historia-e-som-de-z-v2-correcao-mesa.md",
+    "words": 1234
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 2041,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6216
+  }
+}

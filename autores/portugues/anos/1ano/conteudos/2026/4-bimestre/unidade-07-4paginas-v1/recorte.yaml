@@ -1,0 +1,48 @@
+recorte:
+  autor: "portugues"
+  ano: "1ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidade-07"
+  disciplina: "Língua Portuguesa"
+  fonte: "autores/portugues/anos/1ano/fontes/2026-2-semestre/4bim-cantigas-e-poesia-v1.md"
+
+# Divisão combinada com Nicolas Basso em 26/08/2026: 2 capítulos, 2 páginas
+# por capítulo (abertura + fecho), seguindo o mesmo padrão da Unidade 6 do 3º
+# bimestre deste ano — ver ORGANIZACAO.md e PADRAO-VISUAL-1ANO.md, seção
+# "Densidade e conteúdo".
+#
+# p1 = abertura do Cap. 1: índice da unidade (seção 4, "NESTA UNIDADE, VOCÊ
+# VAI") + cantiga (definição, "Ciranda, cirandinha", rimas) + parlenda
+# (definição, "Um, dois, feijão com arroz", rimas) — a fonte encadeia os
+# quatro sub-temas em sequência direta, sem transição perdida.
+#
+# p2 = fecho do Cap. 1: encontrando rimas ("Hoje é domingo" + tabela +
+# "Agora você!") + sinônimos e antônimos (as duas tabelas).
+#
+# p3 = abertura do Cap. 2: letras que mudam o som — provocação caro/carro +
+# R no começo (forte) + R no meio entre vogais (fraco).
+#
+# p4 = fecho do Cap. 2: quando usar RR + exemplos + "Lembre-se!" + tabela
+# COMPARE (caro/carro, moro/morro, vara/varra).
+
+paginas:
+  - numero: 1
+    slug: "versos-que-encantam-cantiga-e-parlenda"
+    titulo: "Versos que encantam: cantiga e parlenda"
+    secoes: [4, 6, 7, 8, 9]
+
+  - numero: 2
+    slug: "encontrando-rimas-sinonimos-e-antonimos"
+    titulo: "Encontrando rimas, sinônimos e antônimos"
+    secoes: [10, 11]
+
+  - numero: 3
+    slug: "letras-que-mudam-o-som-o-r"
+    titulo: "Letras que mudam o som: o R"
+    secoes: [13, 14, 15]
+
+  - numero: 4
+    slug: "quando-usar-rr"
+    titulo: "Quando usar RR?"
+    secoes: [16]

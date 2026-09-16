@@ -1,0 +1,59 @@
+{
+  "author": "portugues",
+  "generated_at": "2026-08-20T18:37:14.680589+00:00",
+  "image": {
+    "bytes": 1644065,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/1ano/3-bimestre/unidade-06-4paginas/p04-nunca-existe-ce-nem-ci-cedilhado-grok-v1.jpg",
+    "sha256": "2636dc95d91a1a7ea56b5a989ad41d9265ba239c134732814a1f8ab050e8f89b",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/projetos/2026/3-bimestre/1ano-4paginas-unidade-06-p04-nunca-existe-ce-nem-ci-cedilhado-grok-v1.yaml",
+  "prompt": {
+    "characters": 6308,
+    "sha256": "e73c76979bef876284efecbf17f40c48c5eeb8671a6bbdbfd27ba02c736ecfc6",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/1ano/prompts/2026/3-bimestre/unidade-06-p04-nunca-existe-ce-nem-ci-cedilhado-v1.md",
+    "words": 1016
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1675,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5850
+  }
+}
