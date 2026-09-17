@@ -1,0 +1,59 @@
+{
+  "author": "matematica",
+  "generated_at": "2026-09-16T19:37:26.471704+00:00",
+  "image": {
+    "bytes": 1511413,
+    "format": "jpeg",
+    "height": 2496,
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/3ano/4-bimestre/unidades-07-08/p07-grafico-de-linhas-grok-v5-cinco-dias.jpg",
+    "sha256": "f2afcfc12100d706a0fc0b0db5dde535cbabcbcf8ea9c939964c1bb8f43d49cf",
+    "source_format": "png",
+    "transcoded": true,
+    "width": 1664
+  },
+  "model": "x-ai/grok-imagine-image-2.0",
+  "parameters": {
+    "aspect_ratio": "2:3",
+    "background": "auto",
+    "max_retries": 2,
+    "moderation": "auto",
+    "output_compression": null,
+    "output_format": "jpeg",
+    "partial_images": 0,
+    "quality": "medium",
+    "quantity": 1,
+    "resolution": "2k",
+    "size": "auto",
+    "stream": false,
+    "timeout": 300
+  },
+  "project_source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/projetos/2026/4-bimestre/unidades-07-08-p07-grafico-de-linhas-grok-v5-cinco-dias.yaml",
+  "prompt": {
+    "characters": 7514,
+    "sha256": "9ff6ab6bf47ba4163447429d38115b1f27b591177d6d8963bc95c7856b3ff609",
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/3ano/prompts/2026/4-bimestre/unidades-07-08-p07-grafico-de-linhas-v5-cinco-dias.md",
+    "words": 1220
+  },
+  "provider": "openrouter",
+  "request_id": null,
+  "schema_version": 1,
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.08,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.08,
+      "upstream_inference_cost": 0.08,
+      "upstream_inference_prompt_cost": 0
+    },
+    "is_byok": false,
+    "prompt_tokens": 1962,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6137
+  }
+}
