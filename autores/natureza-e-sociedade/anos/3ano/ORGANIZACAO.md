@@ -6,10 +6,54 @@
 |---|---|---|
 | 3º | Unidade 1 — O Solo: Base da Vida | sem recorte |
 | 3º | Unidade 2 — Povos Indígenas (posição da Unidade 6 do bimestre) | lote v3 aprovado em 15/08/2026 (fonte curta); lote v4 aprovado em 22/08/2026 (fonte mais rica) — referência visual corrente |
-| 4º | Unidade 1/2 — Biodiversidade e Ecossistemas | sem recorte |
+| 4º | Unidade 1 — Biodiversidade | 6/6 páginas geradas em `_revisao`, nenhuma aprovada ainda; p02 e p04 usam dados com fonte confirmada desde 16/09/2026 |
+| 4º | Unidade 2 — Ecossistemas e Cadeias Alimentares | 6/6 páginas geradas em `_revisao`, nenhuma aprovada ainda; p02 usa dados com fonte confirmada desde 16/09/2026 |
 
 Os prompts ficam em `prompts/2026/<bimestre>/`. Cada lote precisa de projeto
 YAML próprio, provedor e modelo declarados e saída externa em `_revisao`.
+
+## Biodiversidade e Ecossistemas — 4º bimestre (09/09/2026)
+
+Primeiro lote de produção do 4º bimestre. Densidade "6 páginas por
+unidade" pedida por Nicolas Basso, reagindo ao lote de 16 páginas (8+8)
+produzido na mesma sessão para o autor `portugues` — ver `PROPOSTA-
+PEDAGOGICA.md` e `COBERTURA-DA-FONTE.md` de cada unidade em
+`conteudos/2026/4-bimestre/` para o detalhamento completo dos cortes.
+
+Diferente do autor `portugues`, este autor não usa `preparar.py --recorte`:
+os conteúdos de cada página foram escritos à mão a partir da fonte bruta,
+seguindo o modelo de `PROPOSTA-PEDAGOGICA.md`/`COBERTURA-DA-FONTE.md` já
+usado na Unidade Povos Indígenas.
+
+**Pendência de fonte resolvida em 16/09/2026:** três páginas (Biodiversidade
+p02 e p04; Ecossistemas p02) imprimiam estatísticas sem instituição e ano na
+fonte bruta — mesma trava já registrada em `MEMORIA.md` desde a Unidade
+Povos Indígenas. Um incidente à parte: essas três páginas chegaram a ser
+geradas e aprovadas por engano em 16/09/2026, sem checar a pendência
+documentada aqui; a aprovação foi revertida e os números foram
+pesquisados e substituídos por dados com fonte confirmada (IUCN Red List
+2025, IPBES 2019, UICN 2024, Associação Mico-Leão-Dourado 2023,
+INPE/PRODES 2024, SOS Mata Atlântica 2024, MapBiomas 2024) — ver a tabela
+de substituições em cada `COBERTURA-DA-FONTE.md`. As três páginas
+corrigidas foram geradas com sucesso e aguardam aprovação de Nicolas
+Basso; as outras 9 páginas da unidade também aguardam revisão.
+
+**Correção de fonte aplicada:** a fonte bruta da Unidade Biodiversidade
+listava "Lobo-cinzento brasileiro" como espécie ameaçada — espécie não
+nativa do Brasil. Corrigido para lobo-guará (*Chrysocyon brachyurus*),
+decisão de Nicolas Basso em 09/09/2026. Segunda correção em 16/09/2026:
+o lobo-guará tem população real de ~23.600 indivíduos e não serve de
+exemplo de "população pequena" — substituído por mico-leão-dourado
+(~4.800 indivíduos, Associação Mico-Leão-Dourado, Censo 2023).
+
+**Defeitos de geração corrigidos nesta rodada** (registrados em detalhe
+em `direcao/MEMORIA.md`): bioma do "cerrado" saiu como savana africana
+genérica com canídeo errado na primeira geração da capa; acentos e um
+erro de digitação em corpo de texto (Aquífero, hidrodinâmico, específico,
+carnívoros); um cabeçalho de boxe inventado e mal escrito ("Productiores"
+em vez de "Produtores"); uma pirâmide de biomassa que saiu invertida (base
+estreita em vez de larga) e, já corrigida a orientação, um número trocado
+("Sol envia 10%" em vez de "100%") na mesma página.
 
 ## Povos Indígenas — v4 (22/08/2026)
 

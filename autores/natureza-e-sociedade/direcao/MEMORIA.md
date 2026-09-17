@@ -176,6 +176,63 @@ e v2 são histórico e não descrevem o material aprovado.
   evitar a palavra em corpo pequeno ("esses povos"). A palavra sai correta em
   corpo maior.
 
+## Biodiversidade e Ecossistemas — 4º bimestre, 09/09/2026
+
+Primeiro lote de produção fora do tema Povos Indígenas. Conteúdo
+científico (biomas, classificação de seres vivos, cadeias alimentares),
+não histórico/cultural — a maior parte das travas de "cena anterior a
+1500" e representação indígena do `autor.yaml` simplesmente não se aplica
+aqui, mas continuam ativas sem problema (não geram cena histórica, então
+não disparam).
+
+- **bioma pode sair como estereótipo genérico, não o bioma pedido.** Ao
+  pedir só "cerrado" sem qualificar, a primeira geração da capa desenhou
+  savana africana (acácias, canídeo parecido com lobo) em vez de Cerrado
+  brasileiro. Trava que funcionou: nomear explicitamente o que NÃO pode
+  aparecer (acácia, savana africana, canídeo) e o que a vegetação/fauna
+  precisa ser (árvores baixas retorcidas, solo avermelhado, tatu ou
+  tamanduá-bandeira). Vale para qualquer bioma específico: dizer o nome do
+  bioma não basta, é preciso qualificar contra o estereótipo mais provável;
+- **pirâmide/gráfico com orientação implícita pode sair invertido.**
+  Pedir "pirâmide de biomassa com a lei dos 10% em cada nível" sem dizer
+  qual faixa é mais larga produziu um triângulo de cabeça para baixo (100%
+  do Sol na faixa mais larga, no topo). Trava que funcionou: descrever a
+  pirâmide de baixo para cima, nomeando a faixa da base e a do topo
+  explicitamente, e separar o rótulo "100% Sol" da pirâmide (é uma seta
+  externa, não uma faixa);
+- **erro ortográfico pontual que resiste a uma correção em prosa** — mesma
+  lição já registrada para o autor `portugues`: apontar o defeito em texto
+  não bastou para "Aquífero", "hidrodinâmico" e "específico" na primeira
+  tentativa; a segunda tentativa, com a mesma explicação, resolveu sem
+  precisar isolar a palavra num selo à parte (diferença notada: aqui
+  resolveu na 2ª tentativa, em Português precisou da 3ª com isolamento
+  visual — não é uma regra fixa, é tentativa e verificação);
+- **boxe pode ganhar cabeçalho inventado e mal escrito.** Um boxe sem
+  cabeçalho explícito na composição ("Produtores: fazem seu próprio
+  alimento...") recebeu um título não pedido e errado ("Productiores").
+  Trava que funcionou: nomear explicitamente o cabeçalho de cada boxe,
+  inclusive quando ele repete a primeira palavra do texto;
+- **número pode trocar mesmo em corpo grande, mesmo com o texto correto no
+  prompt.** Depois de corrigir a orientação da pirâmide, "o Sol envia 100%
+  de energia" saiu como "10%" — um dígito a menos, no mesmo boxe onde
+  "10%" já aparecia para a planta. Hipótese: dois números parecidos
+  (10%/100%) na mesma frase aumentam o risco de troca. Trava que ajudou:
+  marcar explicitamente que são dois números diferentes e não podem ficar
+  iguais.
+
+## Incidente de processo — 16/09/2026
+
+Uma sessão gerou e aprovou as três páginas pendentes (Biodiversidade p02 e
+p04; Ecossistemas p02) sem antes ler `COBERTURA-DA-FONTE.md`, que já
+registrava a pendência de instituição/ano e dizia explicitamente "nenhuma
+imagem... deve ser gerada". A aprovação foi revertida (removida de
+`aprovadas/` e dos registros); os números foram então pesquisados e
+substituídos por dados com fonte confirmada. Lição: antes de gerar uma
+página que "está faltando" numa unidade, checar se ela falta por
+pendência documentada, não só por falta de tempo — `COBERTURA-DA-FONTE.md`
+e o `ORGANIZACAO.md` do ano são leitura obrigatória antes de fechar um
+buraco aparente no lote.
+
 ## Ajuste visual aprovado em 15 de agosto de 2026
 
 As páginas devem seguir linguagem de editorial collage infographic, scrapbook
