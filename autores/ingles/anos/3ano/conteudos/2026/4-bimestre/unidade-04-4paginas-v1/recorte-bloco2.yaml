@@ -1,0 +1,36 @@
+recorte:
+  autor: "ingles"
+  ano: "3ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidade-04-bloco-02"
+  disciplina: "Inglês"
+  fonte: "autores/ingles/anos/3ano/fontes/2026-2-semestre/4bim-bloco2.md"
+
+# Continuação de recorte-bloco1.yaml — ver a nota lá.
+#
+# p3 = "Parts of the Day": vocabulário dos 4 períodos do dia + estrutura
+# "In the.../At night" -> [4, 7, 8]
+# p4 = fecho da unidade: estrutura "I...at...o'clock", a linha do tempo do
+# dia (gênero textual da unidade, só o exemplo já preenchido — não a versão
+# em branco para o aluno completar, que é atividade), revisão geral de todas
+# as estruturas da Unidade 4 e reflexão cristã final -> [12, 19, 21, 24, 25]
+#
+# Fora do recorte: música ([9], [15], [22]); "COMBINING TIME AND ACTIVITIES"
+# ([13]) e "COMBINING TIME AND PARTS OF THE DAY" ([14]), redundantes com a
+# estrutura de [12] e com a própria linha do tempo de [19] — corte de
+# densidade, não de conteúdo; a explicação do gênero textual "o que é uma
+# linha do tempo" ([18]), redundante com o exemplo visual de [19]; e "CREATE
+# YOUR TIMELINE" ([20]), que é espaço de resposta em branco para o aluno
+# completar — atividade (`ingles-atividades`), não conteúdo deste autor.
+
+paginas:
+  - numero: 3
+    slug: "parts-of-the-day"
+    titulo: "Parts of the Day"
+    secoes: [4, 7, 8]
+
+  - numero: 4
+    slug: "my-day-e-revisao-da-unidade"
+    titulo: "My Day: Revisão da Unidade 4"
+    secoes: [12, 19, 21, 24, 25]

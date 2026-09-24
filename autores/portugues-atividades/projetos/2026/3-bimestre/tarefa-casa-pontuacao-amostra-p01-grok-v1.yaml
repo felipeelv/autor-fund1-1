@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Português atividades — 2º ano — 3º bimestre — Tarefa de casa avulsa (pontuação) — amostra P1 — Grok Imagine 2 — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues-atividades"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Emoções e sinais (tarefa de casa) — amostra — Grok Imagine 2 — v1"
+    prompt: "autores/portugues-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-pontuacao-p01-emocoes-e-sinais-v1.md"
+    saida: "portugues-atividades/2ano/3-bimestre/tarefa-casa-pontuacao/p01-emocoes-e-sinais-grok-v1.jpg"

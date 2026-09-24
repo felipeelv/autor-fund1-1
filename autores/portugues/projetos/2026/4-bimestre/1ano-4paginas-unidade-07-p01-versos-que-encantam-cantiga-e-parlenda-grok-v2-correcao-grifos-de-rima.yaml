@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Português — 1º ano — 4º bimestre — Unidade 7 (4 páginas) — página 1 — Grok Imagine 2 via OpenRouter — v2 correção grifos de rima"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Versos que encantam: cantiga e parlenda — Grok Imagine 2 — v2 correção grifos de rima"
+    prompt: "autores/portugues/anos/1ano/prompts/2026/4-bimestre/unidade-07-p01-versos-que-encantam-cantiga-e-parlenda-v2-correcao-grifos-de-rima.md"
+    saida: "portugues/1ano/4-bimestre/unidade-07-4paginas/p01-versos-que-encantam-cantiga-e-parlenda-grok-v2-correcao-grifos-de-rima.jpg"

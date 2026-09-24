@@ -1,0 +1,56 @@
+recorte:
+  autor: "matematica"
+  ano: "1ano"
+  ano_letivo: "2026"
+  bimestre: "3-bimestre"
+  unidade: "unidade-06"
+  disciplina: "Matemática"
+  fonte: "autores/matematica/anos/1ano/fontes/2026-2-semestre/3bim-transformacoes-e-numeros-maiores-v1.md"
+
+# Primeiro lote de Matemática do 1º ano (nenhuma página deste ano foi
+# produzida antes). A divisão em 4 páginas segue os próprios quatro
+# objetivos que a fonte lista em "O QUE VAMOS APRENDER?" (seção 25):
+#
+# p1 = "Contar até 50"                                  -> seções 25,28,29,30,31
+# p2 = "Agrupar de 10 em 10"                             -> seções 32,33,34
+# p3 = "Contar de 2 em 2, de 5 em 5 e de 10 em 10"       -> seções 37,38,39
+# p4 = "Descobrir padrões em sequências numéricas"       -> seções 40,41,42
+#
+# p1 tinha originalmente as três tabelas de década inteiras (21-30, 31-40,
+# 41-50 — seções 29, 30, 31), 90 células literais (30 números x 3 colunas) —
+# volume alto demais para o 1º ano ("núcleos por página: 2 a 3", texto em
+# palavra isolada) e de alto risco de defeito de geração (número/nome errado).
+# Decisão de Nicolas Basso em 20/08/2026: manter a seção 29 (21-30) inteira,
+# como modelo do padrão "vinte e X", e reduzir as seções 30 e 31 às suas
+# linhas redondas (40/QUARENTA/4 grupos de 10; 50/CINQUENTA/5 grupos de 10),
+# junto da régua numérica (seção 32, que já destaca 10/20/30/40/50 como
+# "grupos completos de 10"). Isso corta as linhas 31-39 e 41-49 do prompt —
+# reorganização de densidade, não invenção: nenhuma linha usada é diferente
+# da fonte, só um subconjunto dela vira o "núcleo das âncoras" desta página.
+# Ver TEXTOS EXATOS do rascunho -v1 para o recorte exato das linhas 30/31.
+#
+# Seção 43 ("RESUMO DO BIMESTRE") fica fora do recorte: é comum à Unidade 5
+# e à Unidade 6, não pertence só a esta unidade. Decisão pendente sobre
+# tratá-la como página de fechamento do bimestre quando a Unidade 5 também
+# estiver pronta.
+
+paginas:
+  - numero: 1
+    slug: "contando-ate-50"
+    titulo: "Números até 50"
+    secoes: [25, 28, 29, 30, 31, 32]
+
+  - numero: 2
+    slug: "agrupando-de-10-em-10"
+    titulo: "Agrupando de 10 em 10"
+    secoes: [33, 34]
+
+  - numero: 3
+    slug: "contando-de-2-5-e-10-em-10"
+    titulo: "Contando de 2 em 2, de 5 em 5 e de 10 em 10"
+    secoes: [37, 38, 39]
+
+  - numero: 4
+    slug: "descobrindo-o-padrao-das-sequencias"
+    titulo: "Descobrindo o padrão das sequências"
+    secoes: [40, 41, 42]

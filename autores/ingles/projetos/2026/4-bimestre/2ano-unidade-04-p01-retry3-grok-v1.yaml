@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Inglês EF1 — 2º ano — Unidade 4 — Bloco 1 — My Toys — retry 3 — Grok Imagine 2 via OpenRouter"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — My Toys — v2 retry 3"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/4-bimestre/unidade-04-bloco-01-p01-my-toys-v2-cabecalho-em-portugues.md"
+    saida: "ingles/2ano/4-bimestre/unidade-04-4paginas-v1/p01-my-toys-v2-retry3.jpg"

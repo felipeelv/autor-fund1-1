@@ -1,0 +1,34 @@
+recorte:
+  autor: "ingles"
+  ano: "1ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidade-04-bloco-01"
+  disciplina: "Inglês"
+  fonte: "autores/ingles/anos/1ano/fontes/2026-2-semestre/4bim-bloco1.md"
+
+# Divisão combinada com Nicolas Basso em 17/09/2026: 2 páginas por bloco (4 no
+# total da Unidade 4), retomando a densidade do precedente aprovado desta
+# mesma disciplina/ano (Unidade 3, bloco 1: "autonomia guiada", 1 subtema por
+# página, ~6 núcleos visuais + 1-2 fluxos de exemplo — ver
+# `direcao/PADRAO-VISUAL-1ANO.md`). Números entre colchetes são o "#" do
+# `preparar.py --inventario` desta fonte.
+#
+# p1 = "The Family": vocabulário dos 6 membros da família + curiosidade sobre
+# apelidos (mommy/daddy/granny/grandad) + estrutura "This is my..."
+#   -> [4, 6, 7, 8]
+# p2 = "I Love My...": estrutura "I love my..." + diálogos curtos -> [10, 12, 13]
+#
+# Música e "você sabia" de fecho ([9], [15]) ficam fora deste recorte — ver
+# AUTOR.md: "não comprimir músicas, diálogos e revisão em uma mesma página".
+
+paginas:
+  - numero: 1
+    slug: "the-family"
+    titulo: "The Family"
+    secoes: [4, 6, 7, 8]
+
+  - numero: 2
+    slug: "i-love-my"
+    titulo: "I Love My..."
+    secoes: [10, 12, 13]

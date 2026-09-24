@@ -1,0 +1,42 @@
+projeto:
+  titulo: "Inglês EF1 — 3º ano — Unidade 4 — What Time Is It? — 4 páginas — Grok Imagine 2 via OpenRouter — v2 (cabeçalhos em português)"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Numbers 1-12 — v2"
+    prompt: "autores/ingles/anos/3ano/prompts/2026/4-bimestre/unidade-04-bloco-01-p01-numbers-1-12-v2-cabecalho-em-portugues.md"
+    saida: "ingles/3ano/4-bimestre/unidade-04-4paginas-v1/p01-numbers-1-12-v2.jpg"
+
+  - nome: "P2 — What Time Is It? — v1"
+    prompt: "autores/ingles/anos/3ano/prompts/2026/4-bimestre/unidade-04-bloco-01-p02-what-time-is-it-v1.md"
+    saida: "ingles/3ano/4-bimestre/unidade-04-4paginas-v1/p02-what-time-is-it-v1.jpg"
+
+  - nome: "P3 — Parts of the Day — v2"
+    prompt: "autores/ingles/anos/3ano/prompts/2026/4-bimestre/unidade-04-bloco-02-p03-parts-of-the-day-v2-cabecalho-em-portugues.md"
+    saida: "ingles/3ano/4-bimestre/unidade-04-4paginas-v1/p03-parts-of-the-day-v2.jpg"
+
+  - nome: "P4 — My Day: Revisão da Unidade 4 — v1"
+    prompt: "autores/ingles/anos/3ano/prompts/2026/4-bimestre/unidade-04-bloco-02-p04-my-day-e-revisao-da-unidade-v1.md"
+    saida: "ingles/3ano/4-bimestre/unidade-04-4paginas-v1/p04-my-day-e-revisao-da-unidade-v1.jpg"

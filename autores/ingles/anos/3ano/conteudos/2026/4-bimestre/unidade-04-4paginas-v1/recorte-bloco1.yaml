@@ -1,0 +1,37 @@
+recorte:
+  autor: "ingles"
+  ano: "3ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidade-04-bloco-01"
+  disciplina: "Inglês"
+  fonte: "autores/ingles/anos/3ano/fontes/2026-2-semestre/4bim-bloco1.md"
+
+# Divisão combinada com Nicolas Basso em 17/09/2026: 4 páginas na unidade (2
+# por bloco), mesmo padrão dos outros dois anos desta Unidade 4. Números
+# entre colchetes são o "#" do `preparar.py --inventario` desta fonte.
+#
+# p1 = "Numbers 1-12": abertura "nesta unidade você vai aprender" + tabela de
+# números 1-12 + prática de contagem -> [4, 7, 8]
+# p2 = "What Time Is It?": estrutura "It's... o'clock" (com amostra reduzida
+# de horários, não as 12 linhas da tabela da fonte) + estrutura "What time is
+# it?" + diálogos de pergunta e resposta -> [12, 17, 18]
+#
+# Fora do recorte, por dois motivos diferentes:
+# - música ([9], [14], [20]) — ver AUTOR.md, não comprimir música com o resto;
+# - a tabela completa de 12 horários ([13]) — redundante com a tabela de
+#   números da p1, condensada na composição para uma amostra de horários;
+# - "PRACTICE: LOOK AND SAY" ([19]) — é lista de exercício com lacuna de
+#   resposta ("It's _____ o'clock"), que é conteúdo de autor de atividades
+#   (`ingles-atividades`), não deste autor de conteúdo. Ver CLAUDE.md seção 1.
+
+paginas:
+  - numero: 1
+    slug: "numbers-1-12"
+    titulo: "Numbers 1-12"
+    secoes: [4, 7, 8]
+
+  - numero: 2
+    slug: "what-time-is-it"
+    titulo: "What Time Is It?"
+    secoes: [12, 17, 18]

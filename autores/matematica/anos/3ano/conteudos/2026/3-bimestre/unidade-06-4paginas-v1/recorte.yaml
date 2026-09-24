@@ -1,0 +1,62 @@
+recorte:
+  autor: "matematica"
+  ano: "3ano"
+  ano_letivo: "2026"
+  bimestre: "3-bimestre"
+  unidade: "unidade-06"
+  disciplina: "Matemática"
+  fonte: "autores/matematica/anos/3ano/fontes/2026-2-semestre/3bim-divisao-resto-geometria-v1.md"
+
+# Segundo recorte da Unidade 6 ("GEOMETRIA") deste ano, desta vez isolada da
+# Unidade 5 e em 4 páginas, no mesmo padrão de nomenclatura usado para
+# 1ano-4paginas-unidade-06 e 2ano-6paginas-unidade-06 (27/08/2026).
+#
+# O primeiro lote (18/08/2026) já cobriu Unidades 5 e 6 juntas em 6 páginas,
+# aprovado e promovido — ver `unidade-05-06-6paginas-v1/`. As páginas 1 e 2
+# abaixo reaproveitam, sem alteração de conteúdo, o texto já validado das
+# páginas 4 e 5 daquele lote (Sólidos Geométricos e Planificação), porque
+# passaram por 17 rodadas de correção até acertar a geometria de vértice,
+# aresta e rede do prisma — reescrever do zero repetiria os mesmos erros já
+# resolvidos. As páginas 3 e 4 são um recorte novo: o antigo p06 daquele lote
+# comprimia Polígonos + Quadriláteros Especiais + Congruência em uma página
+# só; aqui a mesma seção da fonte (Capítulo 2, da "Relembrando os Polígonos"
+# até "Figuras Congruentes") ganha duas páginas, o que permite incluir também
+# o diagrama de classificação hierárquica dos quadriláteros, que o lote de
+# 18/08 tinha deixado fora por falta de espaço.
+#
+# p1 = abertura da unidade + sólidos geométricos + partes (face, vértice, aresta) -> Capítulo 1
+# p2 = o que é planificação + 5 relações 3D-2D                                    -> Capítulo 2, início
+# p3 = polígonos (3 a 6 lados) + os 5 quadriláteros especiais, um a um            -> Capítulo 2, meio
+# p4 = classificação hierárquica dos quadriláteros + figuras congruentes         -> Capítulo 2, fim
+#
+# Fora do recorte, como no lote anterior:
+# - descrições ASCII de cada planificação (a ilustração final resolve isso
+#   visualmente, sem precisar reproduzir a arte de texto da fonte);
+# - "onde encontramos" (exemplos cotidianos de cada quadrilátero): mantém a
+#   página 3 no teto de densidade do 3º ano sem perder nenhuma definição;
+# - planificação do cone: descrita em 1 frase na fonte, sem tabela de partes
+#   como as demais; incluir só o cone quebraria a paridade visual das outras
+#   5 relações 3D-2D, que têm todas o mesmo nível de detalhe.
+
+paginas:
+  - numero: 1
+    slug: "solidos-geometricos"
+    titulo: "Sólidos Geométricos"
+    origem: "unidade-05-06-p04-solidos-geometricos-v1.md (conteúdo idêntico, sem alteração)"
+    secoes: ["Sólidos Geométricos", "Formas ao Nosso Redor", "Faces, Vértices e Arestas", "Classificando Sólidos"]
+
+  - numero: 2
+    slug: "planificacao-e-figuras-planas"
+    titulo: "Planificação e Figuras Planas"
+    origem: "unidade-05-06-p05-planificacao-e-figuras-planas-v1.md (conteúdo idêntico, sem alteração)"
+    secoes: ["O Que É Planificação?", "Planificação do Cubo", "Planificação do Paralelepípedo", "Planificação da Pirâmide", "Planificação do Cilindro", "Relação 3D ↔ 2D"]
+
+  - numero: 3
+    slug: "poligonos-e-quadrilateros-especiais"
+    titulo: "Polígonos e Quadriláteros Especiais"
+    secoes: ["Relembrando os Polígonos", "Os Quadriláteros Especiais", "O Quadrado", "O Retângulo", "O Losango", "O Trapézio", "O Paralelogramo"]
+
+  - numero: 4
+    slug: "classificacao-e-figuras-congruentes"
+    titulo: "Classificação dos Quadriláteros e Figuras Congruentes"
+    secoes: ["Classificação dos Quadriláteros", "Figuras Congruentes"]

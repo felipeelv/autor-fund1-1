@@ -1,0 +1,31 @@
+recorte:
+  autor: "ingles"
+  ano: "2ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidade-04-bloco-02"
+  disciplina: "Inglês"
+  fonte: "autores/ingles/anos/2ano/fontes/2026-2-semestre/4bim-bloco2.md"
+
+# Continuação de recorte-bloco1.yaml — ver a nota lá.
+#
+# p3 = "It Is... / What Color Is It?": estrutura "It is... (color)" com
+# exemplos + estrutura "What color is it?" com os diálogos de pergunta e
+# resposta -> [4, 6, 8]
+# p4 = fecho do bloco: revisão geral (toys + colors) + reflexão cristã final
+# -> [11, 12, 14]
+#
+# p4 fica sozinha com revisão + reflexão, sem diálogo nem música juntos (ver
+# AUTOR.md). As duas curiosidades ("você sabia") e as duas músicas ficam de
+# fora deste recorte.
+
+paginas:
+  - numero: 3
+    slug: "it-is-what-color-is-it"
+    titulo: "It Is... / What Color Is It?"
+    secoes: [4, 6, 8]
+
+  - numero: 4
+    slug: "revisao-toys-and-colors"
+    titulo: "Review: Toys and Colors"
+    secoes: [11, 12, 14]

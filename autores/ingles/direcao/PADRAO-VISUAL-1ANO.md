@@ -1,11 +1,14 @@
 # Padrão visual — Inglês · 1º ano
 
 Status: segunda proposta em geração, após pedido de maior densidade textual e
-mistura de colagem com sketchnote.
+mistura de colagem com sketchnote. Corrigido em 17/09/2026 (Nicolas Basso):
+o fundo estava especificado como "branco quente `#FFFDF8`", em desacordo com
+CLAUDE.md seção 1 ("fundo branco puro") — corrigido para branco puro
+`#FFFFFF`.
 
 ## DNA visual
 
-- página vertical 2:3 sobre papel branco quente;
+- página vertical 2:3 sobre papel branco puro;
 - colagem editorial de papel recortado e pintura guache;
 - sketchnote profissional com setas, círculos, sublinhados e conectores;
 - visual note-taking orgânico, sem grade rígida de cartões;
@@ -22,7 +25,7 @@ mistura de colagem com sketchnote.
 
 | Papel | Cor |
 |---|---|
-| Fundo | branco quente `#FFFDF8` |
+| Fundo | branco puro `#FFFFFF` |
 | Texto | grafite `#263238` |
 | Red | `#E94B3C` |
 | Blue | `#2F6FD0` |

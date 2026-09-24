@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Matemática — 1º ano — 3º bimestre — Unidade 6 — página 1 — Grok Imagine 2 via OpenRouter — v3 (correção barra de dez)"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Números até 50 — Grok Imagine 2 — v3 correção barra de dez"
+    prompt: "autores/matematica/anos/1ano/prompts/2026/3-bimestre/unidade-06-p01-contando-ate-50-v3-correcao-barra-de-dez.md"
+    saida: "matematica/1ano/3-bimestre/unidade-06-4paginas/p01-contando-ate-50-grok-v3-correcao-barra-de-dez.jpg"

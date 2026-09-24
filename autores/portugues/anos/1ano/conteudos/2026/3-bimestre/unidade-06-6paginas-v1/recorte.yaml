@@ -1,0 +1,54 @@
+recorte:
+  autor: "portugues"
+  ano: "1ano"
+  ano_letivo: "2026"
+  bimestre: "3-bimestre"
+  unidade: "unidade-06"
+  disciplina: "Língua Portuguesa"
+  fonte: "autores/portugues/anos/1ano/fontes/2026-2-semestre/3bim-mundo-das-historias-e-somos-escritores-v1.md"
+
+# A fonte rotula esta unidade como "UNIDADE 8", mas ela ocupa a posição da
+# Unidade 6 do 3º bimestre: o arquivo cobre as Unidades 5 e 6, e a Unidade 8
+# verdadeira está no 4º bimestre, com outro título ("Brincando de poeta") e
+# outro conteúdo. Erro de rotulagem da fonte, não corrigido no arquivo da
+# fonte; o recorte e os prompts tratam a unidade como 6.
+#
+# Seção 20 ("NESTA UNIDADE, VOCÊ VAI") fica de fora: é lista de objetivos
+# voltada ao professor, e dois dos cinco itens ("criar o livro da turma",
+# "organizar seu portfólio do ano") não têm desenvolvimento no corpo da
+# unidade — virariam promessa sem conteúdo na página.
+
+paginas:
+  - numero: 1
+    slug: "vamos-criar-nossa-historia"
+    titulo: "Vamos criar nossa história"
+    secoes: [22, 23]
+
+  - numero: 2
+    slug: "som-de-z-com-s-ou-z"
+    titulo: "O som de Z: com S ou com Z"
+    secoes: [24]
+
+  - numero: 3
+    slug: "roteiro-da-historia"
+    titulo: "O roteiro da nossa história"
+    secoes: [25]
+
+  - numero: 4
+    slug: "inicio-meio-e-fim"
+    titulo: "Início, meio e fim"
+    secoes: [26]
+
+  # As páginas 5 e 6 partem da mesma seção 28: a página 5 fica com as duas
+  # famílias de palavras (C com som de S e Ç) e a página 6, com a regra, o
+  # alerta e o quadro comparativo. A divisão dos literais é feita à mão na
+  # COMPOSIÇÃO de cada prompt, sem repetir texto entre as duas páginas.
+  - numero: 5
+    slug: "c-e-cedilha-com-som-de-s"
+    titulo: "C e Ç: o som de S"
+    secoes: [28]
+
+  - numero: 6
+    slug: "nunca-existe-ce-nem-ci-cedilhado"
+    titulo: "Nunca existe ÇE nem ÇI"
+    secoes: [28, 29]

@@ -1,0 +1,31 @@
+recorte:
+  autor: "ingles"
+  ano: "1ano"
+  ano_letivo: "2026"
+  bimestre: "4-bimestre"
+  unidade: "unidade-04-bloco-02"
+  disciplina: "Inglês"
+  fonte: "autores/ingles/anos/1ano/fontes/2026-2-semestre/4bim-bloco2.md"
+
+# Continuação de recorte-bloco1.yaml — ver a nota lá sobre a divisão em 4
+# páginas combinada com Nicolas Basso em 17/09/2026.
+#
+# p3 = "He Is... / She Is...": pronomes, regra de uso e estrutura, com prática
+# de diálogo curto -> [4, 6, 7, 9, 11, 13]
+# p4 = fecho do ano: revisão geral + reflexão cristã final -> [16, 17, 18]
+#
+# p4 fica sozinha com revisão + reflexão, sem diálogo nem música juntos (ver
+# AUTOR.md, princípio de não comprimir os três num só lugar). Os diálogos de
+# "Talking About My Family" ([13]) foram usados como prática na p3, não
+# repetidos aqui.
+
+paginas:
+  - numero: 3
+    slug: "he-is-she-is"
+    titulo: "He Is... / She Is..."
+    secoes: [4, 6, 7, 9, 11, 13]
+
+  - numero: 4
+    slug: "revisao-e-fecho-do-ano"
+    titulo: "Revisão: My Family"
+    secoes: [16, 17, 18]

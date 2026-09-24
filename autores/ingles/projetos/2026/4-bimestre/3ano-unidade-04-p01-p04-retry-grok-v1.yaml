@@ -1,0 +1,34 @@
+projeto:
+  titulo: "Inglês EF1 — 3º ano — Unidade 4 — p1 e p4 retry (thríi + tarde) — Grok Imagine 2 via OpenRouter"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Numbers 1-12 — v3 retry"
+    prompt: "autores/ingles/anos/3ano/prompts/2026/4-bimestre/unidade-04-bloco-01-p01-numbers-1-12-v3-fundo-branco-puro.md"
+    saida: "ingles/3ano/4-bimestre/unidade-04-4paginas-v2/p01-numbers-1-12-v3-retry.jpg"
+
+  - nome: "P4 — My Day: Revisão da Unidade 4 — v2 retry"
+    prompt: "autores/ingles/anos/3ano/prompts/2026/4-bimestre/unidade-04-bloco-02-p04-my-day-e-revisao-da-unidade-v2-fundo-branco-puro.md"
+    saida: "ingles/3ano/4-bimestre/unidade-04-4paginas-v2/p04-my-day-e-revisao-da-unidade-v2-retry.jpg"

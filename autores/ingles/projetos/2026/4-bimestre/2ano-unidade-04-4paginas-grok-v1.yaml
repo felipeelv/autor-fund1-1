@@ -1,0 +1,42 @@
+projeto:
+  titulo: "Inglês EF1 — 2º ano — Unidade 4 — My Toys & Colors — 4 páginas — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — My Toys — v1"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/4-bimestre/unidade-04-bloco-01-p01-my-toys-v1.md"
+    saida: "ingles/2ano/4-bimestre/unidade-04-4paginas-v1/p01-my-toys-v1.jpg"
+
+  - nome: "P2 — My Favorite Toy & Colors — v1"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/4-bimestre/unidade-04-bloco-01-p02-my-favorite-toy-and-colors-v1.md"
+    saida: "ingles/2ano/4-bimestre/unidade-04-4paginas-v1/p02-my-favorite-toy-and-colors-v1.jpg"
+
+  - nome: "P3 — It Is... / What Color Is It? — v1"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/4-bimestre/unidade-04-bloco-02-p03-it-is-what-color-is-it-v1.md"
+    saida: "ingles/2ano/4-bimestre/unidade-04-4paginas-v1/p03-it-is-what-color-is-it-v1.jpg"
+
+  - nome: "P4 — Review: Toys and Colors — v1"
+    prompt: "autores/ingles/anos/2ano/prompts/2026/4-bimestre/unidade-04-bloco-02-p04-revisao-toys-and-colors-v1.md"
+    saida: "ingles/2ano/4-bimestre/unidade-04-4paginas-v1/p04-revisao-toys-and-colors-v1.jpg"

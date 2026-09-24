@@ -1,0 +1,42 @@
+projeto:
+  titulo: "Português atividades — 1º ano — 4º bimestre — Caderno de casa (Unidades 07-08) — 6 páginas, 15 exercícios — Grok Imagine 2 — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues-atividades"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — Sinônimos e antônimos (caderno de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/portugues-atividades/anos/1ano/prompts/2026/4-bimestre/caderno-de-casa-unidades-07-08-p02-sinonimos-e-antonimos-v1.md"
+    saida: "portugues-atividades/1ano/4-bimestre/caderno-de-casa-unidades-07-08/p02-sinonimos-e-antonimos-grok-v1.jpg"
+  - nome: "P3 — A letra R (caderno de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/portugues-atividades/anos/1ano/prompts/2026/4-bimestre/caderno-de-casa-unidades-07-08-p03-r-forte-fraco-e-rr-v1.md"
+    saida: "portugues-atividades/1ano/4-bimestre/caderno-de-casa-unidades-07-08/p03-r-forte-fraco-e-rr-grok-v1.jpg"
+  - nome: "P4 — A letra S (caderno de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/portugues-atividades/anos/1ano/prompts/2026/4-bimestre/caderno-de-casa-unidades-07-08-p04-s-som-de-s-ou-z-v1.md"
+    saida: "portugues-atividades/1ano/4-bimestre/caderno-de-casa-unidades-07-08/p04-s-som-de-s-ou-z-grok-v1.jpg"
+  - nome: "P5 — Copiando e traçando (caderno de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/portugues-atividades/anos/1ano/prompts/2026/4-bimestre/caderno-de-casa-unidades-07-08-p05-copiar-ss-e-tracar-letra-s-v1.md"
+    saida: "portugues-atividades/1ano/4-bimestre/caderno-de-casa-unidades-07-08/p05-copiar-ss-e-tracar-letra-s-grok-v1.jpg"
+  - nome: "P6 — Pontuação e recital (caderno de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/portugues-atividades/anos/1ano/prompts/2026/4-bimestre/caderno-de-casa-unidades-07-08-p06-pontuacao-e-recital-v1.md"
+    saida: "portugues-atividades/1ano/4-bimestre/caderno-de-casa-unidades-07-08/p06-pontuacao-e-recital-grok-v1.jpg"

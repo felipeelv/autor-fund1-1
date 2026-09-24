@@ -1,0 +1,42 @@
+projeto:
+  titulo: "Matemática atividades — 2º ano — 3º bimestre — Tarefa de casa avulsa (valor posicional) — 5 páginas — Grok Imagine 2 — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica-atividades"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Valor posicional (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p01-valor-posicional-v1.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p01-valor-posicional-grok-v1.jpg"
+  - nome: "P2 — Decomposição e composição (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p02-decomposicao-e-composicao-v1.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p02-decomposicao-e-composicao-grok-v1.jpg"
+  - nome: "P3 — Comparar e ordenar (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p03-comparar-e-ordenar-v1.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p03-comparar-e-ordenar-grok-v1.jpg"
+  - nome: "P4 — Extenso e sequência (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p04-extenso-e-sequencia-v1.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p04-extenso-e-sequencia-grok-v1.jpg"
+  - nome: "P5 — Figuras geométricas (tarefa de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p05-figuras-geometricas-v1.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p05-figuras-geometricas-grok-v1.jpg"

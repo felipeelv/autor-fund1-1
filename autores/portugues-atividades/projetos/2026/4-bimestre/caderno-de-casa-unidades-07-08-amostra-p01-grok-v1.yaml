@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Português atividades — 1º ano — 4º bimestre — Caderno de casa (Unidades 07-08) — Amostra P1 — Grok Imagine 2 — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues-atividades"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P1 — Rimas (caderno de casa) — Grok Imagine 2 — v1"
+    prompt: "autores/portugues-atividades/anos/1ano/prompts/2026/4-bimestre/caderno-de-casa-unidades-07-08-p01-rimas-v1.md"
+    saida: "portugues-atividades/1ano/4-bimestre/caderno-de-casa-unidades-07-08/p01-rimas-grok-v1.jpg"

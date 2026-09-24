@@ -1,0 +1,39 @@
+projeto:
+  titulo: "Matemática atividades — 2º ano — 3º bimestre — Tarefa de casa avulsa (valor posicional) — P2 a P5 — correção de fundo — Grok Imagine 2 — v2"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica-atividades"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — Decomposição e composição (tarefa de casa) — correção de fundo — Grok Imagine 2 — v2"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p02-decomposicao-e-composicao-v2-fundo-branco.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p02-decomposicao-e-composicao-grok-v2-fundo-branco.jpg"
+  - nome: "P3 — Comparar e ordenar (tarefa de casa) — correção de fundo — Grok Imagine 2 — v2"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p03-comparar-e-ordenar-v2-fundo-branco.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p03-comparar-e-ordenar-grok-v2-fundo-branco.jpg"
+  - nome: "P4 — Extenso e sequência (tarefa de casa) — correção de fundo e lacuna — Grok Imagine 2 — v2"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p04-extenso-e-sequencia-v2-fundo-e-lacuna.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p04-extenso-e-sequencia-grok-v2-fundo-e-lacuna.jpg"
+  - nome: "P5 — Figuras geométricas (tarefa de casa) — correção de fundo — Grok Imagine 2 — v2"
+    prompt: "autores/matematica-atividades/anos/2ano/prompts/2026/3-bimestre/tarefa-casa-matematica-p05-figuras-geometricas-v2-fundo-branco.md"
+    saida: "matematica-atividades/2ano/3-bimestre/tarefa-casa-matematica/p05-figuras-geometricas-grok-v2-fundo-branco.jpg"

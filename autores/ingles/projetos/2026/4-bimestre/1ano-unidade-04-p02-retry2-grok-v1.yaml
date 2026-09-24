@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Inglês EF1 — 1º ano — Unidade 4 — Bloco 1 — I Love My... — retry 2 — Grok Imagine 2 via OpenRouter"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — I Love My... — v1 retry 2"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/4-bimestre/unidade-04-bloco-01-p02-i-love-my-v1.md"
+    saida: "ingles/1ano/4-bimestre/unidade-04-4paginas-v1/p02-i-love-my-v1-retry2.jpg"

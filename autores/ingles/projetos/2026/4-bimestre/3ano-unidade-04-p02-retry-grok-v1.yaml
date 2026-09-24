@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Inglês EF1 — 3º ano — Unidade 4 — Bloco 1 — What Time Is It? — retry (relógio das 3h) — Grok Imagine 2 via OpenRouter"
+  tipo: "colecao-apostila-fund1-4-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P2 — What Time Is It? — v1 retry"
+    prompt: "autores/ingles/anos/3ano/prompts/2026/4-bimestre/unidade-04-bloco-01-p02-what-time-is-it-v1.md"
+    saida: "ingles/3ano/4-bimestre/unidade-04-4paginas-v1/p02-what-time-is-it-v1-retry.jpg"
