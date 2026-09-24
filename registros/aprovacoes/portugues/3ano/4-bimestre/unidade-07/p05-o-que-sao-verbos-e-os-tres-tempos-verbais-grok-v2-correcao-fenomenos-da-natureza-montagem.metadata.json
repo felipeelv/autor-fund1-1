@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T12:38:34.247079+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida por Nicolas Basso em 23/09/2026, sobre a v1 aprovada: 'fenômenos' ganha 'da natureza' em três lugares. Núcleo 1: 'da natureza.' montado com as letras da própria v1 (o 'z' desenhado no mesmo traço). Cartão Fenômenos: 'da natureza' recortado da v2 e recolorido; as linhas de verbos descem uma linha e a nuvem com chuva fica menor (78%). Exemplo 3: as duas linhas da v1 refeitas a 90% ('“Ontem choveu muito.”' / '(fenômeno' + 'da natureza)' recortado da v2). O resto da página é a v1.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/3ano/4-bimestre/unidade-07/p05-o-que-sao-verbos-e-os-tres-tempos-verbais-grok-v1.jpg",
+      "sha256": "eddf78a6c4ba39b267ec671602037403fa0ebe3e44613ad49e2e35637e4e10ba"
+    },
+    "recortes_de": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/3ano/4-bimestre/unidade-07/p05-o-que-sao-verbos-e-os-tres-tempos-verbais-grok-v2-correcao-fenomenos-da-natureza.jpg",
+      "sha256": "01385273d0ab1ffa78af4e16ea5f9e88ccd202ce0233b83d962096a37985365f"
+    },
+    "regioes_alteradas_px": [
+      [
+        793,
+        683,
+        1246,
+        743
+      ],
+      [
+        1127,
+        1198,
+        1483,
+        1494
+      ],
+      [
+        1131,
+        1643,
+        1560,
+        1734
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/3ano/prompts/2026/4-bimestre/unidade-07-p05-o-que-sao-verbos-e-os-tres-tempos-verbais-v2-correcao-fenomenos-da-natureza.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/3ano/4-bimestre/unidade-07/p05-o-que-sao-verbos-e-os-tres-tempos-verbais-grok-v2-correcao-fenomenos-da-natureza-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1408842,
+    "sha256": "7224bc332b8244ef677ca1bb8ded4dc7f4f9a9bf4c252f3dadaf2546acc86dba"
+  }
+}

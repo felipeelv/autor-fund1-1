@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T12:21:45.118905+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida por Nicolas Basso em 23/09/2026: sobre a v1 aprovada, só o exemplo 1 do quadrante 3 (café-LATRO + xícara) foi substituído pelo texto e pela ilustração do peixe recortados da tentativa 2, gerada com o prompt v2. O resto da página é a v1, pixel a pixel.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/3ano/4-bimestre/unidade-07/p03-os-quatro-recursos-do-humor-grok-v1.jpg",
+      "sha256": "9dac25a7a52c20bde7d3aeb25d4100dfae4f5db38353691986746820e51ba6fd"
+    },
+    "recortes_de": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/3ano/4-bimestre/unidade-07/p03-os-quatro-recursos-do-humor-grok-v2-correcao-exemplo-do-peixe-tentativa2.jpg",
+      "sha256": "fe6322c3332282850fcff5adfeb283a1243ffc9d9e419cb3be4feb6b6e2a1a39"
+    },
+    "regiao_alterada_px": [
+      62,
+      1876,
+      800,
+      2088
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/3ano/prompts/2026/4-bimestre/unidade-07-p03-os-quatro-recursos-do-humor-v2-correcao-exemplo-do-peixe.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/3ano/4-bimestre/unidade-07/p03-os-quatro-recursos-do-humor-grok-v2-correcao-exemplo-do-peixe-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1460071,
+    "sha256": "d03dba5822fe68a5b58d549e915255de0b79acf25fc96af6cab4be6785c15439"
+  }
+}

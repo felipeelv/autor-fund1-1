@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "author": "natureza-e-sociedade",
+  "generated_at": "2026-09-23T12:59:26.963647+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida por Nicolas Basso em 23/09/2026, sobre a v1: no versículo de 1 Timóteo 4:12, a palavra 'que' foi apagada e 'ninguém desprezar sua juventude,' foi aproximado 69 px para a esquerda; o fim do sublinhado foi encurtado na mesma medida. O resto da página é a v1.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/3ano/4-bimestre/unidade-ecossistemas/p06-cuidar-da-criacao-grok-v1.jpg",
+      "sha256": "1ed860fee7a7f81f46f552e27ab3f80293a683b65e6683f96a885e2a0e9326eb"
+    },
+    "regiao_alterada_px": [
+      474,
+      1767,
+      1087,
+      1829
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/natureza-e-sociedade/anos/3ano/prompts/2026/4-bimestre/unidade-ecossistemas-p06-cuidar-da-criacao-v2-correcao-nao-deixem-ninguem.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/natureza-e-sociedade/3ano/4-bimestre/unidade-ecossistemas/p06-cuidar-da-criacao-grok-v2-correcao-nao-deixem-ninguem-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1688170,
+    "sha256": "341c9c32b9eb78c499aa34eb42c32c8a61df14c779de9af7f0158f55fe6e3667"
+  }
+}

@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Português — 3º ano — 4º bimestre — Unidade 7 — página 01 — Grok Imagine 2 via OpenRouter — v2 correção nesta unidade você vai"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "portugues"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P01 — Humor e poesia na infância: gênero e características — Grok Imagine 2 — v2 correção nesta unidade você vai"
+    prompt: "autores/portugues/anos/3ano/prompts/2026/4-bimestre/unidade-07-p01-humor-e-poesia-genero-e-caracteristicas-v2-correcao-nesta-unidade-voce-vai.md"
+    saida: "portugues/3ano/4-bimestre/unidade-07/p01-humor-e-poesia-genero-e-caracteristicas-grok-v2-correcao-nesta-unidade-voce-vai.jpg"

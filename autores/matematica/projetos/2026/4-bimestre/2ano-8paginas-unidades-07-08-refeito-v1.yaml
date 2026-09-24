@@ -1,0 +1,51 @@
+projeto:
+  titulo: "Matemática — 2º ano — 4º bimestre — Unidades 7-8 — 8 páginas refeitas — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "apostila-fund1-1-pagina"
+  idioma: "pt-BR"
+  formato: "vertical 2:3"
+  autor: "matematica"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P01 — Medindo com o Corpo e a Necessidade de Padrão — Grok Imagine 2 — v5-refeito"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p01-medindo-com-o-corpo-e-a-necessidade-de-padrao-v5-refeito.md"
+    saida: "matematica/2ano/4-bimestre/unidades-07-08-8paginas/p01-medindo-com-o-corpo-e-a-necessidade-de-padrao-grok-v5-refeito.jpg"
+  - nome: "P02 — Metro e Centímetro — Grok Imagine 2 — v2-refeito"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p02-metro-e-centimetro-v2-refeito.md"
+    saida: "matematica/2ano/4-bimestre/unidades-07-08-8paginas/p02-metro-e-centimetro-grok-v2-refeito.jpg"
+  - nome: "P03 — Capacidade: o Litro — Grok Imagine 2 — v2-refeito"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p03-capacidade-o-litro-v2-refeito.md"
+    saida: "matematica/2ano/4-bimestre/unidades-07-08-8paginas/p03-capacidade-o-litro-grok-v2-refeito.jpg"
+  - nome: "P04 — O Relógio: Horas Exatas e Meia Hora — Grok Imagine 2 — v2-refeito"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p04-o-relogio-horas-exatas-e-meia-hora-v2-refeito.md"
+    saida: "matematica/2ano/4-bimestre/unidades-07-08-8paginas/p04-o-relogio-horas-exatas-e-meia-hora-grok-v2-refeito.jpg"
+  - nome: "P05 — Dinheiro Brasileiro: Moedas e Cédulas — Grok Imagine 2 — v5-refeito"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p05-dinheiro-brasileiro-moedas-e-cedulas-v5-refeito.md"
+    saida: "matematica/2ano/4-bimestre/unidades-07-08-8paginas/p05-dinheiro-brasileiro-moedas-e-cedulas-grok-v5-refeito.jpg"
+  - nome: "P06 — Troco e Problemas com Dinheiro — Grok Imagine 2 — v2-refeito"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p06-troco-e-problemas-com-dinheiro-v2-refeito.md"
+    saida: "matematica/2ano/4-bimestre/unidades-07-08-8paginas/p06-troco-e-problemas-com-dinheiro-grok-v2-refeito.jpg"
+  - nome: "P07 — Pesquisa e Tabelas — Grok Imagine 2 — v4-refeito"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p07-pesquisa-e-tabelas-v4-refeito.md"
+    saida: "matematica/2ano/4-bimestre/unidades-07-08-8paginas/p07-pesquisa-e-tabelas-grok-v4-refeito.jpg"
+  - nome: "P08 — Gráficos — Grok Imagine 2 — v4-refeito"
+    prompt: "autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p08-graficos-v4-refeito.md"
+    saida: "matematica/2ano/4-bimestre/unidades-07-08-8paginas/p08-graficos-grok-v4-refeito.jpg"
