@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "author": "ingles",
+  "generated_at": "2026-09-24T19:17:12.285450+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local: 'ingiês'→'inglês' (l desenhado no traço da fonte); fundo quase branco levado a branco puro #FFFFFF (pixels com mínimo ≥228 e pouca saturação).",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p08-revisao-e-fecho-do-ano-grok-v1.jpg",
+      "sha256": "48b1638b2f1b2044693919b6bca6052231cd0301bce3c9a02c462f3f4301e54a"
+    }
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles/anos/1ano/prompts/2026/4-bimestre/unidade-04-p08-revisao-e-fecho-do-ano-v1.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p08-revisao-e-fecho-do-ano-grok-v1-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1196387,
+    "sha256": "ef6ebe3975a4323a56a123f58647588e93a81e2530d633a5e31e32ab0f13018d"
+  }
+}

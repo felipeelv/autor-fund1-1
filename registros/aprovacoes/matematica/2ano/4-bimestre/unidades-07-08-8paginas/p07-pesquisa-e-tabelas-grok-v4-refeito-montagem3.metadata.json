@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "author": "matematica",
+  "generated_at": "2026-09-23T21:00:45.915720+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API sobre a v4-refeito gerada: (1) risquinhos redesenhados batendo com o TOTAL (Maçã 5+3, Banana 5+1, Laranja 3, Uva 5+5; grupo = 4 em pé + 1 atravessado); (2) DICA DE CONTAGEM redesenhada com um único grupo de 5 (o modelo pôs 2 riscos extras); (3) ícone da Uva (círculo azul) trocado pelo cacho de uva recortado da v1 aprovada, 85%; (4) 'Quantas meninos preferem boneca?'→'meninas' (o 'a' de 'Quantas'); (5) 'de carro de que'→'do que' (o 'o' de 'carro'); (6) tabela de transporte: ícone de mala em 'A pé' trocado pela pessoa andando e gota azul em 'Ônibus' trocada pelo ônibus, ambos do topo da mesma página; ícone errado de 'Bicicleta' apagado (sem ícone de bicicleta no acervo). O resto da página é a v4-refeito. Montagem2: também apagados os 4 ícones errados da tabela de brinquedos (Bola, Boneca, Carrinho, Videogame). Montagem3 (25/09/2026, pedido de Nicolas Basso): ícones de DADOS COLETADOS alinhados ao texto (fruta: maçã, banana, uva; cor: azul, vermelho, verde); 'Brinquedo Favorito'→'favorito' (f de 'informação' recolorido), 'Transporte'→'transporte' e 'Escola'→'escola' (t e e de 'transporte').",
+    "bases": [
+      {
+        "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p07-pesquisa-e-tabelas-grok-v4-refeito.jpg",
+        "sha256": "7a16152bba616b94f92b3bc9fad85bb555f7385ded4983ee48d374a210c6cec9"
+      },
+      {
+        "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p07-pesquisa-e-tabelas-grok-v1.jpg",
+        "sha256": "1bf92579a2f0306c8a4b784efa5028d671f75b5373b1333cb1a7aaaf35d78b56"
+      }
+    ],
+    "regioes_alteradas_px": [
+      [
+        390,
+        1168,
+        736,
+        1446
+      ],
+      [
+        1062,
+        1252,
+        1352,
+        1364
+      ],
+      [
+        128,
+        1380,
+        204,
+        1445
+      ],
+      [
+        285,
+        2162,
+        298,
+        2180
+      ],
+      [
+        1285,
+        2279,
+        1298,
+        2298
+      ],
+      [
+        896,
+        1836,
+        958,
+        2031
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p07-pesquisa-e-tabelas-v4-refeito.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p07-pesquisa-e-tabelas-grok-v4-refeito-montagem3.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1635402,
+    "sha256": "f059b190bf67a8a64896c3be476603b02515896857af82599817f8c11927865a"
+  }
+}

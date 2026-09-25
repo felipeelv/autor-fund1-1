@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T15:04:17.994344+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida pelas professoras via Nicolas Basso em 23/09/2026, sobre a v1 aprovada: 'Emocional'→'emocional' (o 'e' branco de 'de', em 'Sinônimos de', reduzido 93%, inclinado 2,6° e com sombra como o título; o 'E' apagado com textura laranja do próprio título) e 'Idiomáticas'→'idiomáticas' (o 'i' da própria palavra; resto aproximado 12 px). O resto da página é a v1.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/2ano/4-bimestre/unidades-07-08/p05-vocabulario-emocional-e-expressoes-idiomaticas-grok-v1.jpg",
+      "sha256": "4703c1474fcd81f877e2949cdfd1ceceac510e9010f035aa79375c1e56f770e3"
+    },
+    "regioes_alteradas_px": [
+      [
+        462,
+        52,
+        504,
+        122
+      ],
+      [
+        615,
+        1840,
+        942,
+        1912
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p05-vocabulario-emocional-e-expressoes-idiomaticas-v2-correcao-minusculas.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p05-vocabulario-emocional-e-expressoes-idiomaticas-grok-v2-correcao-minusculas-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1497082,
+    "sha256": "c1c8c4f35b8284b77c66f982692d77b4fefd4cd4a7be3a0e348dc8ebf2d0081a"
+  }
+}

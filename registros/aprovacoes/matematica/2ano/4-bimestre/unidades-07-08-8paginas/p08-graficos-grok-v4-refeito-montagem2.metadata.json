@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "author": "matematica",
+  "generated_at": "2026-09-23T21:01:54.136523+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API sobre a v4-refeito gerada: (1) gráfico de colunas redesenhado — eixo 0 a 10 com todos os números (dígitos da própria página; o '3' vem da tabela), grade tracejada e colunas com altura exata (Maçã 8, Banana 6, Laranja 3, Uva 10), textura das colunas originais esticada; (2) ícones trocados: maçã vermelha no lugar da folha (tabela e pictograma) e cacho de uva no lugar da maçã/folha, recortados do pictograma; (3) gráfico de barras com comprimento proporcional (Vermelho 5, Amarelo 4, Verde 7 ajustados à escala do Azul 8), números acompanhando; (4) pictograma da Uva com 5 cachos (eram 4). Textos conferidos com TEXTOS EXATOS, sem erro. Montagem2 (25/09/2026, pedido de Nicolas Basso): os tiquinhos do eixo vertical do gráfico de colunas estavam nas posições antigas, fora das linhas de grade; apagados e redesenhados exatamente em cada linha (0 a 10), junto com o eixo.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p08-graficos-grok-v4-refeito.jpg",
+      "sha256": "e7a4fd38ff703177d1c3c24f60389a7afc95a0e8d1ca657ed0d778293f8ada33"
+    },
+    "regioes_alteradas_px": [
+      [
+        1122,
+        486,
+        1638,
+        906
+      ],
+      [
+        826,
+        478,
+        888,
+        852
+      ],
+      [
+        866,
+        1676,
+        926,
+        1985
+      ],
+      [
+        1092,
+        1914,
+        1410,
+        1986
+      ],
+      [
+        187,
+        1827,
+        650,
+        2064
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p08-graficos-v4-refeito.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p08-graficos-grok-v4-refeito-montagem2.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1724018,
+    "sha256": "9fdd11d9d6f7aa5a04bf7d58ab986e4c833d5fa9ec4877b1de4c85179436b51e"
+  }
+}

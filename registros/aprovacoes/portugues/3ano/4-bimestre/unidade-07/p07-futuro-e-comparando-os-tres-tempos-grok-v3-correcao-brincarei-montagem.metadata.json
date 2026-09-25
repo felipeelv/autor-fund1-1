@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T13:30:19.016416+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida por Nicolas Basso em 23/09/2026, sobre a v1 aprovada: no quadro FUTURO, 'vou brincar' vira 'brincarei', montado com as letras da própria frase ('brincar' + 'e' de 'eu' + 'i' de 'brincar'); a linha foi recentralizada. O resto da página é a v1.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/3ano/4-bimestre/unidade-07/p07-futuro-e-comparando-os-tres-tempos-grok-v1.jpg",
+      "sha256": "bd9ce03e7266d6afdefabf0c23ad36c0270cfc8d0cdc087ced6a09f36f906e6d"
+    },
+    "regiao_alterada_px": [
+      1121,
+      1810,
+      1556,
+      1842
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/3ano/prompts/2026/4-bimestre/unidade-07-p07-futuro-e-comparando-os-tres-tempos-v3-correcao-brincarei.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/3ano/4-bimestre/unidade-07/p07-futuro-e-comparando-os-tres-tempos-grok-v3-correcao-brincarei-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1454867,
+    "sha256": "9e2050d7fb300c9dc8e964738759210872d06af43bdfd0349cb263365e2421fe"
+  }
+}

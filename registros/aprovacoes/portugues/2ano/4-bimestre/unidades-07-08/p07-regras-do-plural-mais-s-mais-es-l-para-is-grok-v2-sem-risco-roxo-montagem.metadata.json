@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-25T12:42:08.958174+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida por Nicolas Basso em 25/09/2026, sobre a v1 aprovada: removidos os riscos roxos sobre o 's' final de animais, papéis, faróis e azuis; o 'i' e o 's' finais foram redesenhados com letras limpas da própria página ('i' de 'animais', 's' de 'país'). O resto é a v1.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/2ano/4-bimestre/unidades-07-08/p07-regras-do-plural-mais-s-mais-es-l-para-is-grok-v1.jpg",
+      "sha256": "116e4038f309dca2f5c9dcb976d35fcc02d335ee48ea9fb322a1926ee83c45ac"
+    },
+    "regioes_alteradas_px": [
+      [
+        690,
+        2020,
+        820,
+        2360
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p07-regras-do-plural-mais-s-mais-es-l-para-is-v1.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p07-regras-do-plural-mais-s-mais-es-l-para-is-grok-v2-sem-risco-roxo-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1330671,
+    "sha256": "39752cb36a8db110a11f6ebe0f332492b715337c1971c6b4090c843457a24846"
+  }
+}

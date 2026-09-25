@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T15:22:31.504390+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida pelas professoras via Nicolas Basso em 23/09/2026, sobre a v1 aprovada: 'Terminadas'→'terminadas' (o 't' branco de 'Planejamento', título da p09 aprovada, ampliado 108%); 'Plural'→'plural' nos dois títulos (o 'd' da própria etiqueta girado 180°); 'Visual'→'visual' (o 'V' achatado até a altura-x). O resto da página é a v1; a linha tracejada das etiquetas não foi tocada.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/2ano/4-bimestre/unidades-07-08/p08-regra-do-ao-concordancia-e-resumo-do-plural-grok-v1.jpg",
+      "sha256": "bf53a523d6c990f4dd3312440910ee334bee54a6dc43fa7521fd6c1393326e9a"
+    },
+    "recortes_de": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/2ano/4-bimestre/unidades-07-08/p09-os-6-passos-do-planejamento-e-passo-1-personagem-grok-v1-tentativa2.jpg",
+      "sha256": "a129d08f93d39732d16d8bb27e8d0a442ff9fe19867c9eb9288b7f4b411d9056"
+    },
+    "regioes_alteradas_px": [
+      [
+        815,
+        82,
+        859,
+        151
+      ],
+      [
+        562,
+        1229,
+        600,
+        1300
+      ],
+      [
+        322,
+        1920,
+        588,
+        1978
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p08-regra-do-ao-concordancia-e-resumo-do-plural-v2-correcao-minusculas.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p08-regra-do-ao-concordancia-e-resumo-do-plural-grok-v2-correcao-minusculas-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1454675,
+    "sha256": "e75c7ced1feda6650504fc775991e4bdc437364d4f5790adb76135e5686dff33"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "author": "ingles",
+  "generated_at": "2026-09-24T19:17:12.254291+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local: só fundo quase branco levado a branco puro #FFFFFF (pixels com mínimo ≥228 e pouca saturação).",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p03-i-love-my-grok-v1.jpg",
+      "sha256": "582d1e60663e5e5f757f7153766deb6005b85a5e5e25721757d3510c180535e3"
+    }
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles/anos/1ano/prompts/2026/4-bimestre/unidade-04-p03-i-love-my-v1.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p03-i-love-my-grok-v1-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1204790,
+    "sha256": "877c4541489ccaa4fa63602ecca71d6a53841e47ef79931e0e91da39836aeaa1"
+  }
+}

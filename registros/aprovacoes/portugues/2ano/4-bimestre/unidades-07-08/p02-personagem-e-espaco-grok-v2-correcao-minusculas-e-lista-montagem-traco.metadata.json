@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T14:57:02.968205+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Mesma montagem de p02-...-v2-correcao-minusculas-e-lista-montagem.jpg (5 correções sobre a v1 aprovada), mais: traço dos textos de peso normal engrossado ~1/3 px (ampliação 3x, MinFilter 3, redução), aplicado só nas bordas das letras, para aproximar o peso da letra das outras páginas do 2º ano — pedido de Nicolas Basso em 23/09/2026. Títulos em negrito, rótulos brancos, etiquetas de adjetivos e desenhos não foram tocados.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/2ano/4-bimestre/unidades-07-08/p02-personagem-e-espaco-grok-v1.jpg",
+      "sha256": "4ca75749ce78acb3187fde70499e7e317909e4abf49c9091fc62b34f7ca94645"
+    },
+    "etapa_anterior": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p02-personagem-e-espaco-grok-v2-correcao-minusculas-e-lista-montagem.jpg",
+      "sha256": "25bb1d351eac11a7c4dfbee2b530a5431a1b91749f507604d7e1e9f43a8f3bda"
+    },
+    "regioes_engrossadas_px": [
+      [
+        200,
+        205,
+        890,
+        315
+      ],
+      [
+        140,
+        505,
+        510,
+        615
+      ],
+      [
+        175,
+        680,
+        500,
+        790
+      ],
+      [
+        975,
+        470,
+        1440,
+        630
+      ],
+      [
+        1035,
+        690,
+        1380,
+        795
+      ],
+      [
+        225,
+        1035,
+        1295,
+        1145
+      ],
+      [
+        140,
+        1785,
+        740,
+        1835
+      ],
+      [
+        222,
+        1935,
+        460,
+        2275
+      ],
+      [
+        840,
+        1850,
+        1230,
+        2030
+      ],
+      [
+        1035,
+        2230,
+        1545,
+        2305
+      ],
+      [
+        1040,
+        2320,
+        1310,
+        2445
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p02-personagem-e-espaco-v2-correcao-minusculas-e-lista.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p02-personagem-e-espaco-grok-v2-correcao-minusculas-e-lista-montagem-traco.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1329509,
+    "sha256": "6f6f6c0447bbffc1d73b7357d995d79e2974a284e98d6e9edf1eedac3069a9ea"
+  }
+}

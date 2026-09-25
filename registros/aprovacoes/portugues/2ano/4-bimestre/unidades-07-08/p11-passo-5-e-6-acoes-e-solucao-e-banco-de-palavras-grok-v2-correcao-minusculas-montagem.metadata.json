@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T19:14:20.391309+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Substitui a montagem anterior sobre a v1 (letra diferente das outras páginas). Base agora é a v2 gerada com o prompt v2-correcao-minusculas (títulos já em minúscula, uma só tipografia). Corrigidos 3 erros de renderização do modelo: 'Pessonagens'→'Personagens' (1º 's' trocado pelo 'r' de 'Lugares'), 'corioso'→'curioso' (o 'u' de 'pequeno') e 'especificas'→'específicas' (acento desenhado sobre o 'i'). O resto da página é a v2.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p11-passo-5-e-6-acoes-e-solucao-e-banco-de-palavras-grok-v2-correcao-minusculas.jpg",
+      "sha256": "f1bbf06e440fd07bcd7c616e07f360cbc3437127e9ade2153e1ed0735e5887b2"
+    },
+    "regioes_alteradas_px": [
+      [
+        1049,
+        1901,
+        1191,
+        1940
+      ],
+      [
+        1219,
+        1944,
+        1235,
+        1967
+      ],
+      [
+        836,
+        2374,
+        851,
+        2390
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p11-passo-5-e-6-acoes-e-solucao-e-banco-de-palavras-v2-correcao-minusculas.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p11-passo-5-e-6-acoes-e-solucao-e-banco-de-palavras-grok-v2-correcao-minusculas-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1361526,
+    "sha256": "f62f1d9631c8e27e291e1f2e8ffc799c7dd78e932e130960db946ee9477b01fb"
+  }
+}

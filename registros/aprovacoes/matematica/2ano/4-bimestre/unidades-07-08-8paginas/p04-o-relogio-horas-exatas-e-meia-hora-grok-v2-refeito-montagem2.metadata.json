@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "author": "matematica",
+  "generated_at": "2026-09-23T21:00:59.947442+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local sobre a v2-refeito: os 7 relógios pequenos redesenhados inteiros (mostrador, aro, traços, números 1-12 em Arial Rounded Bold e ponteiros na hora da linha: 3:00, 7:00, 10:00, 12:00, 2:30, 5:30, 9:30); 'apanta'→'aponta'. O resto é a v2-refeito.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p04-o-relogio-horas-exatas-e-meia-hora-grok-v2-refeito.jpg",
+      "sha256": "5697548d7dfa470881b0d01af06e44b01df6a55eb68e304800acf839c760c702"
+    },
+    "regioes_alteradas_px": [
+      [
+        740,
+        1135,
+        850,
+        1610
+      ],
+      [
+        675,
+        1890,
+        792,
+        2257
+      ],
+      [
+        439,
+        1365,
+        456,
+        1391
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p04-o-relogio-horas-exatas-e-meia-hora-v2-refeito.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p04-o-relogio-horas-exatas-e-meia-hora-grok-v2-refeito-montagem2.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1567893,
+    "sha256": "9f0f2d53e564030704dc840e864b4845f2bea217c5ef37f813f092c10fd19b70"
+  }
+}

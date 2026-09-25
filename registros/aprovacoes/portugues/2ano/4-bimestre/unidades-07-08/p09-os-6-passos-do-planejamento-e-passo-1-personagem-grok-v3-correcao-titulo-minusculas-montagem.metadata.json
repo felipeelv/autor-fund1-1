@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T18:31:59.933889+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida pelas professoras via Nicolas Basso em 23/09/2026, sobre a v2 (capa da Unidade 8): no título roxo, 'Passos'→'passos' e 'Planejamento'→'planejamento' (o 'd' de 'do' girado 180°). O resto da página é a v2. No recorte ao lado: 'Criar o Personagem'→'personagem' e 'Nome do Personagem'→'personagem' (o 'd' de 'Nome do' girado 180°; ampliado 125% no título maior). No Capítulo 1: 'Antes de Escrever'→'escrever' (o 'e' de 'de').",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p09-os-6-passos-do-planejamento-e-passo-1-personagem-grok-v2-correcao-capa-da-unidade-8.jpg",
+      "sha256": "2c3bec05053a374d23ca62cec132918b929a36d0c265878f65207d6e631298a1"
+    },
+    "regioes_alteradas_px": [
+      [
+        225,
+        1113,
+        372,
+        1253
+      ],
+      [
+        1166,
+        1016,
+        1320,
+        1282
+      ],
+      [
+        437,
+        925,
+        467,
+        978
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p09-os-6-passos-do-planejamento-e-passo-1-personagem-v3-correcao-titulo-minusculas.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p09-os-6-passos-do-planejamento-e-passo-1-personagem-grok-v3-correcao-titulo-minusculas-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1358876,
+    "sha256": "9ab3ca7b0ded8e7eaebaf9589b1b1607138c76716f1aa56530423271d59250c8"
+  }
+}

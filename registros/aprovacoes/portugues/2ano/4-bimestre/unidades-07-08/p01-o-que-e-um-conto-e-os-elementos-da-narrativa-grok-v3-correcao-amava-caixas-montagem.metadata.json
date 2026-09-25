@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "author": "portugues",
+  "generated_at": "2026-09-23T14:39:30.704190+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Edição local sem chamada à API, pedida pelas professoras via Nicolas Basso em 23/09/2026, sobre a v2 aprovada: no primeiro box de 'Nesta unidade, você vai:', 'Amava Caixas' vira 'amava caixas' — 'A' trocado pelo 'a' de 'Amava', 'C' pelo 'c' de 'Conhecer', letras seguintes aproximadas. O resto da página é a v2.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/portugues/2ano/4-bimestre/unidades-07-08/p01-o-que-e-um-conto-e-os-elementos-da-narrativa-grok-v2-correcao-nesta-unidade-voce-vai.jpg",
+      "sha256": "8315eec437f72295ef3b03d4f87121c36619ffe17465caf74ddc0f1138c5b20c"
+    },
+    "regiao_alterada_px": [
+      213,
+      865,
+      415,
+      895
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/portugues/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p01-o-que-e-um-conto-e-os-elementos-da-narrativa-v3-correcao-amava-caixas.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/portugues/2ano/4-bimestre/unidades-07-08/p01-o-que-e-um-conto-e-os-elementos-da-narrativa-grok-v3-correcao-amava-caixas-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1484346,
+    "sha256": "3ad680d4586ffbc687c57ddca1019c994e209aa5b37fa533b2792de4a9397866"
+  }
+}

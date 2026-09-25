@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "author": "matematica",
+  "generated_at": "2026-09-23T20:57:11.948330+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local sobre a v5-refeito gerada: 'pacmos'→'palmos' (2x, 'l' de 'largura'), 'PÊ'→'PÉ' e 'pês'→'pés' (acento agudo do 'é' da própria linha) e 'imparta'→'importa' (o 'o' de 'mesmo'). O resto é a v5-refeito.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p01-medindo-com-o-corpo-e-a-necessidade-de-padrao-grok-v5-refeito.jpg",
+      "sha256": "952e50c2cbb6968bd5a772555db2111d4084f626bca14829040760573bc25c32"
+    },
+    "regioes_alteradas_px": [
+      [
+        185,
+        1262,
+        470,
+        1292
+      ],
+      [
+        803,
+        948,
+        840,
+        968
+      ],
+      [
+        702,
+        1297,
+        724,
+        1310
+      ],
+      [
+        1191,
+        2412,
+        1210,
+        2436
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p01-medindo-com-o-corpo-e-a-necessidade-de-padrao-v5-refeito.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p01-medindo-com-o-corpo-e-a-necessidade-de-padrao-grok-v5-refeito-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1769500,
+    "sha256": "6f61dbb26a28619afd046ccc0eb5623175875df691b16e3baaeb4c0bda0540f0"
+  }
+}

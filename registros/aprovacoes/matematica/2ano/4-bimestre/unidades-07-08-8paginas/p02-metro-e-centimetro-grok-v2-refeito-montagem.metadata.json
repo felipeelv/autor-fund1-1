@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "author": "matematica",
+  "generated_at": "2026-09-23T21:02:01.087676+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local sem chamada à API sobre a v2-refeito gerada, no bloco COMO USAR A RÉGUA: números da régua refeitos 0 a 17, um em cada traço longo (a régua tem 18 traços; o modelo escreveu '8 8' e '13 13'), com dígitos recortados da própria régua; lápis esticado horizontalmente para ir do 0 ao 15; seta de 'O lápis começa no 0' movida para o traço 0; seta de 'O lápis termina no 15' refeita (tracejado verde saindo do 15 até o rótulo); apagado o rótulo solto 'O lápis começa no' e a seta dupla no alto à direita. Demais textos da página conferidos com TEXTOS EXATOS, sem outros erros.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p02-metro-e-centimetro-grok-v2-refeito.jpg",
+      "sha256": "1c8b4215b9cce2eeaa05313d4500ef30c502d272aacb502991bf9e6647d79c1f"
+    },
+    "regioes_alteradas_px": [
+      [
+        592,
+        1980,
+        1493,
+        2252
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p02-metro-e-centimetro-v2-refeito.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p02-metro-e-centimetro-grok-v2-refeito-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1552398,
+    "sha256": "5354e6c7f4a81004097b9b07e4cee2d6e825df863f304d8a94a82e880acaeaf3"
+  }
+}

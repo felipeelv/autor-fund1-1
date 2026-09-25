@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "author": "ingles",
+  "generated_at": "2026-09-24T19:17:12.269898+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local: 'teil'→'tell', 'lugares de África'→'da África', 'evós'→'avós', 'eviste'→'existe'; fundo quase branco levado a branco puro #FFFFFF (pixels com mínimo ≥228 e pouca saturação).",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p04-dialogos-e-musica-i-love-my-family-grok-v1.jpg",
+      "sha256": "99064077999ed484aeda9ddccd74fc0c52bd808841c05ea636b14b8144d9e46c"
+    }
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/ingles/anos/1ano/prompts/2026/4-bimestre/unidade-04-p04-dialogos-e-musica-i-love-my-family-v1.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p04-dialogos-e-musica-i-love-my-family-grok-v1-montagem.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1451103,
+    "sha256": "6e8d0647c8a70e94640823a52364b327a5cdf734598cb13c568a43ced3dee76f"
+  }
+}

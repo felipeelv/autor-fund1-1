@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "author": "matematica",
+  "generated_at": "2026-09-24T12:35:36.481118+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local sobre a v2-refeito: notas da tabela COMPARAÇÃO trocadas pela frente das cédulas reais (R$ 5, R$ 2, R$ 10, R$ 10; Downloads/<valor>_front.jpg); moedas do Problema 2 com rótulos corrigidos (3 de 1 e 4 de 50); título 'Problema 3:'; nota da bandeja trocada de R$ 3 para R$ 10. Montagem2 (25/09/2026, pedido de Nicolas Basso): cédulas desenhadas da bandeja e da mão da Ana trocadas pela frente real da cédula de R$ 10; seta movida para entre 'PREÇO DO PRODUTO' e o texto vermelho; 'Use a subtração!' passa a 'Use a conta de subtração!' (letras da própria linha; 'n' e 'd' da linha de baixo, recoloridos). Montagem3: moedas desenhadas (comparação 50 centavos x 1 real e as 7 do Problema 2) trocadas por fotos das moedas reais da 2ª família (Wikimedia Commons), clareadas.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p06-troco-e-problemas-com-dinheiro-grok-v2-refeito.jpg",
+      "sha256": "0424eeb6be3508fe71a49fe8515fbb7ccc831b5f086b7a0f14714e9f66118577"
+    },
+    "recortes_de": [
+      {
+        "path": "/Users/nicolasbasso/Downloads/2_front.jpg",
+        "sha256": "63526d97e3ea37201df182b399914dbf968c708c2dd84241baea3c9c7e6718c1"
+      },
+      {
+        "path": "/Users/nicolasbasso/Downloads/5_front.jpg",
+        "sha256": "652acae6eb6d6517468bf83a33d6ad984502a78d975f6c0da5adacaacb9db91b"
+      },
+      {
+        "path": "/Users/nicolasbasso/Downloads/10_front.jpg",
+        "sha256": "7e593ecfc4a92ee7b4cd47888d4d8117ef951eb2960d1a0dd844e1f64627bba5"
+      }
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p06-troco-e-problemas-com-dinheiro-v2-refeito.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p06-troco-e-problemas-com-dinheiro-grok-v2-refeito-montagem3.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1656815,
+    "sha256": "fc0a6711b27de26a3b2e91b541716d4dc0dca754bbdce173c6a4253550599037"
+  }
+}

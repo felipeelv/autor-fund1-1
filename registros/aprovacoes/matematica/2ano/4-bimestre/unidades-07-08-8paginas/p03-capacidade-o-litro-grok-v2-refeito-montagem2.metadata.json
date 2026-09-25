@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "author": "matematica",
+  "generated_at": "2026-09-24T12:35:36.401250+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local sobre a v2-refeito: 'paimos'→'palmos'; ícones da tabela RECIPIENTE trocados por garrafas/caixa recortadas da própria página (Galão e Caixa d'água sem ícone); quadro PARA LEMBRAR recomposto sem encostar na tabela. Montagem2 (25/09/2026, pedido de Nicolas Basso): os 5 ícones da tabela RECIPIENTE trocados pelos da p03 v1 aprovada (garrafinha, garrafa de refrigerante, caixa de leite, galão, caixa d'água); quadro PARA LEMBRAR afastado da tabela, com a borda esquerda da tabela redesenhada; ponto solto em 'refrigerante,' removido.",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p03-capacidade-o-litro-grok-v2-refeito.jpg",
+      "sha256": "4da38f69a8248cf657f818228549de4bfdf415846a7c5db67b8cfdccc64a3436"
+    },
+    "recortes_de": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/aprovadas/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p03-capacidade-o-litro-grok-v1.jpg",
+      "sha256": "071c3c6c88a1f73fb6e389e136b56ef46ae87b9423f170b295f31e56930fc620"
+    }
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p03-capacidade-o-litro-v2-refeito.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p03-capacidade-o-litro-grok-v2-refeito-montagem2.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1543998,
+    "sha256": "229b42ed333084a006b06b0fd9b041a2752260ee8a73c81b4e8216f26fce2301"
+  }
+}

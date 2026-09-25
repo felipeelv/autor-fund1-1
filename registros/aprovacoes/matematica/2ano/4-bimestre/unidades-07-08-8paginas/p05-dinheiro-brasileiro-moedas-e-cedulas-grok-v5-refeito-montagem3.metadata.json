@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "author": "matematica",
+  "generated_at": "2026-09-24T12:34:23.143001+00:00",
+  "provider": "local",
+  "model": null,
+  "api_call": false,
+  "montagem": {
+    "descricao": "Montagem local sobre a v5-refeito: as 7 cédulas desenhadas pelo modelo (cores e animais errados) substituídas pela frente das cédulas reais do Real (arquivos fornecidos por Nicolas Basso em 24/09/2026, Downloads/<valor>_front.jpg), reduzidas a 250 px de largura; apagadas as folhinhas decorativas da coluna dos animais e os ícones sem sentido de 'PARA QUE SERVE O DINHEIRO?'. O resto é a v5-refeito. Montagem2 (25/09/2026, pedido de Nicolas Basso): cada cédula com frente e verso lado a lado (verso baixado de https://www.bcb.gov.br/novasnotas/assets/img/section/<valor>/<valor>_back.jpg, cópia em Downloads/cedulas-verso-bcb/); valor, cor e animal empilhados à direita (mesmas letras, reduzidas a 80%); moedas desenhadas trocadas por fotos das moedas reais da 2ª família (Wikimedia Commons, 'Moeda de N centavos da 2ª geração.png' e 'Brazil R$01 2013.jpg'); ícone de carrinho ao lado de 'PARA QUE SERVE O DINHEIRO?' removido. Montagem3 (25/09/2026, pedido de Nicolas Basso): fotos das moedas clareadas e com mais contraste/cor, um pouco maiores; removidas as 4 setas pretas que ligavam os recortes (área preenchida com a textura do próprio papel, deslocada na vertical).",
+    "base": {
+      "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p05-dinheiro-brasileiro-moedas-e-cedulas-grok-v5-refeito.jpg",
+      "sha256": "eb118e263602ca6ad3f5508881640d1694b00e9391d5e9eeb3e9128fbca779e8"
+    },
+    "recortes_de": [
+      {
+        "path": "/Users/nicolasbasso/Downloads/2_front.jpg",
+        "sha256": "63526d97e3ea37201df182b399914dbf968c708c2dd84241baea3c9c7e6718c1"
+      },
+      {
+        "path": "/Users/nicolasbasso/Downloads/5_front.jpg",
+        "sha256": "652acae6eb6d6517468bf83a33d6ad984502a78d975f6c0da5adacaacb9db91b"
+      },
+      {
+        "path": "/Users/nicolasbasso/Downloads/10_front.jpg",
+        "sha256": "7e593ecfc4a92ee7b4cd47888d4d8117ef951eb2960d1a0dd844e1f64627bba5"
+      },
+      {
+        "path": "/Users/nicolasbasso/Downloads/20_front.jpg",
+        "sha256": "5ad787ebc92f3b834fec9fd98e8699cef53d2fb9bda5e98a3ad2d534808391f4"
+      },
+      {
+        "path": "/Users/nicolasbasso/Downloads/50_front.jpg",
+        "sha256": "3a274f7a1d367e5f7c6b5f68a926df1154ce7cfe9b7062e1aadb3e61cac9a6d6"
+      },
+      {
+        "path": "/Users/nicolasbasso/Downloads/100_front.jpg",
+        "sha256": "f76c0776237931ef5cc8cf941b3a80e253215076899dd277af1e065b15261438"
+      },
+      {
+        "path": "/Users/nicolasbasso/Downloads/200_front.jpg",
+        "sha256": "d27daf2c507ea9389ba60e459317d6d708dd8653ca70dcd2146922986a367c87"
+      }
+    ],
+    "regioes_alteradas_px": [
+      [
+        890,
+        971,
+        1154,
+        2054
+      ],
+      [
+        1385,
+        1132,
+        1490,
+        2000
+      ],
+      [
+        64,
+        1030,
+        146,
+        1189
+      ]
+    ]
+  },
+  "prompt": {
+    "source": "/Users/nicolasbasso/autor-fund1-1/autores/matematica/anos/2ano/prompts/2026/4-bimestre/unidades-07-08-p05-dinheiro-brasileiro-moedas-e-cedulas-v5-refeito.md"
+  },
+  "image": {
+    "path": "/Users/nicolasbasso/autor-fund1-1-saidas/_revisao/matematica/2ano/4-bimestre/unidades-07-08-8paginas/p05-dinheiro-brasileiro-moedas-e-cedulas-grok-v5-refeito-montagem3.jpg",
+    "format": "jpeg",
+    "width": 1664,
+    "height": 2496,
+    "bytes": 1870361,
+    "sha256": "351f9b3714041f2e81c9228975ae9c669851a1bc5aa888457dbfa07bc88109be"
+  }
+}
