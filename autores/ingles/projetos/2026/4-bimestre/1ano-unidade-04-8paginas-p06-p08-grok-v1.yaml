@@ -1,0 +1,36 @@
+projeto:
+  titulo: "Inglês EF1 — 1º ano — Unidade 4 — My Family — 8 páginas — p06 a p08 — Grok Imagine 2 via OpenRouter — v1"
+  tipo: "colecao-apostila-fund1-8-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P06 — he-is-my-she-is-my — v1"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/4-bimestre/unidade-04-p06-he-is-my-she-is-my-v1.md"
+    saida: "ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p06-he-is-my-she-is-my-grok-v1.jpg"
+  - nome: "P07 — talking-about-my-family — v1"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/4-bimestre/unidade-04-p07-talking-about-my-family-v1.md"
+    saida: "ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p07-talking-about-my-family-grok-v1.jpg"
+  - nome: "P08 — revisao-e-fecho-do-ano — v1"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/4-bimestre/unidade-04-p08-revisao-e-fecho-do-ano-v1.md"
+    saida: "ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p08-revisao-e-fecho-do-ano-grok-v1.jpg"

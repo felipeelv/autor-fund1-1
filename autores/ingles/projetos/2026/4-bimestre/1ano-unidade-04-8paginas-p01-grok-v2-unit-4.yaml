@@ -1,0 +1,30 @@
+projeto:
+  titulo: "Inglês EF1 — 1º ano — Unidade 4 — My Family — 8 páginas — p01 v2 UNIT 4 (amostra) — Grok Imagine 2 via OpenRouter"
+  tipo: "colecao-apostila-fund1-8-paginas"
+  idioma: "pt-BR e en"
+  formato: "vertical 2:3"
+  autor: "ingles"
+
+modelo:
+  provider: "openrouter"
+  id: "x-ai/grok-imagine-image-2.0"
+
+parametros_api:
+  tamanho: "auto"
+  qualidade: "medium"
+  formato: "jpeg"
+  fundo: "auto"
+  moderacao: "auto"
+  proporcao: "2:3"
+  resolucao: "2k"
+  timeout: 300
+
+saida:
+  area: "revisao"
+  gerar_pdf: false
+  dpi_pdf: 300
+
+imagens:
+  - nome: "P01 — the-family — v2 unit 4"
+    prompt: "autores/ingles/anos/1ano/prompts/2026/4-bimestre/unidade-04-p01-the-family-v2-unit-4.md"
+    saida: "ingles/1ano/4-bimestre/unidade-04-8paginas-v1/p01-the-family-grok-v2-unit-4.jpg"

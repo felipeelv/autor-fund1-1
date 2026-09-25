@@ -58,7 +58,7 @@ média.
   7/4/11, Boneca 1/8/9, Carrinho 6/2/8, Videogame 5/3/8) e `📌 RESPONDENDO`
   (5 perguntas e respostas); fecha com "a tabela organiza os dados de
   forma clara"; bloco B "INTERPRETAR é entender o que os dados
-  significam." com "Exemplo: Meio de Transporte para a Escola" e
+  significam." com "Exemplo: Meio de transporte para a escola" e
   `TRANSPORTE / QUANTIDADE` (A pé 12, Carro 8, Ônibus 5, Bicicleta 2,
   TOTAL 27) e `O QUE OS DADOS NOS DIZEM?` (4 observações); fecha com
   "interpretar é entender o que os números significam no mundo real!"
@@ -100,7 +100,7 @@ próprio, unidade ou termo técnico.
 - Assim fica mais fácil contar de 5 em 5!
 - Uma TABELA organiza os dados em linhas e colunas, facilitando a leitura.
 - Para LER uma tabela, procure a informação cruzando linhas e colunas.
-- Exemplo: Brinquedo Favorito
+- Exemplo: Brinquedo favorito
 - BRINQUEDO
 - MENINOS
 - MENINAS
@@ -130,7 +130,7 @@ próprio, unidade ou termo técnico.
 - 5. Quantas crianças participaram da pesquisa? 11 + 9 + 8 + 8 = 36 crianças
 - A tabela organiza os dados de forma clara. Fica fácil comparar e encontrar informações!
 - INTERPRETAR é entender o que os dados significam.
-- Exemplo: Meio de Transporte para a Escola
+- Exemplo: Meio de transporte para a escola
 - TRANSPORTE
 - QUANTIDADE
 - A pé

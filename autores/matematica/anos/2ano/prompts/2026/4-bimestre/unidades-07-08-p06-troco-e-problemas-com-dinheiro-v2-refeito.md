@@ -55,7 +55,7 @@ liso, bordas rasgadas, fita e sombra curta; sem grade digital.
   e a tabela `PAGUEI / PREÇO / TROCO` com as 4 linhas (R$ 5,00 / R$ 3,00 /
   R$ 2,00; R$ 10,00 / R$ 6,00 / R$ 4,00; R$ 20,00 / R$ 15,00 / R$ 5,00; R$
   2,00 / R$ 2,00 / R$ 0,00 — não tem troco); fecha com "📌 PARA CALCULAR O
-  TROCO: TROCO = VALOR PAGO - PREÇO DO PRODUTO. Use a subtração! Se você
+  TROCO: TROCO = VALOR PAGO - PREÇO DO PRODUTO. Use a conta de subtração! Se você
   pagar o valor EXATO, não há troco. Se pagar a MAIS, recebe troco de
   volta.";
 - núcleo 3, em papel laranja: os três problemas resolvidos em sequência,
@@ -104,7 +104,7 @@ próprio, unidade ou termo técnico.
 - R$ 0,00 (não tem troco)
 - 📌 PARA CALCULAR O TROCO
 - TROCO = VALOR PAGO - PREÇO DO PRODUTO
-- Use a subtração!
+- Use a conta de subtração!
 - Se você pagar o valor EXATO, não há troco. Se pagar a MAIS, recebe troco de volta.
 - Problema 1:
 - Ana quer comprar um caderno que custa R$ 8,00. Ela tem uma cédula de R$ 10,00. Quanto ela vai receber de troco?
